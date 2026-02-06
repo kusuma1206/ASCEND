@@ -1,0 +1,404 @@
+[
+  {
+    "id": "oops_med_01",
+    "question": "What is the difference between an 'Interface' and an 'Abstract Class' in Java?",
+    "options": [
+      "Interface cannot have any implemented methods (pre-Java 8)",
+      "Abstract class can have state (fields); Interface cannot",
+      "A class can implement multiple interfaces but extend only one abstract class",
+      "They are identical"
+    ],
+    "correct_answer": [
+      "Interface cannot have any implemented methods (pre-Java 8)",
+      "Abstract class can have state (fields); Interface cannot",
+      "A class can implement multiple interfaces but extend only one abstract class"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_02",
+    "question": "What is 'RAII' (Resource Acquisition Is Initialization)?",
+    "options": [
+      "A programming idiom where resource lifecycle is tied to object lifetime",
+      "A way to start an app",
+      "A database connection pool",
+      "A type of constructor"
+    ],
+    "correct_answer": [
+      "A programming idiom where resource lifecycle is tied to object lifetime"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_03",
+    "question": "Which of these are part of the 'SOLID' principles?",
+    "options": [
+      "Single Responsibility",
+      "Open/Closed",
+      "Liskov Substitution",
+      "Interface Segregation",
+      "Dependency Inversion"
+    ],
+    "correct_answer": [
+      "Single Responsibility",
+      "Open/Closed",
+      "Liskov Substitution",
+      "Interface Segregation",
+      "Dependency Inversion"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_04",
+    "question": "What does the 'L' in SOLID stand for?",
+    "options": [
+      "Liskov Substitution Principle",
+      "Linear Scalability",
+      "Logic Separation",
+      "Layered System"
+    ],
+    "correct_answer": [
+      "Liskov Substitution Principle"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_05",
+    "question": "Which of these are characteristics of 'Protected' access modifier?",
+    "options": [
+      "Accessible within same package",
+      "Accessible by subclasses in other packages",
+      "Accessible only within same class",
+      "Accessible by anyone"
+    ],
+    "correct_answer": [
+      "Accessible within same package",
+      "Accessible by subclasses in other packages"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_06",
+    "question": "What is 'Method Hiding' in OOP?",
+    "options": [
+      "A static method in subclass has same signature as superclass",
+      "Making a method private",
+      "Deleting a method",
+      "Changing a method's return type"
+    ],
+    "correct_answer": [
+      "A static method in subclass has same signature as superclass"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_07",
+    "question": "Which of these keywords relate to 'Abstraction'?",
+    "options": [
+      "abstract",
+      "interface",
+      "virtual",
+      "pure virtual"
+    ],
+    "correct_answer": [
+      "abstract",
+      "interface",
+      "virtual",
+      "pure virtual"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_08",
+    "question": "What is a 'Pure Virtual Function' in C++?",
+    "options": [
+      "Function with no implementation in base class (= 0)",
+      "A function that returns void",
+      "A function with only integer params",
+      "A static function"
+    ],
+    "correct_answer": [
+      "Function with no implementation in base class (= 0)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_09",
+    "question": "Which of these describe 'Coupling' in OOP?",
+    "options": [
+      "Degree of interdependence between modules",
+      "Internal strength of a module",
+      "A type of inheritance",
+      "Data encryption"
+    ],
+    "correct_answer": [
+      "Degree of interdependence between modules"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_10",
+    "question": "Which of these are true about 'Cohesion'?",
+    "options": [
+      "Degree to which elements inside a module belong together",
+      "High cohesion is generally preferred",
+      "Low cohesion indicates a 'God Object'",
+      "It is same as coupling"
+    ],
+    "correct_answer": [
+      "Degree to which elements inside a module belong together",
+      "High cohesion is generally preferred",
+      "Low cohesion indicates a 'God Object'"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_11",
+    "question": "What is the 'Diamond Problem' in Multiple Inheritance?",
+    "options": [
+      "Ambiguity when inheriting from two classes that share a common base",
+      "System crash",
+      "Memory leak",
+      "Circular dependency"
+    ],
+    "correct_answer": [
+      "Ambiguity when inheriting from two classes that share a common base"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_12",
+    "question": "Which of these are solutions for the Diamond Problem?",
+    "options": [
+      "Virtual Inheritance (C++)",
+      "Interfaces (Java)",
+      "Traits (PHP/Scala)",
+      "Multiple code blocks"
+    ],
+    "correct_answer": [
+      "Virtual Inheritance (C++)",
+      "Interfaces (Java)",
+      "Traits (PHP/Scala)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_13",
+    "question": "What is 'Runtime Polymorphism'?",
+    "options": [
+      "Method overriding",
+      "Method overloading",
+      "Generics",
+      "Templates"
+    ],
+    "correct_answer": [
+      "Method overriding"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_14",
+    "question": "Which of these are required for Method Overriding?",
+    "options": [
+      "Same name",
+      "Same parameters",
+      "Same return type (or covariant)",
+      "Inheritance relationship"
+    ],
+    "correct_answer": [
+      "Same name",
+      "Same parameters",
+      "Same return type (or covariant)",
+      "Inheritance relationship"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_15",
+    "question": "What is 'Late Binding'?",
+    "options": [
+      "Method call resolved at runtime",
+      "Method call resolved at compile time",
+      "Joining code late",
+      "Delayed execution"
+    ],
+    "correct_answer": [
+      "Method call resolved at runtime"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_16",
+    "question": "Which data structure is often used by compilers to support virtual functions?",
+    "options": [
+      "vtable (Virtual Table)",
+      "Hash Map",
+      "LinkedList",
+      "Stack"
+    ],
+    "correct_answer": [
+      "vtable (Virtual Table)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_17",
+    "question": "Which of these are true about 'Constructors'?",
+    "options": [
+      "Called when object is created",
+      "Have no return type",
+      "Can be overloaded",
+      "Can be virtual in Java"
+    ],
+    "correct_answer": [
+      "Called when object is created",
+      "Have no return type",
+      "Can be overloaded"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_18",
+    "question": "What is 'Object Composition'?",
+    "options": [
+      "Combining simple objects to build complex ones",
+      "Inheriting from multiple classes",
+      "Destroying objects",
+      "Defining class types"
+    ],
+    "correct_answer": [
+      "Combining simple objects to build complex ones"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_19",
+    "question": "Which of these keywords are used for finality/immutability?",
+    "options": [
+      "final (Java)",
+      "const (C++)",
+      "readonly (C#)",
+      "static"
+    ],
+    "correct_answer": [
+      "final (Java)",
+      "const (C++)",
+      "readonly (C#)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_20",
+    "question": "What is 'Reflection' in OOP?",
+    "options": [
+      "Ability of a program to examine and modify its own structure at runtime",
+      "Mirroring data to another server",
+      "Code review process",
+      "Unit testing"
+    ],
+    "correct_answer": [
+      "Ability of a program to examine and modify its own structure at runtime"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_21",
+    "question": "Which of these are true regarding 'Static' methods?",
+    "options": [
+      "Belong to class, not instance",
+      "Cannot access instance variables directly",
+      "Can be called without creating an object",
+      "Cannot be overloaded"
+    ],
+    "correct_answer": [
+      "Belong to class, not instance",
+      "Cannot access instance variables directly",
+      "Can be called without creating an object"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_22",
+    "question": "What is 'Information Hiding'?",
+    "options": [
+      "Restricting access to internal state of an object",
+      "Encrypting source code",
+      "Hiding files in a directory",
+      "Removing comments"
+    ],
+    "correct_answer": [
+      "Restricting access to internal state of an object"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_23",
+    "question": "Which of these describe 'Generic' programming?",
+    "options": [
+      "Writing code that works for any data type",
+      "Templates in C++",
+      "Generics in Java",
+      "Assembly code"
+    ],
+    "correct_answer": [
+      "Writing code that works for any data type",
+      "Templates in C++",
+      "Generics in Java"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_med_24",
+    "question": "What is a 'Copy Constructor'?",
+    "options": [
+      "Constructor that creates an object using another object of same class",
+      "Constructor that copies files",
+      "A tool to duplicate classes",
+      "A static method"
+    ],
+    "correct_answer": [
+      "Constructor that creates an object using another object of same class"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_med_25",
+    "question": "Which of these are 'Access Modifiers' in C++?",
+    "options": [
+      "public",
+      "private",
+      "protected"
+    ],
+    "correct_answer": [
+      "public",
+      "private",
+      "protected"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  }
+]

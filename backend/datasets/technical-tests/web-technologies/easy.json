@@ -1,0 +1,396 @@
+[
+  {
+    "id": "web_easy_01",
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyperlink Text Markup Language",
+      "Hyper Tool Multi Language"
+    ],
+    "correct_answer": [
+      "Hyper Text Markup Language"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_02",
+    "question": "Which tag is used to create a hyperlink?",
+    "options": [
+      "<a>",
+      "<link>",
+      "<href>",
+      "<url>"
+    ],
+    "correct_answer": [
+      "<a>"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_03",
+    "question": "Which of these are semantic HTML5 tags?",
+    "options": [
+      "<header>",
+      "<footer>",
+      "<main>",
+      "<div>"
+    ],
+    "correct_answer": [
+      "<header>",
+      "<footer>",
+      "<main>"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_04",
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Classic Style Sheets",
+      "Creative Style System",
+      "Computer Style Sheets"
+    ],
+    "correct_answer": [
+      "Cascading Style Sheets"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_05",
+    "question": "Which of these are valid ways to include CSS in HTML?",
+    "options": [
+      "Inline",
+      "Internal",
+      "External",
+      "Import"
+    ],
+    "correct_answer": [
+      "Inline",
+      "Internal",
+      "External"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_06",
+    "question": "Which JavaScript keyword is used to declare a variable that cannot be reassigned?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "static"
+    ],
+    "correct_answer": [
+      "const"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_07",
+    "question": "What is the correct syntax for a JavaScript if statement?",
+    "options": [
+      "if (x > y)",
+      "if x > y then",
+      "if x > y:",
+      "if [ x > y ]"
+    ],
+    "correct_answer": [
+      "if (x > y)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_08",
+    "question": "Which of these are browser storage options?",
+    "options": [
+      "LocalStorage",
+      "SessionStorage",
+      "Cookies",
+      "MemoryStorage"
+    ],
+    "correct_answer": [
+      "LocalStorage",
+      "SessionStorage",
+      "Cookies"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_09",
+    "question": "What is the 'DOM' in web development?",
+    "options": [
+      "Document Object Model",
+      "Data Object Management",
+      "Document Oriented Multi-language",
+      "Digital Object Mode"
+    ],
+    "correct_answer": [
+      "Document Object Model"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_10",
+    "question": "Which HTML tag is used to embed an image?",
+    "options": [
+      "<img>",
+      "<image>",
+      "<pic>",
+      "<src>"
+    ],
+    "correct_answer": [
+      "<img>"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_11",
+    "question": "Which of these are CSS Box Model properties?",
+    "options": [
+      "Margin",
+      "Border",
+      "Padding",
+      "Content"
+    ],
+    "correct_answer": [
+      "Margin",
+      "Border",
+      "Padding",
+      "Content"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_12",
+    "question": "How do you select an element with id 'header' in CSS?",
+    "options": [
+      "#header",
+      ".header",
+      "header",
+      "id:header"
+    ],
+    "correct_answer": [
+      "#header"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_13",
+    "question": "What does JSON stand for?",
+    "options": [
+      "JavaScript Object Notation",
+      "Java Sequential Object Network",
+      "JavaScript Oriented Node",
+      "Java Standard Object Notation"
+    ],
+    "correct_answer": [
+      "JavaScript Object Notation"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_14",
+    "question": "Which of these are HTTP methods?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correct_answer": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_15",
+    "question": "What is the purpose of 'alt' attribute in <img> tag?",
+    "options": [
+      "Alternative text if image fails to load",
+      "Alignment",
+      "Alternative source",
+      "Animation type"
+    ],
+    "correct_answer": [
+      "Alternative text if image fails to load"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_16",
+    "question": "Which JavaScript method is used to write to the browser console?",
+    "options": [
+      "console.log()",
+      "print()",
+      "write.console()",
+      "log()"
+    ],
+    "correct_answer": [
+      "console.log()"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_17",
+    "question": "Which of these are valid JavaScript data types?",
+    "options": [
+      "Number",
+      "String",
+      "Object",
+      "Undefined"
+    ],
+    "correct_answer": [
+      "Number",
+      "String",
+      "Object",
+      "Undefined"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_18",
+    "question": "What is the result of 10 + '5' in JavaScript?",
+    "options": [
+      "'105'",
+      "15",
+      "Error",
+      "NaN"
+    ],
+    "correct_answer": [
+      "'105'"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_19",
+    "question": "Which event occurs when a user clicks on an HTML element?",
+    "options": [
+      "onclick",
+      "onchange",
+      "onmouseover",
+      "onfocus"
+    ],
+    "correct_answer": [
+      "onclick"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_20",
+    "question": "Which of these are front-end frameworks/libraries?",
+    "options": [
+      "React",
+      "Vue",
+      "Angular",
+      "Express"
+    ],
+    "correct_answer": [
+      "React",
+      "Vue",
+      "Angular"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_21",
+    "question": "What is 'Responsive Design'?",
+    "options": [
+      "Web design that adapts to screen size",
+      "Quick loading website",
+      "Interactive design",
+      "Design with animations"
+    ],
+    "correct_answer": [
+      "Web design that adapts to screen size"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_22",
+    "question": "Which tag is used to include external JavaScript?",
+    "options": [
+      "<script>",
+      "<js>",
+      "<link>",
+      "<include>"
+    ],
+    "correct_answer": [
+      "<script>"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_23",
+    "question": "Which of these are ways to declare a function in JavaScript?",
+    "options": [
+      "function name() {}",
+      "const name = () => {}",
+      "const name = function() {}",
+      "def name() {}"
+    ],
+    "correct_answer": [
+      "function name() {}",
+      "const name = () => {}",
+      "const name = function() {}"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_easy_24",
+    "question": "What is the purpose of the <head> section in HTML?",
+    "options": [
+      "Store meta-information and links",
+      "Store visible content",
+      "Show navigation",
+      "Define layout"
+    ],
+    "correct_answer": [
+      "Store meta-information and links"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_easy_25",
+    "question": "What is 'Closure' in JavaScript?",
+    "options": [
+      "A function having access to its parent scope",
+      "Ending a program",
+      "Closing a database connection",
+      "Private class members"
+    ],
+    "correct_answer": [
+      "A function having access to its parent scope"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

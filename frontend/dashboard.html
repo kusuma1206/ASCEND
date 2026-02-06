@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Dashboard | Ascend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tour.css">
+  <style>
+    :root {
+      --primary: #8B5CF6;
+      --bg-dark: #0F172A;
+      --card-bg: #1E293B;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --success: #10B981;
+      --warning: #F59E0B;
+      --danger: #EF4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar - Reused Style */
+    .sidebar {
+      width: 260px;
+      background: #0B1121;
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+
+    .brand-logo img {
+      width: 140px;
+      margin-bottom: 40px;
+    }
+
+    .nav-item {
+      padding: 12px 16px;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 8px;
+      margin-bottom: 4px;
+      transition: all 0.2s;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+      border: none;
+      background: none;
+      text-align: left;
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    .nav-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+    }
+
+    .nav-item.active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .user-profile {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    /* Main Content */
+    .main {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 40px;
+    }
+
+    .h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+    }
+
+    /* Dashboard Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 30px;
+    }
+
+    /* Hero Score Card */
+    .score-card {
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      height: fit-content;
+    }
+
+    .score-circle {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: conic-gradient(var(--primary) 0%, rgba(255, 255, 255, 0.1) 0%);
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .score-inner {
+      width: 150px;
+      height: 150px;
+      background: var(--card-bg);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .score-val {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .score-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .verdict-badge {
+      background: rgba(139, 92, 246, 0.1);
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    /* Modules Grid */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .module-card {
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .module-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+    }
+
+    .module-head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .module-icon {
+      font-size: 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+    }
+
+    .module-score {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .module-name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .module-status {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Bottom Row */
+    .bottom-row {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    .wide-card {
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      margin-top: 12px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--success);
+      width: 0%;
+      transition: width 1s;
+    }
+
+    /* Activity Log */
+    .activity-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .activity-item:last-child {
+      border-bottom: none;
+    }
+
+    .activity-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .activity-content {
+      flex: 1;
+    }
+
+    .activity-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .activity-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .activity-score {
+      font-weight: 700;
+      color: var(--success);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div
+      style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 40px; display: flex; align-items: center; gap: 10px;">
+      <span>Ascend 🚀</span>
+    </div>
+
+    <div class="user-profile">
+      <div class="avatar">👤</div>
+      <div>
+        <div style="font-weight: 600;" class="user-name-display">Student</div>
+        <div style="font-size: 0.8rem; color: var(--text-muted);">2026 Batch</div>
+      </div>
+    </div>
+
+    <button onclick="location.href='resume_upload.html'" class="nav-item">Resume Analyzer</button>
+    <button onclick="location.href='technical_test_setup.html'" class="nav-item">Technical Test</button>
+    <button onclick="location.href='communication_test.html'" class="nav-item">Communication</button>
+    <button onclick="location.href='mock_interview_setup.html'" class="nav-item">Mock Interview</button>
+    <button onclick="location.href='roadmap_setup.html'" class="nav-item">Roadmap</button>
+    <button onclick="location.href='opportunities.html'" class="nav-item">Opportunities</button>
+    <button class="nav-item active">Dashboard</button>
+
+    <div style="margin-top: auto;">
+      <button onclick="location.href='index.html'" class="nav-item" style="color: #EF4444;">Logout</button>
+      <div style="padding: 12px 16px; color: var(--text-muted); font-size: 0.8rem;">Signed in</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="header">
+      <div>
+        <h1 class="h1">Career Readiness Dashboard</h1>
+        <p class="subtitle">Track your progress towards your goal: <strong id="target-role">AI Engineer</strong></p>
+      </div>
+      <div>
+        <!-- Refresh Button could go here -->
+      </div>
+    </div>
+
+    <div class="grid-container">
+
+      <!-- HERO SCORE -->
+      <div class="score-card">
+        <h3 style="margin-bottom: 24px; color: var(--text-muted);">OVERALL SCORE</h3>
+        <div class="score-circle" id="overall-chart">
+          <div class="score-inner">
+            <div class="score-val" id="overall-score">0</div>
+            <div class="score-label">/ 100</div>
+          </div>
+        </div>
+        <div class="verdict-badge" id="verdict-label">Analyzing...</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;" id="insight-text">
+          Syncing your latest progress...
+        </p>
+      </div>
+
+      <!-- MODULES -->
+      <div class="modules-grid">
+
+        <!-- Resume -->
+        <div id="card-resume" class="module-card" onclick="location.href='resume_upload.html'">
+          <div class="module-head">
+            <div class="module-icon">📄</div>
+            <div class="module-score" id="resume-score">--</div>
+          </div>
+          <div>
+            <div class="module-name">Resume Strength</div>
+            <div class="module-status" id="resume-status">Checking...</div>
+          </div>
+        </div>
+
+        <!-- Technical -->
+        <div id="card-tech" class="module-card" onclick="location.href='technical_test_setup.html'">
+          <div class="module-head">
+            <div class="module-icon">💻</div>
+            <div class="module-score" id="tech-score">--</div>
+          </div>
+          <div>
+            <div class="module-name">Technical Skills</div>
+            <div class="module-status" id="tech-status">Checking...</div>
+          </div>
+        </div>
+
+        <!-- Communication -->
+        <div id="card-comm" class="module-card" onclick="location.href='communication_test.html'">
+          <div class="module-head">
+            <div class="module-icon">🗣️</div>
+            <div class="module-score" id="comm-score">--</div>
+          </div>
+          <div>
+            <div class="module-name">Communication</div>
+            <div class="module-status" id="comm-status">Checking...</div>
+          </div>
+        </div>
+
+        <!-- Interview -->
+        <div id="card-interview" class="module-card" onclick="location.href='mock_interview_setup.html'">
+          <div class="module-head">
+            <div class="module-icon">👔</div>
+            <div class="module-score" id="interview-score">--</div>
+          </div>
+          <div>
+            <div class="module-name">Mock Interview</div>
+            <div class="module-status" id="interview-status">Checking...</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="bottom-row">
+      <div id="card-roadmap" class="wide-card">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+          <strong>Roadmap Progress</strong>
+          <span id="roadmap-meta" style="color: var(--primary);">Phase 1</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="roadmap-bar" style="width: 0%"></div>
+        </div>
+        <p style="margin-top: 12px; font-size: 0.9rem; color: var(--text-muted);" id="roadmap-next">
+          Next: Complete Phase 1 tasks
+        </p>
+      </div>
+
+      <div id="card-opportunities" class="wide-card" onclick="location.href='opportunities.html'"
+        style="cursor: pointer;">
+        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 4px;" id="opps-saved">0</div>
+        <div style="color: var(--text-muted);">Opportunities Saved</div>
+        <div style="margin-top: 16px; font-size: 0.9rem; color: var(--primary);">View Applications &rarr;</div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/userContext.js"></script>
+  <script src="js/tour.js"></script>
+  <script>
+    // Fetch Dashboard Stats
+    async function loadDashboard() {
+      try {
+        const res = await fetch('http://localhost:3002/api/dashboard/stats');
+        const json = await res.json();
+
+        if (json.success) {
+          renderDashboard(json.data);
+        }
+      } catch (e) {
+        console.error("Dashboard Load Failed", e);
+      }
+    }
+
+    function renderDashboard(data) {
+      // 1. Overall
+      const score = data.overall.score;
+      document.getElementById('overall-score').textContent = score;
+      document.getElementById('overall-chart').style.background =
+        `conic-gradient(${getColor(data.overall.color)} ${score}%, rgba(255,255,255,0.05) ${score}% 100%)`;
+
+      document.getElementById('verdict-label').textContent = data.overall.verdict;
+      document.getElementById('verdict-label').style.color = getColor(data.overall.color);
+      document.getElementById('insight-text').textContent = data.overall.insight;
+
+      // 2. Modules
+      updateModule('resume', data.modules.resume);
+      updateModule('tech', data.modules.technical);
+      updateModule('comm', data.modules.communication);
+      updateModule('interview', data.modules.interview);
+
+      // 3. Roadmap
+      const r = data.modules.roadmap;
+      document.getElementById('roadmap-meta').textContent = `Phase ${r.phase} • ${r.progress}%`;
+      document.getElementById('roadmap-bar').style.width = `${r.progress}%`;
+      document.getElementById('roadmap-next').textContent = `Next Action: ${r.nextAction}`;
+
+      // 4. Opps
+      document.getElementById('opps-saved').textContent = data.modules.opportunities.saved;
+
+      // 5. Activity Feed
+      renderActivityFeed(data.activities);
+    }
+
+    function renderActivityFeed(activities) {
+      const feed = document.getElementById('activity-feed');
+      feed.innerHTML = '';
+
+      if (!activities || activities.length === 0) {
+        feed.innerHTML = '<p style="color: var(--text-muted);">No recent activity found.</p>';
+        return;
+      }
+
+      const icons = {
+        'Resume': '📄',
+        'Technical': '💻',
+        'Communication': '🗣️',
+        'MockInterview': '👔',
+        'Roadmap': '📍',
+        'Opportunities': '💼'
+      };
+
+      activities.forEach(log => {
+        const date = new Date(log.createdAt).toLocaleString();
+        const scoreDisplay = log.score ? `<span class="activity-score">Score: ${log.score}</span>` : '';
+
+        const html = `
+          <div class="activity-item">
+            <div class="activity-icon">${icons[log.module] || '📌'}</div>
+            <div class="activity-content">
+              <div class="activity-title">${log.summary}</div>
+              <div class="activity-meta">${date} • ${log.status}</div>
+            </div>
+            ${scoreDisplay}
+          </div>
+        `;
+        feed.innerHTML += html;
+      });
+    }
+
+    function updateModule(prefix, data) {
+      document.getElementById(`${prefix}-score`).textContent = data.attempted ? data.score : '--';
+      document.getElementById(`${prefix}-status`).textContent = data.status;
+
+      // Visual cue for unattempted
+      if (!data.attempted) {
+        document.getElementById(`${prefix}-status`).style.color = '#94A3B8';
+      } else {
+        document.getElementById(`${prefix}-status`).style.color = '#F8FAFC';
+      }
+    }
+
+    function getColor(name) {
+      if (name === 'green') return '#10B981';
+      if (name === 'orange') return '#F59E0B';
+      return '#EF4444';
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', loadDashboard);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+id,question,option1,option2,option3,option4,answer,difficulty
+1,What does CSS stand for?,Cascading Style Sheets,Creative Style System,Computer Style Sheets,Colorful Style Sheets,Cascading Style Sheets,easy
+2,Which property changes text color?,color,font-color,text-color,fgcolor,color,easy
+3,Which property changes background color?,background-color,bgcolor,color,background,background-color,easy
+4,Which selector selects all elements?,*,all,body,html,*,easy
+5,Which property changes font size?,font-size,text-size,size,font,font-size,easy
+6,Which property changes font style?,font-style,style,font,text-style,font-style,easy
+7,Which property makes text bold?,font-weight,font-style,weight,bold,font-weight,easy
+8,Which unit is relative?,em,px,cm,mm,em,easy
+9,Which unit is absolute?,px,em,rem,%,px,easy
+10,Which property aligns text?,text-align,align,position,float,text-align,easy
+11,Which value centers text?,center,middle,align,mid,center,easy
+12,Which property adds space inside element?,padding,margin,border,spacing,padding,easy
+13,Which property adds space outside element?,margin,padding,space,border,margin,easy
+14,Which property adds border?,border,outline,edge,frame,border,easy
+15,Which value hides element?,display:none,visibility:hidden,hidden,opacity:0,display:none,easy
+16,Which property controls visibility?,visibility,display,opacity,show,visibility,easy
+17,Which value makes block inline?,inline,block,flex,grid,inline,easy
+18,Which property floats element?,float,align,position,flow,float,easy
+19,Which value floats left?,left,right,center,auto,left,easy
+20,Which property clears float?,clear,float,overflow,reset,clear,easy
+21,Which property sets width?,width,size,length,span,width,easy
+22,Which property sets height?,height,size,length,span,height,easy
+23,Which property sets background image?,background-image,bg-image,image,background,background-image,easy
+24,Which value repeats background?,repeat,no-repeat,repeat-x,repeat-y,repeat,easy
+25,Which value prevents repeat?,no-repeat,stop,none,fixed,no-repeat,easy
+26,Which property sets position?,position,place,align,layout,position,easy
+27,Which value positions relative?,relative,absolute,fixed,static,relative,easy
+28,Which property sets opacity?,opacity,transparent,visibility,alpha,opacity,easy
+29,Which value fully visible?,1,0,100,visible,1,easy
+30,Which property sets cursor?,cursor,mouse,pointer,hover,cursor,easy
+31,Which position removes element from flow?,absolute,relative,static,sticky,absolute,medium
+32,Which position sticks on scroll?,sticky,fixed,absolute,relative,sticky,medium
+33,Which property controls stacking order?,z-index,order,layer,depth,z-index,medium
+34,Which display creates flexbox?,flex,block,grid,inline,flex,medium
+35,Which property aligns items in flex?,align-items,justify-items,place-items,align,align-items,medium
+36,Which property aligns main axis?,justify-content,align-items,content,place,justify-content,medium
+37,Which value spreads items evenly?,space-between,center,space-around,even,space-between,medium
+38,Which display creates grid?,grid,flex,block,inline,grid,medium
+39,Which property defines grid columns?,grid-template-columns,grid-columns,columns,template,grid-template-columns,medium
+40,Which unit is viewport based?,vw,em,px,cm,vw,medium
+41,Which unit relates to root font?,rem,em,px,%,rem,medium
+42,Which pseudo-class targets hover?,hover,active,focus,visited,hover,medium
+43,Which pseudo-class targets focus?,focus,hover,active,visited,focus,medium
+44,Which pseudo-element targets first letter?,::first-letter,::first-line,::before,::after,::first-letter,medium
+45,Which property adds shadow?,box-shadow,text-shadow,shadow,border-shadow,box-shadow,medium
+46,Which property rounds corners?,border-radius,corner,radius,round,border-radius,medium
+47,Which property changes list style?,list-style,bullet,marker,style,list-style,medium
+48,Which property removes underline?,text-decoration,decoration,underline,style,text-decoration,medium
+49,Which value removes underline?,none,off,no,remove,none,medium
+50,Which property transforms element?,transform,translate,rotate,scale,transform,medium
+51,Which function rotates element?,rotate(),turn(),spin(),angle(),rotate(),medium
+52,Which function scales element?,scale(),resize(),zoom(),grow(),scale(),medium
+53,Which property animates element?,animation,transition,motion,animate,animation,medium
+54,Which property animates on change?,transition,animation,effect,motion,transition,medium
+55,Which property controls duration?,duration,time,speed,delay,duration,medium
+56,Which property sets delay?,animation-delay,delay,wait,pause,animation-delay,medium
+57,Which property repeats animation?,animation-iteration-count,repeat,loop,cycle,animation-iteration-count,medium
+58,Which value loops forever?,infinite,always,loop,forever,infinite,medium
+59,Which property controls overflow?,overflow,clip,scroll,hidden,overflow,medium
+60,Which selector has highest specificity?,Inline style,ID selector,Class selector,Element selector,Inline style,hard
+61,Order of CSS specificity?,Inline > ID > Class > Element,ID > Class > Element > Inline,Class > ID > Element,Element > Class > ID,Inline > ID > Class > Element,hard
+62,Which property improves performance?,will-change,optimize,cache,render,will-change,hard
+63,Which layout is one-dimensional?,Flexbox,Grid,Table,Float,Flexbox,hard
+64,Which layout is two-dimensional?,Grid,Flexbox,Float,Inline,Grid,hard
+65,Which property creates stacking context?,position,z-index,opacity,all,opacity,hard
+66,Which property disables pointer events?,pointer-events,events,cursor,disable,pointer-events,hard
+67,Which value disables pointer?,none,off,FALSE,0,none,hard
+68,Which property blends background?,background-blend-mode,blend,mix,overlay,background-blend-mode,hard
+69,Which property clips background?,background-clip,clip,crop,cut,background-clip,hard
+70,Which property sets object fit?,object-fit,fit,resize,scale,object-fit,hard
+71,Which value covers container?,cover,contain,fill,stretch,cover,hard
+72,Which property sets aspect ratio?,aspect-ratio,ratio,size,scale,aspect-ratio,hard
+73,Which media query targets print?,print,screen,all,page,print,hard
+74,Which media query targets dark mode?,prefers-color-scheme,dark-mode,theme,color,prefers-color-scheme,hard
+75,Which property enables smooth scroll?,scroll-behavior,smooth,scroll,animate,scroll-behavior,hard
+76,Which value smooth scroll?,smooth,auto,fast,slow,smooth,hard
+77,Which property customizes scrollbar?,::-webkit-scrollbar,scrollbar,scroll-style,scroll,::-webkit-scrollbar,hard
+78,Which property sets caret color?,caret-color,cursor-color,text-caret,caret,caret-color,hard
+79,Which property sets accent color?,accent-color,theme-color,highlight,focus,accent-color,hard
+80,Which property controls column layout?,column-count,columns,layout,grid,column-count,hard
+81,Which property fills available space?,flex-grow,flex-fill,grow,expand,flex-grow,hard
+82,Which property prevents shrinking?,flex-shrink,flex-grow,shrink,size,flex-shrink,hard
+83,Which property sets order?,order,position,z-index,rank,order,hard
+84,Which property hides backface?,backface-visibility,face,visibility,flip,backface-visibility,hard
+85,Which property preserves 3D?,transform-style,perspective,depth,3d,transform-style,hard
+86,Which property sets perspective?,perspective,depth,distance,3d,perspective,hard
+87,Which property limits width?,max-width,width,min-width,limit,max-width,hard
+88,Which property limits height?,max-height,height,min-height,limit,max-height,hard
+89,Which property defines font fallback?,font-family,font,typeface,fallback,font-family,hard
+90,In how many ways can CSS be written in?,1,2,3,4,3,hard
+91,Which symbol is used for class selectors in CSS?,#,.,*,&,.,easy
+92,Which CSS property is used to make text bold?,font-style,font-weight,text-bold,weight,font-weight,easy
+93,Which property is used to add space inside an element?,margin,padding,border,spacing,padding,easy
+94,Which CSS property is used to hide an element?,visibility: hidden,display: none,Both A and B,hide,Both A and B,easy
+95,Which unit is relative to the font size of the element?,px,cm,em,pt,em,easy
+96,Which CSS property is used to make an element fixed to the viewport?,absolute,relative,sticky,fixed,fixed,medium
+97,Which pseudo-class applies styles when the mouse is over an element?,:active,:focus,:hover,:visited,:hover,medium
+98,Which property ensures content does not overflow its container?,float,clear,overflow,display,overflow,medium
+99,Which property is used to apply a shadow to text?,box-shadow,text-shadow,shadow,font-shadow,text-shadow,medium
+100,Which CSS property changes the cursor when hovering over an element?,mouse,pointer,cursor,hand,cursor,medium
+101,What does position: sticky do?,Acts like relative always,Acts like fixed always,Switches between relative and fixed,Same as absolute,Switches between relative and fixed,hard
+102,Which CSS property creates a new stacking context?,z-index,position,opacity (less than 1),float,opacity (less than 1),hard
+103,Which property is used to align items vertically in Flexbox?,align-content,justify-content,align-items,place-items,align-items,hard
+104,Which pseudo-element styles the first letter of text?,:first-letter,::first-letter,:letter,::letter,::first-letter,hard
+105,Which CSS unit is relative to the viewport width?,em,rem,%,vw,vw,hard
+

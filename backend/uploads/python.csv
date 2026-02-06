@@ -1,0 +1,107 @@
+id,question,option1,option2,option3,option4,answer,difficulty
+1,Python is primarily a ___ language.,Compiled,Markup,Interpreted,Assembly,Interpreted,easy
+2,Which symbol is used for comments in Python?,//,#,<!--,**,#,easy
+3,Which keyword is used to define a function?,func,define,def,function,def,easy
+4,Which data type stores True/False?,int,bool,str,float,bool,easy
+5,What is the output of len('Python')?,5,6,7,Error,6,easy
+6,Which keyword exits a loop?,exit,stop,break,end,break,easy
+7,Which operator is used for power?,^,**,//,%,**,easy
+8,Which type is immutable?,list,dict,set,tuple,tuple,easy
+9,Which function takes input from user?,input(),scan(),read(),get(),input(),easy
+10,Which keyword is used for inheritance?,inherits,extends,super,class,class,easy
+11,Which bracket is used for lists?,{},(),[],<>,[],easy
+12,Which function prints output?,print(),write(),show(),echo(),print(),easy
+13,Which operator is used for floor division?,/,//,%,**,//,easy
+14,Which keyword defines a class?,object,class,struct,define,class,easy
+15,Which file extension is Python?,.pt,.py,.p,.python,.py,easy
+16,Which keyword handles exceptions?,try,catch,handle,except,try,easy
+17,Which keyword creates variable?,var,let,auto,No keyword,No keyword,easy
+18,Which method converts string to integer?,str(),int(),float(),bool(),int(),easy
+19,Which function returns type?,type(),typeof(),class(),id(),type(),easy
+20,Which keyword deletes object?,remove,del,free,clear,del,easy
+21,Which keyword continues loop?,pass,skip,continue,next,continue,easy
+22,Which operator compares equality?,=,==,===,!=,==,easy
+23,Which function finds max?,maximum(),max(),top(),high(),max(),easy
+24,Which function converts to list?,array(),list(),tuple(),dict(),list(),easy
+25,Which keyword creates loop?,loop,iterate,for,repeat,for,easy
+26,Which operator gives remainder?,//,%,/,**,%,easy
+27,Which function finds length?,size(),count(),len(),length(),len(),easy
+28,Which keyword does nothing?,pass,null,skip,none,pass,easy
+29,Which value represents nothing?,null,0,none,None,None,easy
+30,Which function sorts list?,sort(),order(),arrange(),sortedlist(),sort(),easy
+31,Which keyword is used to create generator?,yield,return,gen,next,yield,medium
+32,Which module handles regular expressions?,regex,re,pyregex,pattern,re,medium
+33,What is list comprehension?,Loop,Compact syntax,Function,Decorator,Compact syntax,medium
+34,Which function opens file?,open(),read(),file(),load(),open(),medium
+35,Which mode opens file for append?,r,w,a,x,a,medium
+36,Which method removes last list element?,remove(),delete(),pop(),cut(),pop(),medium
+37,Which keyword checks condition?,if,when,check,case,if,medium
+38,Which exception for zero division?,ValueError,ZeroDivisionError,MathError,TypeError,ZeroDivisionError,medium
+39,Which module works with OS?,sys,os,path,env,os,medium
+40,Which operator checks identity?,==,is,!=,in,is,medium
+41,Which keyword imports module?,load,include,import,require,import,medium
+42,Which function returns iterator?,iter(),next(),loop(),range(),iter(),medium
+43,Which keyword defines anonymous function?,lambda,anon,def,func,lambda,medium
+44,Which data structure is FIFO?,stack,queue,list,set,queue,medium
+45,Which method adds element to set?,append,add,insert,push,add,medium
+46,Which method copies list?,clone(),copy(),duplicate(),replicate(),copy(),medium
+47,Which keyword raises exception?,throw,raise,error,except,raise,medium
+48,Which function returns ASCII value?,ord(),ascii(),chr(),code(),ord(),medium
+49,Which keyword handles multiple conditions?,if,elif,else,switch,elif,medium
+50,Which method joins strings?,merge(),join(),concat(),combine(),join(),medium
+51,Which method removes whitespace?,strip(),clean(),trim(),cut(),strip(),medium
+52,Which function rounds number?,round(),floor(),ceil(),approx(),round(),medium
+53,Which keyword creates infinite loop?,while True,for,repeat,loop,while True,medium
+54,Which module handles dates?,time,datetime,calendar,date,datetime,medium
+55,Which function converts to binary?,bin(),binary(),base2(),convert(),bin(),medium
+56,Which operator checks membership?,in,is,==,has,in,medium
+57,Which keyword ends program?,stop,exit,quit,break,exit,medium
+58,Which method reverses list?,reverse(),invert(),flip(),turn(),reverse(),medium
+59,Which function gives absolute value?,abs(),absolute(),mod(),fabs(),abs(),medium
+60,Which keyword creates dictionary?,map,dict,hash,table,dict,medium
+61,What is GIL in Python?,Interpreter,Lock,Thread,Memory,Lock,hard
+62,Which decorator makes static method?,@static,@staticmethod,@class,@method,@staticmethod,hard
+63,Which module handles multiprocessing?,thread,multiprocessing,process,parallel,multiprocessing,hard
+64,Which keyword creates coroutine?,async,await,yield,co,async,hard
+65,Which method resolves MRO?,mro(),order(),resolve(),linear(),mro(),hard
+66,Which library used for numerical computing?,numpy,pandas,scipy,math,numpy,hard
+67,Which keyword pauses coroutine?,wait,sleep,await,yield,await,hard
+68,Which type stores key-value pairs?,list,tuple,dict,set,dict,hard
+69,Which method serializes object?,dump,pickle,serialize,save,pickle,hard
+70,Which module handles JSON?,json,js,pickle,xml,json,hard
+71,Which keyword enforces abstract method?,@abstractmethod,@abstract,@virtual,@interface,@abstractmethod,hard
+72,Which algorithm is used by Timsort?,Merge,Insertion,Hybrid,Quick,Hybrid,hard
+73,Which method checks subclass?,issubclass(),isinstance(),type(),class(),issubclass(),hard
+74,Which module inspects bytecode?,dis,inspect,opcode,byte,dis,hard
+75,Which function gives memory id?,id(),mem(),addr(),ref(),id(),hard
+76,Which protocol enables iteration?,__iter__,__next__,__loop__,__for__,__iter__,hard
+77,Which library supports async IO?,asyncio,aio,event,loop,asyncio,hard
+78,Which object stores traceback?,error,trace,exception,sys,exception,hard
+79,Which module handles threading?,thread,threading,parallel,multi,threading,hard
+80,Which operator unpacks list?,*,**,&,@,*,hard
+81,Which operator unpacks dict?,*,**,&,@,**,hard
+82,Which keyword creates context manager?,with,using,context,manage,with,hard
+83,Which method flushes output buffer?,flush(),clear(),reset(),sync(),flush(),hard
+84,Which library used for ML?,numpy,sklearn,tensorflow,all,all,hard
+85,Which keyword handles cleanup?,finally,end,close,exit,finally,hard
+86,Which object handles generators?,iterator,yield,next,generator,generator,hard
+87,Which module measures performance?,timeit,perf,benchmark,clock,timeit,hard
+88,Which feature enables lazy evaluation?,generator,list,tuple,set,generator,hard
+89,Which keyword stops iteration?,stop,break,return,StopIteration,StopIteration,hard
+90,Which method checks attribute?,hasattr(),getattr(),setattr(),isattr(),hasattr(),hard
+91,Which of the following is a valid variable name in Python?,1num,num-1,num_1,num@1,num_1,easy
+92,what is the output of print(type(10)),<class 'float'>,<class 'str'>,<class 'int'>,<class 'bool'>,<class 'int'>,easy
+93,Which function is used to take input from the user?,get(),input(),scan(),read(),input(),easy
+94,What is the output of print(5 > 3)?,true,false,5,error,true,easy
+95,Which of the following is a Python loop?,repeat,loop,for,iterate,for,easy
+96,Which of the following is immutable in Python?,list,dict,set,tuple,tuple,medium
+97,What will be the output of print(bool(0))?,true,false,0,error,false,medium
+98,What does len() function do?,finds data type,counts elements,converts data,deletes data,counts elements,medium
+99,Which keyword is used to handle exceptions in Python?,catch,error,except,handle,except,medium
+100,What is the output of print("python"[1:4])?,pyt,yth,tho,ytho,yth,medium
+101,What is the output of print(type(lambda x: x))?,<class 'function'>,<class 'lambda'>,<class 'method'>,<class 'generator'>,<class 'function'>,hard
+102,Which of the following creates a generator?,[],{},(),(x for x in range(5)),(x for x in range(5)),hard
+103,What is the output of print(0.1 + 0.2 == 0.3)?,True,False,Error,None,False,hard
+104,Which statement about Python is TRUE?,Python supports method overloading,Python does not support OOP,Python uses dynamic typing,Python variables must be declared,Python uses dynamic typing,hard
+105,"What is the output of print("5" + "3")?",8,53,Error,15,53,hard
+

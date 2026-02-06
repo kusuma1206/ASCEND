@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ASCEND — Login / Sign Up</title>
+  <style>
+    :root {
+      --accent: #6366f1;
+      --accent-dark: #4f46e5;
+      --glass-bg: rgba(255, 255, 255, 0.12);
+      --glass-border: rgba(255, 255, 255, 0.22);
+      --text-light: #e6eefc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html,
+    body {
+      height: 100%;
+      font-family: "Inter", "Poppins", system-ui;
+    }
+
+    body {
+      background: url('./assets/bg.png') center/cover no-repeat fixed;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 460px;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .panel-left {
+      color: var(--text-light);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 38px;
+    }
+
+    .tag {
+      font-size: 18px;
+      color: #dbeafe;
+      max-width: 540px;
+      line-height: 1.45;
+    }
+
+    /* glass card shared styles */
+    .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 18px;
+      padding: 28px;
+      color: white;
+      width: 100%;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      overflow: hidden;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      background: transparent;
+      color: #dbeafe;
+      font-size: 15px
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+      color: white;
+      box-shadow: 0 6px 18px rgba(79, 70, 229, 0.18)
+    }
+
+    .panel {
+      transition: transform .33s ease, opacity .33s ease;
+    }
+
+    .panel.hidden {
+      transform: translateY(12px);
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    h2 {
+      margin-bottom: 6px;
+      color: #eef2ff;
+      font-size: 22px;
+    }
+
+    p.lead {
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: #dbeafe;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 6px;
+      color: #e6eefc
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.06);
+      color: white;
+      font-size: 14px;
+      outline: none;
+      margin-bottom: 10px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #c7d2fe;
+      margin: 8px 0 14px 0
+    }
+
+    .links a {
+      color: #c7d2fe;
+      text-decoration: none
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px
+    }
+
+    .btn {
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+      color: white;
+      flex: 1
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: white;
+      flex-basis: 160px
+    }
+
+    .helper {
+      font-size: 13px;
+      color: #f8fafc;
+      margin-top: 10px
+    }
+
+    @media (max-width:920px) {
+      .wrap {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width:420px) {
+      .brand {
+        font-size: 30px
+      }
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 800px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 14px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="panel-left" aria-hidden="false">
+      <div class="brand">ASCEND</div>
+      <div class="tag">A modern platform for learning & intelligent guidance.</div>
+
+    </div>
+
+    <div class="glass-card" role="region" aria-label="Auth card">
+      <div class="tabs" role="tablist" aria-label="Authentication tabs">
+        <button id="tabLogin" class="tab-btn active" role="tab" aria-selected="true"
+          onclick="showPanel('login')">Login</button>
+        <button id="tabSignup" class="tab-btn" role="tab" aria-selected="false" onclick="showPanel('signup')">Sign
+          Up</button>
+      </div>
+
+      <!-- LOGIN PANEL -->
+      <div id="panel-login" class="panel">
+        <h2>Login</h2>
+        <p class="lead">Enter your account details.</p>
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+          <label for="login-username">Username or Email</label>
+          <input id="login-username" type="text" placeholder="username or email" required>
+
+          <label for="login-password">Password</label>
+          <input id="login-password" type="password" placeholder="••••••••" required>
+
+          <div class="links">
+            <a href="#" onclick="alert('Forgot password flow - implement backend')">Forgot password?</a>
+            <a href="#" onclick="showPanel('signup'); return false;">Create an account</a>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-secondary" onclick="showPanel('signup')">Sign Up</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- SIGNUP PANEL -->
+      <div id="panel-signup" class="panel hidden" aria-hidden="true">
+        <h2>Create account</h2>
+        <p class="lead">Fill in details to register.</p>
+        <form id="signupForm" onsubmit="return handleSignup(event)">
+          <label for="fullName">Full name</label>
+          <input id="fullName" type="text" placeholder="Your full name" required>
+
+          <label for="signup-username">Username</label>
+          <input id="signup-username" type="text" placeholder="Choose a username" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="name@example.com" required>
+
+          <label for="signup-password">Password</label>
+          <input id="signup-password" type="password" placeholder="At least 8 characters" required>
+
+          <label for="signup-password2">Confirm Password</label>
+          <input id="signup-password2" type="password" placeholder="Repeat password" required>
+
+          <div class="helper">By signing up you agree to the Terms of Service.</div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            <button type="button" class="btn btn-secondary" onclick="showPanel('login')">Back to Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Toggle panels
+    function showPanel(name) {
+      const login = document.getElementById('panel-login');
+      const signup = document.getElementById('panel-signup');
+      const tabLogin = document.getElementById('tabLogin');
+      const tabSignup = document.getElementById('tabSignup');
+
+      if (name === 'signup') {
+        login.classList.add('hidden');
+        signup.classList.remove('hidden');
+        tabLogin.classList.remove('active');
+        tabSignup.classList.add('active');
+      } else {
+        signup.classList.add('hidden');
+        login.classList.remove('hidden');
+        tabSignup.classList.remove('active');
+        tabLogin.classList.add('active');
+      }
+    }
+
+    // VALID EMAIL CHECK
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    // ✅ FIXED LOGIN FUNCTION
+    function handleLogin(e) {
+      e.preventDefault();
+
+      const username = document.getElementById("login-username").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+
+      if (!username || !password) {
+        alert("Please enter username and password.");
+        return false;
+      }
+
+      // Save username for display on next page
+      const userObj = { id: 'user_local', name: username };
+      localStorage.setItem("ascend_user", JSON.stringify(userObj));
+
+      // ⭐ Redirect to Dashboard (Tour Start)
+      window.location.href = "dashboard.html";
+      return false;
+    }
+
+    // SIGNUP HANDLER
+    function handleSignup(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('fullName').value.trim();
+      const username = document.getElementById('signup-username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const pw = document.getElementById('signup-password').value;
+      const pw2 = document.getElementById('signup-password2').value;
+
+      if (!name || !username || !email || !pw || !pw2) {
+        alert('Please fill all fields.');
+        return false;
+      }
+      if (!isValidEmail(email)) {
+        alert('Please enter a valid email.');
+        return false;
+      }
+      if (pw.length < 8) {
+        alert('Password must be at least 8 characters.');
+        return false;
+      }
+      if (pw !== pw2) {
+        alert('Passwords do not match.');
+        return false;
+      }
+
+      alert("Account created! Now login.");
+      showPanel('login');
+      return false;
+    }
+  </script>

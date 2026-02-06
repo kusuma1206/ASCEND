@@ -1,0 +1,403 @@
+[
+  {
+    "id": "cn_med_01",
+    "question": "What is the primary difference between TCP and UDP?",
+    "options": [
+      "TCP is connection-oriented, UDP is connectionless",
+      "TCP is faster than UDP",
+      "UDP provides flow control",
+      "TCP uses less header space"
+    ],
+    "correct_answer": [
+      "TCP is connection-oriented, UDP is connectionless"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_02",
+    "question": "Which of these are fields in a TCP header?",
+    "options": [
+      "Source Port",
+      "Sequence Number",
+      "Acknowledgment Number",
+      "Checksum"
+    ],
+    "correct_answer": [
+      "Source Port",
+      "Sequence Number",
+      "Acknowledgment Number",
+      "Checksum"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_03",
+    "question": "What is the 'Three-Way Handshake' in TCP?",
+    "options": [
+      "SYN -> SYN-ACK -> ACK",
+      "PUSH -> PULL -> ACK",
+      "SYN -> ACK -> DATA",
+      "FIN -> FIN-ACK -> ACK"
+    ],
+    "correct_answer": [
+      "SYN -> SYN-ACK -> ACK"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_04",
+    "question": "Which of these are interior gateway protocols (IGP)?",
+    "options": [
+      "OSPF",
+      "RIP",
+      "IS-IS",
+      "BGP"
+    ],
+    "correct_answer": [
+      "OSPF",
+      "RIP",
+      "IS-IS"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_05",
+    "question": "What is the purpose of BGP (Border Gateway Protocol)?",
+    "options": [
+      "Routing between autonomous systems (AS)",
+      "Assigning IP addresses",
+      "Mapping names to IPs",
+      "Translating private IPs to public"
+    ],
+    "correct_answer": [
+      "Routing between autonomous systems (AS)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_06",
+    "question": "Which of these HTTP status codes indicate a client-side error?",
+    "options": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "404 Not Found"
+    ],
+    "correct_answer": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "404 Not Found"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_07",
+    "question": "What does DNS (Domain Name System) primarily do?",
+    "options": [
+      "Translates domain names to IP addresses",
+      "Secures web traffic",
+      "Accelerates file downloads",
+      "Manages database connections"
+    ],
+    "correct_answer": [
+      "Translates domain names to IP addresses"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_08",
+    "question": "Which of these are DNS record types?",
+    "options": [
+      "A (IPv4)",
+      "AAAA (IPv6)",
+      "CNAME (Alias)",
+      "MX (Mail Exchange)"
+    ],
+    "correct_answer": [
+      "A (IPv4)",
+      "AAAA (IPv6)",
+      "CNAME (Alias)",
+      "MX (Mail Exchange)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_09",
+    "question": "What is the default port for HTTPS?",
+    "options": [
+      "443",
+      "80",
+      "22",
+      "8080"
+    ],
+    "correct_answer": [
+      "443"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_10",
+    "question": "Which of the following use UDP at the transport layer?",
+    "options": [
+      "DNS queries",
+      "Streaming media",
+      "Online gaming",
+      "HTTP/1.1 web browsing"
+    ],
+    "correct_answer": [
+      "DNS queries",
+      "Streaming media",
+      "Online gaming"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_11",
+    "question": "What is 'ICMP' used for?",
+    "options": [
+      "Error reporting and operational information",
+      "File transfer",
+      "Securing browser traffic",
+      "Wireless authentication"
+    ],
+    "correct_answer": [
+      "Error reporting and operational information"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_12",
+    "question": "Which of these describe 'Subnetting'?",
+    "options": [
+      "Dividing a network into smaller network pieces",
+      "Speeds up internet",
+      "Prevents hackers",
+      "Uses a subnet mask"
+    ],
+    "correct_answer": [
+      "Dividing a network into smaller network pieces",
+      "Uses a subnet mask"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_13",
+    "question": "What is the size of an IPv6 address?",
+    "options": [
+      "128 bits",
+      "32 bits",
+      "64 bits",
+      "48 bits"
+    ],
+    "correct_answer": [
+      "128 bits"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_14",
+    "question": "Which of these are types of CASTING in networking?",
+    "options": [
+      "Unicast",
+      "Multicast",
+      "Broadcast",
+      "Anycast"
+    ],
+    "correct_answer": [
+      "Unicast",
+      "Multicast",
+      "Broadcast",
+      "Anycast"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_15",
+    "question": "Which algorithm is used by OSPF for selecting the best path?",
+    "options": [
+      "Dijkstra's",
+      "Bellman-Ford",
+      "Floyd-Warshall",
+      "Greedy"
+    ],
+    "correct_answer": [
+      "Dijkstra's"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_16",
+    "question": "What is the purpose of the 'Time to Live' (TTL) field in an IP header?",
+    "options": [
+      "Prevent infinite loops",
+      "Speed up packet delivery",
+      "Encrypt packet",
+      "Define file size"
+    ],
+    "correct_answer": [
+      "Prevent infinite loops"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_17",
+    "question": "Which of these belong to the Application Layer of OSI?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SMTP",
+      "TCP"
+    ],
+    "correct_answer": [
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_18",
+    "question": "What is the 'Maximum Transmission Unit' (MTU)?",
+    "options": [
+      "Size of largest network layer protocol data unit",
+      "Maximum speed",
+      "Total users",
+      "Memory size of router"
+    ],
+    "correct_answer": [
+      "Size of largest network layer protocol data unit"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_19",
+    "question": "Which of these are flow control techniques in TCP?",
+    "options": [
+      "Sliding Window",
+      "Stop and Wait",
+      "Congestion Avoidance",
+      "Checksum"
+    ],
+    "correct_answer": [
+      "Sliding Window",
+      "Stop and Wait"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_20",
+    "question": "What is 'NAT' (Network Address Translation)?",
+    "options": [
+      "Mapping private addresses to public addresses",
+      "Sorting network traffic",
+      "Blocking ports",
+      "Encrypting data"
+    ],
+    "correct_answer": [
+      "Mapping private addresses to public addresses"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_21",
+    "question": "What is 'ARP' (Address Resolution Protocol) used for?",
+    "options": [
+      "Map IP address to MAC address",
+      "Map URL to IP",
+      "Map MAC to port",
+      "Route packets"
+    ],
+    "correct_answer": [
+      "Map IP address to MAC address"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_22",
+    "question": "Which of these are valid IPv4 address classes?",
+    "options": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class E"
+    ],
+    "correct_answer": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class E"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_23",
+    "question": "What is a 'Switch' primarily using to make forwarding decisions?",
+    "options": [
+      "MAC address",
+      "IP address",
+      "Port number",
+      "Protocol"
+    ],
+    "correct_answer": [
+      "MAC address"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_med_24",
+    "question": "Which of these are wireless networking standards?",
+    "options": [
+      "802.11a",
+      "802.11g",
+      "802.11ac",
+      "802.11ax"
+    ],
+    "correct_answer": [
+      "802.11a",
+      "802.11g",
+      "802.11ac",
+      "802.11ax"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_med_25",
+    "question": "What is the purpose of 'Congestion Control'?",
+    "options": [
+      "Preventing overflow of network nodes",
+      "Speeding up CPU",
+      "Managing disk space",
+      "Updating router software"
+    ],
+    "correct_answer": [
+      "Preventing overflow of network nodes"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

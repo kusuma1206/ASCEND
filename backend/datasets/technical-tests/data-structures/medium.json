@@ -1,0 +1,395 @@
+[
+  {
+    "id": "ds_med_01",
+    "question": "What is the balance factor of a node in an AVL tree?",
+    "options": [
+      "Height(Left) - Height(Right)",
+      "Height(Left) + Height(Right)",
+      "Height(Right) - Height(Left)",
+      "Max(Height(Left), Height(Right))"
+    ],
+    "correct_answer": [
+      "Height(Left) - Height(Right)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_02",
+    "question": "Which of the following are properties of a B-Tree of order m?",
+    "options": [
+      "Every node has at most m children",
+      "Every internal node has at least ceil(m/2) children",
+      "The root has at least two children if it is not a leaf",
+      "All leaves are at the same level"
+    ],
+    "correct_answer": [
+      "Every node has at most m children",
+      "Every internal node has at least ceil(m/2) children",
+      "The root has at least two children if it is not a leaf",
+      "All leaves are at the same level"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_03",
+    "question": "In a hash table, what is 'Open Addressing'?",
+    "options": [
+      "A method for handling collisions by searching for next empty slot",
+      "A method for handling collisions using linked lists",
+      "A way to resize the table",
+      "A way to delete elements"
+    ],
+    "correct_answer": [
+      "A method for handling collisions by searching for next empty slot"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_04",
+    "question": "Which of these are open addressing techniques?",
+    "options": [
+      "Linear Probing",
+      "Quadratic Probing",
+      "Double Hashing",
+      "Chaining"
+    ],
+    "correct_answer": [
+      "Linear Probing",
+      "Quadratic Probing",
+      "Double Hashing"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_05",
+    "question": "What is the time complexity to find the median in a Max-Heap?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "O(n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_06",
+    "question": "Which of the following data structures are typically used to implement a Priority Queue?",
+    "options": [
+      "Binary Heap",
+      "Balanced Binary Search Tree",
+      "Unordered Array",
+      "Ordered Linked List"
+    ],
+    "correct_answer": [
+      "Binary Heap",
+      "Balanced Binary Search Tree"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_07",
+    "question": "What is the load factor in a hash table?",
+    "options": [
+      "Number of elements / Number of slots",
+      "Number of slots / Number of elements",
+      "Number of collisions / Number of elements",
+      "Number of empty slots / Total slots"
+    ],
+    "correct_answer": [
+      "Number of elements / Number of slots"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_08",
+    "question": "Which rotation is required if a node is inserted into the right subtree of the right child of a node in AVL tree?",
+    "options": [
+      "Left Rotation",
+      "Right Rotation",
+      "Left-Right Rotation",
+      "Right-Left Rotation"
+    ],
+    "correct_answer": [
+      "Left Rotation"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_09",
+    "question": "Which of these describe a 'Trie' data structure?",
+    "options": [
+      "Used for reitrieving keys in a dataset of strings",
+      "Node stores a character",
+      "Root is always empty",
+      "It is a binary tree"
+    ],
+    "correct_answer": [
+      "Used for reitrieving keys in a dataset of strings",
+      "Node stores a character",
+      "Root is always empty"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_10",
+    "question": "How many pointers are required for a node in a doubly linked list?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": [
+      "2"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_11",
+    "question": "Which of these are applications of a Stack?",
+    "options": [
+      "Expression Evaluation",
+      "Undo functionality",
+      "Function Calls",
+      "Task Scheduling"
+    ],
+    "correct_answer": [
+      "Expression Evaluation",
+      "Undo functionality",
+      "Function Calls"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_12",
+    "question": "What is the time complexity of building an adjacency list for a graph with V vertices and E edges?",
+    "options": [
+      "O(V+E)",
+      "O(V^2)",
+      "O(E^2)",
+      "O(V*E)"
+    ],
+    "correct_answer": [
+      "O(V+E)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_13",
+    "question": "In a Min-Heap, where is the second smallest element?",
+    "options": [
+      "Root",
+      "Left or Right child of root",
+      "Any leaf node",
+      "At the last level"
+    ],
+    "correct_answer": [
+      "Left or Right child of root"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_14",
+    "question": "Which of the following are self-balancing trees?",
+    "options": [
+      "AVL Tree",
+      "Red-Black Tree",
+      "Splay Tree",
+      "Binary Search Tree"
+    ],
+    "correct_answer": [
+      "AVL Tree",
+      "Red-Black Tree",
+      "Splay Tree"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_15",
+    "question": "What is the maximum number of nodes in a binary tree of height h?",
+    "options": [
+      "2^(h+1) - 1",
+      "2^h - 1",
+      "2^h",
+      "2^(h-1)"
+    ],
+    "correct_answer": [
+      "2^(h+1) - 1"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_16",
+    "question": "Which data structure is used to implement Disjoint Set Union (DSU)?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Tree",
+      "Graph"
+    ],
+    "correct_answer": [
+      "Array",
+      "Tree"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_17",
+    "question": "What is the time complexity of 'Delete' operation in a Skip List?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "O(log n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_18",
+    "question": "What is a 'Perfect Binary Tree'?",
+    "options": [
+      "All internal nodes have 2 children and all leaves are at same level",
+      "Every node has 0 or 2 children",
+      "Every node has exactly 2 children",
+      "A tree with n/2 nodes"
+    ],
+    "correct_answer": [
+      "All internal nodes have 2 children and all leaves are at same level"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_19",
+    "question": "Which of these are non-linear data structures?",
+    "options": [
+      "Graph",
+      "Tree",
+      "Hash Table",
+      "Stack"
+    ],
+    "correct_answer": [
+      "Graph",
+      "Tree",
+      "Hash Table"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_20",
+    "question": "What is the sequence of nodes visited in a level-order traversal of a binary tree?",
+    "options": [
+      "Top-down, left-to-right",
+      "Bottom-up, right-to-left",
+      "Left-to-right, then down",
+      "Depth first"
+    ],
+    "correct_answer": [
+      "Top-down, left-to-right"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_21",
+    "question": "What is a 'Sparse Matrix'?",
+    "options": [
+      "A matrix where most elements are zero",
+      "A matrix with negative values",
+      "A tiny matrix",
+      "A matrix with only 1s and 0s"
+    ],
+    "correct_answer": [
+      "A matrix where most elements are zero"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_22",
+    "question": "Which of these are methods to represent a graph?",
+    "options": [
+      "Adjacency Matrix",
+      "Adjacency List",
+      "Incidence Matrix",
+      "Linked Matrix"
+    ],
+    "correct_answer": [
+      "Adjacency Matrix",
+      "Adjacency List",
+      "Incidence Matrix"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_23",
+    "question": "What is the space complexity of an adjacency list for a graph with V vertices and E edges?",
+    "options": [
+      "O(V+E)",
+      "O(V^2)",
+      "O(E^2)",
+      "O(V)"
+    ],
+    "correct_answer": [
+      "O(V+E)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_med_24",
+    "question": "Which operation in a circular queue requires checking if (rear + 1) % size == front?",
+    "options": [
+      "Enqueue",
+      "Dequeue",
+      "IsFull",
+      "IsEmpty"
+    ],
+    "correct_answer": [
+      "Enqueue",
+      "IsFull"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_med_25",
+    "question": "In a linked list implementation of a stack, where should the 'top' be maintained for O(1) ops?",
+    "options": [
+      "Head",
+      "Tail",
+      "Middle",
+      "Anywhere"
+    ],
+    "correct_answer": [
+      "Head"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

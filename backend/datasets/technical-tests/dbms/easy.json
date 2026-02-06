@@ -1,0 +1,396 @@
+[
+  {
+    "id": "dbms_easy_01",
+    "question": "What is a 'Primary Key'?",
+    "options": [
+      "Unique identifier for a record",
+      "A key to the database server",
+      "A common field",
+      "A non-null field"
+    ],
+    "correct_answer": [
+      "Unique identifier for a record"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_02",
+    "question": "What does SQL stand for?",
+    "options": [
+      "Structured Query Language",
+      "Standard Query Language",
+      "Simple Query Language",
+      "Sequential Query Language"
+    ],
+    "correct_answer": [
+      "Structured Query Language"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_03",
+    "question": "Which of these are DDL (Data Definition Language) commands?",
+    "options": [
+      "CREATE",
+      "ALTER",
+      "DROP",
+      "SELECT"
+    ],
+    "correct_answer": [
+      "CREATE",
+      "ALTER",
+      "DROP"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_04",
+    "question": "What is 'Normalization'?",
+    "options": [
+      "Reducing data redundancy",
+      "Increasing database speed",
+      "Backing up data",
+      "Securing access"
+    ],
+    "correct_answer": [
+      "Reducing data redundancy"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_05",
+    "question": "Which of these are part of the ACID properties of a transaction?",
+    "options": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "correct_answer": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_06",
+    "question": "What is a 'Foreign Key'?",
+    "options": [
+      "Field that refers to primary key of another table",
+      "Key from another country",
+      "Temporary key",
+      "Encrypted key"
+    ],
+    "correct_answer": [
+      "Field that refers to primary key of another table"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_07",
+    "question": "Which command is used to retrieve data from a table?",
+    "options": [
+      "SELECT",
+      "GET",
+      "FETCH",
+      "EXTRACT"
+    ],
+    "correct_answer": [
+      "SELECT"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_08",
+    "question": "Which of these are types of database relationships?",
+    "options": [
+      "One-to-One",
+      "One-to-Many",
+      "Many-to-Many",
+      "Few-to-Some"
+    ],
+    "correct_answer": [
+      "One-to-One",
+      "One-to-Many",
+      "Many-to-Many"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_09",
+    "question": "What is an 'Index' used for?",
+    "options": [
+      "Speed up data retrieval",
+      "Unique identifier",
+      "Linking tables",
+      "Storing passwords"
+    ],
+    "correct_answer": [
+      "Speed up data retrieval"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_10",
+    "question": "What is a 'Transaction'?",
+    "options": [
+      "Unit of work as single logical operation",
+      "Payment for DB license",
+      "Transfer of data to client",
+      "Database backup"
+    ],
+    "correct_answer": [
+      "Unit of work as single logical operation"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_11",
+    "question": "Which of these are DML (Data Manipulation Language) commands?",
+    "options": [
+      "INSERT",
+      "UPDATE",
+      "DELETE",
+      "TRUNCATE"
+    ],
+    "correct_answer": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_12",
+    "question": "What is 'Referential Integrity'?",
+    "options": [
+      "Ensuring relationships between tables remain consistent",
+      "Database speed",
+      "Data encryption",
+      "User permissions"
+    ],
+    "correct_answer": [
+      "Ensuring relationships between tables remain consistent"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_13",
+    "question": "What does NoSQL mean?",
+    "options": [
+      "Not Only SQL",
+      "No SQL is possible",
+      "New SQL",
+      "Network SQL"
+    ],
+    "correct_answer": [
+      "Not Only SQL"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_14",
+    "question": "Which of these are aggregate functions in SQL?",
+    "options": [
+      "SUM()",
+      "AVG()",
+      "COUNT()",
+      "JOIN()"
+    ],
+    "correct_answer": [
+      "SUM()",
+      "AVG()",
+      "COUNT()"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_15",
+    "question": "What is a 'View'?",
+    "options": [
+      "Virtual table based on result of SQL query",
+      "User interface",
+      "Database dashboard",
+      "Table thumbnail"
+    ],
+    "correct_answer": [
+      "Virtual table based on result of SQL query"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_16",
+    "question": "Which clause is used to filter results in a SELECT statement?",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING"
+    ],
+    "correct_answer": [
+      "WHERE"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_17",
+    "question": "Which of these are valid SQL Join types?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "correct_answer": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_18",
+    "question": "What is the purpose of the 'HAVING' clause?",
+    "options": [
+      "Filter group of rows",
+      "Filter single row",
+      "Sort groups",
+      "Define index"
+    ],
+    "correct_answer": [
+      "Filter group of rows"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_19",
+    "question": "What is '2NF'?",
+    "options": [
+      "Second Normal Form",
+      "Double Network Flow",
+      "Second Node Field",
+      "Double Numeric Factor"
+    ],
+    "correct_answer": [
+      "Second Normal Form"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_20",
+    "question": "Which of these characterize a 'Relational Database'?",
+    "options": [
+      "Data in tables",
+      "Fixed schema",
+      "Supports SQL",
+      "Key-Value storage"
+    ],
+    "correct_answer": [
+      "Data in tables",
+      "Fixed schema",
+      "Supports SQL"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_21",
+    "question": "What is 'Deadlock' in DBMS?",
+    "options": [
+      "Condition where two transactions wait for each other to release locks",
+      "Database is powered off",
+      "Admin is logged out",
+      "Database is full"
+    ],
+    "correct_answer": [
+      "Condition where two transactions wait for each other to release locks"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_22",
+    "question": "Which command permanently saves changes to a database?",
+    "options": [
+      "COMMIT",
+      "SAVE",
+      "STORE",
+      "ROLLBACK"
+    ],
+    "correct_answer": [
+      "COMMIT"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_23",
+    "question": "Which of these are constraints in SQL?",
+    "options": [
+      "NOT NULL",
+      "UNIQUE",
+      "CHECK",
+      "DEFAULT"
+    ],
+    "correct_answer": [
+      "NOT NULL",
+      "UNIQUE",
+      "CHECK",
+      "DEFAULT"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_easy_24",
+    "question": "What is an 'ER Diagram'?",
+    "options": [
+      "Entity-Relationship Diagram",
+      "Edge-Result Diagram",
+      "Element-Record Diagram",
+      "Execution-Reason Diagram"
+    ],
+    "correct_answer": [
+      "Entity-Relationship Diagram"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_easy_25",
+    "question": "What is 'Functional Dependency'?",
+    "options": [
+      "Relationship between attributes in a table",
+      "Code logic dependency",
+      "Database software version",
+      "User access level"
+    ],
+    "correct_answer": [
+      "Relationship between attributes in a table"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

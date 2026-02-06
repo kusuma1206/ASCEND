@@ -1,0 +1,398 @@
+[
+  {
+    "id": "dbms_med_01",
+    "question": "When is a relation in BCNF (Boyce-Codd Normal Form)?",
+    "options": [
+      "When it is in 3NF and every determinant is a candidate key",
+      "When every non-key attribute is dependent on primary key",
+      "When there are no transitive dependencies",
+      "When it is in 4NF"
+    ],
+    "correct_answer": [
+      "When it is in 3NF and every determinant is a candidate key"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_02",
+    "question": "Which of these are required for 3NF?",
+    "options": [
+      "Relation is in 2NF",
+      "No transitive dependency for non-prime attributes",
+      "Every determinant is candidate key",
+      "No multi-valued dependencies"
+    ],
+    "correct_answer": [
+      "Relation is in 2NF",
+      "No transitive dependency for non-prime attributes"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_03",
+    "question": "What is the difference between a 'B-Tree' Index and a 'Hash' Index?",
+    "options": [
+      "B-Tree supports range queries; Hash does not",
+      "Hash is faster for exact matches",
+      "B-Tree is always faster",
+      "Hash supports sorting"
+    ],
+    "correct_answer": [
+      "B-Tree supports range queries; Hash does not",
+      "Hash is faster for exact matches"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_04",
+    "question": "What is a 'Self Join'?",
+    "options": [
+      "A table joined with itself",
+      "A join without conditions",
+      "A join between two identical schemas",
+      "A join using primary keys"
+    ],
+    "correct_answer": [
+      "A table joined with itself"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_05",
+    "question": "Which of these are SQL isolation levels?",
+    "options": [
+      "READ UNCOMMITTED",
+      "READ COMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
+    ],
+    "correct_answer": [
+      "READ UNCOMMITTED",
+      "READ COMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_06",
+    "question": "What is 'Dirty Read' in a transaction?",
+    "options": [
+      "Transaction reads data that has been modified by another transaction but not yet committed",
+      "Transaction reads same row twice and gets different results",
+      "New rows appear in search",
+      "Database is corrupted"
+    ],
+    "correct_answer": [
+      "Transaction reads data that has been modified by another transaction but not yet committed"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_07",
+    "question": "Which command is used to remove all records from a table without logging individual row deletions?",
+    "options": [
+      "TRUNCATE",
+      "DELETE",
+      "DROP",
+      "REMOVE"
+    ],
+    "correct_answer": [
+      "TRUNCATE"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_08",
+    "question": "Which of these are properties of a 'Candidate Key'?",
+    "options": [
+      "Minimal superkey",
+      "Uniquely identifies a record",
+      "Can be NULL",
+      "Can be more than one in a table"
+    ],
+    "correct_answer": [
+      "Minimal superkey",
+      "Uniquely identifies a record",
+      "Can be more than one in a table"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_09",
+    "question": "What is 'Cascading Delete'?",
+    "options": [
+      "Automatically deleting child records when parent is deleted",
+      "Deleting random records",
+      "Database cleanup",
+      "Deleting records in bulk"
+    ],
+    "correct_answer": [
+      "Automatically deleting child records when parent is deleted"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_10",
+    "question": "Which of these characterize a 'Clustered Index'?",
+    "options": [
+      "Determines physical order of data in table",
+      "Only one per table",
+      "Data rows are stored in leaf nodes",
+      "Can be many per table"
+    ],
+    "correct_answer": [
+      "Determines physical order of data in table",
+      "Only one per table",
+      "Data rows are stored in leaf nodes"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_11",
+    "question": "In Relational Algebra, what does the 'Selection' (sigma) operator do?",
+    "options": [
+      "Filters rows based on a condition",
+      "Selects specific columns",
+      "Joins two tables",
+      "Renames attributes"
+    ],
+    "correct_answer": [
+      "Filters rows based on a condition"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_12",
+    "question": "Which of these are 'Set Operations' in SQL?",
+    "options": [
+      "UNION",
+      "INTERSECT",
+      "EXCEPT (MINUS)",
+      "JOIN"
+    ],
+    "correct_answer": [
+      "UNION",
+      "INTERSECT",
+      "EXCEPT (MINUS)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_13",
+    "question": "What is the result of 'GROUP BY' without an aggregate function?",
+    "options": [
+      "Functions like DISTINCT on grouped columns",
+      "Returns error",
+      "Returns all rows",
+      "Returns one random row"
+    ],
+    "correct_answer": [
+      "Functions like DISTINCT on grouped columns"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_14",
+    "question": "Which of these are types of Database Anomalies?",
+    "options": [
+      "Insertion Anomaly",
+      "Update Anomaly",
+      "Deletion Anomaly",
+      "Selection Anomaly"
+    ],
+    "correct_answer": [
+      "Insertion Anomaly",
+      "Update Anomaly",
+      "Deletion Anomaly"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_15",
+    "question": "What is '2PL' (Two-Phase Locking)?",
+    "options": [
+      "Concurrency control protocol with Growing and Shrinking phases",
+      "Using two locks per row",
+      "Checking password twice",
+      "Replicating data"
+    ],
+    "correct_answer": [
+      "Concurrency control protocol with Growing and Shrinking phases"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_16",
+    "question": "Which of these characterize a 'Weak Entity'?",
+    "options": [
+      "Doesn't have its own primary key",
+      "Depends on a strong entity",
+      "Participates in identifying relationship",
+      "Cannot be stored in a table"
+    ],
+    "correct_answer": [
+      "Doesn't have its own primary key",
+      "Depends on a strong entity",
+      "Participates in identifying relationship"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_17",
+    "question": "What does 'TID' stand for in DBMS Internals?",
+    "options": [
+      "Tuple Identifier",
+      "Transaction ID",
+      "Table Information Data",
+      "Type Identifier"
+    ],
+    "correct_answer": [
+      "Tuple Identifier"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_18",
+    "question": "Which of these are valid SQL constraints?",
+    "options": [
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "CHECK",
+      "DEFAULT"
+    ],
+    "correct_answer": [
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "CHECK",
+      "DEFAULT"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_19",
+    "question": "What is 'Query Optimization'?",
+    "options": [
+      "Process of selecting the most efficient plan to execute a query",
+      "Writing shorter SQL",
+      "Removing indexes",
+      "Reducing database size"
+    ],
+    "correct_answer": [
+      "Process of selecting the most efficient plan to execute a query"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_20",
+    "question": "Which of these are Joins where UNMATCHED rows are included?",
+    "options": [
+      "LEFT OUTER JOIN",
+      "RIGHT OUTER JOIN",
+      "FULL OUTER JOIN",
+      "INNER JOIN"
+    ],
+    "correct_answer": [
+      "LEFT OUTER JOIN",
+      "RIGHT OUTER JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_21",
+    "question": "What is 'Multi-valued Dependency' related to in Normalization?",
+    "options": [
+      "4NF (Fourth Normal Form)",
+      "3NF",
+      "BCNF",
+      "5NF"
+    ],
+    "correct_answer": [
+      "4NF (Fourth Normal Form)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_22",
+    "question": "What is a 'Database Trigger'?",
+    "options": [
+      "Procedural code executed automatically in response to certain events",
+      "A hardware button",
+      "A slow query",
+      "A backup command"
+    ],
+    "correct_answer": [
+      "Procedural code executed automatically in response to certain events"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_23",
+    "question": "Which of these characterize 'Write-Ahead Logging' (WAL)?",
+    "options": [
+      "Changes recorded in log before being applied to data files",
+      "Speeds up reads",
+      "Used for recovery",
+      "Prevents database crashes"
+    ],
+    "correct_answer": [
+      "Changes recorded in log before being applied to data files",
+      "Used for recovery"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_med_24",
+    "question": "What is 'Logical Data Independence'?",
+    "options": [
+      "Ability to change conceptual schema without changing external schema",
+      "Moving data files to new disk",
+      "Changing password",
+      "Hiding columns"
+    ],
+    "correct_answer": [
+      "Ability to change conceptual schema without changing external schema"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_med_25",
+    "question": "Which SQL clause is used to sort the result-set?",
+    "options": [
+      "ORDER BY",
+      "SORT BY",
+      "ARRANGE BY",
+      "GROUP BY"
+    ],
+    "correct_answer": [
+      "ORDER BY"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

@@ -1,0 +1,409 @@
+[
+  {
+    "id": "java_hard_01",
+    "question": "Which of these are regions in the Java Heap memory (HotSpot)?",
+    "options": [
+      "Eden Space",
+      "Survivor Space 0 (S0)",
+      "Survivor Space 1 (S1)",
+      "Old Generation",
+      "Metaspace"
+    ],
+    "correct_answer": [
+      "Eden Space",
+      "Survivor Space 0 (S0)",
+      "Survivor Space 1 (S1)",
+      "Old Generation"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_02",
+    "question": "What is the purpose of 'Metaspace' in Java 8+?",
+    "options": [
+      "Store class metadata using native memory",
+      "Store object instances",
+      "Fast thread cache",
+      "Database connection pool"
+    ],
+    "correct_answer": [
+      "Store class metadata using native memory"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_03",
+    "question": "Which of the following are Garbage Collection (GC) algorithms in Java?",
+    "options": [
+      "G1 (Garbage First)",
+      "ZGC (Z Garbage Collector)",
+      "Shenandoah",
+      "Serial GC",
+      "Parallel GC"
+    ],
+    "correct_answer": [
+      "G1 (Garbage First)",
+      "ZGC (Z Garbage Collector)",
+      "Shenandoah",
+      "Serial GC",
+      "Parallel GC"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_04",
+    "question": "What is 'Double-Checked Locking' used for in Java?",
+    "options": [
+      "Reducing overhead of acquiring a lock by first testing lock criterion without actually acquiring it",
+      "Encryption",
+      "Database authentication",
+      "Network handshaking"
+    ],
+    "correct_answer": [
+      "Reducing overhead of acquiring a lock by first testing lock criterion without actually acquiring it"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_05",
+    "question": "Which of these are required for a thread-safe 'Singleton' using double-checked locking?",
+    "options": [
+      "volatile keyword on the instance field",
+      "synchronized block",
+      "private constructor",
+      "final keyword on instance"
+    ],
+    "correct_answer": [
+      "volatile keyword on the instance field",
+      "synchronized block",
+      "private constructor"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_06",
+    "question": "What is the 'Fork/Join' framework used for?",
+    "options": [
+      "Parallelizing tasks that can be recursively broken into smaller pieces",
+      "Database joins",
+      "Network socket management",
+      "Memory allocation"
+    ],
+    "correct_answer": [
+      "Parallelizing tasks that can be recursively broken into smaller pieces"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_07",
+    "question": "Which of these are true about Java 'ClassLoaders'?",
+    "options": [
+      "Delegate model (Parent-first)",
+      "Classes are loaded on demand",
+      "Can be custom implemented",
+      "Once loaded, a class is never unloaded unless GC'd"
+    ],
+    "correct_answer": [
+      "Delegate model (Parent-first)",
+      "Classes are loaded on demand",
+      "Can be custom implemented",
+      "Once loaded, a class is never unloaded unless GC'd"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_08",
+    "question": "What is the 'Just-In-Time' (JIT) compiler's main role?",
+    "options": [
+      "Converting bytecode to machine code at runtime for performance",
+      "Compiling .java to .class",
+      "Optimizing UI layout",
+      "Encrypting jars"
+    ],
+    "correct_answer": [
+      "Converting bytecode to machine code at runtime for performance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_09",
+    "question": "Which of these characterize 'PhantomReference' in Java?",
+    "options": [
+      "Used to schedule pre-mortem cleanup actions",
+      "get() always returns null",
+      "Associated with a ReferenceQueue",
+      "Strongest type of reference"
+    ],
+    "correct_answer": [
+      "Used to schedule pre-mortem cleanup actions",
+      "get() always returns null",
+      "Associated with a ReferenceQueue"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_10",
+    "question": "What is 'Happens-Before' relationship in Java Memory Model?",
+    "options": [
+      "Guarantees that memory writes by one specific statement are visible to another",
+      "Timeline of GC",
+      "Order of class loading",
+      "Database synchronization"
+    ],
+    "correct_answer": [
+      "Guarantees that memory writes by one specific statement are visible to another"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_11",
+    "question": "Which of these describe 'CompletableFuture' introduced in Java 8?",
+    "options": [
+      "Asynchronous programming support",
+      "Supports chaining and combining futures",
+      "Implements Future and CompletionStage",
+      "Is part of reflection API"
+    ],
+    "correct_answer": [
+      "Asynchronous programming support",
+      "Supports chaining and combining futures",
+      "Implements Future and CompletionStage"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_12",
+    "question": "What is the 'InvokeDynamic' (indy) instruction used for?",
+    "options": [
+      "Improving performance of dynamic languages/features on JVM",
+      "Calling static methods",
+      "Synchronizing threads",
+      "Garbage collection hint"
+    ],
+    "correct_answer": [
+      "Improving performance of dynamic languages/features on JVM"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_13",
+    "question": "Which of these characterize 'Internalization' (i18n) in Java?",
+    "options": [
+      "ResourceBundles",
+      "Locales",
+      "Properties files",
+      "Database triggers"
+    ],
+    "correct_answer": [
+      "ResourceBundles",
+      "Locales",
+      "Properties files"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_14",
+    "question": "What is 'ThreadLocal' used for?",
+    "options": [
+      "Providing variables that can only be read/written by a specific thread",
+      "Sharing data between threads",
+      "Synchronizing shared resources",
+      "Increasing CPU speed"
+    ],
+    "correct_answer": [
+      "Providing variables that can only be read/written by a specific thread"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_15",
+    "question": "Which of these are required for 'Custom Serialization'?",
+    "options": [
+      "writeObject() method",
+      "readObject() method",
+      "Implementing Serializable",
+      "serialVersionUID field"
+    ],
+    "correct_answer": [
+      "writeObject() method",
+      "readObject() method",
+      "Implementing Serializable",
+      "serialVersionUID field"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_16",
+    "question": "What is 'Escape Analysis'?",
+    "options": [
+      "Optimization to see if an object can be stack-allocated",
+      "Finding memory leaks",
+      "Exception tracking",
+      "Security check"
+    ],
+    "correct_answer": [
+      "Optimization to see if an object can be stack-allocated"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_17",
+    "question": "Which of these characterize the 'G1 GC'?",
+    "options": [
+      "Region-based heap",
+      "Predictable pause times",
+      "Concurrent cycle",
+      "Only works for small heaps"
+    ],
+    "correct_answer": [
+      "Region-based heap",
+      "Predictable pause times",
+      "Concurrent cycle"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_18",
+    "question": "What is 'Intrinsic Lock' (or Monitor Lock) in Java?",
+    "options": [
+      "Lock associated with every object instance",
+      "A hardware lock",
+      "A type of database lock",
+      "A network gate"
+    ],
+    "correct_answer": [
+      "Lock associated with every object instance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_19",
+    "question": "Which of these describe 'ReentrantLock' features over 'synchronized'?",
+    "options": [
+      "TryLock with timeout",
+      "Multiple condition variables",
+      "Interruptible locking",
+      "Fairness policy"
+    ],
+    "correct_answer": [
+      "TryLock with timeout",
+      "Multiple condition variables",
+      "Interruptible locking",
+      "Fairness policy"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_20",
+    "question": "What is the 'Service Provider Interface' (SPI)?",
+    "options": [
+      "Mechanism for discovering and loading implementations of an interface at runtime",
+      "A web service",
+      "A type of UI",
+      "A database connector"
+    ],
+    "correct_answer": [
+      "Mechanism for discovering and loading implementations of an interface at runtime"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_21",
+    "question": "Which of these characterize Java 9 'Modules'?",
+    "options": [
+      "module-info.java",
+      "Strong encapsulation",
+      "Reliable configuration",
+      "Requires legacy jars to be removed"
+    ],
+    "correct_answer": [
+      "module-info.java",
+      "Strong encapsulation",
+      "Reliable configuration"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_22",
+    "question": "What is 'Memory Protection' in the context of JVM?",
+    "options": [
+      "Isolation of different classloader namespaces",
+      "Hardware memory gates",
+      "Encrypted RAM",
+      "OS level sandboxing"
+    ],
+    "correct_answer": [
+      "Isolation of different classloader namespaces"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_23",
+    "question": "Which of these are true about 'WeakHashMap'?",
+    "options": [
+      "Entries are removed when keys are no longer in ordinary use (weakly reachable)",
+      "Uses WeakReference for keys",
+      "Uses WeakReference for values",
+      "Thread-safe"
+    ],
+    "correct_answer": [
+      "Entries are removed when keys are no longer in ordinary use (weakly reachable)",
+      "Uses WeakReference for keys"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_hard_24",
+    "question": "What is 'Spinning' in Java locks?",
+    "options": [
+      "Busy waiting for a short duration instead of immediately suspending thread",
+      "Circular queue",
+      "Memory corruption",
+      "Multiple CPU cores sharing one thread"
+    ],
+    "correct_answer": [
+      "Busy waiting for a short duration instead of immediately suspending thread"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_hard_25",
+    "question": "Which of these denote 'Off-Heap' memory in Java?",
+    "options": [
+      "Direct Buffers (ByteBuffer.allocateDirect)",
+      "Metaspace",
+      "Memory mapped files",
+      "Stack memory"
+    ],
+    "correct_answer": [
+      "Direct Buffers (ByteBuffer.allocateDirect)",
+      "Memory mapped files"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  }
+]

@@ -1,0 +1,107 @@
+id,question,option1,option2,option3,option4,answer,difficultyid,question,option1,option2,option3,option4,answer,difficulty
+1,What does HTML stand for?,Hyper Text Markup Language,High Text Machine Language,Hyperlinks Text Mark Language,Home Tool Markup Language,Hyper Text Markup Language,easy
+2,Which tag creates a paragraph?,<p>,<h>,<div>,<span>,<p>,easy
+3,Which tag creates a hyperlink?,<a>,<link>,<href>,<url>,<a>,easy
+4,Which tag inserts image?,<img>,<image>,<pic>,<src>,<img>,easy
+5,Which attribute gives image path?,src,href,alt,link,src,easy
+6,Which tag makes text bold?,<b>,<strong>,<bold>,<text>,<b>,easy
+7,Which tag makes text italic?,<i>,<em>,<italic>,<style>,<i>,easy
+8,Which tag creates line break?,<br>,<lb>,<break>,<hr>,<br>,easy
+9,Which tag creates horizontal line?,<hr>,<line>,<border>,<br>,<hr>,easy
+10,Which tag creates list?,<ul>,<li>,<list>,<ol>,<ul>,easy
+11,Which tag creates list item?,<li>,<ul>,<ol>,<item>,<li>,easy
+12,Which tag creates ordered list?,<ol>,<ul>,<list>,<li>,<ol>,easy
+13,Which tag defines table?,<table>,<tab>,<tr>,<td>,<table>,easy
+14,Which tag defines table row?,<tr>,<td>,<th>,<row>,<tr>,easy
+15,Which tag defines table cell?,<td>,<tr>,<th>,<cell>,<td>,easy
+16,Which tag defines table header?,<th>,<td>,<tr>,<head>,<th>,easy
+17,Which attribute gives tooltip?,title,alt,name,label,title,easy
+18,Which attribute opens link in new tab?,target,href,rel,open,target,easy
+19,Which value opens new tab?,_blank,_self,_new,_top,_blank,easy
+20,Which tag creates form?,<form>,<input>,<field>,<submit>,<form>,easy
+21,Which tag takes input?,<input>,<form>,<text>,<data>,<input>,easy
+22,Which input type is password?,password,text,hidden,secure,password,easy
+23,Which input type is checkbox?,checkbox,radio,check,box,checkbox,easy
+24,Which input type is radio?,radio,checkbox,option,select,radio,easy
+25,Which tag defines heading?,<h1>,<p>,<head>,<title>,<h1>,easy
+26,Which heading is largest?,<h1>,<h6>,<h3>,<h4>,<h1>,easy
+27,Which tag defines document title?,<title>,<head>,<meta>,<name>,<title>,easy
+28,Which tag links CSS?,<link>,<style>,<css>,<script>,<link>,easy
+29,Which tag embeds CSS?,<style>,<css>,<link>,<script>,<style>,easy
+30,Which tag embeds JS?,<script>,<js>,<javascript>,<code>,<script>,easy
+31,What does semantic HTML mean?,Meaningful tags,Styled tags,Colored tags,Small tags,Meaningful tags,medium
+32,Which tag represents navigation?,<nav>,<menu>,<header>,<aside>,<nav>,medium
+33,Which tag represents header?,<header>,<head>,<top>,<h>,<header>,medium
+34,Which tag represents footer?,<footer>,<bottom>,<end>,<foot>,<footer>,medium
+35,Which tag represents article?,<article>,<section>,<div>,<content>,<article>,medium
+36,Which tag groups related content?,<section>,<div>,<span>,<group>,<section>,medium
+37,Which tag represents sidebar?,<aside>,<side>,<bar>,<menu>,<aside>,medium
+38,Which attribute is mandatory for img accessibility?,alt,src,title,id,alt,medium
+39,Which tag embeds audio?,<audio>,<sound>,<music>,<media>,<audio>,medium
+40,Which tag embeds video?,<video>,<media>,<movie>,<film>,<video>,medium
+41,Which attribute enables controls?,controls,control,enable,show,controls,medium
+42,Which attribute auto plays media?,autoplay,play,start,auto,autoplay,medium
+43,Which tag embeds iframe?,<iframe>,<frame>,<window>,<embed>,<iframe>,medium
+44,Which attribute sets charset?,charset,encoding,lang,meta,charset,medium
+45,Which tag defines metadata?,<meta>,<data>,<info>,<head>,<meta>,medium
+46,Which tag prevents zoom on mobile?,viewport,scale,width,device,viewport,medium
+47,Which input type selects date?,date,calendar,time,day,date,medium
+48,Which input type selects email?,email,mail,text,address,email,medium
+49,Which input type selects number?,number,int,digit,numeric,number,medium
+50,Which input type selects file?,file,upload,browse,attach,file,medium
+51,Which attribute validates required field?,required,validate,mandatory,check,required,medium
+52,Which attribute sets placeholder text?,placeholder,hint,label,name,placeholder,medium
+53,Which tag creates dropdown?,<select>,<option>,<list>,<dropdown>,<select>,medium
+54,Which tag defines option?,<option>,<select>,<list>,<item>,<option>,medium
+55,Which tag groups options?,<optgroup>,<group>,<options>,<set>,<optgroup>,medium
+56,Which tag embeds SVG?,<svg>,<vector>,<draw>,<shape>,<svg>,medium
+57,Which tag embeds canvas?,<canvas>,<draw>,<paint>,<graphic>,<canvas>,medium
+58,Which attribute sets element id?,id,class,name,key,id,medium
+59,Which attribute sets CSS class?,class,id,style,css,class,medium
+60,Which attribute applies inline CSS?,style,class,css,format,style,medium
+61,Which HTML5 API stores data offline?,localStorage,cookies,session,cache,localStorage,hard
+62,Difference between localStorage & sessionStorage?,Persistence,Size,Speed,Security,Persistence,hard
+63,Which tag supports drag & drop?,draggable,drag,drop,move,draggable,hard
+64,Which attribute enables drag?,draggable,drag,move,drop,draggable,hard
+65,Which API gives geolocation?,Geolocation API,Location API,GPS API,Map API,Geolocation API,hard
+66,Which tag defines custom element?,<template>,<custom>,<element>,<define>,<template>,hard
+67,Which API supports offline apps?,Service Worker,AppCache,Cache API,Worker,Service Worker,hard
+68,Which element supports shadow DOM?,Web Components,DOM,HTML,CSS,Web Components,hard
+69,Which attribute prevents form validation?,novalidate,disable,ignore,skip,novalidate,hard
+70,Which attribute groups radio buttons?,name,id,class,group,name,hard
+71,Which tag defines progress bar?,<progress>,<meter>,<range>,<bar>,<progress>,hard
+72,Which tag defines scalar measurement?,<meter>,<progress>,<range>,<bar>,<meter>,hard
+73,Which tag handles bidirectional text?,<bdi>,<bdo>,<dir>,<rtl>,<bdi>,hard
+74,Which tag overrides text direction?,<bdo>,<bdi>,<dir>,<rtl>,<bdo>,hard
+75,Which tag defines figure caption?,<figcaption>,<figure>,<caption>,<img>,<figcaption>,hard
+76,Which tag groups media with caption?,<figure>,<img>,<media>,<caption>,<figure>,hard
+77,Which attribute specifies async script?,async,defer,delay,load,async,hard
+78,Which attribute delays script execution?,defer,async,wait,pause,defer,hard
+79,Which API handles background tasks?,Web Workers,Threads,Processes,Async,Web Workers,hard
+80,Which attribute secures iframe?,sandbox,secure,lock,protect,sandbox,hard
+81,Which element defines dialog box?,<dialog>,<popup>,<modal>,<box>,<dialog>,hard
+82,Which attribute allows fullscreen?,allowfullscreen,fullscreen,allow,screen,allowfullscreen,hard
+83,Which tag embeds PDF?,<embed>,<pdf>,<object>,<iframe>,<embed>,hard
+84,Which element defines output?,<output>,<result>,<print>,<value>,<output>,hard
+85,Which tag defines data list?,<datalist>,<list>,<options>,<select>,<datalist>,hard
+86,Which attribute associates list?,list,id,name,data,list,hard
+87,Which element tracks time?,<time>,<date>,<clock>,<timer>,<time>,hard
+88,Which tag marks highlighted text?,<mark>,<highlight>,<strong>,<em>,<mark>,hard
+89,Which tag hides content?,hidden,display,none,invisible,hidden,hard
+90,Which attribute defines MIME type?,type,mime,format,encoding,type,hard
+91,Which attribute is used to provide an image path?,link,href,src,alt,src,easy
+92,Which tag is used to define the title of a web page?,<meta>,<head>,<title>,<body>,<title>,easy
+93,Which tag is used to create a table header cell?,<td>,<th>,<tr>,<thead>,<th>,easy
+94,Which tag is used to create a horizontal line?,<line>,<hr>,<br>,<hl>,<hr>,easy
+95,Which input type is used for a password field?,text,hidden,password,secure,password,medium
+96,Which tag is used to group related form elements?,<group>,<fieldset>,<section>,<div>,<fieldset>,medium
+97,Which attribute is used to open a link in a new tab?,open,new,target="_blank",href="_new",target="_blank",medium
+98,What is the correct HTML5 doctype declaration?,<!DOCTYPE HTML PUBLIC>,<!DOCTYPE html>,<DOCTYPE html>,<!HTML>,<!DOCTYPE html>,medium
+99,Which tag is used to embed audio in HTML5?,<sound>,<music>,<audio>,<media>,<audio>,medium
+100,Which attribute is used to merge table columns?,rowspan,colspan,merge,span,colspan,medium
+101,Which HTML5 element is used to draw graphics using JavaScript?,<svg>,<canvas>,<graphic>,<draw>,<canvas>,hard
+102,Which tag is used to define the main content of a document?,<body>,<main>,<section>,<article>,<main>,hard
+103,Which HTML attribute is used to improve accessibility for screen readers?,title,alt,aria-label,accesskey,aria-label,hard
+104,What happens if the alt attribute is missing in an <img> tag?,Image will not load,Browser throws error,Screen readers get no description,Page will not render,Screen readers get no description,hard
+105,Which attribute makes an input field read-only but still selectable?,disabled,readonly,hidden,locked,readonly,hard
+

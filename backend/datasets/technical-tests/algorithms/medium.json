@@ -1,0 +1,394 @@
+[
+  {
+    "id": "algo_med_01",
+    "question": "What does the Master Theorem solve?",
+    "options": [
+      "Recurrence relations of divide and conquer algorithms",
+      "Space complexity of loops",
+      "Sorting stability",
+      "Graph connectivity"
+    ],
+    "correct_answer": [
+      "Recurrence relations of divide and conquer algorithms"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_02",
+    "question": "Which of these are required for a problem to be solved using Dynamic Programming?",
+    "options": [
+      "Overlapping subproblems",
+      "Optimal substructure",
+      "Greedy choice property",
+      "Linear time complexity"
+    ],
+    "correct_answer": [
+      "Overlapping subproblems",
+      "Optimal substructure"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_03",
+    "question": "What is the time complexity of the Huffman Coding algorithm?",
+    "options": [
+      "O(n log n)",
+      "O(n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correct_answer": [
+      "O(n log n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_04",
+    "question": "Which of the following are true about Topological Sort?",
+    "options": [
+      "Applicable to Directed Acyclic Graphs (DAG)",
+      "Can be implemented using DFS",
+      "Can be implemented using Kahn's algorithm",
+      "Result is always unique"
+    ],
+    "correct_answer": [
+      "Applicable to Directed Acyclic Graphs (DAG)",
+      "Can be implemented using DFS",
+      "Can be implemented using Kahn's algorithm"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_05",
+    "question": "What is the time complexity of the Longest Common Subsequence (LCS) problem using DP?",
+    "options": [
+      "O(m*n)",
+      "O(m+n)",
+      "O(n log n)",
+      "O(2^n)"
+    ],
+    "correct_answer": [
+      "O(m*n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_06",
+    "question": "Which of these are properties of Kruskal's algorithm?",
+    "options": [
+      "Greedy algorithm",
+      "Uses Disjoint Set Union (DSU)",
+      "Sorts edges by weight",
+      "Starts from a specific vertex"
+    ],
+    "correct_answer": [
+      "Greedy algorithm",
+      "Uses Disjoint Set Union (DSU)",
+      "Sorts edges by weight"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_07",
+    "question": "What is the worst-case time complexity of the Bellman-Ford algorithm?",
+    "options": [
+      "O(V*E)",
+      "O(E log V)",
+      "O(V^3)",
+      "O(V+E)"
+    ],
+    "correct_answer": [
+      "O(V*E)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_08",
+    "question": "Which of these describe the 'Fractional Knapsack' problem?",
+    "options": [
+      "Solved using Greedy approach",
+      "Items can be broken into parts",
+      "Solved using DP",
+      "Items must be taken as whole"
+    ],
+    "correct_answer": [
+      "Solved using Greedy approach",
+      "Items can be broken into parts"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_09",
+    "question": "What is the time complexity of the Floyd-Warshall algorithm?",
+    "options": [
+      "O(V^3)",
+      "O(V^2)",
+      "O(V*E)",
+      "O(E log V)"
+    ],
+    "correct_answer": [
+      "O(V^3)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_10",
+    "question": "Which of the following sorting algorithms have O(n log n) worst-case time complexity?",
+    "options": [
+      "Merge Sort",
+      "Heap Sort",
+      "Quick Sort",
+      "Selection Sort"
+    ],
+    "correct_answer": [
+      "Merge Sort",
+      "Heap Sort"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_11",
+    "question": "What is 'Memoization' in Dynamic Programming?",
+    "options": [
+      "Storing results of expensive function calls",
+      "Bottom-up approach",
+      "Iterative approach",
+      "Graph traversal"
+    ],
+    "correct_answer": [
+      "Storing results of expensive function calls"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_12",
+    "question": "Which of these are characteristics of Backtracking?",
+    "options": [
+      "Explores all possible solutions",
+      "Uses recursion",
+      "Prunes search tree using constraints",
+      "Always runs in polynomial time"
+    ],
+    "correct_answer": [
+      "Explores all possible solutions",
+      "Uses recursion",
+      "Prunes search tree using constraints"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_13",
+    "question": "What is the time complexity of the Rabin-Karp algorithm for pattern searching in average case?",
+    "options": [
+      "O(n+m)",
+      "O(n*m)",
+      "O(log n)",
+      "O(n)"
+    ],
+    "correct_answer": [
+      "O(n+m)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_14",
+    "question": "Which of the following are applications of BFS?",
+    "options": [
+      "Shortest path in unweighted graph",
+      "Level order traversal",
+      "Testing for bipartiteness",
+      "Cycle detection in directed graph"
+    ],
+    "correct_answer": [
+      "Shortest path in unweighted graph",
+      "Level order traversal",
+      "Testing for bipartiteness"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_15",
+    "question": "What is 'Optimal Substructure' in DP?",
+    "options": [
+      "Optimal solution to problem contains optimal solutions to subproblems",
+      "Problem can be solved greedily",
+      "Overlapping subproblems",
+      "Subproblems are independent"
+    ],
+    "correct_answer": [
+      "Optimal solution to problem contains optimal solutions to subproblems"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_16",
+    "question": "Which of these are true about the 'KMP' algorithm?",
+    "options": [
+      "Used for string matching",
+      "Uses a prefix function (LPS array)",
+      "Time complexity O(n+m)",
+      "Based on hashing"
+    ],
+    "correct_answer": [
+      "Used for string matching",
+      "Uses a prefix function (LPS array)",
+      "Time complexity O(n+m)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_17",
+    "question": "What is the space complexity of Depth First Search (DFS)?",
+    "options": [
+      "O(V)",
+      "O(E)",
+      "O(V^2)",
+      "O(1)"
+    ],
+    "correct_answer": [
+      "O(V)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_18",
+    "question": "Which algorithm is most efficient for finding all-pairs shortest paths in a dense graph?",
+    "options": [
+      "Floyd-Warshall",
+      "Dijkstra's with priority queue",
+      "Bellman-Ford",
+      "Johnson's algorithm"
+    ],
+    "correct_answer": [
+      "Floyd-Warshall"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_19",
+    "question": "Which of these are required for a binary search tree to be balanced?",
+    "options": [
+      "Height must be O(log n)",
+      "Left and right subtrees height difference <= 1",
+      "Every node has 2 children",
+      "Tree must be complete"
+    ],
+    "correct_answer": [
+      "Height must be O(log n)",
+      "Left and right subtrees height difference <= 1"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_20",
+    "question": "What is the time complexity of the 'Quick Select' algorithm to find k-th smallest element on average?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correct_answer": [
+      "O(n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_21",
+    "question": "What is the 'Greedy Choice Property'?",
+    "options": [
+      "Globally optimal solution can be reached by making locally optimal choices",
+      "Store previous results",
+      "Problem has optimal substructure",
+      "Prune search space"
+    ],
+    "correct_answer": [
+      "Globally optimal solution can be reached by making locally optimal choices"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_22",
+    "question": "Which of these algorithms are used to find Strongly Connected Components?",
+    "options": [
+      "Kosaraju's",
+      "Tarjan's",
+      "Kruskal's",
+      "Prim's"
+    ],
+    "correct_answer": [
+      "Kosaraju's",
+      "Tarjan's"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_med_23",
+    "question": "What is the time complexity of matrix chain multiplication using DP?",
+    "options": [
+      "O(n^3)",
+      "O(n^2)",
+      "O(n)",
+      "O(2^n)"
+    ],
+    "correct_answer": [
+      "O(n^3)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_24",
+    "question": "In which cases is 'Bucket Sort' efficient?",
+    "options": [
+      "Input is uniformly distributed over a range",
+      "Input is large and unsorted",
+      "Input has many duplicates",
+      "Hardware is slow"
+    ],
+    "correct_answer": [
+      "Input is uniformly distributed over a range"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_med_25",
+    "question": "Which of these are classic problems solvable by backtracking?",
+    "options": [
+      "N-Queens problem",
+      "Sudoku solver",
+      "Hamiltonian path",
+      "Binary search"
+    ],
+    "correct_answer": [
+      "N-Queens problem",
+      "Sudoku solver",
+      "Hamiltonian path"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  }
+]

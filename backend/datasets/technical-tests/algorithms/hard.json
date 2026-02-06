@@ -1,0 +1,394 @@
+[
+  {
+    "id": "algo_hard_01",
+    "question": "Which of these are required to prove a problem is NP-Complete?",
+    "options": [
+      "Prove it is in NP",
+      "Reduce a known NP-Complete problem to it in polynomial time",
+      "Show it is solvable in linear time",
+      "Prove it is not in P"
+    ],
+    "correct_answer": [
+      "Prove it is in NP",
+      "Reduce a known NP-Complete problem to it in polynomial time"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_02",
+    "question": "What is the time complexity of the Edmonds-Karp algorithm for maximum flow?",
+    "options": [
+      "O(V * E^2)",
+      "O(V^2 * E)",
+      "O(V^3)",
+      "O(E * log V)"
+    ],
+    "correct_answer": [
+      "O(V * E^2)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_03",
+    "question": "What is the time complexity for solving TSP (Traveling Salesperson Problem) using Dynamic Programming with Bitmasking?",
+    "options": [
+      "O(n^2 * 2^n)",
+      "O(n!)",
+      "O(2^n)",
+      "O(n^2)"
+    ],
+    "correct_answer": [
+      "O(n^2 * 2^n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_04",
+    "question": "Which of these are true about the 'Cook-Levin Theorem'?",
+    "options": [
+      "The Boolean Satisfiability Problem is NP-Complete",
+      "P = NP",
+      "Any NP problem can be reduced to SAT in polynomial time",
+      "Sorting is in NP-Complete"
+    ],
+    "correct_answer": [
+      "The Boolean Satisfiability Problem is NP-Complete",
+      "Any NP problem can be reduced to SAT in polynomial time"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_05",
+    "question": "What is the time complexity of the Graham Scan algorithm for finding a Convex Hull?",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(n log h)"
+    ],
+    "correct_answer": [
+      "O(n log n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_06",
+    "question": "Which of these algorithms solve the 'Maximum Bipartite Matching' problem?",
+    "options": [
+      "Hopcroft-Karp",
+      "Ford-Fulkerson",
+      "Hungarian Algorithm",
+      "Dijkstra's"
+    ],
+    "correct_answer": [
+      "Hopcroft-Karp",
+      "Ford-Fulkerson",
+      "Hungarian Algorithm"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_07",
+    "question": "What is the time complexity of 'Manacher's Algorithm' for finding the longest palindromic substring?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correct_answer": [
+      "O(n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_08",
+    "question": "Which of these are classic String algorithms?",
+    "options": [
+      "Z-algorithm",
+      "Aho-Corasick",
+      "Suffix Array construction",
+      "Radix Sort"
+    ],
+    "correct_answer": [
+      "Z-algorithm",
+      "Aho-Corasick",
+      "Suffix Array construction"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_09",
+    "question": "What is the complexity of 'Kruskal's algorithm' using a primitive array instead of DSU for cycle detection?",
+    "options": [
+      "O(E*V)",
+      "O(E log E)",
+      "O(V log V)",
+      "O(E + V)"
+    ],
+    "correct_answer": [
+      "O(E*V)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_10",
+    "question": "In Computational Geometry, what does a 'Sweep Line' algorithm reduce a 2D problem into?",
+    "options": [
+      "1D problem over time",
+      "A tree structure",
+      "A set of linear equations",
+      "A 3D projection"
+    ],
+    "correct_answer": [
+      "1D problem over time"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_11",
+    "question": "Which of these are properties of NP-Hard problems?",
+    "options": [
+      "At least as hard as any problem in NP",
+      "Need not be in NP",
+      "Can be solved in polynomial time on a quantum computer",
+      "Must be decidable"
+    ],
+    "correct_answer": [
+      "At least as hard as any problem in NP",
+      "Need not be in NP"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_12",
+    "question": "What is the expected time complexity of the Randomized QuickSort?",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correct_answer": [
+      "O(n log n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_13",
+    "question": "Which theorem states that a problem can be solved in O(n^log_b(a)) time?",
+    "options": [
+      "Master Theorem",
+      "Cook's Theorem",
+      "Pumping Lemma",
+      "Rice's Theorem"
+    ],
+    "correct_answer": [
+      "Master Theorem"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_14",
+    "question": "Which of these are true about 'Amortized Analysis'?",
+    "options": [
+      "Gives average performance of each operation in the worst case",
+      "Uses the Aggregate method",
+      "Uses the Potential method (Physicist's method)",
+      "Guarantees a per-operation worst case"
+    ],
+    "correct_answer": [
+      "Gives average performance of each operation in the worst case",
+      "Uses the Aggregate method",
+      "Uses the Potential method (Physicist's method)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_15",
+    "question": "What is the time complexity of the 'A*' search algorithm in the worst case?",
+    "options": [
+      "O(b^d) where b is branching factor and d is depth",
+      "O(V+E)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "O(b^d) where b is branching factor and d is depth"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_16",
+    "question": "Which of these problems are known to be NP-Complete?",
+    "options": [
+      "Vertex Cover",
+      "3-SAT",
+      "Subset Sum",
+      "Shortest Path in Directed Graph"
+    ],
+    "correct_answer": [
+      "Vertex Cover",
+      "3-SAT",
+      "Subset Sum"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_17",
+    "question": "What is the time complexity of the 'Ford-Fulkerson' algorithm if capacities are irrational?",
+    "options": [
+      "It might not terminate",
+      "O(E * f) where f is max flow",
+      "O(V^2 * E)",
+      "O(E * log V)"
+    ],
+    "correct_answer": [
+      "It might not terminate"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_18",
+    "question": "What is the time complexity to find the 'Minimum Cut' in a network using max-flow algorithms?",
+    "options": [
+      "Same as max-flow",
+      "O(V^3)",
+      "O(V*E)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "Same as max-flow"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_19",
+    "question": "Which techniques are used in 'Fast Fourier Transform' (FFT)?",
+    "options": [
+      "Divide and Conquer",
+      "Complex numbers",
+      "Roots of unity",
+      "Dynamic Programming"
+    ],
+    "correct_answer": [
+      "Divide and Conquer",
+      "Complex numbers",
+      "Roots of unity"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_20",
+    "question": "What is the time complexity of 'Strassen's Matrix Multiplication'?",
+    "options": [
+      "O(n^2.807)",
+      "O(n^3)",
+      "O(n^2)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "O(n^2.807)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_21",
+    "question": "Which of these are characteristics of 'Randomized Algorithms'?",
+    "options": [
+      "Use a source of random bits",
+      "Las Vegas type (always correct, random time)",
+      "Monte Carlo type (random correctness, fixed time)",
+      "Always faster than deterministic"
+    ],
+    "correct_answer": [
+      "Use a source of random bits",
+      "Las Vegas type (always correct, random time)",
+      "Monte Carlo type (random correctness, fixed time)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_22",
+    "question": "What is the time complexity of searching in a 2D segment tree?",
+    "options": [
+      "O(log n * log m)",
+      "O(log n + log m)",
+      "O(n*m)",
+      "O(log (n*m))"
+    ],
+    "correct_answer": [
+      "O(log n * log m)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_23",
+    "question": "Which of these are required for 'Link-Cut Trees' to work efficiently?",
+    "options": [
+      "Splay trees as auxiliary trees",
+      "Path decomposition",
+      "Preferred child property",
+      "Heaps"
+    ],
+    "correct_answer": [
+      "Splay trees as auxiliary trees",
+      "Path decomposition",
+      "Preferred child property"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_hard_24",
+    "question": "What is the time complexity of 'Aho-Corasick' to find all occurrences of k patterns in a text of length n?",
+    "options": [
+      "O(n + sum of pattern lengths + total matches)",
+      "O(n * k)",
+      "O(n * log k)",
+      "O(n^2)"
+    ],
+    "correct_answer": [
+      "O(n + sum of pattern lengths + total matches)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_hard_25",
+    "question": "In Approximation Algorithms, what is the 'p-approximation' ratio?",
+    "options": [
+      "Ratio between heuristic solution and optimal solution",
+      "Success rate of algorithm",
+      "Reduction factor",
+      "Probability of correct answer"
+    ],
+    "correct_answer": [
+      "Ratio between heuristic solution and optimal solution"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

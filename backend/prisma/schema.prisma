@@ -1,0 +1,229 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  tourCompleted Boolean @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model InterviewSession {
+  id          String   @id @default(uuid())
+  userId      String?  // Optional: Link to a user system if needed later
+  type        String   // 'TECHNICAL' or 'HR'
+  role        String   // e.g., 'Java Backend', 'Behavioral'
+  totalScore  Float    @default(0.0)
+  status      String   @default("IN_PROGRESS") // 'IN_PROGRESS', 'COMPLETED'
+  currentStage String  @default("GREETING")   // GREETING, READINESS, INTRO, MAIN, CLOSING
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  attempts    QuestionAttempt[]
+}
+
+model QuestionAttempt {
+  id              String   @id @default(uuid())
+  sessionId       String
+  session         InterviewSession @relation(fields: [sessionId], references: [id])
+  
+  questionId      String
+  questionText    String
+  userAnswer      String
+  matchedKeywords String[] // Array of strings supported by PostgreSQL
+  missingKeywords String[]
+  score           Float
+  feedback        String
+  
+  createdAt       DateTime @default(now())
+}
+
+model TechnicalTest {
+  id          String   @id @default(uuid())
+  userId      String?
+  subject     String
+  difficulty  String
+  totalScore  Float    @default(0.0)
+  maxScore    Float    @default(0.0)
+  status      String   @default("IN_PROGRESS") // 'IN_PROGRESS', 'COMPLETED'
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  answers     TestAnswer[]
+}
+
+model TestAnswer {
+  id          String   @id @default(uuid())
+  testId      String
+  test        TechnicalTest @relation(fields: [testId], references: [id])
+
+  questionId  String
+  selectedAnswers String[] // Array to support multi-select
+  isCorrect   Boolean
+  marks       Float
+
+  createdAt   DateTime @default(now())
+}
+
+model AtsAnalysis {
+  id             String   @id @default(uuid())
+  userId         String?
+  filename       String
+  parsedSections Json
+  targetRole     String
+  atsScore       Float
+  createdAt      DateTime @default(now())
+}
+
+model CommunicationTest {
+  id          String   @id @default(uuid())
+  userId      String?
+  totalScore  Float    @default(0.0)
+  status      String   @default("IN_PROGRESS") // 'IN_PROGRESS', 'COMPLETED'
+  resultLabel String?  // 'Poor', 'Average', 'Good', 'Excellent'
+  overallFeedback String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  tasks       CommunicationTaskResult[]
+}
+
+model CommunicationTaskResult {
+  id              String   @id @default(uuid())
+  testId          String
+  test            CommunicationTest @relation(fields: [testId], references: [id])
+
+  taskId          String
+  taskType        String
+  transcript      String   @db.Text
+  score           Float
+  duration        Int      // in seconds
+  wordCount       Int
+  sentenceCount   Int
+  connectorCount  Int
+  feedback        String
+  createdAt       DateTime @default(now())
+}
+
+model Opportunity {
+  id             String   @id @default(uuid())
+  batchReach     String[] // e.g. ["2026"]
+  type           String   // Internship, Hackathon, Scholarship
+  title          String
+  provider       String
+  stipendReward  String
+  applicationLink String  @default("https://www.google.com") // Verified URL
+  deadlineApp    DateTime?
+  deadlineEvent  DateTime?
+  difficulty     String   // Easy, Medium, Hard
+  mode           String   // Remote, In-Person, Hybrid
+  requirements   Json     // { skills: [], eligibility: "" }
+  intelligence   Json     // { why_it_matters: "", next_action: "", prep_tip: "" }
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+// --- ROADMAP ENGINE MODELS ---
+
+model RoadmapTemplate {
+  id             String   @id @default(uuid())
+  title          String   // e.g., "AI/ML Engineer Fast Track (2026)"
+  description    String
+  targetBatch    String   // "2026"
+  createdAt      DateTime @default(now())
+  
+  phases         RoadmapPhase[]
+}
+
+model RoadmapPhase {
+  id              String   @id @default(uuid())
+  templateId      String
+  template        RoadmapTemplate @relation(fields: [templateId], references: [id])
+  
+  phaseNumber     Int
+  title           String   // e.g., "Foundations"
+  durationWeeks   Int      // e.g., 4
+  description     String
+  
+  // Intelligence Layer Links
+  opportunityUnlockId String? // If completed, unlocks this ID in Opportunity table
+  
+  tasks           RoadmapTask[]
+}
+
+model RoadmapTask {
+  id          String   @id @default(uuid())
+  phaseId     String
+  phase       RoadmapPhase @relation(fields: [phaseId], references: [id])
+  
+  weekNumber  Int      // e.g., 1 (Relative to phase start)
+  title       String   // e.g., "Build Titanic EDA"
+  type        String   // "BUILD" or "LEARN"
+  deliverable String   // "Link to Kaggle Notebook"
+}
+
+model UserRoadmapProgress {
+  id             String   @id @default(uuid())
+  userId         String   // Link to user
+  templateId     String
+  
+  currentPhase   Int      @default(1)
+  completedTasks String[] // Array of Task IDs
+  startDate      DateTime @default(now())
+  lastActive     DateTime @updatedAt
+}
+
+model StudentProfile {
+  id             String   @id @default(uuid())
+  userId         String   @unique // One profile per user
+  semester       Int      // e.g., 6
+  branch         String   // e.g., "CSE"
+  targetRole     String   // e.g., "AI Engineer"
+  skills         String[] // Array of known skills
+  weeklyHours    Int      // e.g., 20
+  goalMotivation String   // e.g., "Placement"
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model DiagnosisResult {
+  id                 String   @id @default(uuid())
+  userId             String   @unique
+  readinessScore     Float    // 0-100
+  criticalGaps       String[] // ["Missing Python", "No Projects"]
+  riskFactors        String[] // ["High Time Pressure"]
+  verdict            String   // "Needs Acceleration"
+  prescribedTemplate String   // Template ID
+  createdAt          DateTime @default(now())
+}
+
+model UserOpportunity {
+  id            String   @id @default(uuid())
+  userId        String
+  opportunityId String
+  status        String   // "SAVED", "APPLIED"
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([userId, opportunityId])
+}
+
+model ActivityLog {
+  id        String   @id @default(uuid())
+  userId    String
+  module    String   // "Resume", "Technical", "Communication", "MockInterview", "Roadmap", "Opportunities"
+  action    String   // "UPLOAD", "COMPLETE", "GENERATE", "SAVE", "APPLY"
+  summary   String
+  score     Float?
+  status    String   // "COMPLETED", "IN_PROGRESS", "FAILED"
+  metadata  Json?    // Extra details like subject, role etc.
+  createdAt DateTime @default(now())
+}

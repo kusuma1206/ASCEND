@@ -1,0 +1,393 @@
+[
+  {
+    "id": "oops_easy_01",
+    "question": "What is the fundamental unit of Object-Oriented Programming?",
+    "options": [
+      "Object",
+      "Class",
+      "Function",
+      "Variable"
+    ],
+    "correct_answer": [
+      "Object"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_02",
+    "question": "Which concept allows a class to acquire properties of another class?",
+    "options": [
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction"
+    ],
+    "correct_answer": [
+      "Inheritance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_03",
+    "question": "Which of these are pillars of OOP?",
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction"
+    ],
+    "correct_answer": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_04",
+    "question": "What is 'Encapsulation'?",
+    "options": [
+      "Wrapping data and methods into a single unit",
+      "Hiding implementation details",
+      "Creating many forms",
+      "Inheriting members"
+    ],
+    "correct_answer": [
+      "Wrapping data and methods into a single unit"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_05",
+    "question": "Which of these access modifiers are found in C++/Java?",
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "friend"
+    ],
+    "correct_answer": [
+      "public",
+      "private",
+      "protected"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_06",
+    "question": "What is 'Polymorphism'?",
+    "options": [
+      "One interface, multiple forms",
+      "Data hiding",
+      "Class structure",
+      "Resource management"
+    ],
+    "correct_answer": [
+      "One interface, multiple forms"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_07",
+    "question": "Which of these is an example of compile-time polymorphism?",
+    "options": [
+      "Method Overloading",
+      "Method Overriding",
+      "Inheritance",
+      "Virtual Functions"
+    ],
+    "correct_answer": [
+      "Method Overloading"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_08",
+    "question": "Which of these keywords are used in Inheritance?",
+    "options": [
+      "extends",
+      "implements",
+      "super",
+      "this"
+    ],
+    "correct_answer": [
+      "extends",
+      "implements",
+      "super"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_09",
+    "question": "What is an 'Abstract Class'?",
+    "options": [
+      "A class that cannot be instantiated",
+      "A class with no methods",
+      "A class with only static methods",
+      "A final class"
+    ],
+    "correct_answer": [
+      "A class that cannot be instantiated"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_10",
+    "question": "What is a 'Constructor'?",
+    "options": [
+      "Special method to initialize objects",
+      "Method to delete objects",
+      "A building tool",
+      "A class type"
+    ],
+    "correct_answer": [
+      "Special method to initialize objects"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_11",
+    "question": "Which of these are types of constructors?",
+    "options": [
+      "Default",
+      "Parameterized",
+      "Copy",
+      "Virtual"
+    ],
+    "correct_answer": [
+      "Default",
+      "Parameterized",
+      "Copy"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_12",
+    "question": "Which keyword is used to refer to the current object instance?",
+    "options": [
+      "this",
+      "self",
+      "super",
+      "instance"
+    ],
+    "correct_answer": [
+      "this"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_13",
+    "question": "What is 'Method Overriding'?",
+    "options": [
+      "Subclass providing specific implementation for a superclass method",
+      "Using same name for different parameters",
+      "Deleting a method",
+      "Changing access modifier"
+    ],
+    "correct_answer": [
+      "Subclass providing specific implementation for a superclass method"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_14",
+    "question": "Which of these are valid OOP languages?",
+    "options": [
+      "Java",
+      "C++",
+      "Python",
+      "Assembly"
+    ],
+    "correct_answer": [
+      "Java",
+      "C++",
+      "Python"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_15",
+    "question": "What is an 'Interface'?",
+    "options": [
+      "A blueprint of a class with abstract methods",
+      "A GUI part",
+      "A memory address",
+      "A network tool"
+    ],
+    "correct_answer": [
+      "A blueprint of a class with abstract methods"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_16",
+    "question": "What is 'Diamond Problem' related to?",
+    "options": [
+      "Multiple Inheritance",
+      "Method Overloading",
+      "Constructors",
+      "Static methods"
+    ],
+    "correct_answer": [
+      "Multiple Inheritance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_17",
+    "question": "Which of these are access modifiers in Java?",
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "default (package)"
+    ],
+    "correct_answer": [
+      "public",
+      "private",
+      "protected",
+      "default (package)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_18",
+    "question": "What is a 'Destructor'?",
+    "options": [
+      "Special method invoked when object is destroyed",
+      "A virus",
+      "Memory cleaning tool",
+      "A compiler part"
+    ],
+    "correct_answer": [
+      "Special method invoked when object is destroyed"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_19",
+    "question": "Which concept promotes 'Code Reusability'?",
+    "options": [
+      "Inheritance",
+      "Encapsulation",
+      "Static binding",
+      "Pointers"
+    ],
+    "correct_answer": [
+      "Inheritance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_20",
+    "question": "Which of these are true about 'Composition'?",
+    "options": [
+      "A 'has-a' relationship",
+      "A 'is-a' relationship",
+      "Alternative to inheritance",
+      "Strong coupling"
+    ],
+    "correct_answer": [
+      "A 'has-a' relationship",
+      "Alternative to inheritance"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_21",
+    "question": "What is 'Static Binding'?",
+    "options": [
+      "Method resolved at compile time",
+      "Method resolved at runtime",
+      "Hardcoding values",
+      "Variable typing"
+    ],
+    "correct_answer": [
+      "Method resolved at compile time"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_22",
+    "question": "What is 'Dynamic Binding'?",
+    "options": [
+      "Method resolved at runtime",
+      "Dynamic memory allocation",
+      "Variable pointers",
+      "Compile time check"
+    ],
+    "correct_answer": [
+      "Method resolved at runtime"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_23",
+    "question": "Which of these keywords prevent inheritance in Java?",
+    "options": [
+      "final",
+      "static",
+      "sealed",
+      "const"
+    ],
+    "correct_answer": [
+      "final",
+      "sealed"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_easy_24",
+    "question": "What is a 'Base Class'?",
+    "options": [
+      "The class from which others inherit",
+      "The bottom class",
+      "A utility class",
+      "A library class"
+    ],
+    "correct_answer": [
+      "The class from which others inherit"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_easy_25",
+    "question": "What is 'Aggregation' in OOP?",
+    "options": [
+      "Weak association where child can exist independently of parent",
+      "Strong association",
+      "Inheritance type",
+      "Data types combination"
+    ],
+    "correct_answer": [
+      "Weak association where child can exist independently of parent"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

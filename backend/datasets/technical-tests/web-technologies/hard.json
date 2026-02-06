@@ -1,0 +1,406 @@
+[
+  {
+    "id": "web_hard_01",
+    "question": "What is the primary difference between HTTP/2 and HTTP/3?",
+    "options": [
+      "HTTP/2 uses TCP; HTTP/3 uses QUIC (over UDP)",
+      "HTTP/3 is slower",
+      "HTTP/2 doesn't support multiplexing",
+      "HTTP/3 replaces HTML"
+    ],
+    "correct_answer": [
+      "HTTP/2 uses TCP; HTTP/3 uses QUIC (over UDP)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_02",
+    "question": "Which of these are true about 'Content Security Policy' (CSP)?",
+    "options": [
+      "Helps prevent XSS and data injection attacks",
+      "Defines which resources the browser is allowed to load for a given page",
+      "Implemented via HTTP header or meta tag",
+      "Used to encrypt cookies"
+    ],
+    "correct_answer": [
+      "Helps prevent XSS and data injection attacks",
+      "Defines which resources the browser is allowed to load for a given page",
+      "Implemented via HTTP header or meta tag"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_03",
+    "question": "What is a 'Service Worker'?",
+    "options": [
+      "Script that your browser runs in the background, separate from a web page",
+      "A type of web server",
+      "A database connector",
+      "A CSS framework"
+    ],
+    "correct_answer": [
+      "Script that your browser runs in the background, separate from a web page"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_04",
+    "question": "Which of these are capabilities of 'Service Workers'?",
+    "options": [
+      "Offline functionality",
+      "Push notifications",
+      "Background sync",
+      "Direct DOM access"
+    ],
+    "correct_answer": [
+      "Offline functionality",
+      "Push notifications",
+      "Background sync"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_05",
+    "question": "What is 'Tree Shaking' in JS bundling?",
+    "options": [
+      "Procedure that removes unused code from final bundle",
+      "Sorting code",
+      "Encryption",
+      "Compressing images"
+    ],
+    "correct_answer": [
+      "Procedure that removes unused code from final bundle"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_06",
+    "question": "Which of these describe 'CSRF' (Cross-Site Request Forgery)?",
+    "options": [
+      "Attack that forces authenticated user to execute unwanted actions on a web app",
+      "Injecting scripts into pages",
+      "Stealing passwords via keyloggers",
+      "Denial of service"
+    ],
+    "correct_answer": [
+      "Attack that forces authenticated user to execute unwanted actions on a web app"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_07",
+    "question": "Which of these are ways to prevent CSRF attacks?",
+    "options": [
+      "Anti-CSRF tokens",
+      "SameSite cookie attribute",
+      "CORS policy",
+      "HTTPS"
+    ],
+    "correct_answer": [
+      "Anti-CSRF tokens",
+      "SameSite cookie attribute"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_08",
+    "question": "What is the 'Critical Rendering Path'?",
+    "options": [
+      "Sequence of steps browser goes through to convert HTML, CSS, and JS into pixels on screen",
+      "The URL path",
+      "Server-side routing",
+      "Database index"
+    ],
+    "correct_answer": [
+      "Sequence of steps browser goes through to convert HTML, CSS, and JS into pixels on screen"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_09",
+    "question": "Which of these are stages in the Critical Rendering Path?",
+    "options": [
+      "DOM construction",
+      "CSSOM construction",
+      "Render Tree",
+      "Layout",
+      "Paint"
+    ],
+    "correct_answer": [
+      "DOM construction",
+      "CSSOM construction",
+      "Render Tree",
+      "Layout",
+      "Paint"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_10",
+    "question": "What is 'Preflight Request' in CORS?",
+    "options": [
+      "OPTIONS request sent to check if actual request is safe to send",
+      "A performance check",
+      "A login check",
+      "A type of redirect"
+    ],
+    "correct_answer": [
+      "OPTIONS request sent to check if actual request is safe to send"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_11",
+    "question": "Which of these are true about 'HTTP/2'?",
+    "options": [
+      "Binary protocol",
+      "Multiplexed (multiple requests over single connection)",
+      "Header compression (HPACK)",
+      "Server Push"
+    ],
+    "correct_answer": [
+      "Binary protocol",
+      "Multiplexed (multiple requests over single connection)",
+      "Header compression (HPACK)",
+      "Server Push"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_12",
+    "question": "What is 'XSS' (Cross-Site Scripting)?",
+    "options": [
+      "Vulnerability where attacker injects malicious scripts into content from otherwise trusted websites",
+      "Stealing server logs",
+      "Overloading server with requests",
+      "Mapping domain names to IPs"
+    ],
+    "correct_answer": [
+      "Vulnerability where attacker injects malicious scripts into content from otherwise trusted websites"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_13",
+    "question": "Which of these are types of XSS attacks?",
+    "options": [
+      "Stored XSS",
+      "Reflected XSS",
+      "DOM-based XSS",
+      "SQL Injection"
+    ],
+    "correct_answer": [
+      "Stored XSS",
+      "Reflected XSS",
+      "DOM-based XSS"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_14",
+    "question": "What is 'Shadow DOM'?",
+    "options": [
+      "Web standard for component encapsulation by attaching hidden DOM tree to an element",
+      "A hidden div",
+      "Server-side DOM",
+      "A CSS hack"
+    ],
+    "correct_answer": [
+      "Web standard for component encapsulation by attaching hidden DOM tree to an element"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_15",
+    "question": "Which of these define 'Web Components' specifications?",
+    "options": [
+      "Custom Elements",
+      "Shadow DOM",
+      "HTML Templates",
+      "HTML Imports (Deprecated)"
+    ],
+    "correct_answer": [
+      "Custom Elements",
+      "Shadow DOM",
+      "HTML Templates"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_16",
+    "question": "What is the purpose of 'Rel=preload'?",
+    "options": [
+      "Informs browser to fetch a resource as soon as possible",
+      "Speeds up CPU",
+      "Encrypts data",
+      "Checks network connection"
+    ],
+    "correct_answer": [
+      "Informs browser to fetch a resource as soon as possible"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_17",
+    "question": "Which of these characterize 'GraphQL'?",
+    "options": [
+      "Query language for APIs",
+      "Client specifies exactly what data it needs",
+      "Single endpoint",
+      "Uses multiple HTTP methods like REST"
+    ],
+    "correct_answer": [
+      "Query language for APIs",
+      "Client specifies exactly what data it needs",
+      "Single endpoint"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_18",
+    "question": "What is 'Server-Side Rendering' (SSR) primarily used for?",
+    "options": [
+      "Improving initial load time and SEO by rendering page on server",
+      "Speeding up database",
+      "Saving bandwidth",
+      "Improving security"
+    ],
+    "correct_answer": [
+      "Improving initial load time and SEO by rendering page on server"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_19",
+    "question": "Which of these are true about 'WebSockets'?",
+    "options": [
+      "Full-duplex communication over single TCP connection",
+      "Bidirectional",
+      "Handshake starts with HTTP",
+      "Stateless"
+    ],
+    "correct_answer": [
+      "Full-duplex communication over single TCP connection",
+      "Bidirectional",
+      "Handshake starts with HTTP"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_20",
+    "question": "What is 'PWA' (Progressive Web App)?",
+    "options": [
+      "Web app that uses modern web capabilities to deliver app-like experience",
+      "A type of mobile OS",
+      "A desktop software",
+      "A server framework"
+    ],
+    "correct_answer": [
+      "Web app that uses modern web capabilities to deliver app-like experience"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_21",
+    "question": "Which of these are required for a 'PWA'?",
+    "options": [
+      "HTTPS",
+      "Web App Manifest",
+      "Service Worker",
+      "Store listing"
+    ],
+    "correct_answer": [
+      "HTTPS",
+      "Web App Manifest",
+      "Service Worker"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_22",
+    "question": "What is 'Critical CSS'?",
+    "options": [
+      "CSS required to render above-the-fold content",
+      "Very important CSS",
+      "Error-free CSS",
+      "CSS for mobile only"
+    ],
+    "correct_answer": [
+      "CSS required to render above-the-fold content"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_23",
+    "question": "Which of these are 'Storage' APIs available in modern browsers?",
+    "options": [
+      "IndexedDB",
+      "Web SQL (Deprecated)",
+      "LocalStorage",
+      "SessionStorage",
+      "Cookies"
+    ],
+    "correct_answer": [
+      "IndexedDB",
+      "LocalStorage",
+      "SessionStorage",
+      "Cookies"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_hard_24",
+    "question": "What is 'Same-Origin Policy'?",
+    "options": [
+      "Restrict how a document or script loaded from one origin can interact with a resource from another origin",
+      "Rule for variable naming",
+      "Protocol for data transfer",
+      "Database lock"
+    ],
+    "correct_answer": [
+      "Restrict how a document or script loaded from one origin can interact with a resource from another origin"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_hard_25",
+    "question": "Which of these are part of the 'Web performance' metrics (Core Web Vitals)?",
+    "options": [
+      "LCP (Largest Contentful Paint)",
+      "FID (First Input Delay)",
+      "CLS (Cumulative Layout Shift)",
+      "TTO (Total Time On)"
+    ],
+    "correct_answer": [
+      "LCP (Largest Contentful Paint)",
+      "FID (First Input Delay)",
+      "CLS (Cumulative Layout Shift)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  }
+]

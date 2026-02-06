@@ -1,0 +1,393 @@
+[
+  {
+    "id": "algo_easy_01",
+    "question": "Which sorting algorithm has a best-case time complexity of O(n) when the array is already sorted?",
+    "options": [
+      "Bubble Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Selection Sort"
+    ],
+    "correct_answer": [
+      "Bubble Sort"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_02",
+    "question": "What is the time complexity of Binary Search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "O(log n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_03",
+    "question": "Which of these are Divide and Conquer algorithms?",
+    "options": [
+      "Merge Sort",
+      "Quick Sort",
+      "Binary Search",
+      "Selection Sort"
+    ],
+    "correct_answer": [
+      "Merge Sort",
+      "Quick Sort",
+      "Binary Search"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_04",
+    "question": "What is the space complexity of an in-place sorting algorithm?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correct_answer": [
+      "O(1)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_05",
+    "question": "Which of these sorting algorithms are stable?",
+    "options": [
+      "Merge Sort",
+      "Bubble Sort",
+      "Quick Sort",
+      "Heap Sort"
+    ],
+    "correct_answer": [
+      "Merge Sort",
+      "Bubble Sort"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_06",
+    "question": "In which algorithm is a 'pivot' element used?",
+    "options": [
+      "Quick Sort",
+      "Merge Sort",
+      "Insertion Sort",
+      "Radix Sort"
+    ],
+    "correct_answer": [
+      "Quick Sort"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_07",
+    "question": "What is the worst-case time complexity of Quick Sort?",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correct_answer": [
+      "O(n^2)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_08",
+    "question": "Which of these are greedy algorithms?",
+    "options": [
+      "Dijkstra's",
+      "Prim's",
+      "Kruskal's",
+      "Floyd-Warshall"
+    ],
+    "correct_answer": [
+      "Dijkstra's",
+      "Prim's",
+      "Kruskal's"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_09",
+    "question": "Which algorithm is used to find the shortest path from a single source to all other vertices in a weighted graph?",
+    "options": [
+      "Dijkstra's",
+      "Bellman-Ford",
+      "BFS",
+      "DFS"
+    ],
+    "correct_answer": [
+      "Dijkstra's"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_10",
+    "question": "What is the recurrence relation for Merge Sort?",
+    "options": [
+      "T(n) = 2T(n/2) + n",
+      "T(n) = T(n-1) + n",
+      "T(n) = T(n/2) + 1",
+      "T(n) = 2T(n/2) + 1"
+    ],
+    "correct_answer": [
+      "T(n) = 2T(n/2) + n"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_11",
+    "question": "Which of these techniques are used to solve the 0/1 Knapsack problem?",
+    "options": [
+      "Dynamic Programming",
+      "Greedy (Fractional)",
+      "Branch and Bound",
+      "Backtracking"
+    ],
+    "correct_answer": [
+      "Dynamic Programming",
+      "Branch and Bound",
+      "Backtracking"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_12",
+    "question": "In Merge Sort, how many sub-arrays is an array divided into at each step?",
+    "options": [
+      "2",
+      "3",
+      "Log n",
+      "1"
+    ],
+    "correct_answer": [
+      "2"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_13",
+    "question": "What is the time complexity of building a heap from an array of n elements?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correct_answer": [
+      "O(n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_14",
+    "question": "Which of these algorithms are used for string matching?",
+    "options": [
+      "Knuth-Morris-Pratt (KMP)",
+      "Rabin-Karp",
+      "Boyer-Moore",
+      "Huffman Coding"
+    ],
+    "correct_answer": [
+      "Knuth-Morris-Pratt (KMP)",
+      "Rabin-Karp",
+      "Boyer-Moore"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_15",
+    "question": "Which algorithm used Depth First Search (DFS) for its implementation?",
+    "options": [
+      "Topological Sort",
+      "BFS",
+      "Dijkstra's",
+      "Kruskal's"
+    ],
+    "correct_answer": [
+      "Topological Sort"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_16",
+    "question": "Which data structure is essential for Depth First Search (DFS)?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Hash Table"
+    ],
+    "correct_answer": [
+      "Stack"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_17",
+    "question": "Which of the following are examples of dynamic programming problems?",
+    "options": [
+      "Fibonacci sequence",
+      "Longest Common Subsequence",
+      "Shortest path in DAG",
+      "Selection Sort"
+    ],
+    "correct_answer": [
+      "Fibonacci sequence",
+      "Longest Common Subsequence",
+      "Shortest path in DAG"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_18",
+    "question": "What is the time complexity of the Floyd-Warshall algorithm?",
+    "options": [
+      "O(n^3)",
+      "O(n^2)",
+      "O(n log n)",
+      "O(2^n)"
+    ],
+    "correct_answer": [
+      "O(n^3)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_19",
+    "question": "A problem is said to be NP-complete if?",
+    "options": [
+      "It is in NP and NP-Hard",
+      "It is solvable in polynomial time",
+      "It is solvable in linear time",
+      "It is unsolvable"
+    ],
+    "correct_answer": [
+      "It is in NP and NP-Hard"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_20",
+    "question": "Which of these sorting algorithms are based on comparisons?",
+    "options": [
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort",
+      "Counting Sort"
+    ],
+    "correct_answer": [
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_21",
+    "question": "Which algorithm finds the Minimum Spanning Tree (MST)?",
+    "options": [
+      "Prim's",
+      "Kruskal's",
+      "Dijkstra's",
+      "Bellman-Ford"
+    ],
+    "correct_answer": [
+      "Prim's",
+      "Kruskal's"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_22",
+    "question": "What is the time complexity of Linear Search?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n^2)",
+      "O(1)"
+    ],
+    "correct_answer": [
+      "O(n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_23",
+    "question": "Which of these are characteristics of Greedy algorithms?",
+    "options": [
+      "Local optimum",
+      "Irreversible",
+      "Always gives global optimum",
+      "Optimal substructure"
+    ],
+    "correct_answer": [
+      "Local optimum",
+      "Irreversible",
+      "Optimal substructure"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "algo_easy_24",
+    "question": "What is the result of using Binary Search on an unsorted array?",
+    "options": [
+      "Undefined / Incorrect",
+      "Always correct",
+      "O(n) result",
+      "Syntax error"
+    ],
+    "correct_answer": [
+      "Undefined / Incorrect"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "algo_easy_25",
+    "question": "Which of the following is NOT a characteristic of an algorithm?",
+    "options": [
+      "Ambiguity",
+      "Finiteness",
+      "Input",
+      "Output"
+    ],
+    "correct_answer": [
+      "Ambiguity"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

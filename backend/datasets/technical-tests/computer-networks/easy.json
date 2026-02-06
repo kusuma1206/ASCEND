@@ -1,0 +1,395 @@
+[
+  {
+    "id": "cn_easy_01",
+    "question": "How many layers are in the OSI model?",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "9"
+    ],
+    "correct_answer": [
+      "7"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_02",
+    "question": "What is the primary function of the Network Layer?",
+    "options": [
+      "Routing",
+      "Error correction",
+      "Encryption",
+      "Framing"
+    ],
+    "correct_answer": [
+      "Routing"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_03",
+    "question": "Which of these are layers in the TCP/IP model?",
+    "options": [
+      "Application",
+      "Transport",
+      "Internet",
+      "Network Access"
+    ],
+    "correct_answer": [
+      "Application",
+      "Transport",
+      "Internet",
+      "Network Access"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_04",
+    "question": "What does HTTP stand for?",
+    "options": [
+      "Hypertext Transfer Protocol",
+      "High Text Transfer Protocol",
+      "Hyper Transfer Text Protocol",
+      "Hyperlink Text Transfer Protocol"
+    ],
+    "correct_answer": [
+      "Hypertext Transfer Protocol"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_05",
+    "question": "Which of these protocols are used in the Application Layer?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "TCP"
+    ],
+    "correct_answer": [
+      "HTTP",
+      "FTP",
+      "DNS"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_06",
+    "question": "What is the size of an IPv4 address?",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "16 bits"
+    ],
+    "correct_answer": [
+      "32 bits"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_07",
+    "question": "What is the size of an IPv6 address?",
+    "options": [
+      "128 bits",
+      "64 bits",
+      "32 bits",
+      "256 bits"
+    ],
+    "correct_answer": [
+      "128 bits"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_08",
+    "question": "Which of these are valid IP address classes?",
+    "options": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class F"
+    ],
+    "correct_answer": [
+      "Class A",
+      "Class B",
+      "Class C"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_09",
+    "question": "Which protocol is connection-oriented?",
+    "options": [
+      "TCP",
+      "UDP",
+      "IP",
+      "ICMP"
+    ],
+    "correct_answer": [
+      "TCP"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_10",
+    "question": "What does DNS do?",
+    "options": [
+      "Translates domain names to IP addresses",
+      "Secures data",
+      "Transfers files",
+      "Routes packets"
+    ],
+    "correct_answer": [
+      "Translates domain names to IP addresses"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_11",
+    "question": "Which of these are private IP address ranges?",
+    "options": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "8.8.8.8"
+    ],
+    "correct_answer": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_12",
+    "question": "On which layer does a Switch primarily operate?",
+    "options": [
+      "Data Link Layer",
+      "Physical Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    "correct_answer": [
+      "Data Link Layer"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_13",
+    "question": "What does LAN stand for?",
+    "options": [
+      "Local Area Network",
+      "Large Area Network",
+      "Light Area Network",
+      "List Area Network"
+    ],
+    "correct_answer": [
+      "Local Area Network"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_14",
+    "question": "Which of these are network topologies?",
+    "options": [
+      "Star",
+      "Bus",
+      "Mesh",
+      "Tree"
+    ],
+    "correct_answer": [
+      "Star",
+      "Bus",
+      "Mesh",
+      "Tree"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_15",
+    "question": "What is the default port for HTTP?",
+    "options": [
+      "80",
+      "443",
+      "21",
+      "22"
+    ],
+    "correct_answer": [
+      "80"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_16",
+    "question": "What is the default port for HTTPS?",
+    "options": [
+      "443",
+      "80",
+      "25",
+      "53"
+    ],
+    "correct_answer": [
+      "443"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_17",
+    "question": "Which of these protocols are used for sending/receiving email?",
+    "options": [
+      "SMTP",
+      "IMAP",
+      "POP3",
+      "SNMP"
+    ],
+    "correct_answer": [
+      "SMTP",
+      "IMAP",
+      "POP3"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_18",
+    "question": "What is a 'MAC Address'?",
+    "options": [
+      "Physical address of a device",
+      "Network address of a router",
+      "Memory address",
+      "Software address"
+    ],
+    "correct_answer": [
+      "Physical address of a device"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_19",
+    "question": "Which protocol is used by the 'ping' command?",
+    "options": [
+      "ICMP",
+      "TCP",
+      "UDP",
+      "ARP"
+    ],
+    "correct_answer": [
+      "ICMP"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_20",
+    "question": "Which of these are wireless networking standards?",
+    "options": [
+      "802.11",
+      "Bluetooth",
+      "Ethernet",
+      "LTE"
+    ],
+    "correct_answer": [
+      "802.11",
+      "Bluetooth",
+      "LTE"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_21",
+    "question": "What is 'Subnetting'?",
+    "options": [
+      "Dividing a network into smaller parts",
+      "Connecting two networks",
+      "Increasing bandwidth",
+      "Securing a router"
+    ],
+    "correct_answer": [
+      "Dividing a network into smaller parts"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_22",
+    "question": "What is a 'Gateway'?",
+    "options": [
+      "A node that acts as entrance to another network",
+      "A firewall",
+      "A fast server",
+      "A specific port"
+    ],
+    "correct_answer": [
+      "A node that acts as entrance to another network"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_23",
+    "question": "Which of these are used for network security?",
+    "options": [
+      "Firewall",
+      "VPN",
+      "IDS",
+      "NAT"
+    ],
+    "correct_answer": [
+      "Firewall",
+      "VPN",
+      "IDS"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_easy_24",
+    "question": "What does DHCP do?",
+    "options": [
+      "Assigns IP addresses automatically",
+      "Routes mail",
+      "Translates names",
+      "Controls bandwidth"
+    ],
+    "correct_answer": [
+      "Assigns IP addresses automatically"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_easy_25",
+    "question": "What is a 'Port Number'?",
+    "options": [
+      "Identifier for a specific process on a network",
+      "IP address part",
+      "Hardware plug number",
+      "Router ID"
+    ],
+    "correct_answer": [
+      "Identifier for a specific process on a network"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

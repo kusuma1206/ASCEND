@@ -1,0 +1,391 @@
+[
+  {
+    "id": "java_easy_01",
+    "question": "What does JVM stand for?",
+    "options": [
+      "Java Virtual Machine",
+      "Java Vital Machine",
+      "Java Visual Mechanism",
+      "Java Variable Manager"
+    ],
+    "correct_answer": [
+      "Java Virtual Machine"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_02",
+    "question": "Which of these is used to compile Java code?",
+    "options": [
+      "javac",
+      "java",
+      "javap",
+      "javadoc"
+    ],
+    "correct_answer": [
+      "javac"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_03",
+    "question": "Which of these are primitive data types in Java?",
+    "options": [
+      "int",
+      "double",
+      "boolean",
+      "String"
+    ],
+    "correct_answer": [
+      "int",
+      "double",
+      "boolean"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_04",
+    "question": "Which keyword is used to inherit a class in Java?",
+    "options": [
+      "extends",
+      "implements",
+      "inherits",
+      "import"
+    ],
+    "correct_answer": [
+      "extends"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_05",
+    "question": "Which of these are valid Java loop structures?",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "foreach"
+    ],
+    "correct_answer": [
+      "for",
+      "while",
+      "do-while"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_06",
+    "question": "What is the size of 'int' in Java?",
+    "options": [
+      "32 bits",
+      "16 bits",
+      "64 bits",
+      "8 bits"
+    ],
+    "correct_answer": [
+      "32 bits"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_07",
+    "question": "Which of these is a root class of all Java classes?",
+    "options": [
+      "Object",
+      "System",
+      "Class",
+      "Base"
+    ],
+    "correct_answer": [
+      "Object"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_08",
+    "question": "Which of these are non-access modifiers in Java?",
+    "options": [
+      "static",
+      "final",
+      "abstract",
+      "private"
+    ],
+    "correct_answer": [
+      "static",
+      "final",
+      "abstract"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_09",
+    "question": "What is 'Bytecode'?",
+    "options": [
+      "Intermediate code executed by JVM",
+      "Machine code for CPU",
+      "Source code",
+      "CSS for Java"
+    ],
+    "correct_answer": [
+      "Intermediate code executed by JVM"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_10",
+    "question": "How do you start a main method in Java?",
+    "options": [
+      "public static void main(String[] args)",
+      "void main()",
+      "static public void main()",
+      "public main()"
+    ],
+    "correct_answer": [
+      "public static void main(String[] args)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_11",
+    "question": "Which of these are valid ways to declare an array in Java?",
+    "options": [
+      "int[] arr",
+      "int arr[]",
+      "int arr[5]",
+      "array int arr"
+    ],
+    "correct_answer": [
+      "int[] arr",
+      "int arr[]"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_12",
+    "question": "What is the purpose of 'final' keyword on a variable?",
+    "options": [
+      "Value cannot be changed",
+      "Variable cannot be Inherited",
+      "Memory is cleared",
+      "Variable becomes static"
+    ],
+    "correct_answer": [
+      "Value cannot be changed"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_13",
+    "question": "Which of these is NOT a wrapper class in Java?",
+    "options": [
+      "Integer",
+      "String",
+      "Character",
+      "Boolean"
+    ],
+    "correct_answer": [
+      "String"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_14",
+    "question": "Which of these are collection interfaces in Java?",
+    "options": [
+      "List",
+      "Set",
+      "Map",
+      "Collection"
+    ],
+    "correct_answer": [
+      "List",
+      "Set",
+      "Map",
+      "Collection"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_15",
+    "question": "What is 'Garbage Collection' in Java?",
+    "options": [
+      "Automatic memory management",
+      "Deleting source files",
+      "Cleaning IDE cache",
+      "Removing old variables"
+    ],
+    "correct_answer": [
+      "Automatic memory management"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_16",
+    "question": "Which keyword is used to call the superclass constructor?",
+    "options": [
+      "super()",
+      "this()",
+      "parent()",
+      "base()"
+    ],
+    "correct_answer": [
+      "super()"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_17",
+    "question": "Which of these are checked exceptions in Java?",
+    "options": [
+      "IOException",
+      "SQLException",
+      "RuntimeException",
+      "NullPointerException"
+    ],
+    "correct_answer": [
+      "IOException",
+      "SQLException"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_18",
+    "question": "What is an 'Interface' in Java?",
+    "options": [
+      "Set of abstract methods",
+      "A GUI window",
+      "A network link",
+      "A variable type"
+    ],
+    "correct_answer": [
+      "Set of abstract methods"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_19",
+    "question": "What does the 'static' keyword mean?",
+    "options": [
+      "Member belongs to class rather than instance",
+      "Member cannot be changed",
+      "Member is private",
+      "Member is short-lived"
+    ],
+    "correct_answer": [
+      "Member belongs to class rather than instance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_20",
+    "question": "Which of these are valid access modifiers for a top-level class?",
+    "options": [
+      "public",
+      "default",
+      "private",
+      "protected"
+    ],
+    "correct_answer": [
+      "public",
+      "default"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_21",
+    "question": "What is 'Autoboxing'?",
+    "options": [
+      "Automatic conversion from primitive to wrapper",
+      "Packing code into JAR",
+      "Automatic memory layout",
+      "Boxed visual elements"
+    ],
+    "correct_answer": [
+      "Automatic conversion from primitive to wrapper"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_22",
+    "question": "Which block is always executed regardless of an exception?",
+    "options": [
+      "finally",
+      "catch",
+      "try",
+      "execute"
+    ],
+    "correct_answer": [
+      "finally"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_23",
+    "question": "Which of these classes are used for input reading?",
+    "options": [
+      "Scanner",
+      "BufferedReader",
+      "FileReader",
+      "InputWriter"
+    ],
+    "correct_answer": [
+      "Scanner",
+      "BufferedReader",
+      "FileReader"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_easy_24",
+    "question": "What does 'JRE' stand for?",
+    "options": [
+      "Java Runtime Environment",
+      "Java Resource Engine",
+      "Java Result Entry",
+      "Java Remote Engine"
+    ],
+    "correct_answer": [
+      "Java Runtime Environment"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_easy_25",
+    "question": "How do you define a constant in Java?",
+    "options": [
+      "static final",
+      "constant",
+      "const",
+      "immutable"
+    ],
+    "correct_answer": [
+      "static final"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

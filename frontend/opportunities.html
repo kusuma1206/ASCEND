@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opportunity Intelligence Engine | Ascend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent-internship: #0ea5e9;
+      --accent-hackathon: #8b5cf6;
+      --accent-scholarship: #f59e0b;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* LAYOUT */
+    .sidebar {
+      width: 280px;
+      background: white;
+      border-right: 1px solid #e2e8f0;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      height: 70px;
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      flex-shrink: 0;
+    }
+
+    .content-area {
+      flex: 1;
+      padding: 32px;
+      overflow-y: auto;
+    }
+
+    /* TYPOGRAPHY */
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+
+    /* SIDEBAR FILTERS */
+    .filter-group {
+      margin-bottom: 24px;
+    }
+
+    .filter-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .checkbox-item input {
+      accent-color: var(--primary);
+    }
+
+    /* TABS */
+    .tabs {
+      display: flex;
+      gap: 24px;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 0 32px;
+      background: white;
+      flex-shrink: 0;
+    }
+
+    .tab {
+      padding: 16px 4px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .tab:hover {
+      color: var(--primary);
+    }
+
+    .tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+
+    /* GRID */
+    .opp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+      padding-bottom: 40px;
+    }
+
+    /* CARDS */
+    .card {
+      background: white;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      padding: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      border-color: var(--primary);
+    }
+
+    .badge-top {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 99px;
+      text-transform: uppercase;
+    }
+
+    .badge-internship {
+      background: #e0f2fe;
+      color: var(--accent-internship);
+    }
+
+    .badge-hackathon {
+      background: #f3e8ff;
+      color: var(--accent-hackathon);
+    }
+
+    .badge-scholarship {
+      background: #fef3c7;
+      color: var(--accent-scholarship);
+    }
+
+    .card-header {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .provider-logo {
+      width: 44px;
+      height: 44px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--text-muted);
+      font-size: 1.2rem;
+    }
+
+    .role-info h3 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .role-info span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      background: #f1f5f9;
+      border-radius: 4px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .intelligence-preview {
+      background: #eff6ff;
+      border-radius: 8px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--primary);
+    }
+
+    .intelligence-text {
+      font-size: 0.8rem;
+      color: var(--primary-dark);
+      font-weight: 500;
+    }
+
+    .card-footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    .deadline {
+      font-size: 0.8rem;
+      color: var(--danger);
+      font-weight: 600;
+    }
+
+    .btn-view {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal {
+      background: white;
+      width: 600px;
+      max-width: 90%;
+      max-height: 90vh;
+      border-radius: 16px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: slideUp 0.3s ease-out;
+    }
+
+    .modal-header {
+      padding: 24px;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+    }
+
+    .modal-body {
+      padding: 24px;
+      overflow-y: auto;
+    }
+
+    .section-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      margin-top: 24px;
+    }
+
+    .section-title:first-child {
+      margin-top: 0;
+    }
+
+    .ai-insight {
+      background: #f0f9ff;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #bae6fd;
+      margin-bottom: 20px;
+    }
+
+    .ai-insight h4 {
+      color: #0369a1;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .action-btn {
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+      display: block;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+
+    .action-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div style="font-weight: 700; font-size: 1.4rem; color: var(--primary); margin-bottom: 20px;">Ascend 🚀</div>
+
+    <div style="margin-bottom: 24px;">
+      <a href="dashboard.html"
+        style="display: block; padding: 12px; border-radius: 8px; color: var(--text-main); text-decoration: none; font-weight: 600; background: var(--primary); margin-bottom: 10px;">📊
+        Back to Dashboard</a>
+
+      <a href="roadmap_setup.html"
+        style="display: block; padding: 12px; border-radius: 8px; color: var(--text-main); text-decoration: none; font-weight: 600; background: #f1f5f9; color: #0F172A;">📍
+        My Roadmap</a>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">My Focus</div>
+      <label class="checkbox-item"><input type="checkbox" checked onchange="filterData()"> Class of 2026</label>
+      <label class="checkbox-item"><input type="checkbox" onchange="filterData()"> Remote Only</label>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">Difficulty</div>
+      <label class="checkbox-item"><input type="checkbox" checked onchange="filterData()" value="Easy"> Easy</label>
+      <label class="checkbox-item"><input type="checkbox" checked onchange="filterData()" value="Medium"> Medium</label>
+      <label class="checkbox-item"><input type="checkbox" checked onchange="filterData()" value="Hard"> Hard</label>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">Skills</div>
+      <label class="checkbox-item"><input type="checkbox" onchange="filterData()" value="Python"> Python / AI</label>
+      <label class="checkbox-item"><input type="checkbox" onchange="filterData()" value="Web"> Web Dev</label>
+      <label class="checkbox-item"><input type="checkbox" onchange="filterData()" value="Data"> Data Science</label>
+    </div>
+    <div style="margin-top: auto;">
+      <button onclick="location.href='index.html'"
+        style="background: none; border: none; color: #ef4444; width: 100%; text-align: left; padding: 8px 0; font-weight: 600; cursor: pointer; font-size: 0.9rem;">Logout</button>
+      <div style="font-size: 0.8rem; color: var(--text-muted);">Signed in</div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="header">
+      <div style="display:flex; align-items:center; gap:16px;">
+        <button onclick="location.href='resume_upload.html'"
+          style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1.2rem;">&larr;</button>
+        <h1>Opportunity Intelligence Engine</h1>
+      </div>
+      <div style="font-size: 0.9rem; color: var(--text-muted);">
+        Analyzing for: <strong>CS / 2026 Batch</strong>
+      </div>
+    </header>
+
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('all')">All Opportunities</div>
+      <div class="tab" onclick="switchTab('Internship')">Internships</div>
+      <div class="tab" onclick="switchTab('Hackathon')">Hackathons</div>
+      <div class="tab" onclick="switchTab('Scholarship')">Scholarships</div>
+    </div>
+
+    <div class="content-area">
+      <div id="loading" style="text-align: center; padding: 40px; color: var(--text-muted);">Initializing Intelligence
+        Engine...</div>
+      <div id="grid" class="opp-grid"></div>
+    </div>
+  </main>
+
+  <!-- Details Modal -->
+  <div id="detailsModal" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalTitle" style="margin: 0; font-size: 1.25rem;">Title</h2>
+          <span id="modalProvider"
+            style="font-size: 0.9rem; color: var(--text-muted); font-weight: 500;">Provider</span>
+        </div>
+        <button onclick="closeModal()"
+          style="background:none; border:none; font-size: 1.5rem; cursor: pointer;">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- AI Intelligence Block -->
+        <div class="ai-insight">
+          <h4>✨ Why this matters for You (2026)</h4>
+          <p id="modalWhyMatters" style="color: #0c4a6e; font-size: 0.95rem;"></p>
+        </div>
+
+        <div class="section-title">Preparation Strategy</div>
+        <p id="modalPrepTip"
+          style="background:#f0f9ff; padding:12px; border-left:3px solid var(--accent-hackathon); font-size: 0.9rem;">
+        </p>
+
+        <div class="section-title">Key Requirements</div>
+        <div id="modalSkills" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px;"></div>
+
+        <a id="modalActionBtn" href="#" class="action-btn">Apply Now</a>
+        <p id="modalNextAction"
+          style="text-align: center; margin-top: 12px; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:3002/api/opportunities';
+    let allData = [];
+    let currentFilter = 'all';
+
+    // Fetch Data
+    async function init() {
+      try {
+        // First sync to ensure DB has data
+        await fetch(API_URL + '/sync', { method: 'POST' });
+
+        // Then recommendation fetch (simulated profile)
+        const res = await fetch(API_URL + '/recommendations', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            studentProfile: {
+              batch: "2026",
+              skills: ["Python", "JavaScript", "React", "ML"],
+              interests: ["AI", "Web"]
+            }
+          })
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          allData = data.recommendations;
+          renderGrid(allData);
+          document.getElementById('loading').style.display = 'none';
+        }
+      } catch (err) {
+        document.getElementById('loading').innerHTML = `<span style="color:red">Failed to load intelligence data. Is the backend running?</span>`;
+      }
+    }
+
+    // Render Logic
+    function renderGrid(items) {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = items.map(item => `
+        <div class="card" onclick="openModal('${item.id}')">
+          <span class="badge-top badge-${item.type.toLowerCase()}">${item.type}</span>
+          
+          <div class="card-header">
+            <div class="provider-logo">${item.provider[0]}</div>
+            <div class="role-info">
+              <h3>${item.title}</h3>
+              <span>${item.provider}</span>
+            </div>
+          </div>
+
+          <div class="card-tags">
+            ${item.requirements.skills.slice(0, 3).map(s => `<span class="tag">${s}</span>`).join('')}
+            <span class="tag" style="background: #f0fdf4; color: #15803d;">${item.stipend_reward.split(' ')[0]}</span>
+          </div>
+
+          ${item.intelligence ? `
+            <div class="intelligence-preview">
+              <div class="intelligence-text">💡 ${item.intelligence.why_it_matters.substring(0, 70)}...</div>
+            </div>
+          ` : ''}
+
+          <div class="card-footer">
+            <span class="deadline">⏳ Deadline: ${new Date(item.deadlines.application).toLocaleDateString()}</span>
+            <span class="btn-view">View Strategy &rarr;</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Filter Logic
+    function filterData() {
+      // Basic implementation for checkboxes (extensible)
+      // For now just re-renders active tab
+      switchTab(currentFilter);
+    }
+
+    function switchTab(type) {
+      currentFilter = type;
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (type === 'all') {
+        renderGrid(allData);
+      } else {
+        renderGrid(allData.filter(i => i.type === type));
+      }
+    }
+
+    // Modal Logic
+    function openModal(id) {
+      const item = allData.find(i => i.id === id);
+      if (!item) return;
+
+      document.getElementById('modalTitle').textContent = item.title;
+      document.getElementById('modalProvider').textContent = item.provider;
+      document.getElementById('modalWhyMatters').textContent = item.intelligence.why_it_matters;
+      document.getElementById('modalPrepTip').textContent = "💡 " + item.intelligence.prep_tip;
+      document.getElementById('modalNextAction').textContent = "👉 Next: " + item.intelligence.next_action;
+
+      const actionBtn = document.getElementById('modalActionBtn');
+      if (item.application_link) {
+        actionBtn.href = item.application_link;
+        actionBtn.target = "_blank";
+        actionBtn.textContent = "Apply on Official Portal ↗";
+        actionBtn.style.display = "block";
+      } else {
+        actionBtn.style.display = "none";
+      }
+
+      const skillsContainer = document.getElementById('modalSkills');
+      skillsContainer.innerHTML = item.requirements.skills.map(s =>
+        `<span style="background:#f1f5f9; padding:6px 12px; border-radius:6px; font-size:0.85rem;">${s}</span>`
+      ).join('');
+
+      document.getElementById('detailsModal').style.display = 'flex';
+    }
+
+    function closeModal(e) {
+      if (e && e.target !== document.getElementById('detailsModal')) return; // Check if click is on overlay/close btn
+      document.getElementById('detailsModal').style.display = 'none';
+    }
+
+    // Start
+    init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+[
+  {
+    "id": "ds_easy_01",
+    "question": "What is the time complexity to insert an element at the beginning of a singly linked list?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correct_answer": [
+      "O(1)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_02",
+    "question": "Which data structure follows the LIFO (Last In First Out) principle?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Linked List",
+      "Tree"
+    ],
+    "correct_answer": [
+      "Stack"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_03",
+    "question": "Which of the following are linear data structures?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Tree",
+      "Graph"
+    ],
+    "correct_answer": [
+      "Array",
+      "Linked List"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_04",
+    "question": "In a queue, from which end are elements deleted?",
+    "options": [
+      "Front",
+      "Rear",
+      "Middle",
+      "Anywhere"
+    ],
+    "correct_answer": [
+      "Front"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_05",
+    "question": "Which of the following are valid tree traversal techniques?",
+    "options": [
+      "Inorder",
+      "Preorder",
+      "Postorder",
+      "Outorder"
+    ],
+    "correct_answer": [
+      "Inorder",
+      "Preorder",
+      "Postorder"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_06",
+    "question": "What is the degree of a leaf node in a tree?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_answer": [
+      "0"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_07",
+    "question": "Which data structure is used for implementing recursion?",
+    "options": [
+      "Stack",
+      "Queue",
+      "List",
+      "Heap"
+    ],
+    "correct_answer": [
+      "Stack"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_08",
+    "question": "Which of these are non-linear data structures?",
+    "options": [
+      "Graph",
+      "Tree",
+      "Stack",
+      "Queue"
+    ],
+    "correct_answer": [
+      "Graph",
+      "Tree"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_09",
+    "question": "A binary tree where every node has either 0 or 2 children is called?",
+    "options": [
+      "Full Binary Tree",
+      "Complete Binary Tree",
+      "Perfect Binary Tree",
+      "Balanced Binary Tree"
+    ],
+    "correct_answer": [
+      "Full Binary Tree"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_10",
+    "question": "What is the worst-case time complexity of searching in a Hash Table?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "O(n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_11",
+    "question": "Which of the following are properties of a Red-Black Tree?",
+    "options": [
+      "The root is always black",
+      "All leaves are black",
+      "Every node is either red or black",
+      "A red node can have a red child"
+    ],
+    "correct_answer": [
+      "The root is always black",
+      "All leaves are black",
+      "Every node is either red or black"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_12",
+    "question": "Which data structure is best for Breadth-First Search (BFS)?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Priority Queue",
+      "Deque"
+    ],
+    "correct_answer": [
+      "Queue"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_13",
+    "question": "What is the height of an empty tree?",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "Undefined"
+    ],
+    "correct_answer": [
+      "-1"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_14",
+    "question": "Which of the following are typically implemented using linked lists?",
+    "options": [
+      "Dynamic Arrays",
+      "Graphs (Adjacency List)",
+      "Stacks",
+      "Queues"
+    ],
+    "correct_answer": [
+      "Graphs (Adjacency List)",
+      "Stacks",
+      "Queues"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_15",
+    "question": "In a Max-Heap, where is the largest element located?",
+    "options": [
+      "Root",
+      "Any leaf",
+      "Leftmost child",
+      "Rightmost child"
+    ],
+    "correct_answer": [
+      "Root"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_16",
+    "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+    "options": [
+      "Dijkstra's",
+      "Prim's",
+      "Kruskal's",
+      "BFS"
+    ],
+    "correct_answer": [
+      "Dijkstra's"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_17",
+    "question": "Which of these are asymptotic notations used for performance analysis?",
+    "options": [
+      "Big O",
+      "Big Omega",
+      "Big Theta",
+      "Big Alpha"
+    ],
+    "correct_answer": [
+      "Big O",
+      "Big Omega",
+      "Big Theta"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_18",
+    "question": "What is the space complexity of an adjacency matrix representation of a graph with n vertices?",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correct_answer": [
+      "O(n^2)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_19",
+    "question": "Which data structure handles priority-based access?",
+    "options": [
+      "Priority Queue",
+      "Standard Queue",
+      "Stack",
+      "Hash Set"
+    ],
+    "correct_answer": [
+      "Priority Queue"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_20",
+    "question": "Which of these describe a Linked List?",
+    "options": [
+      "Random access is O(1)",
+      "Size is dynamic",
+      "Insertion is fast if pointers are known",
+      "Contiguous memory allocation"
+    ],
+    "correct_answer": [
+      "Size is dynamic",
+      "Insertion is fast if pointers are known"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_21",
+    "question": "What is a circular queue?",
+    "options": [
+      "A queue where last position connects back to first",
+      "A queue that grows indefinitely",
+      "A queue implemented as a tree",
+      "A queue with no front pointer"
+    ],
+    "correct_answer": [
+      "A queue where last position connects back to first"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_22",
+    "question": "Which operation is not typically O(1) in a Stack?",
+    "options": [
+      "Push",
+      "Pop",
+      "Peek",
+      "Sort"
+    ],
+    "correct_answer": [
+      "Sort"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_23",
+    "question": "Which of these are required for a binary search to work on an array?",
+    "options": [
+      "Array must be sorted",
+      "Array must be primitive",
+      "Random access must be possible",
+      "Array must be empty"
+    ],
+    "correct_answer": [
+      "Array must be sorted",
+      "Random access must be possible"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_easy_24",
+    "question": "What is the postfix expression for (A+B)*C?",
+    "options": [
+      "AB+C*",
+      "ABC+*",
+      "+AB*C",
+      "ABC*+"
+    ],
+    "correct_answer": [
+      "AB+C*"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_easy_25",
+    "question": "What is the primary advantage of a Doubly Linked List over a Singly Linked List?",
+    "options": [
+      "Less memory",
+      "Faster random access",
+      "Bidirectional traversal",
+      "Simple implementation"
+    ],
+    "correct_answer": [
+      "Bidirectional traversal"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

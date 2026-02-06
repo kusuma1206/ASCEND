@@ -1,0 +1,106 @@
+id,question,option1,option2,option3,option4,answer,difficulty
+1,C is a ___ level language,Low,High,Middle,Machine,Middle,easy
+2,Which symbol ends a C statement?,;,},.,",",;,easy
+3,Which function prints output?,printf,print,cout,display,printf,easy
+4,Which header is needed for printf?,stdio.h,conio.h,math.h,string.h,stdio.h,easy
+5,Which keyword defines constant?,#define,const,static,final,#define,easy
+6,Which operator is used for addition?,+,-,*,/,+,easy
+7,Which data type stores integers?,int,float,double,char,int,easy
+8,Which format specifier prints int?,%d,%f,%c,%s,%d,easy
+9,Which format specifier prints float?,%f,%d,%c,%s,%f,easy
+10,Which keyword starts loop?,for,iterate,repeat,loop,for,easy
+11,Which keyword exits loop?,break,exit,stop,end,break,easy
+12,Which keyword skips iteration?,continue,skip,pass,next,continue,easy
+13,Which operator compares values?,==,=,!=,<�,==,easy
+14,Which data type stores character?,char,int,float,double,char,easy
+15,Which header supports math functions?,math.h,stdio.h,stdlib.h,string.h,math.h,easy
+16,Which function reads input?,scanf,input,read,gets,scanf,easy
+17,Which format specifier reads int?,%d,%f,%c,%s,%d,easy
+18,Which format specifier reads char?,%c,%d,%f,%s,%c,easy
+19,Which keyword defines function return type?,int,void,char,float,int,easy
+20,Which operator is logical AND?,&&,&,AND,and,&&,easy
+21,Which operator is logical OR?,||,|,OR,or,||,easy
+22,Which value means false?,0,1,-1,TRUE,0,easy
+23,Which value means true?,1,0,-1,FALSE,1,easy
+24,Which symbol is address operator?,&,*,#,@,&,easy
+25,Which symbol is pointer operator?,*,&,#,@,*,easy
+26,Which header handles strings?,string.h,stdio.h,stdlib.h,math.h,string.h,easy
+27,Which function finds string length?,strlen,length,size,count,strlen,easy
+28,Which function copies string?,strcpy,copy,assign,move,strcpy,easy
+29,Which function compares strings?,strcmp,strcompare,compare,match,strcmp,easy
+30,Which keyword stops program?,return,exit,stop,end,return,easy
+31,What is pointer?,Variable storing address,Variable storing value,Function,Array,Variable storing address,medium
+32,Which operator accesses value via pointer?,*,&,->,.,*,medium
+33,Which storage class has block scope?,auto,static,extern,register,auto,medium
+34,Which storage class retains value?,static,auto,extern,register,static,medium
+35,Which keyword allocates memory?,malloc,alloc,new,create,malloc,medium
+36,Which function frees memory?,free,delete,remove,clear,free,medium
+37,Which header supports malloc?,stdlib.h,stdio.h,math.h,string.h,stdlib.h,medium
+38,Which loop runs at least once?,do-while,for,while,repeat,do-while,medium
+39,Which operator has highest precedence?,(),*,=,+,(),medium
+40,Which keyword defines union?,union,struct,class,object,union,medium
+41,Which keyword defines structure?,struct,union,class,record,struct,medium
+42,Which operator accesses struct member?,.,->,*,&,.,medium
+43,Which operator accesses struct via pointer?,->,.,*,&,->,medium
+44,Which function opens file?,fopen,open,file,read,fopen,medium
+45,Which mode opens file for writing?,w,r,a,x,w,medium
+46,Which function closes file?,fclose,close,end,stop,fclose,medium
+47,Which function reads file?,fscanf,scan,read,input,fscanf,medium
+48,Which function writes file?,fprintf,write,print,output,fprintf,medium
+49,Which keyword exits function?,return,break,exit,stop,return,medium
+50,Which header supports file ops?,stdio.h,stdlib.h,string.h,math.h,stdio.h,medium
+51,Which operator is ternary?,?:,??,if,->,?:,medium
+52,Which keyword creates enum?,enum,struct,define,const,enum,medium
+53,Which keyword creates typedef?,typedef,define,type,alias,typedef,medium
+54,Which function compares memory?,memcmp,memcpy,strcmp,compare,memcmp,medium
+55,Which function copies memory?,memcpy,memmove,strcpy,copy,memcpy,medium
+56,Which function sets memory?,memset,set,init,fill,memset,medium
+57,Which function finds char in string?,strchr,find,locate,search,strchr,medium
+58,Which operator increments value?,++,--,+,+=,++,medium
+59,Which operator decrements value?,--,++,-,-=,--,medium
+60,Which function converts string to int?,atoi,itoa,strint,parse,atoi,medium
+61,What is dangling pointer?,Points to freed memory,Null pointer,Wild pointer,Void pointer,Points to freed memory,hard
+62,What is void pointer?,Generic pointer,Null pointer,Dangling pointer,Wild pointer,Generic pointer,hard
+63,Which memory leak occurs when free not called?,Memory leak,Stack overflow,Seg fault,Deadlock,Memory leak,hard
+64,What is segmentation fault?,Invalid memory access,Syntax error,Compile error,Logic error,Invalid memory access,hard
+65,Which pointer points to nothing?,NULL,void,wild,dangling,NULL,hard
+66,Which operator returns address?,&,*,->,.,&,hard
+67,Which function reallocates memory?,realloc,malloc,free,calloc,realloc,hard
+68,Which allocates zero-initialized memory?,calloc,malloc,realloc,alloc,calloc,hard
+69,Which keyword prevents modification?,const,static,volatile,final,const,hard
+70,Which keyword prevents optimization?,volatile,const,static,register,volatile,hard
+71,Which header supports assert?,assert.h,stdio.h,stdlib.h,math.h,assert.h,hard
+72,Which macro checks condition?,assert,check,verify,test,assert,hard
+73,Which function sorts array?,qsort,sort,arrange,order,qsort,hard
+74,Which function searches array?,bsearch,search,find,lookup,bsearch,hard
+75,Which operator size returns bytes?,sizeof,length,bytes,size,sizeof,hard
+76,Which pointer arithmetic adds element size?,ptr+1,ptr++,ptr+size,ptr*,ptr+1,hard
+77,Which keyword creates inline function?,inline,static,auto,register,inline,hard
+78,Which feature avoids name conflicts?,Namespaces,Packages,Modules,Scopes,Scopes,hard
+79,Which variable stored in CPU register?,register,auto,static,extern,register,hard
+80,Which storage class has global scope?,extern,static,auto,register,extern,hard
+81,Which storage class limits scope?,static,extern,auto,register,static,hard
+82,Which feature supports recursion?,Stack,Heap,Queue,Array,Stack,hard
+83,Which memory stores local variables?,Stack,Heap,Global,Static,Stack,hard
+84,Which memory stores dynamic memory?,Heap,Stack,Register,Cache,Heap,hard
+85,Which operator dereferences pointer?,*,&,->,.,*,hard
+86,Which pointer causes crash if used?,Wild pointer,Null pointer,Void pointer,Generic pointer,Wild pointer,hard
+87,Which header supports time functions?,time.h,date.h,clock.h,sys.h,time.h,hard
+88,Which function gets current time?,time,clock,now,gettime,time,hard
+89,Which function delays execution?,sleep,delay,wait,pause,sleep,hard
+90,Which keyword stops compiler warning?,void,static,register,const,void,hard
+91,What is the correct extension of a C file?,.c,.cpp,.java,.py,.c,easy
+92,Which keyword is used to declare a constant in C?,constant,final,const,define,const,easy
+93,What is the starting point of a C program?,start(),main(),init(),begin(),main(),easy
+94,Which loop executes at least once?,for,while,do-while,foreach,do-while,easy
+95,Which operator is used for addition in C?,*,/,+,%,+,easy
+96,What is the size of int in C (on most systems)?,2 bytes,4 bytes,8 bytes,Depends on compiler only,4 bytes,medium
+97,Which keyword is used to return a value from a function?,break,exit,return,continue,return,medium
+98,Which of the following is NOT a loop in C?,for,while,do-while,repeat,repeat,medium
+99,Which header file is required for malloc()?,<stdio.h>,<conio.h>,<stdlib.h>,<memory.h>,<stdlib.h>,medium
+100,Which of the following correctly declares a pointer?,int ptr;,int *ptr;,pointer int ptr;,int &ptr;,int *ptr;,medium
+101,Which of the following causes a memory leak?,free(ptr),ptr = NULL,Losing reference to allocated memory,Using static variables,Losing reference to allocated memory,hard
+102,Which function is used to deallocate memory?,delete(),free(),remove(),dealloc(),free(),hard
+103,What is the output of printf("%d", printf("Hello"));?,Hello5,Hello,5,Error,Hello5,hard
+104,Which of the following is NOT a valid storage class?,auto,static,register,dynamic,dynamic,hard
+105,What happens if you dereference a NULL pointer?,Returns 0,Compile-time error,Undefined behavior,Program works normally,Undefined behavior,hard

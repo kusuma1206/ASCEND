@@ -1,0 +1,204 @@
+[
+  {
+    "id": "ai-ml-fast-track-2026",
+    "title": "AI/ML Engineer Fast Track (2026 Batch)",
+    "description": "A high-velocity, assignment-driven roadmap to transform a 3rd-year student into an ML Engineer ready for placement season.",
+    "target_batch": "2026",
+    "phases": [
+      {
+        "phase_number": 1,
+        "title": "Foundations & The 'Hello World' of ML",
+        "duration_weeks": 4,
+        "description": "Move from syntax to Scikit-Learn. Stop watching tutorials; start building.",
+        "opportunity_unlock_id": null,
+        "tasks": [
+          {
+            "week": 1,
+            "title": "Pandas & NumPy Sprint",
+            "type": "LEARN",
+            "deliverable": "Submit 5 data manipulation scripts (filtering, merging, aggregations)."
+          },
+          {
+            "week": 2,
+            "title": "EDA on Titanic Dataset",
+            "type": "BUILD",
+            "deliverable": "Kaggle Notebook link with >80% accuracy on training set."
+          },
+          {
+            "week": 3,
+            "title": "Linear Regression from Scratch",
+            "type": "BUILD",
+            "deliverable": "Python script implementing Gradient Descent without Scikit-Learn."
+          },
+          {
+            "week": 4,
+            "title": "First Deployable Model",
+            "type": "BUILD",
+            "deliverable": "Streamlit app predicting Housing Prices."
+          }
+        ]
+      },
+      {
+        "phase_number": 2,
+        "title": "Deep Dive & Deployment",
+        "duration_weeks": 6,
+        "description": "Build production-grade models. This phase is critical for resume building.",
+        "opportunity_unlock_id": "intern-amzn-ml-2026",
+        "tasks": [
+          {
+            "week": 1,
+            "title": "FastAPI & Model Serving",
+            "type": "LEARN",
+            "deliverable": "API endpoint that accepts JSON input and returns model prediction."
+          },
+          {
+            "week": 2,
+            "title": "Computer Vision Basics (CNNs)",
+            "type": "BUILD",
+            "deliverable": "Digit Recognizer (MNIST) web app using TensorFlow/PyTorch."
+          },
+          {
+            "week": 4,
+            "title": "NLP Sentiment Analysis",
+            "type": "BUILD",
+            "deliverable": "Twitter/Reddit sentiment analyzer deployed on HuggingFace Spaces."
+          },
+          {
+            "week": 6,
+            "title": "Resume Polish for Amazon ML",
+            "type": "BUILD",
+            "deliverable": "Add 'Deployed ML Models' section to Resume."
+          }
+        ]
+      },
+      {
+        "phase_number": 3,
+        "title": "The Capstone",
+        "duration_weeks": 8,
+        "description": "End-to-end MLOps or Novel Architecture. This is your placement winning card.",
+        "opportunity_unlock_id": "intern-g-step-2026",
+        "tasks": [
+          {
+            "week": 1,
+            "title": "Problem Statement Selection",
+            "type": "LEARN",
+            "deliverable": "1-page PDF proposing a novel solution to a real-world problem."
+          },
+          {
+            "week": 4,
+            "title": "MVP Development",
+            "type": "BUILD",
+            "deliverable": "Working prototype with basic UI and backend."
+          },
+          {
+            "week": 8,
+            "title": "Final Presentation & Documentation",
+            "type": "BUILD",
+            "deliverable": "GitHub Repo with full Readme, Video Demo, and Live Link."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gsoc-2026-cracker",
+    "title": "GSoC 2026 Cracker Protocol",
+    "description": "A rigid, backwards-calculated timeline to crack Google Summer of Code 2026 using the 'Community First' approach.",
+    "target_batch": "2026",
+    "phases": [
+      {
+        "phase_number": 1,
+        "title": "Community Bonding & Environment Setup",
+        "duration_weeks": 4,
+        "description": "October 2025. The most ignored phase. Establish presence before coding.",
+        "opportunity_unlock_id": null,
+        "tasks": [
+          {
+            "week": 1,
+            "title": "Organization Scouting",
+            "type": "LEARN",
+            "deliverable": "List of 3 orgs with active IRC/Discord and interesting tech stacks."
+          },
+          {
+            "week": 2,
+            "title": "Environment Setup",
+            "type": "BUILD",
+            "deliverable": "Local build of the codebase running successfully. Screenshot required."
+          },
+          {
+            "week": 3,
+            "title": "The 'Lurker' Phase",
+            "type": "LEARN",
+            "deliverable": "Read 10 recent PRs to understand code style and contribution guidelines."
+          },
+          {
+            "week": 4,
+            "title": "First Interaction",
+            "type": "BUILD",
+            "deliverable": " Introduce yourself in the channel or ask a sensible question."
+          }
+        ]
+      },
+      {
+        "phase_number": 2,
+        "title": "Contribution Mode (Good First Issues)",
+        "duration_weeks": 8,
+        "description": "Nov-Dec 2025. Prove you can code. Fix bugs, don't just add features.",
+        "opportunity_unlock_id": "schol-gsoc-2025",
+        "tasks": [
+          {
+            "week": 1,
+            "title": "Find a 'Good First Issue'",
+            "type": "LEARN",
+            "deliverable": "Identify an unassigned issue tagged 'good-first-issue' or 'beginner'."
+          },
+          {
+            "week": 3,
+            "title": "First Pull Request",
+            "type": "BUILD",
+            "deliverable": "Submit a PR fixing a minor bug or documentation error."
+          },
+          {
+            "week": 6,
+            "title": "Consistent Contribution",
+            "type": "BUILD",
+            "deliverable": "2 Merged PRs in the target repository."
+          },
+          {
+            "week": 8,
+            "title": "Mentor Contact",
+            "type": "BUILD",
+            "deliverable": "Ask mentor for feedback on your contributions so far."
+          }
+        ]
+      },
+      {
+        "phase_number": 3,
+        "title": "Proposal Drafting",
+        "duration_weeks": 4,
+        "description": "Feb 2026. The document that decides your fate.",
+        "opportunity_unlock_id": null,
+        "tasks": [
+          {
+            "week": 1,
+            "title": "Draft Initial Proposal",
+            "type": "BUILD",
+            "deliverable": "Google Doc sharing your project plan, timeline, and deliverables."
+          },
+          {
+            "week": 3,
+            "title": "Peer/Mentor Review",
+            "type": "LEARN",
+            "deliverable": "Get feedback from at least 1 past GSoC scholar or project mentor."
+          },
+          {
+            "week": 4,
+            "title": "Final Submission",
+            "type": "BUILD",
+            "deliverable": "Submit PDF to the GSoC portal before the deadline."
+          }
+        ]
+      }
+    ]
+  }
+]

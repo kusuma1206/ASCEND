@@ -1,0 +1,412 @@
+[
+  {
+    "id": "web_med_01",
+    "question": "Which CSS property is used to align items along the main axis in a Flexbox container?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "flex-direction",
+      "align-content"
+    ],
+    "correct_answer": [
+      "justify-content"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_02",
+    "question": "Which of these are valid values for the 'position' property in CSS?",
+    "options": [
+      "static",
+      "relative",
+      "absolute",
+      "fixed",
+      "sticky"
+    ],
+    "correct_answer": [
+      "static",
+      "relative",
+      "absolute",
+      "fixed",
+      "sticky"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_03",
+    "question": "What is a JavaScript 'Promise'?",
+    "options": [
+      "An object representing the eventual completion or failure of an asynchronous operation",
+      "A way to loop",
+      "A type of variable",
+      "A security feature"
+    ],
+    "correct_answer": [
+      "An object representing the eventual completion or failure of an asynchronous operation"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_04",
+    "question": "Which of these are states of a Promise?",
+    "options": [
+      "Pending",
+      "Fulfilled",
+      "Rejected",
+      "Settled"
+    ],
+    "correct_answer": [
+      "Pending",
+      "Fulfilled",
+      "Rejected"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_05",
+    "question": "What is 'Event Bubbling' in the DOM?",
+    "options": [
+      "Event starts from the target element and propagates up to the root",
+      "Event starts from root and goes to target",
+      "Event stops at target",
+      "Event is deleted"
+    ],
+    "correct_answer": [
+      "Event starts from the target element and propagates up to the root"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_06",
+    "question": "Which of these are true about 'LocalStorage'?",
+    "options": [
+      "Data has no expiration time",
+      "Stored data is per origin",
+      "Maximum storage is around 5-10MB",
+      "Data is sent to server with every request"
+    ],
+    "correct_answer": [
+      "Data has no expiration time",
+      "Stored data is per origin",
+      "Maximum storage is around 5-10MB"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_07",
+    "question": "What is the 'Virtual DOM'?",
+    "options": [
+      "Lightweight copy of the real DOM used by frameworks like React to improve performance",
+      "A 3D DOM",
+      "A server-side DOM",
+      "A type of browser engine"
+    ],
+    "correct_answer": [
+      "Lightweight copy of the real DOM used by frameworks like React to improve performance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_08",
+    "question": "Which of these are valid HTTP methods?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "OPTIONS"
+    ],
+    "correct_answer": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH",
+      "OPTIONS"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_09",
+    "question": "What is 'Hoisting' in JavaScript?",
+    "options": [
+      "Variables and function declarations are moved to the top of their scope during compilation",
+      "Calling functions early",
+      "Deleting variables",
+      "Upgrading JS version"
+    ],
+    "correct_answer": [
+      "Variables and function declarations are moved to the top of their scope during compilation"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_10",
+    "question": "Which of these describe 'Closure' in JavaScript?",
+    "options": [
+      "Function having access to the parent scope even after parent function has closed",
+      "Ending a script",
+      "Private variables in a class",
+      "Closing a database"
+    ],
+    "correct_answer": [
+      "Function having access to the parent scope even after parent function has closed"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_11",
+    "question": "Which CSS property is used to create a Grid layout?",
+    "options": [
+      "display: grid",
+      "layout: grid",
+      "grid-template",
+      "grid-style"
+    ],
+    "correct_answer": [
+      "display: grid"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_12",
+    "question": "Which of these are CSS preprocessors?",
+    "options": [
+      "Sass",
+      "Less",
+      "Stylus",
+      "PostCSS"
+    ],
+    "correct_answer": [
+      "Sass",
+      "Less",
+      "Stylus"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_13",
+    "question": "What does a 'Media Query' do in CSS?",
+    "options": [
+      "Applies styles based on device characteristics like screen width",
+      "Plays videos",
+      "Sorts media files",
+      "Checks internet speed"
+    ],
+    "correct_answer": [
+      "Applies styles based on device characteristics like screen width"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_14",
+    "question": "Which of these are true about 'Semantics' in HTML5?",
+    "options": [
+      "Using tags that describe the meaning (e.g., <header>, <article>)",
+      "Better for SEO",
+      "Better for accessibility",
+      "Makes pages load faster"
+    ],
+    "correct_answer": [
+      "Using tags that describe the meaning (e.g., <header>, <article>)",
+      "Better for SEO",
+      "Better for accessibility"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_15",
+    "question": "What is 'CORS' (Cross-Origin Resource Sharing)?",
+    "options": [
+      "Mechanism allowing restricted resources on a webpage to be requested from another domain",
+      "A server type",
+      "A security bug",
+      "A type of database"
+    ],
+    "correct_answer": [
+      "Mechanism allowing restricted resources on a webpage to be requested from another domain"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_16",
+    "question": "Which of these are required for a 'Responsive' website?",
+    "options": [
+      "Fluid grids",
+      "Flexible images",
+      "Media queries",
+      "Fixed widths"
+    ],
+    "correct_answer": [
+      "Fluid grids",
+      "Flexible images",
+      "Media queries"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_17",
+    "question": "What is 'WebPack' primarily used for?",
+    "options": [
+      "Module bundling and asset management",
+      "Hosting websites",
+      "Creating databases",
+      "Security scanning"
+    ],
+    "correct_answer": [
+      "Module bundling and asset management"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_18",
+    "question": "Which of these describe 'SPAs' (Single Page Applications)?",
+    "options": [
+      "Interact with user by dynamically rewriting current page",
+      "Reduced server load after initial load",
+      "Improved user experience",
+      "Slow navigation"
+    ],
+    "correct_answer": [
+      "Interact with user by dynamically rewriting current page",
+      "Reduced server load after initial load",
+      "Improved user experience"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_19",
+    "question": "What is the purpose of the 'alt' attribute in an <img> tag?",
+    "options": [
+      "Provides alternative text if image fails to load",
+      "Used by screen readers for accessibility",
+      "Changes image size",
+      "Stores image metadata"
+    ],
+    "correct_answer": [
+      "Provides alternative text if image fails to load",
+      "Used by screen readers for accessibility"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_20",
+    "question": "Which of these characterize JavaScript 'Arrow' functions?",
+    "options": [
+      "Cannot be used as constructors",
+      "Do not have their own 'this' context",
+      "Shorter syntax",
+      "Automatically async"
+    ],
+    "correct_answer": [
+      "Cannot be used as constructors",
+      "Do not have their own 'this' context",
+      "Shorter syntax"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_21",
+    "question": "What is 'Z-index' used for in CSS?",
+    "options": [
+      "Controlling the vertical stack order of elements",
+      "Zoom level",
+      "Encryption key",
+      "Zero offset"
+    ],
+    "correct_answer": [
+      "Controlling the vertical stack order of elements"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_22",
+    "question": "Which of these are valid JavaScript data types?",
+    "options": [
+      "null",
+      "undefined",
+      "boolean",
+      "symbol",
+      "bigint"
+    ],
+    "correct_answer": [
+      "null",
+      "undefined",
+      "boolean",
+      "symbol",
+      "bigint"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_23",
+    "question": "What is the result of 'typeof []' in JavaScript?",
+    "options": [
+      "'object'",
+      "'array'",
+      "'list'",
+      "'undefined'"
+    ],
+    "correct_answer": [
+      "'object'"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "web_med_24",
+    "question": "Which of these are components of the 'Box Model'?",
+    "options": [
+      "Content",
+      "Padding",
+      "Border",
+      "Margin"
+    ],
+    "correct_answer": [
+      "Content",
+      "Padding",
+      "Border",
+      "Margin"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "web_med_25",
+    "question": "What is 'Debouncing'?",
+    "options": [
+      "Technique to ensure that time-consuming tasks do not fire so often that they stall performance",
+      "Removing bugs",
+      "Clearing cache",
+      "A type of inheritance"
+    ],
+    "correct_answer": [
+      "Technique to ensure that time-consuming tasks do not fire so often that they stall performance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

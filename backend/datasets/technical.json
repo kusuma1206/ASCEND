@@ -1,0 +1,1422 @@
+[
+  {
+    "role": "Java Backend Developer",
+    "questions": [
+      {
+        "id": "java_01",
+        "question": "Explain the difference between JDK, JRE, and JVM.",
+        "expected_keywords": [
+          "development kit",
+          "runtime environment",
+          "virtual machine",
+          "compile",
+          "execute"
+        ],
+        "weightage": {
+          "virtual machine": 2,
+          "runtime environment": 2
+        },
+        "example_answer": "JDK (Java Development Kit) is the full toolset for developers, containing the JRE and tools like compilers. JRE (Java Runtime Environment) provides the minimum requirements to run Java applications. JVM (Java Virtual Machine) is the engine that actually executes the Java bytecode on a specific machine. In short: JDK is for developing, JRE is for running, and JVM is the execution heart."
+      },
+      {
+        "id": "java_02",
+        "question": "What are the main principles of OOP?",
+        "expected_keywords": [
+          "encapsulation",
+          "inheritance",
+          "polymorphism",
+          "abstraction",
+          "object",
+          "class"
+        ],
+        "weightage": {
+          "encapsulation": 2,
+          "inheritance": 2,
+          "polymorphism": 2,
+          "abstraction": 2
+        },
+        "example_answer": "The four main pillars of OOP are Encapsulation (hiding internal state and exposing behavior), Inheritance (sharing behavior between classes), Polymorphism (allowing one thing to take multiple forms), and Abstraction (simplifying complex reality by modeling only necessary parts). Using these principles leads to more maintainable and modular code."
+      },
+      {
+        "id": "java_03",
+        "question": "Explain the difference between an Interface and an Abstract Class.",
+        "expected_keywords": [
+          "multiple inheritance",
+          "implementation",
+          "state",
+          "constructor",
+          "abstract methods",
+          "default methods"
+        ],
+        "weightage": {
+          "multiple inheritance": 2,
+          "implementation": 2
+        },
+        "example_answer": "An interface is a contract that defines 'what' a class should do but not 'how', and it supports multiple inheritance. An abstract class is a partially implemented class that can hold state (variables) and constructors, representing an 'is-a' relationship. You use an interface for decoupled behavior and an abstract class for shared base logic."
+      },
+      {
+        "id": "java_04",
+        "question": "How does Garbage Collection work in Java?",
+        "expected_keywords": [
+          "heap",
+          "stack",
+          "mark and sweep",
+          "automatic memory management",
+          "objects",
+          "cleaning"
+        ],
+        "weightage": {
+          "heap": 2,
+          "mark and sweep": 2
+        },
+        "example_answer": "Garbage Collection in Java is an automatic memory management process that identifies and deletes objects that are no longer reachable in the heap. It primarily uses the 'Mark and Sweep' algorithm: first, it marks objects that are still in use, and then it sweeps away the unmarked ones. This prevents memory leaks and allows developers to focus on logic rather than manual memory deallocation."
+      },
+      {
+        "id": "java_05",
+        "question": "What is the difference between '==' and '.equals()'?",
+        "expected_keywords": [
+          "reference",
+          "memory address",
+          "content",
+          "value",
+          "comparison",
+          "object"
+        ],
+        "weightage": {
+          "reference": 2,
+          "content": 2
+        },
+        "example_answer": "In Java, '==' is a relational operator that compares the memory addresses (references) of two objects to see if they point to the exact same location. In contrast, '.equals()' is a method used to compare the actual contents or values of the objects. For example, two different String objects can have the same text ('equals' is true) but different memory addresses ('==' is false)."
+      },
+      {
+        "id": "java_06",
+        "question": "Explain the contract between hashCode() and equals().",
+        "expected_keywords": [
+          "hash collision",
+          "object identity",
+          "buckets",
+          "map",
+          "same integer",
+          "consistency"
+        ],
+        "weightage": {
+          "consistency": 2,
+          "hash collision": 2
+        },
+        "example_answer": "The contract states that if two objects are equal according to the '.equals()' method, they must also return the same integer value from 'hashCode()'. This is crucial for the correct behavior of hash-based collections like HashMap or HashSet. If you override one, you must override the other to maintain this consistency and avoid issues like losing objects in a set."
+      },
+      {
+        "id": "java_07",
+        "question": "What are the different scopes of a bean in Spring?",
+        "expected_keywords": [
+          "singleton",
+          "prototype",
+          "request",
+          "session",
+          "global session",
+          "application"
+        ],
+        "weightage": {
+          "singleton": 2,
+          "prototype": 2
+        },
+        "example_answer": "Spring beans can have different scopes: 'singleton' (one instance per container), 'prototype' (new instance every time it's requested), 'request' (one per HTTP request), 'session' (one per HTTP session), and 'application' (one per ServletContext). Singleton is the default and is most common for stateless services."
+      },
+      {
+        "id": "java_08",
+        "question": "Explain Dependency Injection in Spring.",
+        "expected_keywords": [
+          "inversion of control",
+          "ioc container",
+          "loose coupling",
+          "autowiring",
+          "constructor",
+          "setter"
+        ],
+        "weightage": {
+          "inversion of control": 2,
+          "loose coupling": 2
+        },
+        "example_answer": "Dependency Injection is a design pattern where an object's dependencies are provided by the Spring container rather than the object creating them itself. This implements Inversion of Control (IoC), leading to loose coupling between components. It makes the code more modular, easier to test, and allows for cleaner configuration via constructor or setter injection."
+      },
+      {
+        "id": "java_09",
+        "question": "Difference between Checked and Unchecked Exceptions.",
+        "expected_keywords": [
+          "compile time",
+          "runtime",
+          "try catch",
+          "throws",
+          "error",
+          "handling"
+        ],
+        "weightage": {
+          "compile time": 3,
+          "runtime": 3
+        },
+        "example_answer": "Checked exceptions are checked at compile-time and must be either caught or declared (using 'throws'). They represent recoverable conditions like 'FileNotFoundException'. Unchecked exceptions (subclasses of RuntimeException) are checked at runtime, often representing programming errors like 'NullPointerException'. Proper error handling ensures the application can respond gracefully to unexpected conditions."
+      },
+      {
+        "id": "java_10",
+        "question": "What is the result of String Immutability in Java?",
+        "expected_keywords": [
+          "string pool",
+          "security",
+          "thread safe",
+          "caching",
+          "memory",
+          "final"
+        ],
+        "weightage": {
+          "string pool": 2,
+          "thread safe": 2
+        },
+        "example_answer": "String immutability in Java means that once a String object is created, its value cannot be changed. This leads to the 'String Pool' for memory efficiency, security (as strings are often used for credentials), and thread-safety since they don't change state. If you try to modify a string, Java simply creates a new object instead of changing the original."
+      },
+      {
+        "id": "java_11",
+        "question": "Explain the keywords final, finally, and finalize.",
+        "expected_keywords": [
+          "constant",
+          "block",
+          "cleanup",
+          "garbage collection",
+          "method",
+          "variable"
+        ],
+        "weightage": {
+          "constant": 1,
+          "block": 1,
+          "cleanup": 2
+        },
+        "example_answer": "'final' is a keyword to make variables constant, classes non-inheritable, or methods non-overridable. 'finally' is a block used with try-catch to ensure specific code (like resource cleanup) executes regardless of an exception. 'finalize' is a deprecated method that the garbage collector calls before destroying an object, though it's now rarely used in favor of better cleanup practices."
+      },
+      {
+        "id": "java_12",
+        "question": "How does a HashMap work internally?",
+        "expected_keywords": [
+          "array",
+          "linked list",
+          "hashing",
+          "buckets",
+          "key value",
+          "collision"
+        ],
+        "weightage": {
+          "hashing": 2,
+          "buckets": 2,
+          "collision": 2
+        },
+        "example_answer": "A HashMap works by using a 'hashing' function to map keys to specific 'buckets' in an internal array. When multiple keys map to the same bucket (a 'collision'), it uses a linked list (or a balanced tree in modern Java) to store multiple entries. This structure allows for fast O(1) average time complexity for both put and get operations."
+      },
+      {
+        "id": "java_13",
+        "question": "What is the Volatile keyword used for?",
+        "expected_keywords": [
+          "thread safety",
+          "main memory",
+          "cache",
+          "visibility",
+          "cpu",
+          "atomic"
+        ],
+        "weightage": {
+          "visibility": 3,
+          "main memory": 2
+        },
+        "example_answer": "The 'volatile' keyword ensures 'visibility' of variable changes across multiple threads. It forces the CPU to read the variable's value directly from the main memory rather than its local cache, ensuring that every thread always sees the most recent update. This is essential for preventing stale data issues in multi-threaded environments."
+      },
+      {
+        "id": "java_14",
+        "question": "Explain RESTful API constraints.",
+        "expected_keywords": [
+          "stateless",
+          "client server",
+          "cacheable",
+          "uniform interface",
+          "layered system",
+          "resource"
+        ],
+        "weightage": {
+          "stateless": 2,
+          "resource": 2
+        },
+        "example_answer": "RESTful API constraints include being stateless (each request contains all info needed for processing), client-server separation (independent evolution of both), cacheability (improving performance), and a uniform interface. A key takeaway is that the server doesn't store any client context between requests, making it highly scalable and predictable."
+      },
+      {
+        "id": "java_15",
+        "question": "What is Hibernate and JPA?",
+        "expected_keywords": [
+          "orm",
+          "relational",
+          "mapping",
+          "database",
+          "java persistence api",
+          "sql"
+        ],
+        "weightage": {
+          "orm": 3
+        },
+        "example_answer": "JPA (Java Persistence API) is a standard specification for Object-Relational Mapping (ORM) in Java. Hibernate is a widely used implementation of this standard. Together, they allow developers to interact with a relational database using Java objects rather than writing manual SQL queries, significantly reducing boilerplate code and improving maintainability."
+      },
+      {
+        "id": "java_16",
+        "question": "Explain the Spring Boot Auto Configuration.",
+        "expected_keywords": [
+          "classpath",
+          "annotation",
+          "configuration",
+          "beans",
+          "properties",
+          "default"
+        ],
+        "weightage": {
+          "classpath": 2,
+          "annotation": 2
+        },
+        "example_answer": "Spring Boot Auto Configuration automatically configures your application based on the dependencies present in your classpath. For example, if you have 'spring-boot-starter-web' on your classpath, it automatically sets up an embedded Tomcat server and an InternalResourceViewResolver. It uses '@EnableAutoConfiguration' to scan for and apply these sensible default beans."
+      },
+      {
+        "id": "java_17",
+        "question": "Difference between StringBuffer and StringBuilder.",
+        "expected_keywords": [
+          "synchronized",
+          "thread safe",
+          "performance",
+          "speed",
+          "mutable",
+          "legacy"
+        ],
+        "weightage": {
+          "synchronized": 3,
+          "performance": 2
+        },
+        "example_answer": "Both allow creating mutable strings, but 'StringBuffer' is synchronized and thus thread-safe, making it suitable for multi-threaded environments. 'StringBuilder' is not synchronized, making it significantly faster for single-threaded scenarios. Usually, 'StringBuilder' is the preferred choice for local string manipulations where thread safety isn't a concern."
+      },
+      {
+        "id": "java_18",
+        "question": "What is Method Overloading vs Overriding?",
+        "expected_keywords": [
+          "signature",
+          "runtime",
+          "compile time",
+          "inheritance",
+          "same name",
+          "parameters"
+        ],
+        "weightage": {
+          "time": 1,
+          "signature": 2,
+          "inheritance": 2
+        },
+        "example_answer": "Method Overloading occurs within the same class when two methods have the same name but different parameters (compile-time polymorphism). Method Overriding occurs when a subclass provides a specific implementation for a method already defined in its parent class (runtime polymorphism). Simply put, overloading is about variety within a class, while overriding is about behavior replacement in a hierarchy."
+      },
+      {
+        "id": "java_19",
+        "question": "Explain the concept of Microservices.",
+        "expected_keywords": [
+          "decoupled",
+          "independent",
+          "scalability",
+          "containers",
+          "deployment",
+          "api gateway"
+        ],
+        "weightage": {
+          "decoupled": 2,
+          "independent": 2
+        },
+        "example_answer": "Microservices is an architectural style where an application is built as a collection of small, independent services that communicate via lightweight protocols (like HTTP/REST). Each service is decoupled, can be deployed independently, and can be scaled based on its specific load. This approach improves fault tolerance and allows for faster deployment of individual features."
+      },
+      {
+        "id": "java_20",
+        "question": "How to handle database transactions in Spring?",
+        "expected_keywords": [
+          "@transational",
+          "rollback",
+          "commit",
+          "acid",
+          "propagation",
+          "isolation"
+        ],
+        "weightage": {
+          "@transational": 2,
+          "acid": 2
+        },
+        "example_answer": "In Spring, database transactions are typically handled using the '@Transactional' annotation, which simplifies transaction management by marking a method as an atomic operation. This ensures ACID properties: if any part of the method fails, Spring will automatically roll back all changes to the database, ensuring data integrity and consistency."
+      },
+      {
+        "id": "java_21",
+        "question": "What is the purpose of Maven/Gradle?",
+        "expected_keywords": [
+          "build tool",
+          "dependency management",
+          "plugins",
+          "lifecycle",
+          "pom.xml",
+          "automation"
+        ],
+        "weightage": {
+          "dependency": 2,
+          "build": 2
+        },
+        "example_answer": "Maven and Gradle are build automation tools primarily used for Java projects. They manage project dependencies, automate the compilation process, run tests, and package the code into artifacts like JAR or WAR files. Maven uses XML (pom.xml) for configuration, while Gradle uses a Groovy or Kotlin-based DSL, offering more flexibility and performance for complex builds."
+      },
+      {
+        "id": "java_22",
+        "question": "Explain the Singleton Design Pattern.",
+        "expected_keywords": [
+          "one instance",
+          "private constructor",
+          "static method",
+          "global access",
+          "thread safety",
+          "lazy loading"
+        ],
+        "weightage": {
+          "one instance": 3,
+          "static method": 2
+        },
+        "example_answer": "The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. This is typically achieved by making the constructor private, creating a private static instance of the class, and providing a public static method (like 'getInstance()') to return that single instance. It's useful for managing shared resources like database connections or configurations."
+      },
+      {
+        "id": "java_23",
+        "question": "What is the Java Stream API?",
+        "expected_keywords": [
+          "functional",
+          "collections",
+          "filter",
+          "map",
+          "reduce",
+          "lambda"
+        ],
+        "weightage": {
+          "functional": 2,
+          "collections": 2
+        },
+        "example_answer": "The Java Stream API, introduced in Java 8, allows for functional-style operations on collections of objects. It enables developers to process data in a declarative way using operations like 'filter', 'map', and 'reduce'. Streams do not store data but rather perform computations on the source data, often leading to more readable and concise code for data transformations."
+      },
+      {
+        "id": "java_24",
+        "question": "Explain SQL Injection and how to prevent it in Java.",
+        "expected_keywords": [
+          "prepared statement",
+          "sanitization",
+          "parameters",
+          "security",
+          "query",
+          "malicious"
+        ],
+        "weightage": {
+          "prepared statement": 3,
+          "parameters": 2
+        },
+        "example_answer": "SQL Injection occurs when malicious SQL statements are inserted into an entry field for execution. To prevent this in Java, you should always use 'PreparedStatement' with parameterized queries instead of concatenating strings to build SQL. PreparedStatements ensure that user input is treated as data, not as executable code, effectively blocking injection attacks."
+      },
+      {
+        "id": "java_25",
+        "question": "What is a Java ClassLoader?",
+        "expected_keywords": [
+          "load classes",
+          "runtime",
+          "bootstrap",
+          "extension",
+          "application",
+          "dynamic"
+        ],
+        "weightage": {
+          "load classes": 2
+        },
+        "example_answer": "A ClassLoader in Java is a part of the JVM that dynamically loads Java classes into memory during runtime. It follows a delegation model where it first checks if the parent ClassLoader has already loaded the class before attempting to load it itself. There are three built-in loaders: Bootstrap, Extension, and System/Application ClassLoader."
+      }
+    ]
+  },
+  {
+    "role": "Python Developer",
+    "questions": [
+      {
+        "id": "py_01",
+        "question": "Explain the difference between a List and a Tuple.",
+        "expected_keywords": [
+          "mutable",
+          "immutable",
+          "performance",
+          "syntax",
+          "brackets",
+          "parentheses"
+        ],
+        "weightage": {
+          "mutable": 3,
+          "immutable": 3
+        },
+        "example_answer": "In Python, a list is a mutable collection defined with square brackets, meaning you can change its elements. A tuple is an immutable collection defined with parentheses, meaning it cannot be changed once created. Lists are typically used for homogenous data, while tuples are used for heterogeneous data and offer slightly better performance."
+      },
+      {
+        "id": "py_02",
+        "question": "What is a Decorator in Python?",
+        "expected_keywords": [
+          "keyword",
+          "wrapper",
+          "function",
+          "modify behavior",
+          "@ symbol",
+          "higher order"
+        ],
+        "weightage": {
+          "wrapper": 2,
+          "function": 2
+        },
+        "example_answer": "A decorator is a higher-order function that takes another function and extends its behavior without explicitly modifying it. It's commonly used for logging, access control, or performance timing. You apply it using the '@' symbol before the function definition."
+      },
+      {
+        "id": "py_03",
+        "question": "Explain List Comprehension.",
+        "expected_keywords": [
+          "concise",
+          "syntax",
+          "loop",
+          "create list",
+          "readability",
+          "efficient"
+        ],
+        "weightage": {
+          "concise": 2,
+          "loop": 1
+        },
+        "example_answer": "List comprehension provides a concise way to create lists based on existing iterables. It follows the syntax '[expression for item in iterable if condition]'. It is more readable and often faster than traditional for-loops for simple list generation."
+      },
+      {
+        "id": "py_04",
+        "question": "What is the difference between deep copy and shallow copy?",
+        "expected_keywords": [
+          "reference",
+          "nested objects",
+          "memory",
+          "duplicate",
+          "independent",
+          "copy module"
+        ],
+        "weightage": {
+          "nested objects": 2,
+          "reference": 2
+        },
+        "example_answer": "A shallow copy creates a new object but fills it with references to the items in the original object; if those items are changed, the new object reflects that. A deep copy creates a completely independent clone, including all nested objects. In short, shallow copy shares internal parts, while deep copy replicates everything for total isolation."
+      },
+      {
+        "id": "py_05",
+        "question": "How does Python handle memory management?",
+        "expected_keywords": [
+          "garbage collection",
+          "reference counting",
+          "heap",
+          "private heap",
+          "allocation",
+          "deallocation"
+        ],
+        "weightage": {
+          "reference counting": 3
+        },
+        "example_answer": "Python manages memory automatically through reference counting and a cyclic garbage collector. Every object has a count of how many times it's referenced; when that count hits zero, the memory is deallocated. The garbage collector also handles circular references (where two objects point to each other) to prevent memory leaks."
+      },
+      {
+        "id": "py_06",
+        "question": "What are *args and **kwargs?",
+        "expected_keywords": [
+          "variable arguments",
+          "positional",
+          "keyword arguments",
+          "dictionary",
+          "tuple",
+          "parameter"
+        ],
+        "weightage": {
+          "variable arguments": 2,
+          "dictionary": 2
+        },
+        "example_answer": "'*args' allows a function to accept any number of positional arguments, which are received as a tuple. '**kwargs' allows for any number of keyword arguments, which are received as a dictionary. These tools make functions highly flexible, as they can handle a varying number of inputs without being explicitly defined beforehand."
+      },
+      {
+        "id": "py_07",
+        "question": "Explain the Global Interpreter Lock (GIL).",
+        "expected_keywords": [
+          "thread",
+          "multithreading",
+          "one core",
+          "concurrency",
+          "bottleneck",
+          "mutex"
+        ],
+        "weightage": {
+          "thread": 2,
+          "one core": 2
+        },
+        "example_answer": "The Global Interpreter Lock (GIL) is a mutex that allows only one thread to execute Python bytecode at a time, even on multi-core systems. While this simplifies memory management, it can become a bottleneck for CPU-bound multi-threaded applications. Developers often use multiprocessing or asynchronous programming to work around this limitation."
+      },
+      {
+        "id": "py_08",
+        "question": "What is a Generator?",
+        "expected_keywords": [
+          "yield",
+          "iterator",
+          "memory efficient",
+          "next",
+          "state",
+          "lazy evaluation"
+        ],
+        "weightage": {
+          "yield": 3,
+          "memory": 2
+        },
+        "example_answer": "A generator is a special type of iterator that uses the 'yield' keyword to return values one at a time, pausing its state between each one. This makes it extremely memory-efficient, as it doesn't store the entire sequence in memory. Generators are 'lazy', calculating each value only when it's specifically requested."
+      },
+      {
+        "id": "py_09",
+        "question": "Difference between 'is' and '=='",
+        "expected_keywords": [
+          "identity",
+          "value",
+          "equality",
+          "memory address",
+          "reference",
+          "comparison"
+        ],
+        "weightage": {
+          "identity": 2,
+          "value": 2
+        },
+        "example_answer": "The '==' operator checks for value equality, meaning it sees if two objects contain the same data. The 'is' operator checks for identity, meaning it sees if both variables point to the exact same object in memory. For example, two different lists can be equal ('==') but not identical ('is')."
+      },
+      {
+        "id": "py_10",
+        "question": "What is a Lambda function?",
+        "expected_keywords": [
+          "anonymous",
+          "single expression",
+          "inline",
+          "function",
+          "syntax",
+          "concise"
+        ],
+        "weightage": {
+          "anonymous": 3
+        },
+        "example_answer": "A Lambda function is an anonymous, single-expression function defined using the 'lambda' keyword. It's used for small, one-off tasks where a full function definition would be overkill. For example, 'lambda x: x * 2' is a concise way to define a function that doubles its input, often used in functions like 'map' or 'filter'."
+      },
+      {
+        "id": "py_11",
+        "question": "Explain Exception Handling in Python.",
+        "expected_keywords": [
+          "try",
+          "except",
+          "finally",
+          "raise",
+          "else",
+          "error"
+        ],
+        "weightage": {
+          "try": 1,
+          "except": 1
+        },
+        "example_answer": "Python handles errors using 'try-except' blocks. You place the code that might fail in the 'try' block and the error recovery logic in the 'except' block. An optional 'finally' block can be added for cleanup tasks that must run regardless of whether an error occurred, ensuring the application stays stable."
+      },
+      {
+        "id": "py_12",
+        "question": "What is init in Python classes?",
+        "expected_keywords": [
+          "constructor",
+          "initialization",
+          "instance",
+          "self",
+          "object",
+          "attributes"
+        ],
+        "weightage": {
+          "constructor": 2,
+          "initialization": 2
+        },
+        "example_answer": "The '__init__' method is known as the constructor in Python. It's automatically called when a new instance of a class is created. Its primary purpose is to initialize the object's attributes with specific values, setting the initial state of the object. The 'self' parameter represents the instance itself, allowing you to attach data to it."
+      },
+      {
+        "id": "py_13",
+        "question": "Explain slicing in Python.",
+        "expected_keywords": [
+          "start",
+          "stop",
+          "step",
+          "subsequence",
+          "index",
+          "colon"
+        ],
+        "weightage": {
+          "index": 1,
+          "colon": 1
+        },
+        "example_answer": "Slicing is a technique to extract a subset of elements from a sequence like a list, string, or tuple. It uses the syntax 'sequence[start:stop:step]'. Slicing is highly efficient and flexible, allowing you to easily reverse a list with '[::-1]' or skip elements with a step value."
+      },
+      {
+        "id": "py_14",
+        "question": "What are Python modules and packages?",
+        "expected_keywords": [
+          "file",
+          "directory",
+          "import",
+          "library",
+          "hierarchy",
+          "init py"
+        ],
+        "weightage": {
+          "file": 1,
+          "directory": 1
+        },
+        "example_answer": "A module is a single Python file containing code, while a package is a directory containing multiple modules and a special '__init__.py' file. This structure allows for better organization of large codebases into hierarchical namespaces, making the code more modular and reusable across different projects."
+      },
+      {
+        "id": "py_15",
+        "question": "Difference between range and xrange (Python 2 vs 3).",
+        "expected_keywords": [
+          "generator",
+          "list",
+          "memory",
+          "iterator",
+          "version",
+          "performance"
+        ],
+        "weightage": {
+          "generator": 2,
+          "list": 2
+        },
+        "example_answer": "In Python 2, 'range' created a static list in memory, while 'xrange' was a generator that yielded values on demand. In Python 3, 'range' has been improved to behave like the old 'xrange', making it memory-efficient regardless of the sequence size. This change ensures better performance when looping over large numbers of items."
+      },
+      {
+        "id": "py_16",
+        "question": "What is Pickling and Unpickling?",
+        "expected_keywords": [
+          "serialization",
+          "deserialization",
+          "byte stream",
+          "object",
+          "save",
+          "load"
+        ],
+        "weightage": {
+          "serialization": 3
+        },
+        "example_answer": "Pickling is the process of serializing a Python object structure into a byte stream, allowing it to be saved to a file or sent over a network. Unpickling is the reverse process, where a byte stream is converted back into a functional Python object. It's commonly used for caching or persisting complex data states."
+      },
+      {
+        "id": "py_17",
+        "question": "Explain the map function.",
+        "expected_keywords": [
+          "apply",
+          "function",
+          "iterable",
+          "list",
+          "element",
+          "transformation"
+        ],
+        "weightage": {
+          "apply": 2,
+          "iterable": 2
+        },
+        "example_answer": "The 'map' function applies a specified function to every item in an iterable (like a list) and returns a map object (an iterator). It's a key part of functional programming in Python, allowing for clean and efficient transformations without the need for manual loops. For instance, 'map(str, [1, 2, 3])' converts a list of numbers into a list of strings."
+      },
+      {
+        "id": "py_18",
+        "question": "What is a Set in Python?",
+        "expected_keywords": [
+          "unique",
+          "unordered",
+          "duplicates",
+          "mutable",
+          "hashable",
+          "collection"
+        ],
+        "weightage": {
+          "unique": 3
+        },
+        "example_answer": "A set is an unordered collection of unique elements. It is defined with curly braces or the 'set()' function. Sets are highly efficient for tasks like removing duplicates from a list or performing mathematical operations like union, intersection, and difference. Unlike lists, sets do not allow duplicate values and do not maintain order."
+      },
+      {
+        "id": "py_19",
+        "question": "Explain the 'self' keyword.",
+        "expected_keywords": [
+          "instance",
+          "current object",
+          "parameter",
+          "method",
+          "class",
+          "reference"
+        ],
+        "weightage": {
+          "instance": 2,
+          "reference": 2
+        },
+        "example_answer": "The 'self' keyword is a reference to the current instance of a class. It is used to access variables and methods associated with that specific object from within the class's methods. Every instance method must include 'self' as its first parameter to distinguish between local variables and instance-level attributes."
+      },
+      {
+        "id": "py_20",
+        "question": "What is the purpose of docstrings?",
+        "expected_keywords": [
+          "documentation",
+          "help",
+          "comment",
+          "function description",
+          "triple quotes",
+          "metadata"
+        ],
+        "weightage": {
+          "documentation": 3
+        },
+        "example_answer": "Docstrings are string literals that appear right after a function, class, or module definition. They are used for documenting the purpose and usage of the code. Unlike regular comments, docstrings are accessible at runtime via the '__doc__' attribute or functions like 'help()', making them essential for building clear and maintained libraries."
+      },
+      {
+        "id": "py_21",
+        "question": "Explain how to open a file safely.",
+        "expected_keywords": [
+          "with statement",
+          "context manager",
+          "close",
+          "resource",
+          "exception",
+          "block"
+        ],
+        "weightage": {
+          "with statement": 3
+        },
+        "example_answer": "To open a file safely, use the 'with' statement, also known as a context manager. For example, 'with open(\"file.txt\", \"r\") as f:'. This ensures that the file is automatically closed as soon as the block ends, even if an exception occurs. This best practice prevents resource leaks and guarantees data integrity during file operations."
+      },
+      {
+        "id": "py_22",
+        "question": "What is Virtualenv?",
+        "expected_keywords": [
+          "dependencies",
+          "isolated",
+          "environment",
+          "version",
+          "package",
+          "conflict"
+        ],
+        "weightage": {
+          "isolated": 2,
+          "dependencies": 2
+        },
+        "example_answer": "Virtualenv is a tool used to create isolated Python environments. It allows you to install specific versions of libraries for different projects without them conflicting with each other or the system-wide Python installation. This isolation is crucial for maintaining reproducible and stable development environments, especially when working on multiple projects with different requirements."
+      },
+      {
+        "id": "py_23",
+        "question": "Explain Multiple Inheritance in Python.",
+        "expected_keywords": [
+          "parent class",
+          "subclass",
+          "mro",
+          "diamond problem",
+          "super",
+          "polymorphism"
+        ],
+        "weightage": {
+          "parent class": 2
+        },
+        "example_answer": "Multiple inheritance allows a class to inherit features from more than one parent class. Python handles this using 'Method Resolution Order' (MRO) to determine which method to call if there are name conflicts (the 'diamond problem'). While powerful, it should be used carefully to avoid complexity, often preferring composition over inheritance when appropriate."
+      },
+      {
+        "id": "py_24",
+        "question": "What is the Pass statement?",
+        "expected_keywords": [
+          "null",
+          "placeholder",
+          "no operation",
+          "syntax",
+          "empty block",
+          "stub"
+        ],
+        "weightage": {
+          "placeholder": 2
+        },
+        "example_answer": "The 'pass' statement is a null operation; it does nothing when executed. It's used as a placeholder in situations where the Python syntax requires a statement but no action is needed, such as in empty function definitions, classes, or loops that will be implemented later. It acts as a clear 'todo' marker that keeps the code syntactically correct."
+      },
+      {
+        "id": "py_25",
+        "question": "Explain Flask vs Django.",
+        "expected_keywords": [
+          "microframework",
+          "monolithic",
+          "lightweight",
+          "batteries included",
+          "opinionated",
+          "admin"
+        ],
+        "weightage": {
+          "microframework": 2,
+          "batteries included": 2
+        },
+        "example_answer": "Flask is a lightweight 'microframework' that provides only the essentials for web development, giving you the flexibility to choose your own tools and libraries. Django is a 'batteries-included' monolithic framework that comes with everything built-in (ORM, admin panel, auth). Use Flask for smaller, simpler apps, and Django for complex, data-driven applications that need faster development."
+      }
+    ]
+  },
+  {
+    "role": "Frontend Developer",
+    "questions": [
+      {
+        "id": "fe_01",
+        "question": "Explain the concept of Virtual DOM in React.",
+        "expected_keywords": [
+          "copy",
+          "diffing",
+          "reconciliation",
+          "performance",
+          "update",
+          "actual dom"
+        ],
+        "weightage": {
+          "diffing": 2,
+          "performance": 2
+        },
+        "example_answer": "The Virtual DOM is a lightweight copy of the actual DOM that React keeps in memory. When state changes, React first updates this virtual version and then uses a 'diffing' algorithm to compare it with the previous state. This process, called reconciliation, allows React to update only the specific parts of the actual DOM that changed, significantly improving performance."
+      },
+      {
+        "id": "fe_02",
+        "question": "What is the difference between var, let, and const?",
+        "expected_keywords": [
+          "scope",
+          "block",
+          "function",
+          "hoisting",
+          "reassignment",
+          "mutable"
+        ],
+        "weightage": {
+          "scope": 3,
+          "hoisting": 2
+        },
+        "example_answer": "'var' is function-scoped and can be hoisted, which often leads to bugs. 'let' and 'const' are block-scoped, meaning they only exist within the specific block (like a loop or if-statement) where they are defined. Use 'const' by default for variables that shouldn't change, and 'let' only when you specifically need to reassign a value."
+      },
+      {
+        "id": "fe_03",
+        "question": "Explain Closures in JavaScript.",
+        "expected_keywords": [
+          "scope",
+          "function",
+          "lexical",
+          "access",
+          "variable",
+          "outer"
+        ],
+        "weightage": {
+          "lexical": 2,
+          "access": 2
+        },
+        "example_answer": "A closure is a function that 'remembers' its lexical scope even after the outer function has finished executing. This allows the inner function to access variables from its parent scope. Closures are widely used in JavaScript for data privacy, creating function factories, and handling asynchronous callbacks."
+      },
+      {
+        "id": "fe_04",
+        "question": "What is the Box Model in CSS?",
+        "expected_keywords": [
+          "margin",
+          "border",
+          "padding",
+          "content",
+          "layout",
+          "width"
+        ],
+        "weightage": {
+          "content": 1,
+          "padding": 1,
+          "border": 1,
+          "margin": 1
+        },
+        "example_answer": "The CSS Box Model defines how elements are structured and sized on a webpage. It consists of four parts: Content (the text or images), Padding (space around the content), Border (a line around the padding), and Margin (space outside the border). Understanding how these layers interact is crucial for controlling layouts and spacing between elements."
+      },
+      {
+        "id": "fe_05",
+        "question": "Explain Event Bubbling and Capturing.",
+        "expected_keywords": [
+          "propagation",
+          "phases",
+          "target",
+          "listeners",
+          "dom",
+          "direction"
+        ],
+        "weightage": {
+          "propagation": 2,
+          "direction": 2
+        },
+        "example_answer": "Event Bubbling and Capturing are the two phases of event propagation in the DOM. Capturing happens first, moving from the root down to the target element. Bubbling is the reverse, where the event starts at the target and 'bubbles' back up to the root. Most developers rely on bubbling to handle events efficiently using event delegation."
+      },
+      {
+        "id": "fe_06",
+        "question": "What are Promises in JavaScript?",
+        "expected_keywords": [
+          "asynchronous",
+          "resolve",
+          "reject",
+          "callback",
+          "then",
+          "future value"
+        ],
+        "weightage": {
+          "asynchronous": 2,
+          "resolve": 2
+        },
+        "example_answer": "A Promise represents the eventual completion (or failure) of an asynchronous operation and its resulting value. It can be in one of three states: Pending, Resolved, or Rejected. Promises are a cleaner alternative to callbacks, allowing you to chain asynchronous tasks using '.then()' and handle errors gracefully using '.catch()'."
+      },
+      {
+        "id": "fe_07",
+        "question": "Difference between LocalStorage, SessionStorage, and Cookies.",
+        "expected_keywords": [
+          "persistence",
+          "browser closing",
+          "server",
+          "size limit",
+          "expiration",
+          "data"
+        ],
+        "weightage": {
+          "persistence": 2,
+          "server": 2
+        },
+        "example_answer": "LocalStorage stores data with no expiration date, persisting even after the browser is closed. SessionStorage stores data only for the duration of the page session (until the tab is closed). Cookies are smaller, have expiration dates, and are sent back to the server with every HTTP request, making them more suitable for authentication and tracking."
+      },
+      {
+        "id": "fe_08",
+        "question": "What is Flexbox?",
+        "expected_keywords": [
+          "layout",
+          "one dimensional",
+          "container",
+          "items",
+          "alignment",
+          "responsive"
+        ],
+        "weightage": {
+          "layout": 2,
+          "one dimensional": 2
+        },
+        "example_answer": "Flexbox is a one-dimensional layout model in CSS that allows for flexible and efficient distribution of space among items in a container. It excels at aligning items along a single axis (row or column) and handling varying item sizes, making it perfect for navigation bars, centered content, and responsive layouts."
+      },
+      {
+        "id": "fe_09",
+        "question": "Explain CSS Grid.",
+        "expected_keywords": [
+          "two dimensional",
+          "rows",
+          "columns",
+          "layout",
+          "areas",
+          "grid"
+        ],
+        "weightage": {
+          "two dimensional": 3
+        },
+        "example_answer": "CSS Grid is a powerful two-dimensional layout system that allows you to align items in both rows and columns simultaneously. Unlike Flexbox, which is primarily one-dimensional, Grid provides more control over complex page structures. It uses a grid-based approach to divide a page into major regions or define relationships in terms of size and position."
+      },
+      {
+        "id": "fe_10",
+        "question": "What is Hoisting in JavaScript?",
+        "expected_keywords": [
+          "declaration",
+          "top",
+          "scope",
+          "initialization",
+          "variable",
+          "function"
+        ],
+        "weightage": {
+          "declaration": 2,
+          "top": 2
+        },
+        "example_answer": "Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase. While declarations are hoisted, initializations are not. This means regular functions can be called before they appear in the code, but 'var' variables will return 'undefined' if accessed too early."
+      },
+      {
+        "id": "fe_11",
+        "question": "Explain the 'this' keyword.",
+        "expected_keywords": [
+          "context",
+          "object",
+          "invocation",
+          "bind",
+          "call",
+          "apply"
+        ],
+        "weightage": {
+          "context": 3
+        },
+        "example_answer": "The 'this' keyword refers to the object it belongs to, but its value changes depending on how the function is called. In a method, 'this' refers to the owner object; in a regular function, it refers to the global object (or undefined in strict mode). Understanding 'this' is crucial for managing context and object-oriented patterns in JavaScript."
+      },
+      {
+        "id": "fe_12",
+        "question": "React Class vs Functional Components.",
+        "expected_keywords": [
+          "hooks",
+          "state",
+          "lifecycle",
+          "syntax",
+          "render",
+          "class"
+        ],
+        "weightage": {
+          "hooks": 3,
+          "lifecycle": 2
+        },
+        "example_answer": "Class components use ES6 classes and lifecycle methods like 'componentDidMount'. Functional components were originally stateless but now use 'Hooks' (like useState and useEffect) to manage state and side effects. Functional components are generally preferred today because they are more concise, easier to test, and follow modern React best practices."
+      },
+      {
+        "id": "fe_13",
+        "question": "What is Redux?",
+        "expected_keywords": [
+          "state management",
+          "store",
+          "action",
+          "reducer",
+          "global",
+          "predictable"
+        ],
+        "weightage": {
+          "state management": 2,
+          "store": 2
+        },
+        "example_answer": "Redux is a predictable state container for JavaScript apps, helping you manage global state across complex applications. It centralizes all state into a single 'store' and ensures that state can only be changed by emitting 'actions' that are handled by 'reducers'. This makes the application state easier to trace, debug, and maintain."
+      },
+      {
+        "id": "fe_14",
+        "question": "Explain Semantic HTML.",
+        "expected_keywords": [
+          "meaning",
+          "structure",
+          "accessibility",
+          "seo",
+          "tags",
+          "header/footer"
+        ],
+        "weightage": {
+          "meaning": 2,
+          "accessibility": 2
+        },
+        "example_answer": "Semantic HTML means using HTML tags that accurately describe the meaning and structure of the content (like <header>, <footer>, <main>, and <article>) rather than generic <div> tags. This improves accessibility for screen readers, enhances SEO, and makes the code more readable and maintainable for developers."
+      },
+      {
+        "id": "fe_15",
+        "question": "What is the UseEffect hook?",
+        "expected_keywords": [
+          "side effects",
+          "lifecycle",
+          "mount",
+          "update",
+          "dependency array",
+          "api calls"
+        ],
+        "weightage": {
+          "side effects": 3
+        },
+        "example_answer": "The 'useEffect' hook allows you to perform side effects in functional components, such as data fetching, subscriptions, or manually changing the DOM. It combines the functionality of lifecycle methods like 'componentDidMount' and 'componentDidUpdate' into a single API. It runs after every render unless a dependency array is provided to control its execution."
+      },
+      {
+        "id": "fe_16",
+        "question": "Explain CSS Specificity.",
+        "expected_keywords": [
+          "rank",
+          "weight",
+          "selectors",
+          "id",
+          "class",
+          "inline"
+        ],
+        "weightage": {
+          "weight": 2,
+          "selectors": 2
+        },
+        "example_answer": "CSS Specificity is the set of rules browsers use to determine which CSS property values are most relevant to an element and should be applied. It is calculated based on the types of selectors used: IDs have the highest weight, followed by classes and attributes, and finally element tags. If multiple rules conflict, the one with the higher specificity 'wins'."
+      },
+      {
+        "id": "fe_17",
+        "question": "What is CORS?",
+        "expected_keywords": [
+          "cross origin",
+          "resource sharing",
+          "security",
+          "browser",
+          "domain",
+          "headers"
+        ],
+        "weightage": {
+          "security": 2,
+          "domain": 2
+        },
+        "example_answer": "CORS (Cross-Origin Resource Sharing) is a security feature implemented by browsers that restricts web pages from making requests to a different domain than the one that served the page. To allow cross-domain requests, the server must include specific headers (like 'Access-Control-Allow-Origin') in its response to signal that the browser should allow the communication."
+      },
+      {
+        "id": "fe_18",
+        "question": "Explain Async/Await.",
+        "expected_keywords": [
+          "syntax",
+          "promise",
+          "blocking",
+          "cleaner",
+          "try catch",
+          "wait"
+        ],
+        "weightage": {
+          "promise": 2,
+          "cleaner": 2
+        },
+        "example_answer": "Async/Await is a modern syntax for handling asynchronous operations in JavaScript, built on top of Promises. It allows you to write asynchronous code that looks and behaves more like synchronous code, making it easier to read and maintain. The 'await' keyword pauses the execution of an 'async' function until a promise is resolved, providing a cleaner flow."
+      },
+      {
+        "id": "fe_19",
+        "question": "What is Webpack?",
+        "expected_keywords": [
+          "bundler",
+          "modules",
+          "assets",
+          "optimization",
+          "dependency graph",
+          "loader"
+        ],
+        "weightage": {
+          "bundler": 3
+        },
+        "example_answer": "Webpack is a static module bundler for modern JavaScript applications. It takes all your project's modules (JS, CSS, images, etc.) and bundles them into one or more optimized files that the browser can load efficiently. It uses a dependency graph to understand how different files relate and offers powerful features like loaders and plugins for complex build tasks."
+      },
+      {
+        "id": "fe_20",
+        "question": "Difference between Null and Undefined.",
+        "expected_keywords": [
+          "assignment",
+          "declaration",
+          "value",
+          "type",
+          "intentional",
+          "missing"
+        ],
+        "weightage": {
+          "value": 2,
+          "type": 2
+        },
+        "example_answer": "'Undefined' means a variable has been declared but has not yet been assigned a value. 'Null' is an intentional assignment representing the absence of any object value. In short, 'undefined' is a default state provided by the language, while 'null' is a value developers use to explicitly state that something is empty."
+      },
+      {
+        "id": "fe_21",
+        "question": "Explain Responsive Design.",
+        "expected_keywords": [
+          "media queries",
+          "viewport",
+          "mobile first",
+          "fluid",
+          "adaptation",
+          "screen size"
+        ],
+        "weightage": {
+          "media queries": 3
+        },
+        "example_answer": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. It primarily uses flexible grids, fluid images, and CSS media queries to adapt the layout based on the device's characteristics (like width or orientation), ensuring a great user experience everywhere from phones to desktops."
+      },
+      {
+        "id": "fe_22",
+        "question": "What is TypeScript?",
+        "expected_keywords": [
+          "superset",
+          "static typing",
+          "compile",
+          "interfaces",
+          "javascript",
+          "type safety"
+        ],
+        "weightage": {
+          "static typing": 2,
+          "type safety": 2
+        },
+        "example_answer": "TypeScript is a strongly typed superset of JavaScript that adds static types to the language. By defining types for variables, function arguments, and return values, TypeScript helps catch errors at compile-time before the code even runs. This leads to more robust code, better IDE tooling, and easier maintenance in large-scale applications."
+      },
+      {
+        "id": "fe_23",
+        "question": "Explain the Event Loop.",
+        "expected_keywords": [
+          "stack",
+          "queue",
+          "blocking",
+          "asynchronous",
+          "execution",
+          "single threaded"
+        ],
+        "weightage": {
+          "stack": 2,
+          "queue": 2
+        },
+        "example_answer": "The Event Loop is the mechanism that allows JavaScript to perform non-blocking I/O operations despite being single-threaded. It constantly monitors the call stack and the message queue. When the stack is empty, it takes the first task from the queue and pushes it onto the stack for execution, enabling handle asynchronous callbacks efficiently."
+      },
+      {
+        "id": "fe_24",
+        "question": "What is Server-Side Rendering (SSR)?",
+        "expected_keywords": [
+          "server",
+          "html",
+          "load time",
+          "seo",
+          "client",
+          "nextjs"
+        ],
+        "weightage": {
+          "seo": 2,
+          "load time": 2
+        },
+        "example_answer": "Server-Side Rendering (SSR) is the process of rendering a webpage on the server instead of the browser. When a user requests a page, the server generates the full HTML and sends it to the client. This improves initial load times and is significantly better for SEO, as search engine crawlers can easily read the fully rendered content."
+      },
+      {
+        "id": "fe_25",
+        "question": "Explain Prototypal Inheritance.",
+        "expected_keywords": [
+          "prototype chain",
+          "object",
+          "properties",
+          "link",
+          "parent",
+          "method"
+        ],
+        "weightage": {
+          "prototype chain": 3
+        },
+        "example_answer": "Prototypal inheritance is a feature in JavaScript where objects can inherit properties and methods from other objects. Every object has an internal link to another object called its 'prototype'. When you try to access a property that doesn't exist on an object, JavaScript searches up this 'prototype chain' until it finds the property or reaches the end of the chain."
+      }
+    ]
+  },
+  {
+    "role": "Full Stack Developer",
+    "questions": [
+      {
+        "id": "fs_01",
+        "question": "Explain the difference between Monolithic and Microservices architecture.",
+        "expected_keywords": [
+          "scalability",
+          "deployment",
+          "independent",
+          "decoupled",
+          "database",
+          "communication"
+        ],
+        "example_answer": "Monolithic architecture combines all components into a single unit, which is easier to develop initially but harder to scale. Microservices break the app into independent, decoupled services that communicate via APIs, allowing for better scalability and faster deployments of individual features."
+      },
+      {
+        "id": "fs_02",
+        "question": "What is the role of a Load Balancer in a full-stack application?",
+        "expected_keywords": [
+          "traffic",
+          "distribution",
+          "servers",
+          "availability",
+          "scalability",
+          "health check"
+        ],
+        "example_answer": "A load balancer distributes incoming network traffic across multiple servers to ensure high availability and reliability. It prevents any single server from becoming a bottleneck and can perform health checks to reroute traffic if a server fails."
+      },
+      {
+        "id": "fs_03",
+        "question": "Explain the concept of MVC (Model-View-Controller).",
+        "expected_keywords": [
+          "separation of concerns",
+          "logic",
+          "data",
+          "interface",
+          "rendering",
+          "business"
+        ],
+        "example_answer": "MVC is a design pattern that separates an application into three main components: The Model handles data and business logic, the View manages the user interface and rendering, and the Controller acts as an interface between them, coordinating user input and data updates."
+      },
+      {
+        "id": "fs_04",
+        "question": "What are the benefits of using Docker for development and deployment?",
+        "expected_keywords": [
+          "container",
+          "consistency",
+          "isolation",
+          "portable",
+          "infrastructure",
+          "devops"
+        ],
+        "example_answer": "Docker provides containerization, ensuring that an application runs the same way in development, testing, and production. It isolates the app and its dependencies, making it portable and easy to manage across different infrastructures."
+      },
+      {
+        "id": "fs_05",
+        "question": "How do you handle authentication and authorization in a full-stack app?",
+        "expected_keywords": [
+          "jwt",
+          "session",
+          "oauth",
+          "roles",
+          "permissions",
+          "token"
+        ],
+        "example_answer": "Authentication identifies a user (e.g., via JWT or sessions), while authorization determines what they can access (roles/permissions). Oauth is often used for third-party integrations, while JWTs provide a stateless way to maintain security across services."
+      }
+    ]
+  },
+  {
+    "role": "Data Analyst",
+    "questions": [
+      {
+        "id": "da_01",
+        "question": "Explain the difference between SQL and NoSQL databases.",
+        "expected_keywords": [
+          "relational",
+          "structured",
+          "schema",
+          "flexible",
+          "scaling",
+          "document"
+        ],
+        "example_answer": "SQL databases are relational and use structured schemas, making them ideal for complex queries and consistency. NoSQL databases are non-relational and offer flexible schemas (like documents), which are better for raw data, speed, and horizontal scaling."
+      },
+      {
+        "id": "da_02",
+        "question": "What is Data Cleaning and why is it important?",
+        "expected_keywords": [
+          "incomplete",
+          "duplicates",
+          "outliers",
+          "accuracy",
+          "preprocessing",
+          "quality"
+        ],
+        "example_answer": "Data cleaning is the process of identifying and correcting errors, duplicates, or incomplete data in a dataset. It is crucial because the quality of the analysis depends entirely on the accuracy of the underlying data; 'garbage in, garbage out'."
+      },
+      {
+        "id": "da_03",
+        "question": "Explain the difference between Mean, Median, and Mode.",
+        "expected_keywords": [
+          "average",
+          "middle",
+          "frequency",
+          "outliers",
+          "distribution",
+          "central tendency"
+        ],
+        "example_answer": "Mean is the mathematical average, Median is the middle value in a sorted list, and Mode is the most frequent value. Median is often preferred over mean when a dataset has significant outliers that could skew the results."
+      },
+      {
+        "id": "da_04",
+        "question": "What is a Joins in SQL and its types?",
+        "expected_keywords": [
+          "inner",
+          "left",
+          "right",
+          "outer",
+          "combine",
+          "foreign key"
+        ],
+        "example_answer": "Joins are used to combine rows from two or more tables based on a related column. Common types include Inner Join (matching records in both), Left/Right Joins (all records from one side), and Full Outer Join (all records from both)."
+      },
+      {
+        "id": "da_05",
+        "question": "Explain the concept of Data Visualization.",
+        "expected_keywords": [
+          "charts",
+          "insights",
+          "trends",
+          "storytelling",
+          "patterns",
+          "dashboard"
+        ],
+        "example_answer": "Data visualization is the graphical representation of information and data. By using visual elements like charts and graphs, it provides an accessible way to see and understand trends, outliers, and patterns in data, making complex insights easier to communicate."
+      }
+    ]
+  }
+]

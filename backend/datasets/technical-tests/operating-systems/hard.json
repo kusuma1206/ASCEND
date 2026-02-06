@@ -1,0 +1,400 @@
+[
+  {
+    "id": "os_hard_01",
+    "question": "Which scheduling algorithm is commonly used in Real-Time Operating Systems (RTOS) to guarantee deadline fulfillment?",
+    "options": [
+      "Earliest Deadline First (EDF)",
+      "Rate Monotonic Scheduling (RMS)",
+      "Round Robin",
+      "SJF"
+    ],
+    "correct_answer": [
+      "Earliest Deadline First (EDF)",
+      "Rate Monotonic Scheduling (RMS)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_02",
+    "question": "What is the 'Priority Inversion' problem in OS?",
+    "options": [
+      "Lower priority process holds a resource needed by a higher priority process",
+      "Higher priority process blocks lower priority process",
+      "Processes swap priorities",
+      "Kernel priority changes"
+    ],
+    "correct_answer": [
+      "Lower priority process holds a resource needed by a higher priority process"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_03",
+    "question": "Which of these are methods to solve Priority Inversion?",
+    "options": [
+      "Priority Inheritance Protocol",
+      "Priority Ceiling Protocol",
+      "Aging",
+      "Preemption"
+    ],
+    "correct_answer": [
+      "Priority Inheritance Protocol",
+      "Priority Ceiling Protocol"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_04",
+    "question": "In a UNIX-like file system, what information is NOT stored in an Inode?",
+    "options": [
+      "Filename",
+      "File size",
+      "Permissions",
+      "Disk block addresses"
+    ],
+    "correct_answer": [
+      "Filename"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_05",
+    "question": "Which of these are characteristics of a 'Microkernel' architecture?",
+    "options": [
+      "Only essential services (IPC, memory) in kernel mode",
+      "Device drivers run in user space",
+      "Inter-process communication (IPC) is critical",
+      "Everything runs in kernel space"
+    ],
+    "correct_answer": [
+      "Only essential services (IPC, memory) in kernel mode",
+      "Device drivers run in user space",
+      "Inter-process communication (IPC) is critical"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_06",
+    "question": "What is the 'Translation Lookaside Buffer' (TLB) Reach?",
+    "options": [
+      "Number of entries in TLB multiplied by page size",
+      "Maximum memory TLB can address",
+      "Speed of TLB access",
+      "Number of TLB levels"
+    ],
+    "correct_answer": [
+      "Number of entries in TLB multiplied by page size"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_07",
+    "question": "Which of the following are true about 'Segmentation with Paging'?",
+    "options": [
+      "Divide each segment into pages",
+      "Solves external fragmentation",
+      "Requires segment table and page table",
+      "Each page must be contiguous"
+    ],
+    "correct_answer": [
+      "Divide each segment into pages",
+      "Solves external fragmentation",
+      "Requires segment table and page table"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_08",
+    "question": "What is 'Stealing' (or Page Stealing) in the context of memory management?",
+    "options": [
+      "Kernel taking back pages from a process",
+      "Malicious process accessing other process memory",
+      "One process using another's heap",
+      "Hardware failure"
+    ],
+    "correct_answer": [
+      "Kernel taking back pages from a process"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_09",
+    "question": "Which of these are standard RAID levels?",
+    "options": [
+      "RAID 0 (Striping)",
+      "RAID 1 (Mirroring)",
+      "RAID 5 (Distributed Parity)",
+      "RAID 10 (Striped mirrors)"
+    ],
+    "correct_answer": [
+      "RAID 0 (Striping)",
+      "RAID 1 (Mirroring)",
+      "RAID 5 (Distributed Parity)",
+      "RAID 10 (Striped mirrors)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_10",
+    "question": "What is the 'Elevator Algorithm' also known as?",
+    "options": [
+      "SCAN",
+      "LOOK",
+      "FCFS",
+      "SSTF"
+    ],
+    "correct_answer": [
+      "SCAN"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_11",
+    "question": "Which of these describe a 'Wait-for Graph'?",
+    "options": [
+      "Cycles indicate deadlock (for single instance resources)",
+      "Nodes are processes",
+      "Edges represent waiting for resources",
+      "Used for CPU scheduling"
+    ],
+    "correct_answer": [
+      "Cycles indicate deadlock (for single instance resources)",
+      "Nodes are processes",
+      "Edges represent waiting for resources"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_12",
+    "question": "What is 'Processor Affinity' in multi-processor scheduling?",
+    "options": [
+      "Preference of a process to stay on the same processor",
+      "Process needing multiple CPUs",
+      "Speed of CPU",
+      "Kernel priority for CPUs"
+    ],
+    "correct_answer": [
+      "Preference of a process to stay on the same processor"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_13",
+    "question": "Which of these are true about 'Memory Protection' in OS?",
+    "options": [
+      "Uses Base and Limit registers",
+      "Can be implemented via Page Table bits",
+      "Prevents user code from accessing kernel space",
+      "Speeds up memory access"
+    ],
+    "correct_answer": [
+      "Uses Base and Limit registers",
+      "Can be implemented via Page Table bits",
+      "Prevents user code from accessing kernel space"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_14",
+    "question": "What is the 'Inverted Page Table' used for?",
+    "options": [
+      "Saving memory by having one entry for each physical frame",
+      "Faster page lookup",
+      "Caching disk blocks",
+      "Supporting unlimited processes"
+    ],
+    "correct_answer": [
+      "Saving memory by having one entry for each physical frame"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_15",
+    "question": "Which of these describe 'Copy-on-Write' (COW)?",
+    "options": [
+      "Both parent and child share same pages initially",
+      "Pages are copied only when modified",
+      "Used in 'fork()' system call",
+      "Requires hardware support"
+    ],
+    "correct_answer": [
+      "Both parent and child share same pages initially",
+      "Pages are copied only when modified",
+      "Used in 'fork()' system call"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_16",
+    "question": "What is 'Logical Block Addressing' (LBA)?",
+    "options": [
+      "Mapping linear addresses to physical disk sectors",
+      "A type of CPU addressing",
+      "Network address",
+      "Memory segment"
+    ],
+    "correct_answer": [
+      "Mapping linear addresses to physical disk sectors"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_17",
+    "question": "Which RAID level provides striping with parity across all disks (no single parity disk)?",
+    "options": [
+      "RAID 5",
+      "RAID 4",
+      "RAID 6",
+      "RAID 1"
+    ],
+    "correct_answer": [
+      "RAID 5"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_18",
+    "question": "Which of these define 'Soft Real-Time' systems?",
+    "options": [
+      "Critical tasks have high priority but no guaranteed deadline",
+      "Missing deadline is a total failure",
+      "Used in weapon systems",
+      "Used in streaming media"
+    ],
+    "correct_answer": [
+      "Critical tasks have high priority but no guaranteed deadline",
+      "Used in streaming media"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_19",
+    "question": "What is the 'Slab Allocator' used for?",
+    "options": [
+      "Reducing fragmentation in kernel object allocation",
+      "Managing large files",
+      "Network buffer",
+      "Process scheduling"
+    ],
+    "correct_answer": [
+      "Reducing fragmentation in kernel object allocation"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_20",
+    "question": "What is 'Fence Register' in OS?",
+    "options": [
+      "Used to separate OS from User Programs",
+      "Hardware clock",
+      "Disk controller",
+      "Network gate"
+    ],
+    "correct_answer": [
+      "Used to separate OS from User Programs"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_21",
+    "question": "Which of these are security threats to an OS?",
+    "options": [
+      "Trojan Horse",
+      "Trapdoor",
+      "Buffer Overflow",
+      "Worm"
+    ],
+    "correct_answer": [
+      "Trojan Horse",
+      "Trapdoor",
+      "Buffer Overflow",
+      "Worm"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_22",
+    "question": "What is 'Acyclic Graph Directory' structure?",
+    "options": [
+      "Allows sharing of subdirectories and files between users",
+      "Is a tree structure",
+      "Disallows links",
+      "Prevents loops"
+    ],
+    "correct_answer": [
+      "Allows sharing of subdirectories and files between users",
+      "Prevents loops"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_23",
+    "question": "What is the time complexity of allocating memory in 'Worst Fit' strategy?",
+    "options": [
+      "O(n) where n is number of free blocks",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correct_answer": [
+      "O(n) where n is number of free blocks"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_hard_24",
+    "question": "Which of these are components of a 'Monitor' (Sync construct)?",
+    "options": [
+      "Variables",
+      "Initialization code",
+      "Procedures",
+      "Condition Variables"
+    ],
+    "correct_answer": [
+      "Variables",
+      "Initialization code",
+      "Procedures",
+      "Condition Variables"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_hard_25",
+    "question": "What is 'Spinlock'?",
+    "options": [
+      "Lock where process loops until lock is available",
+      "Priority lock",
+      "File lock",
+      "Memory gate"
+    ],
+    "correct_answer": [
+      "Lock where process loops until lock is available"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

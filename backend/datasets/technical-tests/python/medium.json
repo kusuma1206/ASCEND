@@ -1,0 +1,407 @@
+[
+  {
+    "id": "py_med_01",
+    "question": "What is the primary difference between a 'List' and a 'Tuple' in Python?",
+    "options": [
+      "List is mutable, Tuple is immutable",
+      "Tuple is faster than list",
+      "List uses more memory",
+      "Tuple can only store integers"
+    ],
+    "correct_answer": [
+      "List is mutable, Tuple is immutable",
+      "Tuple is faster than list"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_02",
+    "question": "Which keyword is used to create a generator function?",
+    "options": [
+      "yield",
+      "generate",
+      "return",
+      "provide"
+    ],
+    "correct_answer": [
+      "yield"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_03",
+    "question": "What is a 'List Comprehension' used for?",
+    "options": [
+      "Creating a new list based on existing list in a concise way",
+      "Sorting a list",
+      "Comparing lists",
+      "Deleting elements"
+    ],
+    "correct_answer": [
+      "Creating a new list based on existing list in a concise way"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_04",
+    "question": "Which of these are valid ways to define a dictionary?",
+    "options": [
+      "{'a': 1}",
+      "dict(a=1)",
+      "dict([('a', 1)])",
+      "{'a': 1,}"
+    ],
+    "correct_answer": [
+      "{'a': 1}",
+      "dict(a=1)",
+      "dict([('a', 1)])",
+      "{'a': 1,}"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_05",
+    "question": "What does a 'Decorator' do in Python?",
+    "options": [
+      "Modifies the behavior of a function or class",
+      "Adds comments to code",
+      "Changes variable names",
+      "Speeds up loops"
+    ],
+    "correct_answer": [
+      "Modifies the behavior of a function or class"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_06",
+    "question": "Which of the following are 'Dunder' (Double Underscore) methods?",
+    "options": [
+      "__init__",
+      "__str__",
+      "__len__",
+      "__add__"
+    ],
+    "correct_answer": [
+      "__init__",
+      "__str__",
+      "__len__",
+      "__add__"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_07",
+    "question": "What is the purpose of the 'with' statement?",
+    "options": [
+      "Simplify exception handling and resource management (Context Managers)",
+      "Create a loop",
+      "Import modules",
+      "Define a class"
+    ],
+    "correct_answer": [
+      "Simplify exception handling and resource management (Context Managers)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_08",
+    "question": "Which of these are true about Python 'Sets'?",
+    "options": [
+      "Unordered collection of unique items",
+      "Supports mathematical set operations (union, intersection)",
+      "Mutable",
+      "Can contain lists"
+    ],
+    "correct_answer": [
+      "Unordered collection of unique items",
+      "Supports mathematical set operations (union, intersection)",
+      "Mutable"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_09",
+    "question": "What does *args represent in a function definition?",
+    "options": [
+      "Variable number of non-keyword arguments",
+      "Variable number of keyword arguments",
+      "A required list",
+      "A pointer"
+    ],
+    "correct_answer": [
+      "Variable number of non-keyword arguments"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_10",
+    "question": "What does **kwargs represent in a function definition?",
+    "options": [
+      "Variable number of keyword arguments",
+      "A dictionary of arguments",
+      "Required arguments",
+      "Optional arguments"
+    ],
+    "correct_answer": [
+      "Variable number of keyword arguments",
+      "A dictionary of arguments"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_11",
+    "question": "What is 'Global Interpreter Lock' (GIL)?",
+    "options": [
+      "Mutex that protects access to Python objects, preventing multiple threads from executing bytecodes at once",
+      "A way to lock files",
+      "A type of encryption",
+      "A security feature"
+    ],
+    "correct_answer": [
+      "Mutex that protects access to Python objects, preventing multiple threads from executing bytecodes at once"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_12",
+    "question": "Which of these are built-in Python decorators?",
+    "options": [
+      "@staticmethod",
+      "@classmethod",
+      "@property",
+      "@classmethod"
+    ],
+    "correct_answer": [
+      "@staticmethod",
+      "@classmethod",
+      "@property"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_13",
+    "question": "What is 'Pickling' in Python?",
+    "options": [
+      "Process of converting Python object into a byte stream",
+      "Compressing files",
+      "Hashing data",
+      "Cleaning memory"
+    ],
+    "correct_answer": [
+      "Process of converting Python object into a byte stream"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_14",
+    "question": "Which of these describe Python's 'Lambda' functions?",
+    "options": [
+      "Anonymous functions",
+      "Usually one line",
+      "Can have multiple expressions",
+      "Implicitly return the result of the expression"
+    ],
+    "correct_answer": [
+      "Anonymous functions",
+      "Usually one line",
+      "Implicitly return the result of the expression"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_15",
+    "question": "What is 'PEP 8'?",
+    "options": [
+      "Python Enhancement Proposal regarding coding conventions (Style Guide)",
+      "A type of variable",
+      "A version of Python",
+      "A library for networking"
+    ],
+    "correct_answer": [
+      "Python Enhancement Proposal regarding coding conventions (Style Guide)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_16",
+    "question": "Which of these are valid Python numeric types?",
+    "options": [
+      "int",
+      "float",
+      "complex",
+      "decimal"
+    ],
+    "correct_answer": [
+      "int",
+      "float",
+      "complex"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_17",
+    "question": "How do you handle multiple exceptions in one 'except' block?",
+    "options": [
+      "except (TypeError, ValueError):",
+      "except TypeError, ValueError:",
+      "except TypeError | ValueError:",
+      "except [TypeError, ValueError]:"
+    ],
+    "correct_answer": [
+      "except (TypeError, ValueError):"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_18",
+    "question": "Which of these describe a 'Generator'?",
+    "options": [
+      "Uses less memory than a list",
+      "Produces elements one by one (lazy evaluation)",
+      "Can be iterated only once",
+      "Infinite generators are possible"
+    ],
+    "correct_answer": [
+      "Uses less memory than a list",
+      "Produces elements one by one (lazy evaluation)",
+      "Can be iterated only once",
+      "Infinite generators are possible"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_19",
+    "question": "What is the result of '1' + '2' in Python?",
+    "options": [
+      "'12'",
+      "3",
+      "Error",
+      "12"
+    ],
+    "correct_answer": [
+      "'12'"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_20",
+    "question": "Which of these are true about 'Modules' and 'Packages'?",
+    "options": [
+      "A module is a single Python file",
+      "A package is a directory containing an __init__.py file",
+      "They help organize code",
+      "Packagess cannot contain sub-packages"
+    ],
+    "correct_answer": [
+      "A module is a single Python file",
+      "A package is a directory containing an __init__.py file",
+      "They help organize code"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_21",
+    "question": "What is 'Shallow Copy' vs 'Deep Copy'?",
+    "options": [
+      "Shallow copy copies object but not nested objects; Deep copy copies everything recursively",
+      "They are same",
+      "Deep copy is for integers",
+      "Shallow copy is faster"
+    ],
+    "correct_answer": [
+      "Shallow copy copies object but not nested objects; Deep copy copies everything recursively"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_22",
+    "question": "Which of these are valid string methods?",
+    "options": [
+      "strip()",
+      "split()",
+      "lower()",
+      "join()",
+      "append()"
+    ],
+    "correct_answer": [
+      "strip()",
+      "split()",
+      "lower()",
+      "join()"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_23",
+    "question": "What is a 'Closure' in Python?",
+    "options": [
+      "A function object that remembers values in enclosing scopes even if they are not present in memory",
+      "A loop counter",
+      "A private class",
+      "Closing a file"
+    ],
+    "correct_answer": [
+      "A function object that remembers values in enclosing scopes even if they are not present in memory"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_med_24",
+    "question": "Which of these keywords are used in exception handling?",
+    "options": [
+      "try",
+      "except",
+      "finally",
+      "else",
+      "raise"
+    ],
+    "correct_answer": [
+      "try",
+      "except",
+      "finally",
+      "else",
+      "raise"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_med_25",
+    "question": "What is the purpose of 'sys.path'?",
+    "options": [
+      "List of strings that specifies search path for modules",
+      "List of system files",
+      "Path to Python executable",
+      "Memory addresses"
+    ],
+    "correct_answer": [
+      "List of strings that specifies search path for modules"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

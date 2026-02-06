@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Result | ASCEND</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0c0c0e;
+      color: #fff;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .accent-gradient {
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-6">
+  <div class="max-w-xl w-full glass rounded-3xl p-10 shadow-2xl text-center">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-2">Assessment Results</h1>
+      <p id="test-info" class="text-gray-400 uppercase tracking-widest text-xs font-semibold">DATA STRUCTURES • EASY</p>
+    </div>
+
+    <div class="relative inline-block mb-10">
+      <svg class="w-48 h-48 transform -rotate-90">
+        <circle cx="96" cy="96" r="88" stroke="currentColor" stroke-width="12" fill="transparent" class="text-gray-800">
+        </circle>
+        <circle id="progress-circle" cx="96" cy="96" r="88" stroke="currentColor" stroke-width="12" fill="transparent"
+          stroke-dasharray="552.92" stroke-dashoffset="552.92"
+          class="text-indigo-500 transition-all duration-1000 ease-out"></circle>
+      </svg>
+      <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <span id="score-text" class="text-5xl font-bold">0</span>
+        <span id="max-score" class="text-gray-500 text-sm font-medium">/ 50</span>
+      </div>
+    </div>
+
+    <div class="space-y-6 mb-10">
+      <div>
+        <h2 id="label-text" class="text-2xl font-bold text-indigo-400">Loading...</h2>
+        <p id="accuracy-text" class="text-sm text-gray-500 mt-1">Accuracy: 0%</p>
+      </div>
+      <p id="feedback-text" class="text-gray-300 leading-relaxed max-w-sm mx-auto">
+        Please wait while we fetch your results.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+      <button onclick="window.location.href='technical_test_setup.html'"
+        class="bg-white/5 hover:bg-white/10 text-white font-bold py-4 rounded-xl transition-all">
+        Try again
+      </button>
+      <button onclick="window.location.href='dashboard.html'"
+        class="accent-gradient hover:opacity-90 text-white font-bold py-4 rounded-xl shadow-lg transition-all">
+        Exit Module
+      </button>
+    </div>
+  </div>
+
+  <script>
+    async function fetchResult() {
+      const testId = sessionStorage.getItem('lastTestId');
+      if (!testId) {
+        window.location.href = 'technical_test_setup.html';
+        return;
+      }
+
+      try {
+        const res = await fetch(`http://localhost:3002/api/test/result/${testId}`);
+        const data = await res.json();
+
+        if (data.success) {
+          const r = data.data;
+          document.getElementById('test-info').textContent = `${r.subject.replace('-', ' ')} • ${r.difficulty}`;
+          document.getElementById('score-text').textContent = r.score;
+          document.getElementById('max-score').textContent = `/ ${r.maxScore}`;
+          document.getElementById('accuracy-text').textContent = `Accuracy: ${r.accuracy}%`;
+          document.getElementById('label-text').textContent = r.label;
+          document.getElementById('feedback-text').textContent = r.feedback;
+
+          // Progress circle animation
+          const circle = document.getElementById('progress-circle');
+          const circumference = 552.92;
+          const offset = circumference - (r.accuracy / 100) * circumference;
+          setTimeout(() => {
+            circle.style.strokeDashoffset = offset;
+          }, 100);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    fetchResult();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+[
+  {
+    "id": "dbms_hard_01",
+    "question": "What is the primary objective of the ARIES recovery algorithm?",
+    "options": [
+      "Guaranteeing atomicity and durability via WAL and Steal/No-Force",
+      "Optimizing query execution",
+      "Reducing disk space",
+      "Encrypting database backups"
+    ],
+    "correct_answer": [
+      "Guaranteeing atomicity and durability via WAL and Steal/No-Force"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_02",
+    "question": "Which of these are principles of the CAP theorem in distributed systems?",
+    "options": [
+      "Consistency",
+      "Availability",
+      "Partition Tolerance",
+      "Durability"
+    ],
+    "correct_answer": [
+      "Consistency",
+      "Availability",
+      "Partition Tolerance"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_03",
+    "question": "In a distributed transaction, what is '2PC' (Two-Phase Commit)?",
+    "options": [
+      "Protocol to ensure atomic commitment across nodes",
+      "A way to backup database twice",
+      "A security check",
+      "A join algorithm"
+    ],
+    "correct_answer": [
+      "Protocol to ensure atomic commitment across nodes"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_04",
+    "question": "What are the phases of the ARIES recovery process?",
+    "options": [
+      "Analysis Phase",
+      "Redo Phase",
+      "Undo Phase",
+      "Commit Phase"
+    ],
+    "correct_answer": [
+      "Analysis Phase",
+      "Redo Phase",
+      "Undo Phase"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_05",
+    "question": "What is '5NF' (Fifth Normal Form) primarily concerned with?",
+    "options": [
+      "Join dependencies",
+      "Multi-valued dependencies",
+      "Transitive dependencies",
+      "Candidate keys"
+    ],
+    "correct_answer": [
+      "Join dependencies"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_06",
+    "question": "Which of these are required for 'Strict 2PL'?",
+    "options": [
+      "Transaction releases all exclusive locks only at the end",
+      "Prevents cascading rollbacks",
+      "Enforces serializability",
+      "Releases locks after every write"
+    ],
+    "correct_answer": [
+      "Transaction releases all exclusive locks only at the end",
+      "Prevents cascading rollbacks",
+      "Enforces serializability"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_07",
+    "question": "What is 'Multiversion Concurrency Control' (MVCC)?",
+    "options": [
+      "Maintaining multiple versions of data to allow reads without locks",
+      "Running multiple versions of DBMS",
+      "A backup technique",
+      "Data encryption"
+    ],
+    "correct_answer": [
+      "Maintaining multiple versions of data to allow reads without locks"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_08",
+    "question": "Which of the following are types of Joins in query processing?",
+    "options": [
+      "Nested Loop Join",
+      "Block Nested Loop Join",
+      "Hash Join",
+      "Sort-Merge Join"
+    ],
+    "correct_answer": [
+      "Nested Loop Join",
+      "Block Nested Loop Join",
+      "Hash Join",
+      "Sort-Merge Join"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_09",
+    "question": "What is 'Phantom Read'?",
+    "options": [
+      "Rows that satisfy search criteria change due to other transactions",
+      "Reading corrupted data",
+      "Reading deleted data",
+      "Reading uncommitted data"
+    ],
+    "correct_answer": [
+      "Rows that satisfy search criteria change due to other transactions"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_10",
+    "question": "In a B+ Tree of order n, what is the maximum number of keys in a node?",
+    "options": [
+      "n-1",
+      "n",
+      "2n",
+      "log n"
+    ],
+    "correct_answer": [
+      "n-1"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_11",
+    "question": "Which of these describe 'Conflict Serializability'?",
+    "options": [
+      "Schedule equivalent to a serial schedule by swapping non-conflicting ops",
+      "Tested using a precedence graph",
+      "Always better than View Serializability",
+      "Guarantees no deadlocks"
+    ],
+    "correct_answer": [
+      "Schedule equivalent to a serial schedule by swapping non-conflicting ops",
+      "Tested using a precedence graph"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_12",
+    "question": "What is 'BASE' in NoSQL terminology?",
+    "options": [
+      "Basically Available, Soft state, Eventual consistency",
+      "Big Analytics Safe Environment",
+      "Backup and Secure Entry",
+      "Binary Atomic Storage Engine"
+    ],
+    "correct_answer": [
+      "Basically Available, Soft state, Eventual consistency"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_13",
+    "question": "Which of these are required for '3PC' (Three-Phase Commit) to be non-blocking?",
+    "options": [
+      "Pre-Commit phase",
+      "Assumption of fail-stop model",
+      "Timeout mechanisms",
+      "Infinite memory"
+    ],
+    "correct_answer": [
+      "Pre-Commit phase",
+      "Assumption of fail-stop model",
+      "Timeout mechanisms"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_14",
+    "question": "What is the 'Log-Structured Merge-Tree' (LSM-Tree) commonly used for?",
+    "options": [
+      "Optimizing write-heavy NoSQL databases",
+      "Relational joins",
+      "Memory management",
+      "Caching"
+    ],
+    "correct_answer": [
+      "Optimizing write-heavy NoSQL databases"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_15",
+    "question": "Which of these describe the 'Snapshot Isolation' level?",
+    "options": [
+      "Transaction sees a consistent snapshot of the database",
+      "Prevents most anomalies except write skew",
+      "Implemented in PostgreSQL and Oracle",
+      "Is same as Serializable"
+    ],
+    "correct_answer": [
+      "Transaction sees a consistent snapshot of the database",
+      "Prevents most anomalies except write skew",
+      "Implemented in PostgreSQL and Oracle"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_16",
+    "question": "What is 'Bitmap Indexing' primarily used for?",
+    "options": [
+      "Low-cardinality attributes in data warehousing",
+      "High-speed website logins",
+      "Clustering data",
+      "Unique constraints"
+    ],
+    "correct_answer": [
+      "Low-cardinality attributes in data warehousing"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_17",
+    "question": "Which of these are components of 'Storage Area Network' (SAN) in DBMS?",
+    "options": [
+      "Fibre Channel",
+      "Storage Arrays",
+      "Hick-level interconnects",
+      "Internal Hard Drives"
+    ],
+    "correct_answer": [
+      "Fibre Channel",
+      "Storage Arrays"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_18",
+    "question": "What is 'Vectorized Query Execution'?",
+    "options": [
+      "Processing batches of data instead of row-at-a-time",
+      "Using vectors for search",
+      "Parallelizing every query",
+      "Encrypting database headers"
+    ],
+    "correct_answer": [
+      "Processing batches of data instead of row-at-a-time"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_19",
+    "question": "Which of these characterize 'Columnar Storage'?",
+    "options": [
+      "Data stored column by column",
+      "Excellent for analytical queries",
+      "High compression ratio",
+      "Slow for single-row updates"
+    ],
+    "correct_answer": [
+      "Data stored column by column",
+      "Excellent for analytical queries",
+      "High compression ratio",
+      "Slow for single-row updates"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_20",
+    "question": "What is 'Deadlock Detection' in DBMS?",
+    "options": [
+      "Periodically checking the wait-for graph for cycles",
+      "Preventing all locks",
+      "Logging every transaction",
+      "Shutting down the server"
+    ],
+    "correct_answer": [
+      "Periodically checking the wait-for graph for cycles"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_21",
+    "question": "Which of these distinguish 'OLTP' from 'OLAP'?",
+    "options": [
+      "OLTP for transactions, OLAP for analysis",
+      "OLTP has frequent updates, OLAP has frequent reads",
+      "OLTP uses normalized data, OLAP often uses de-normalized schemas",
+      "OLTP for small data, OLAP for large data"
+    ],
+    "correct_answer": [
+      "OLTP for transactions, OLAP for analysis",
+      "OLTP has frequent updates, OLAP has frequent reads",
+      "OLTP uses normalized data, OLAP often uses de-normalized schemas"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_22",
+    "question": "What is 'Write-Skew' anomaly?",
+    "options": [
+      "Two transactions read overlapping data sets and update disjoint sets based on previous values",
+      "Database clock drifting",
+      "Data being written to wrong disk",
+      "User double-clicking submit button"
+    ],
+    "correct_answer": [
+      "Two transactions read overlapping data sets and update disjoint sets based on previous values"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_23",
+    "question": "Which of these describe 'Consistent Hashing'?",
+    "options": [
+      "Used to distribute data across nodes in a cluster",
+      "Minimizes data movement when nodes are added/removed",
+      "Standard hash table implementation",
+      "Used in Amazon DynamoDB and Cassandra"
+    ],
+    "correct_answer": [
+      "Used to distribute data across nodes in a cluster",
+      "Minimizes data movement when nodes are added/removed",
+      "Used in Amazon DynamoDB and Cassandra"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "dbms_hard_24",
+    "question": "What is the 'Query Execution Plan'?",
+    "options": [
+      "Sequence of operations (Scan, Join, Sort) determined by Optimizer",
+      "The SQL source code",
+      "A backup schedule",
+      "A user access list"
+    ],
+    "correct_answer": [
+      "Sequence of operations (Scan, Join, Sort) determined by Optimizer"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "dbms_hard_25",
+    "question": "Which of these are required for 'View Serializability'?",
+    "options": [
+      "Read/Write sets are identical to some serial schedule",
+      "Tested using a labeled precedence graph",
+      "Is a weaker condition than Conflict Serializability",
+      "NP-hard to test in general"
+    ],
+    "correct_answer": [
+      "Read/Write sets are identical to some serial schedule",
+      "NP-hard to test in general"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  }
+]

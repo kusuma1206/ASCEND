@@ -1,0 +1,410 @@
+[
+  {
+    "id": "java_med_01",
+    "question": "What is the difference between 'ArrayList' and 'LinkedList'?",
+    "options": [
+      "ArrayList is better for random access; LinkedList for frequent insertions",
+      "ArrayList is synchronized; LinkedList is not",
+      "LinkedList uses more memory per element",
+      "ArrayList is a legacy class"
+    ],
+    "correct_answer": [
+      "ArrayList is better for random access; LinkedList for frequent insertions",
+      "LinkedList uses more memory per element"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_02",
+    "question": "What is the primary feature introduced in Java 8 for functional style programming?",
+    "options": [
+      "Lambda Expressions",
+      "Generics",
+      "Annotations",
+      "Enums"
+    ],
+    "correct_answer": [
+      "Lambda Expressions"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_03",
+    "question": "Which of these are Java 8 'Functional Interfaces'?",
+    "options": [
+      "Predicate",
+      "Consumer",
+      "Supplier",
+      "Function",
+      "Runnable"
+    ],
+    "correct_answer": [
+      "Predicate",
+      "Consumer",
+      "Supplier",
+      "Function",
+      "Runnable"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_04",
+    "question": "What is 'Type Erasure' in Java Generics?",
+    "options": [
+      "Replacement of type parameters with their bounds at compile time",
+      "Deleting variable values",
+      "Removing class info at runtime",
+      "Hardware memory clearing"
+    ],
+    "correct_answer": [
+      "Replacement of type parameters with their bounds at compile time"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_05",
+    "question": "Which of these belong to the 'Java Collections Framework'?",
+    "options": [
+      "ArrayList",
+      "HashMap",
+      "HashSet",
+      "TreeMap",
+      "Array"
+    ],
+    "correct_answer": [
+      "ArrayList",
+      "HashMap",
+      "HashSet",
+      "TreeMap"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_06",
+    "question": "What is a 'Checked Exception'?",
+    "options": [
+      "Exception that must be caught or declared at compile time",
+      "An error that occurs at runtime",
+      "A logic error",
+      "Memory leak"
+    ],
+    "correct_answer": [
+      "Exception that must be caught or declared at compile time"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_07",
+    "question": "Which of these are UNCHECKED exceptions in Java?",
+    "options": [
+      "NullPointerException",
+      "ArrayIndexOutOfBoundsException",
+      "ArithmeticException",
+      "IOException"
+    ],
+    "correct_answer": [
+      "NullPointerException",
+      "ArrayIndexOutOfBoundsException",
+      "ArithmeticException"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_08",
+    "question": "What is the purpose of the 'volatile' keyword in Java?",
+    "options": [
+      "Variable is always read from main memory",
+      "Variable cannot be modified",
+      "Variable is thread-safe",
+      "Variable is private"
+    ],
+    "correct_answer": [
+      "Variable is always read from main memory"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_09",
+    "question": "Which of these are ways to create a Thread in Java?",
+    "options": [
+      "Extending Thread class",
+      "Implementing Runnable interface",
+      "Implementing Callable interface",
+      "Using ExecutorService"
+    ],
+    "correct_answer": [
+      "Extending Thread class",
+      "Implementing Runnable interface",
+      "Implementing Callable interface",
+      "Using ExecutorService"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_10",
+    "question": "What is the default initial capacity of an 'ArrayList'?",
+    "options": [
+      "10",
+      "16",
+      "32",
+      "0"
+    ],
+    "correct_answer": [
+      "10"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_11",
+    "question": "Which of these describe 'Fail-Fast' iterators?",
+    "options": [
+      "Throw ConcurrentModificationException if collection modified while iterating",
+      "Allow modification during iteration",
+      "Fast performance",
+      "Always return null"
+    ],
+    "correct_answer": [
+      "Throw ConcurrentModificationException if collection modified while iterating"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_12",
+    "question": "Which of these are true about 'HashMap'?",
+    "options": [
+      "Permits one null key",
+      "Permits multiple null values",
+      "Not synchronized",
+      "Maintains insertion order"
+    ],
+    "correct_answer": [
+      "Permits one null key",
+      "Permits multiple null values",
+      "Not synchronized"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_13",
+    "question": "What is the 'String Pool'?",
+    "options": [
+      "Special memory region in heap to store string literals",
+      "A cache for numbers",
+      "A list of strings",
+      "An array of chars"
+    ],
+    "correct_answer": [
+      "Special memory region in heap to store string literals"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_14",
+    "question": "Which of these characterize 'StringBuffer' compared to 'StringBuilder'?",
+    "options": [
+      "StringBuffer is synchronized (thread-safe)",
+      "StringBuilder is faster",
+      "Both are mutable",
+      "Both are final"
+    ],
+    "correct_answer": [
+      "StringBuffer is synchronized (thread-safe)",
+      "StringBuilder is faster",
+      "Both are mutable"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_15",
+    "question": "What is 'serialization' in Java?",
+    "options": [
+      "Converting an object into a byte stream",
+      "Sorting objects",
+      "Cleaning memory",
+      "Encrypting data"
+    ],
+    "correct_answer": [
+      "Converting an object into a byte stream"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_16",
+    "question": "Which of these keywords are related to exception handling?",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "throw",
+      "throws"
+    ],
+    "correct_answer": [
+      "try",
+      "catch",
+      "finally",
+      "throw",
+      "throws"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_17",
+    "question": "What is 'Enum' in Java?",
+    "options": [
+      "A special data type that enables a variable to be a set of predefined constants",
+      "A number system",
+      "A loop type",
+      "A class with only static methods"
+    ],
+    "correct_answer": [
+      "A special data type that enables a variable to be a set of predefined constants"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_18",
+    "question": "Which of these describe Java 'Streams' API?",
+    "options": [
+      "Supports sequential and parallel operations",
+      "Does not store data",
+      "Functional in nature",
+      "Used for file I/O only"
+    ],
+    "correct_answer": [
+      "Supports sequential and parallel operations",
+      "Does not store data",
+      "Functional in nature"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_19",
+    "question": "What is 'Autoboxing' and 'Unboxing'?",
+    "options": [
+      "Automatic conversion between primitive types and their corresponding wrapper classes",
+      "Boxing UI elements",
+      "Packing JAR files",
+      "Memory management"
+    ],
+    "correct_answer": [
+      "Automatic conversion between primitive types and their corresponding wrapper classes"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_20",
+    "question": "Which of these characterize 'Optional' class in Java 8?",
+    "options": [
+      "Container object which may or may not contain a non-null value",
+      "Used to avoid NullPointerException",
+      "A part of streams",
+      "A primitive type"
+    ],
+    "correct_answer": [
+      "Container object which may or may not contain a non-null value",
+      "Used to avoid NullPointerException"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_21",
+    "question": "What is the 'synchronized' keyword used for?",
+    "options": [
+      "To ensure that only one thread can access a resource at a time",
+      "To speed up loops",
+      "To update database",
+      "To load classes"
+    ],
+    "correct_answer": [
+      "To ensure that only one thread can access a resource at a time"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_22",
+    "question": "Which of these are valid methods in the 'Object' class?",
+    "options": [
+      "equals()",
+      "hashCode()",
+      "toString()",
+      "clone()",
+      "wait()"
+    ],
+    "correct_answer": [
+      "equals()",
+      "hashCode()",
+      "toString()",
+      "clone()",
+      "wait()"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_23",
+    "question": "What is 'Reflection' API?",
+    "options": [
+      "Provides ability to inspect and modify classes, fields, methods at runtime",
+      "Mirroring servers",
+      "Code review tool",
+      "IDE feature"
+    ],
+    "correct_answer": [
+      "Provides ability to inspect and modify classes, fields, methods at runtime"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "java_med_24",
+    "question": "Which of these characterize 'Generics'?",
+    "options": [
+      "Type safety",
+      "Stability",
+      "Reusability",
+      "Runtime checks"
+    ],
+    "correct_answer": [
+      "Type safety",
+      "Reusability"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "java_med_25",
+    "question": "What is 'Native Method' in Java?",
+    "options": [
+      "A method implemented in a language other than Java (C/C++)",
+      "A method in the same file",
+      "A local method",
+      "A protected method"
+    ],
+    "correct_answer": [
+      "A method implemented in a language other than Java (C/C++)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

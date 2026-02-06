@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technical Test</title>
+
+<style>
+/* ===== BUTTON ===== */
+.primary-btn{
+  background:#6366f1;
+  color:white;
+  border:none;
+  padding:10px 22px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.primary-btn:disabled{
+  opacity:.5;
+}
+
+/* ===== QUESTION CARD ===== */
+.card{
+  background:white;
+  padding:18px;
+  margin:15px 0;
+  border-radius:12px;
+}
+
+/* ===== RIGHT CONTENT AREA ===== */
+#rightContent{
+  min-height:75vh;
+  width:100%;
+  padding-top:20px;
+}
+
+/* ===== RESULT PANEL ===== */
+#resultPanel{
+  display:none;
+  min-height:75vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ================= RESULT CARD (BASE STYLE) ================= */
+
+
+/* ================= PERFORMANCE BASE GLOW ================= */
+
+/* 🔴 LOW PERFORMANCE */
+/* ================= RESULT CARD ================= */
+/* ================= RESULT CARD ================= */
+/* ================= RESULT CARD ================= */
+/* ================= RESULT CARD ================= */
+.result-card {
+  position: relative;
+  background: white;
+  border-radius: 22px;
+  padding: 40px;
+  max-width: 420px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgba(0,0,0,.12);
+  overflow: visible;
+}
+
+/* 🌟 OUTER GLOW LAYER */
+.result-card::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 28px;
+  z-index: -1;
+  filter: blur(18px);
+  opacity: 0.9;
+  animation: glowPulse 2.8s ease-in-out infinite;
+}
+
+/* 🔴 LOW PERFORMANCE */
+.result-card.glow-red::before {
+  background: radial-gradient(
+    circle,
+    rgba(239,68,68,0.9) 0%,
+    rgba(239,68,68,0.45) 45%,
+    rgba(239,68,68,0.15) 70%,
+    transparent 100%
+  );
+}
+
+/* 🟡 AVERAGE PERFORMANCE */
+.result-card.glow-yellow::before {
+  background: radial-gradient(
+    circle,
+    rgba(250,204,21,0.95) 0%,
+    rgba(250,204,21,0.5) 45%,
+    rgba(250,204,21,0.18) 70%,
+    transparent 100%
+  );
+}
+
+/* 🟢 HIGH PERFORMANCE */
+.result-card.glow-green::before {
+  background: radial-gradient(
+    circle,
+    rgba(34,197,94,0.95) 0%,
+    rgba(34,197,94,0.55) 45%,
+    rgba(34,197,94,0.2) 70%,
+    transparent 100%
+  );
+}
+
+/* 🌬️ SOFT PULSE */
+@keyframes glowPulse {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.98);
+    opacity: 0.75;
+  }
+}
+
+/* ===== CIRCULAR PROGRESS ===== */
+.circle{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  background:conic-gradient(#e5e7eb 0deg,#e5e7eb 360deg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 20px;
+  transition:background 1s ease;
+}
+
+.inside-circle{
+  width:135px;
+  height:135px;
+  border-radius:50%;
+  background:white;
+  font-size:28px;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* ===== TEXT ===== */
+.score-text{
+  font-size:18px;
+  margin-top:8px;
+  font-weight:600;
+}
+.performance-text{
+  font-size:16px;
+  margin-top:12px;
+  line-height:1.6;
+}
+.performance-text strong{
+  font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Technical Test</h2>
+
+<div class="test-header">
+  <select id="skill">
+    <option value="">Select Skill</option>
+    <option value="python">Python</option>
+    <option value="java">Java</option>
+    <option value="sql">SQL</option>
+  </select>
+
+  <select id="difficulty">
+    <option value="">Select Difficulty</option>
+    <option value="Easy">Easy</option>
+    <option value="Medium">Medium</option>
+    <option value="Hard">Hard</option>
+  </select>
+
+  <button id="startBtn" class="primary-btn" onclick="startExam()">Start Exam</button>
+</div>
+
+<!-- RIGHT CONTENT -->
+<div id="rightContent">
+
+  <!-- QUESTIONS -->
+  <div id="questions" style="width:100%; max-width:800px;"></div>
+
+  <!-- RESULT PANEL -->
+  <div id="resultPanel">
+    <div class="result-card">
+      <div class="circle" id="progressCircle">
+        <div class="inside-circle" id="circleText">0%</div>
+      </div>
+
+      <div class="score-text" id="scoreText"></div>
+      <div class="performance-text" id="performanceText"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="technical_test.js"></script>
+</body>
+</html>

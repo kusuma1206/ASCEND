@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Session — ASCEND AI</title>
+  <!-- React & Babel for JSX -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      overflow: hidden;
+      /* Prevent body scroll */
+    }
+
+    .bottom-bar {
+      height: 96px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid #1e293b;
+      z-index: 50;
+    }
+
+    .main-content {
+      height: calc(100vh - 60px - 96px);
+      /* Viewport - Header - Footer */
+      padding-bottom: 20px;
+    }
+
+    .mic-wave-bar {
+      width: 2px;
+      background-color: #6366f1;
+      border-radius: 99px;
+      transition: height 0.2s ease;
+    }
+
+    .avatar-container {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 2px solid #334155;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1e293b;
+    }
+
+    .btn-accent {
+      background-color: #6366f1;
+      transition: all 0.2s ease;
+    }
+
+    .btn-accent:hover {
+      background-color: #4f46e5;
+      transform: translateY(-1px);
+    }
+
+    /* Custom Scrollbar */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(30, 41, 59, 0.5);
+      border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #4f46e5;
+      border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #6366f1;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    // Dynamic State
+    // No hardcoded questions anymore. We fetch the first one.
+
+    const App = () => {
+      const [mode, setMode] = useState('ready'); // ready, active
+      const [status, setStatus] = useState('aiSpeaking'); // aiSpeaking, userSpeaking, processing
+      const [questionCount, setQuestionCount] = useState(1);
+      const [totalTime, setTotalTime] = useState(300); // 5:00 minutes
+      const [questionTime, setQuestionTime] = useState(0);
+
+      // --- STT States ---
+      const [transcript, setTranscript] = useState('');
+      const [isListening, setIsListening] = useState(false);
+      const [hasReRecorded, setHasReRecorded] = useState(false);
+      const [error, setError] = useState('');
+      const recognitionRef = useRef(null);
+      const transcriptEndRef = useRef(null);
+      const transcriptContainerRef = useRef(null);
+
+      // --- TTS & Backend States ---
+      const [currentQuestion, setCurrentQuestion] = useState("Initializing interview...");
+      const [isAISpeaking, setIsAISpeaking] = useState(false);
+      const [interviewConfig, setInterviewConfig] = useState(null);
+      const [lastEvaluation, setLastEvaluation] = useState(null);
+      const [sessionId, setSessionId] = useState(null); // New Session ID State
+
+      // New State for Final Summary
+      const [summaryData, setSummaryData] = useState(null);
+      const [activeQuestionId, setActiveQuestionId] = useState(null);
+
+      /**
+       * MANDATORY STATE RESET RULE:
+       * Clears all buffers and UI state for a fresh question.
+       */
+      const resetInterviewUIState = () => {
+        setTranscript('');
+        setError('');
+        setHasReRecorded(false);
+        setLastEvaluation(null);
+        setQuestionTime(0);
+
+        // Clear global question ID tracking
+        window.currentQuestionId = null;
+
+        // Clear STT buffer by forcing a stop/start if necessary
+        if (recognitionRef.current && isListening) {
+          try {
+            recognitionRef.current.stop();
+            setIsListening(false);
+          } catch (e) { console.warn("Reset error", e); }
+        }
+
+        // Reset scroll position of transcript container
+        if (transcriptContainerRef.current) {
+          transcriptContainerRef.current.scrollTop = 0;
+        }
+      };
+
+      // Load config on mount
+      useEffect(() => {
+        const config = localStorage.getItem('interview_config');
+        if (config) {
+          setInterviewConfig(JSON.parse(config));
+        }
+      }, []);
+
+      // Timers Logic
+      useEffect(() => {
+        let timer;
+        if (mode === 'active') {
+          timer = setInterval(() => {
+            setTotalTime(prev => Math.max(0, prev - 1));
+            setQuestionTime(prev => prev + 1);
+          }, 1000);
+        }
+        return () => clearInterval(timer);
+      }, [mode]);
+
+      // UI Auto-scroll Effect for Transcript
+      useEffect(() => {
+        if (transcriptContainerRef.current) {
+          transcriptContainerRef.current.scrollTop = transcriptContainerRef.current.scrollHeight;
+        }
+      }, [transcript]);
+
+      // TTS Function
+      const speakQuestion = (text) => {
+        if (!window.speechSynthesis) {
+          setError("Text-to-Speech is not supported in this browser.");
+          setStatus('userSpeaking');
+          return;
+        }
+
+        // Cancel any ongoing speech
+        window.speechSynthesis.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        utterance.onstart = () => {
+          setIsAISpeaking(true);
+          // status is already aiSpeaking from fetchNextQuestion or useEffect
+        };
+
+        utterance.onend = () => {
+          setIsAISpeaking(false);
+          setStatus('userSpeaking');
+        };
+
+        utterance.onerror = (e) => {
+          console.error("SpeechSynthesis error:", e);
+          setIsAISpeaking(false);
+          setStatus('userSpeaking');
+        };
+
+        window.speechSynthesis.speak(utterance);
+      };
+
+      // Speak when mode starts or question changes
+      useEffect(() => {
+        if (mode === 'active' && status === 'aiSpeaking' && !isAISpeaking && !lastEvaluation) {
+          speakQuestion(currentQuestion);
+        }
+      }, [mode, currentQuestion, status, lastEvaluation]);
+
+      // Cleanup speech on unmount
+      useEffect(() => {
+        return () => {
+          if (window.speechSynthesis) {
+            window.speechSynthesis.cancel();
+          }
+        };
+      }, []);
+
+      // Initialize Speech Recognition
+      useEffect(() => {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+          setError("Speech Recognition is not supported in this browser.");
+          return;
+        }
+
+        const recognition = new SpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = 'en-US';
+
+        recognition.onresult = (event) => {
+          // ANTI-REGRESSION: Only process if we have an active question
+          if (!window.currentQuestionId) return;
+
+          let fullTranscript = '';
+          for (let i = 0; i < event.results.length; ++i) {
+            fullTranscript += event.results[i][0].transcript;
+          }
+          setTranscript(fullTranscript);
+        };
+
+        recognition.onerror = (event) => {
+          console.error("Speech recognition error:", event.error);
+          if (event.error === 'not-allowed') {
+            setError("Microphone permission denied.");
+          } else {
+            setError(`Error: ${event.error}`);
+          }
+          setIsListening(false);
+        };
+
+        recognition.onend = () => {
+          setIsListening(false);
+        };
+
+        recognitionRef.current = recognition;
+      }, []);
+
+      // Formatting
+      const formatTime = (seconds) => {
+        const m = Math.floor(seconds / 60);
+        const s = seconds % 60;
+        return `${m}:${s.toString().padStart(2, '0')}`;
+      };
+
+      const handleBegin = async () => {
+        resetInterviewUIState(); // Rule: Clear state before begin
+        setMode('active');
+        setStatus('processing');
+
+        try {
+          // 1. Start Session
+          const startRes = await fetch('http://localhost:3002/api/interview/start-session', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              role: interviewConfig?.role || "Frontend Developer",
+              type: interviewConfig?.type || "TECHNICAL",
+              userId: "guest"
+            })
+          });
+          const startData = await startRes.json();
+          if (!startData.success) throw new Error("Failed to start session");
+
+          const newSessionId = startData.sessionId;
+          setSessionId(newSessionId);
+
+          // 2. Get First Question
+          await fetchNextQuestion(newSessionId);
+
+        } catch (e) {
+          console.error("Init Error", e);
+          setCurrentQuestion("Error initializing interview. Please check backend.");
+          setStatus('userSpeaking');
+        }
+      };
+
+      const fetchNextQuestion = async (sessId) => {
+        try {
+          setStatus('processing');
+          // USE NEW ENDPOINT
+          const res = await fetch('http://localhost:3002/api/interview/get-next-step', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ sessionId: sessId })
+          });
+          const data = await res.json();
+
+          if (data.success) {
+            if (data.finished) { // OR data.type === 'completed'
+              // End Session logic
+              const endRes = await fetch('http://localhost:3002/api/interview/end-session', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sessionId: sessId })
+              });
+              const endData = await endRes.json();
+              setSummaryData(endData.data);
+              return;
+            }
+
+            // SET CURRENT CONTENT
+            setCurrentQuestion(data.data.question);
+            window.currentQuestionId = data.data.id;
+            setActiveQuestionId(data.data.id);
+            setStatus('aiSpeaking');
+
+            // AUTO-ADVANCE LOGIC IF MESSAGE
+            if (data.data.type === 'MESSAGE') {
+              // Only useful if we wait for speech to end.
+              // For now, let's just create a slight delay or handle onEnd of speech
+              // BUT, our speech effect handles `isAISpeaking`.
+              // Ideally, we wait for `isAISpeaking` to become false, then fetch next.
+              // We can use a ref or effect for this.
+              window.isSystemMessage = true;
+            } else {
+              window.isSystemMessage = false;
+            }
+
+          } else {
+            throw new Error(data.error);
+          }
+        } catch (e) {
+          console.error(e);
+          setCurrentQuestion("Error fetching step.");
+          setStatus('userSpeaking');
+        }
+      };
+
+      // NEW EFFECT FOR AUTO-ADVANCE ON MESSAGE
+      useEffect(() => {
+        if (!isAISpeaking && status === 'userSpeaking' && window.isSystemMessage) {
+          // AI finished speaking a system message. Auto-advance.
+          window.isSystemMessage = false; // Reset to avoid loop
+          if (sessionId) {
+            setTimeout(() => {
+              fetchNextQuestion(sessionId);
+            }, 1000); // 1s pause
+          }
+        }
+      }, [isAISpeaking, status, sessionId]);
+
+      const handleSubmit = async () => {
+        if (transcript.length < 2) {
+          setError("Cannot submit an empty answer.");
+          return;
+        }
+
+        setStatus('processing');
+        setError("");
+
+        try {
+          // 1. Submit Answer
+          const response = await fetch('http://localhost:3002/api/interview/submit-answer', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              sessionId: sessionId,
+              questionId: window.currentQuestionId,
+              answer: transcript
+            })
+          });
+
+          const dataResponse = await response.json();
+          if (!dataResponse.success) throw new Error("Evaluation failed");
+
+          const data = dataResponse.data;
+
+          if (data.stay) {
+            // Logic says stay on current step (e.g. not ready)
+            setLastEvaluation({ feedback: data.feedback }); // Show feedback
+            setStatus('userSpeaking'); // Let user try again
+            setTranscript(''); // Clear input
+            speakQuestion(data.feedback); // Speak the nudge
+            return;
+          }
+
+          setLastEvaluation(data);
+
+          // 2. IMMEDIATE TRANSITION
+          resetInterviewUIState();
+          setQuestionCount(prev => prev + 1); // Only visually approximate
+
+          // Fetch Next
+          await fetchNextQuestion(sessionId);
+
+        } catch (err) {
+          console.error("Evaluation error:", err);
+          setError("Evaluation failed. Moving to next...");
+          setTimeout(() => {
+            setError("");
+            setLastEvaluation(null);
+            fetchNextQuestion(sessionId);
+          }, 3000);
+        }
+      };
+
+      const handleReRecord = () => {
+        if (hasReRecorded) return;
+        setTranscript('');
+        setHasReRecorded(true);
+        toggleListening();
+      };
+
+      const toggleListening = () => {
+        if (!recognitionRef.current) return;
+        if (isListening) {
+          recognitionRef.current.stop();
+          setIsListening(false);
+          if (transcript.length < 2) setError("No speech detected.");
+          else setError("");
+        } else {
+          setTranscript('');
+          setError('');
+          try { recognitionRef.current.start(); setIsListening(true); } catch (e) { console.error(e); }
+        }
+      };
+
+      const handleMicAction = () => {
+        if (status !== 'userSpeaking') return;
+        if (isListening) { toggleListening(); }
+        else {
+          if (hasReRecorded && transcript.length > 0) handleSubmit();
+          else toggleListening();
+        }
+      };
+
+      if (mode === 'ready') {
+        return (
+          <div className="h-screen w-screen flex flex-col items-center justify-center p-6 bg-slate-950">
+            <div className="avatar-container mb-8 text-white">
+              <img src="assets/ai_avatar.png" className="w-full h-full object-cover opacity-80" alt="AI Interviewer" />
+            </div>
+            <h1 className="text-3xl font-bold text-white mb-2">Ready to begin?</h1>
+            <p className="text-slate-400 mb-8 text-center max-w-sm">
+              Ensure you are in a quiet environment and your microphone is accessible.
+            </p>
+            <button
+              onClick={handleBegin}
+              className="btn-accent px-12 py-4 rounded-full text-white font-bold text-lg shadow-lg"
+            >
+              Begin Interview
+            </button>
+          </div>
+        );
+      }
+
+      // FINAL SUMMARY VIEW
+      if (summaryData) {
+        const totalPossible = summaryData.attempts.length * 10;
+        const totalScoreObtained = summaryData.totalScore || 0;
+        const percentage = totalPossible > 0 ? (totalScoreObtained / totalPossible) * 100 : 0;
+
+        let performanceLabel = "Poor";
+        let overallFeedback = "You need stronger fundamentals in this role.";
+
+        if (percentage > 80) {
+          performanceLabel = "Excellent";
+          overallFeedback = "You demonstrate strong readiness for this role.";
+        } else if (percentage > 60) {
+          performanceLabel = "Good";
+          overallFeedback = "You are reasonably prepared but can improve depth.";
+        } else if (percentage > 40) {
+          performanceLabel = "Average";
+          overallFeedback = "You show basic understanding but require more practice.";
+        } else if (percentage > 20) {
+          performanceLabel = "Below Average";
+          overallFeedback = "You need to focus more on core technical concepts.";
+        }
+
+        return (
+          <div className="h-screen w-screen flex flex-col bg-slate-950 overflow-y-scroll custom-scrollbar">
+            <header className="h-[60px] border-b border-slate-800 px-8 flex items-center justify-between bg-slate-950 shrink-0">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-md bg-indigo-500 flex items-center justify-center font-bold text-white">A</div>
+                <span className="font-bold tracking-tight text-white uppercase text-sm">Ascend <span className="text-indigo-500">REPORT</span></span>
+              </div>
+              <button
+                onClick={() => window.location.href = 'mock_interview_setup.html'}
+                className="text-slate-400 hover:text-white text-sm font-medium transition-colors"
+              >
+                Exit
+              </button>
+            </header>
+
+            <main className="p-10 max-w-5xl mx-auto w-full">
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h1 className="text-3xl font-bold text-white mb-2">Interview Summary</h1>
+                  <p className="text-slate-400">{overallFeedback}</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-sm uppercase font-bold text-indigo-400 mb-1">Performance: {performanceLabel}</div>
+                  <div className="text-5xl font-black text-indigo-500">
+                    {totalScoreObtained.toFixed(1)} <span className="text-2xl text-slate-500">/ {totalPossible}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                {summaryData.attempts && summaryData.attempts.map((attempt, index) => (
+                  <div key={index} className="bg-slate-900 border border-slate-800 rounded-xl p-8 shadow-xl">
+                    <div className="flex justify-between items-start mb-6 border-b border-slate-800 pb-4">
+                      <div className="w-3/4">
+                        <span className="text-indigo-500 font-bold text-xs uppercase tracking-widest mb-2 block">Question {index + 1}</span>
+                        <h3 className="text-white font-semibold text-lg">{attempt.questionText}</h3>
+                      </div>
+                      <div className="text-right">
+                        <span className="text-slate-500 text-[10px] uppercase font-bold block mb-1">Score</span>
+                        <span className="bg-indigo-900/40 text-indigo-300 px-4 py-1.5 rounded-lg text-sm font-bold border border-indigo-500/20">
+                          {attempt.score.toFixed(1)} / 10
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-6">
+                      <div>
+                        <label className="text-[10px] uppercase font-bold text-slate-500 tracking-widest block mb-2">Your Answer</label>
+                        <p className="text-slate-300 text-sm leading-relaxed bg-slate-950/50 p-4 rounded-lg border border-slate-800/40 italic">
+                          "{attempt.userAnswer}"
+                        </p>
+                      </div>
+
+                      <div>
+                        <label className="text-[10px] uppercase font-bold text-slate-500 tracking-widest block mb-2">Feedback</label>
+                        <p className="text-slate-200 text-sm font-medium">
+                          {attempt.feedback || "Refer to the orientation below for conceptual alignment and improvement areas."}
+                        </p>
+                      </div>
+
+                      <div className="bg-indigo-900/10 p-5 rounded-xl border border-indigo-500/20">
+                        <label className="text-[10px] uppercase font-bold text-indigo-400 tracking-widest block mb-2">Example of a stronger answer</label>
+                        <p className="text-indigo-100/90 text-sm leading-relaxed">
+                          {attempt.exampleAnswer && attempt.exampleAnswer !== "N/A" ? attempt.exampleAnswer : "Refer to the example below to understand how this concept is typically explained."}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-12 mb-20 text-center">
+                <button
+                  onClick={() => window.location.href = 'mock_interview_setup.html'}
+                  className="btn-accent px-10 py-4 rounded-full text-white font-bold shadow-2xl hover:scale-105 transition-transform"
+                >
+                  Return to Dashboard
+                </button>
+              </div>
+            </main>
+          </div>
+        );
+      }
+
+      return (
+        <div className="h-screen w-screen flex flex-col bg-slate-950 relative">
+          {/* Header */}
+          <header className="h-[60px] border-b border-slate-800 px-8 flex items-center justify-between z-40 bg-slate-950">
+            {/* Same Header Content */}
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-md bg-indigo-500 flex items-center justify-center font-bold text-white">A</div>
+              <span className="font-bold tracking-tight text-white uppercase text-sm">Ascend <span className="text-indigo-500">MOCK</span></span>
+            </div>
+            <button
+              onClick={() => window.location.href = 'mock_interview_setup.html'}
+              className="text-slate-400 hover:text-white text-sm font-medium transition-colors"
+            >
+              Exit
+            </button>
+          </header>
+
+          <main className="flex-1 flex overflow-hidden relative">
+            <div className="flex-1 flex flex-col items-center justify-center main-content px-10">
+
+              {/* Always show Question View unless Summary (handled above) */}
+              <>
+                <div className="avatar-container mb-6 transition-all duration-700 transform scale-75">
+                  <img src="assets/ai_avatar.png" className={`w-full h-full object-cover shadow-2xl ${status === 'aiSpeaking' ? 'opacity-100 ring-4 ring-indigo-500/20' : 'opacity-60'}`} alt="AI Interviewer" />
+                </div>
+
+                <div className="flex flex-col items-center text-center w-full max-w-3xl">
+                  <div className="mb-6 min-h-[60px] flex items-center justify-center">
+                    <p className={`text-xl md:text-2xl font-semibold leading-snug transition-all duration-700 ${isAISpeaking ? 'text-white scale-100' : 'text-slate-500 scale-95 opacity-50'}`}>
+                      "{currentQuestion}"
+                    </p>
+                  </div>
+
+                  <h2 className={`text-lg font-medium mb-1 tracking-wide ${isListening ? 'text-emerald-400' : status === 'processing' ? 'text-amber-400' : status === 'aiSpeaking' ? 'text-indigo-400' : 'text-slate-300'}`}>
+                    {isAISpeaking ? "AI is asking a question..." :
+                      isListening ? "Listening to your answer..." :
+                        status === 'processing' ? "Processing..." :
+                          status === 'userSpeaking' ? "You may answer now" : "Your Mic is Off"}
+                  </h2>
+
+                  {error && <div className="text-rose-500 text-xs font-semibold mb-2">{error}</div>}
+
+                  <div
+                    ref={transcriptContainerRef}
+                    className="mt-4 w-full max-w-2xl bg-slate-900/40 border border-slate-800/60 rounded-xl p-5 h-32 overflow-y-scroll backdrop-blur-sm shadow-inner group custom-scrollbar"
+                  >
+                    <label className="text-[9px] uppercase font-bold text-slate-500 tracking-[0.2em] block mb-2 group-hover:text-slate-400 transition-colors">Your Answer (Transcribed)</label>
+                    <p className={`text-sm leading-relaxed ${transcript ? 'text-slate-100' : 'text-slate-600 italic'}`}>
+                      {transcript || (isListening ? "Speak now..." : isAISpeaking ? "AI is speaking..." : "Click mic to start recording...")}
+                    </p>
+                  </div>
+
+                  {!isListening && transcript.length > 0 && status === 'userSpeaking' && (
+                    <div className="mt-4 flex gap-4">
+                      {!hasReRecorded && (
+                        <button onClick={handleReRecord} className="text-xs text-slate-400 hover:text-white font-medium underline underline-offset-4">
+                          Re-record answer
+                        </button>
+                      )}
+                      <button onClick={handleSubmit} className="text-xs bg-indigo-600 px-5 py-2.5 rounded-lg font-bold hover:bg-indigo-500 transition-colors shadow-lg">
+                        Submit Answer
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </>
+
+            </div>
+
+            {/* Right Panel - Same as before */}
+            <div className="w-64 border-l border-slate-900 absolute right-0 top-0 bottom-0 bg-slate-950/50 p-6 flex flex-col gap-8">
+              <div>
+                <label className="text-[10px] uppercase font-bold text-slate-500 tracking-widest block mb-1">Progress</label>
+                <div className="text-white text-lg font-medium">Question {questionCount} of 5</div>
+                <div className="w-full bg-slate-800 h-1.5 rounded-full mt-2">
+                  <div className="bg-indigo-500 h-full rounded-full transition-all duration-500" style={{ width: `${(questionCount / 5) * 100}%` }}></div>
+                </div>
+              </div>
+              <div>
+                <label className="text-[10px] uppercase font-bold text-slate-500 tracking-widest block mb-1">Time Remaining</label>
+                <div className="text-white text-2xl font-mono">{formatTime(totalTime)}</div>
+              </div>
+            </div>
+          </main>
+
+          {/* Footer - Same as before */}
+          <footer className="bottom-bar flex items-center justify-between px-10">
+            <div className="w-1/3">
+              <label className="text-[10px] uppercase font-bold text-slate-500 tracking-widest block">Time this question</label>
+              <div className="text-white text-xl font-mono">{formatTime(questionTime)}</div>
+            </div>
+
+            <div className="w-1/3 flex justify-center">
+              <button
+                onClick={handleMicAction}
+                disabled={status !== 'userSpeaking' || isAISpeaking || (hasReRecorded && isListening === false && transcript.length > 0)}
+                className={`w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group ${isListening
+                  ? 'bg-rose-600 text-white shadow-[0_0_20px_rgba(225,29,72,0.4)] scale-110'
+                  : status === 'userSpeaking' && !isAISpeaking && !(hasReRecorded && transcript.length > 0)
+                    ? 'bg-indigo-600 text-white shadow-lg'
+                    : 'bg-slate-800 text-slate-500 cursor-not-allowed opacity-50'
+                  }`}
+              >
+                {isListening ? (
+                  <div className="w-4 h-4 bg-white rounded-sm"></div>
+                ) : (
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clipRule="evenodd"></path>
+                  </svg>
+                )}
+              </button>
+            </div>
+
+            <div className="w-1/3 flex flex-col items-end text-right">
+              <div className="flex gap-1 items-end mb-2 h-4">
+                {[1, 2, 3, 4, 5].map(i => (
+                  <div
+                    key={i}
+                    className="mic-wave-bar"
+                    style={{
+                      height: isListening ? `${20 + Math.random() * 80}%` : '4px',
+                      backgroundColor: isListening ? '#f43f5e' : '#6366f1'
+                    }}
+                  ></div>
+                ))}
+              </div>
+              <span className="text-[10px] text-slate-500 uppercase font-bold tracking-widest">
+                {isAISpeaking ? "AI is speaking..." : "Listening..."}
+              </span>
+            </div>
+          </footer>
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+
+</html>

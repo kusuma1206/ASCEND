@@ -1,0 +1,153 @@
+{
+  "roles": [
+    {
+      "name": "Frontend Developer",
+      "requiredSkills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Responsive Design",
+        "Git"
+      ],
+      "preferredSkills": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "Web Performance"
+      ],
+      "keywords": [
+        "DOM",
+        "Browser",
+        "Accessibility",
+        "UI",
+        "UX",
+        "Sass",
+        "Webpack",
+        "SPA",
+        "Vite"
+      ]
+    },
+    {
+      "name": "Backend Developer",
+      "requiredSkills": [
+        "Node.js",
+        "Python",
+        "SQL",
+        "Database Design",
+        "API Development",
+        "Git"
+      ],
+      "preferredSkills": [
+        "Express.js",
+        "PostgreSQL",
+        "MongoDB",
+        "Auth",
+        "Microservices",
+        "Docker"
+      ],
+      "keywords": [
+        "REST",
+        "CRUD",
+        "ORM",
+        "Prisma",
+        "Redis",
+        "Security",
+        "Scalability",
+        "Serverless",
+        "AWS"
+      ]
+    },
+    {
+      "name": "Full Stack Developer",
+      "requiredSkills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "SQL",
+        "Git"
+      ],
+      "preferredSkills": [
+        "Full-stack",
+        "TypeScript",
+        "Next.js",
+        "Database",
+        "Authentication",
+        "Deployment"
+      ],
+      "keywords": [
+        "Application",
+        "Server",
+        "Client",
+        "Architecture",
+        "Cloud",
+        "Agile",
+        "Testing",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Data Analyst",
+      "requiredSkills": [
+        "SQL",
+        "Excel",
+        "Data Visualization",
+        "Python",
+        "Statistics"
+      ],
+      "preferredSkills": [
+        "Tableau",
+        "Power BI",
+        "Pandas",
+        "NumPy",
+        "Clean Data",
+        "Reporting"
+      ],
+      "keywords": [
+        "ETL",
+        "Dashboard",
+        "Regression",
+        "Analysis",
+        "Dataset",
+        "Business Intelligence",
+        "Probability"
+      ]
+    }
+  ],
+  "sectionKeywords": {
+    "Skills": [
+      "skills",
+      "technical skills",
+      "competencies",
+      "technologies"
+    ],
+    "Education": [
+      "education",
+      "academic",
+      "university",
+      "college",
+      "degree"
+    ],
+    "Experience": [
+      "experience",
+      "work history",
+      "employment",
+      "professional background"
+    ],
+    "Projects": [
+      "projects",
+      "personal projects",
+      "portfolio",
+      "academics projects"
+    ],
+    "Certifications": [
+      "certifications",
+      "licenses",
+      "courses",
+      "awards"
+    ]
+  }
+}

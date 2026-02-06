@@ -1,0 +1,401 @@
+[
+  {
+    "id": "ds_hard_01",
+    "question": "What is the primary use of a Segment Tree?",
+    "options": [
+      "Range queries and range updates",
+      "Sorting numbers",
+      "Reitrieving strings",
+      "Simulating networks"
+    ],
+    "correct_answer": [
+      "Range queries and range updates"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_02",
+    "question": "In a Red-Black Tree, which of the following properties must hold?",
+    "options": [
+      "A red node cannot have a red child",
+      "Every path from a node to descendant leaves contains the same number of black nodes",
+      "The root is black",
+      "All leaves (NIL) are black"
+    ],
+    "correct_answer": [
+      "A red node cannot have a red child",
+      "Every path from a node to descendant leaves contains the same number of black nodes",
+      "The root is black",
+      "All leaves (NIL) are black"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_03",
+    "question": "What is the time complexity of 'query' and 'update' in a Binary Indexed Tree (Fenwick Tree)?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(sqrt n)",
+      "O(n)"
+    ],
+    "correct_answer": [
+      "O(log n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_04",
+    "question": "Which of these are true about an Articulation Point in a graph?",
+    "options": [
+      "A vertex whose removal increases the number of connected components",
+      "Found using DFS with 'discovery time' and 'low time'",
+      "Root of DFS tree is articulation point if it has at least two children",
+      "Every bridge endpoint is an articulation point if degree > 1"
+    ],
+    "correct_answer": [
+      "A vertex whose removal increases the number of connected components",
+      "Found using DFS with 'discovery time' and 'low time'",
+      "Root of DFS tree is articulation point if it has at least two children",
+      "Every bridge endpoint is an articulation point if degree > 1"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_05",
+    "question": "What is a 'Suffix Automaton' mainly used for?",
+    "options": [
+      "String pattern matching",
+      "Sorting arrays",
+      "Balancing trees",
+      "Graph traversal"
+    ],
+    "correct_answer": [
+      "String pattern matching"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_06",
+    "question": "Which of the following hashing techniques use multiple hash functions to resolve collisions?",
+    "options": [
+      "Cuckoo Hashing",
+      "Double Hashing",
+      "Bloom Filter",
+      "Perfect Hashing"
+    ],
+    "correct_answer": [
+      "Cuckoo Hashing",
+      "Double Hashing",
+      "Bloom Filter"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_07",
+    "question": "In the Disjoint Set Union (DSU) with Path Compression and Union by Rank, what is the amortized time complexity per operation?",
+    "options": [
+      "O(alpha(n)) where alpha is Inverse Ackermann",
+      "O(log n)",
+      "O(1)",
+      "O(n)"
+    ],
+    "correct_answer": [
+      "O(alpha(n)) where alpha is Inverse Ackermann"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_08",
+    "question": "Which of these describe a Fibonacci Heap?",
+    "options": [
+      "Supports 'decrease key' in amortized O(1)",
+      "Used in Dijkstra's to achieve O(E + V log V)",
+      "Collection of min-heap-ordered trees",
+      "Supports 'extract-min' in O(1)"
+    ],
+    "correct_answer": [
+      "Supports 'decrease key' in amortized O(1)",
+      "Used in Dijkstra's to achieve O(E + V log V)",
+      "Collection of min-heap-ordered trees"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_09",
+    "question": "What is Tarjan's algorithm used for?",
+    "options": [
+      "Finding Strongly Connected Components",
+      "Finding MST",
+      "Shortest path",
+      "Maximum flow"
+    ],
+    "correct_answer": [
+      "Finding Strongly Connected Components"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_10",
+    "question": "A 'Treedap' (Treap) combines which two data structures?",
+    "options": [
+      "Tree and Heap",
+      "Tree and Map",
+      "Table and Heap",
+      "Binary Search Tree and Priority Queue"
+    ],
+    "correct_answer": [
+      "Tree and Heap"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_11",
+    "question": "Which of these are properties of a 2-3 Tree?",
+    "options": [
+      "Every internal node is either a 2-node or a 3-node",
+      "All leaves are at the same distance from the root",
+      "It is always balanced",
+      "Height is O(log n)"
+    ],
+    "correct_answer": [
+      "Every internal node is either a 2-node or a 3-node",
+      "All leaves are at the same distance from the root",
+      "It is always balanced",
+      "Height is O(log n)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_12",
+    "question": "What is the maximum number of edges in a simple undirected graph with n vertices?",
+    "options": [
+      "n(n-1)/2",
+      "n^2",
+      "2n",
+      "n(n+1)/2"
+    ],
+    "correct_answer": [
+      "n(n-1)/2"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_13",
+    "question": "Which data structure is best for solving the 'Dynamic Connectivity' problem?",
+    "options": [
+      "Link-Cut Tree",
+      "Splay Tree",
+      "Segment Tree",
+      "HLD (Heavy-Light Decomposition)"
+    ],
+    "correct_answer": [
+      "Link-Cut Tree"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_14",
+    "question": "Which of the following are true regarding B+ Trees over B-Trees?",
+    "options": [
+      "All keys are present in leaves",
+      "Leaves are linked for range queries",
+      "Internal nodes only store keys (not values)",
+      "Searching is faster for certain keys"
+    ],
+    "correct_answer": [
+      "All keys are present in leaves",
+      "Leaves are linked for range queries",
+      "Internal nodes only store keys (not values)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_15",
+    "question": "What is the time complexity to find the Lowest Common Ancestor (LCA) in a tree after O(n log n) preprocessing?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(sqrt n)"
+    ],
+    "correct_answer": [
+      "O(1)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_16",
+    "question": "Which of these algorithms find Bridges in a graph?",
+    "options": [
+      "Tarjan's Bridge-finding",
+      "DFS based low-link approach",
+      "Kruskal's",
+      "Dijkstra's"
+    ],
+    "correct_answer": [
+      "Tarjan's Bridge-finding",
+      "DFS based low-link approach"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_17",
+    "question": "What is the amortized time complexity of a Splay Tree operation?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correct_answer": [
+      "O(log n)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_18",
+    "question": "In a Max-Flow Min-Cut theorem, the maximum flow value is equal to?",
+    "options": [
+      "Minimum cut capacity",
+      "Maximum cut capacity",
+      "Sum of all edges",
+      "Total vertex count"
+    ],
+    "correct_answer": [
+      "Minimum cut capacity"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_19",
+    "question": "Which of these data structures support persistent updates (keeping previous versions)?",
+    "options": [
+      "Persistent Segment Tree",
+      "Persistent Trie",
+      "Persistent Array",
+      "Hash Table"
+    ],
+    "correct_answer": [
+      "Persistent Segment Tree",
+      "Persistent Trie",
+      "Persistent Array"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_20",
+    "question": "What is the purpose of 'Centroid Decomposition' in a tree?",
+    "options": [
+      "Solving path-related queries",
+      "Balancing the tree",
+      "Sorting edges",
+      "Reducing memory"
+    ],
+    "correct_answer": [
+      "Solving path-related queries"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_21",
+    "question": "What is the time complexity of 'Hopcroft-Karp' algorithm for maximum matching?",
+    "options": [
+      "O(E * sqrt(V))",
+      "O(V^3)",
+      "O(V*E)",
+      "O(log V)"
+    ],
+    "correct_answer": [
+      "O(E * sqrt(V))"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_22",
+    "question": "Which of these are types of Heaps?",
+    "options": [
+      "Binomial Heap",
+      "Fibonacci Heap",
+      "Leftist Heap",
+      "Skew Heap"
+    ],
+    "correct_answer": [
+      "Binomial Heap",
+      "Fibonacci Heap",
+      "Leftist Heap",
+      "Skew Heap"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_23",
+    "question": "What does a 'Bloom Filter' return if an element is NOT in the set?",
+    "options": [
+      "Definitely not in the set",
+      "Probably not in the set",
+      "Probably in the set",
+      "Error"
+    ],
+    "correct_answer": [
+      "Definitely not in the set"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "ds_hard_24",
+    "question": "Which of these characterize a 'Suffix Tree'?",
+    "options": [
+      "Compressed trie of all suffixes of a string",
+      "Ukkonen's algorithm for construction",
+      "Built in O(n) time",
+      "Supports substring search in O(m) time"
+    ],
+    "correct_answer": [
+      "Compressed trie of all suffixes of a string",
+      "Ukkonen's algorithm for construction",
+      "Built in O(n) time",
+      "Supports substring search in O(m) time"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "ds_hard_25",
+    "question": "What is the complexity of finding Articulation Points in a graph with V vertices and E edges?",
+    "options": [
+      "O(V+E)",
+      "O(V^2)",
+      "O(E^2)",
+      "O(V*E)"
+    ],
+    "correct_answer": [
+      "O(V+E)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

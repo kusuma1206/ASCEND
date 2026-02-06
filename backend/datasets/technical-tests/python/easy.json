@@ -1,0 +1,391 @@
+[
+  {
+    "id": "py_easy_01",
+    "question": "What is the correct file extension for Python files?",
+    "options": [
+      ".py",
+      ".python",
+      ".pt",
+      ".pyt"
+    ],
+    "correct_answer": [
+      ".py"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_02",
+    "question": "How do you create a variable with the numeric value 5 in Python?",
+    "options": [
+      "x = 5",
+      "x = int(5)",
+      "both of the above",
+      "x : 5"
+    ],
+    "correct_answer": [
+      "both of the above"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_03",
+    "question": "Which of these are built-in data types in Python?",
+    "options": [
+      "List",
+      "Tuple",
+      "Dict",
+      "Set"
+    ],
+    "correct_answer": [
+      "List",
+      "Tuple",
+      "Dict",
+      "Set"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_04",
+    "question": "Which method is used to remove whitespace from both the beginning and the end of a string?",
+    "options": [
+      "strip()",
+      "trim()",
+      "len()",
+      "cut()"
+    ],
+    "correct_answer": [
+      "strip()"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_05",
+    "question": "Which of these keywords are used for exception handling in Python?",
+    "options": [
+      "try",
+      "except",
+      "finally",
+      "catch"
+    ],
+    "correct_answer": [
+      "try",
+      "except",
+      "finally"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_06",
+    "question": "What is the correct way to create a function in Python?",
+    "options": [
+      "def myFunction():",
+      "create myFunction():",
+      "function myFunction():",
+      "def:myFunction()"
+    ],
+    "correct_answer": [
+      "def myFunction():"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_07",
+    "question": "How do you start a WHILE loop in Python?",
+    "options": [
+      "while x > y:",
+      "while (x > y)",
+      "while x > y {",
+      "x > y while:"
+    ],
+    "correct_answer": [
+      "while x > y:"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_08",
+    "question": "Which of these can be used to iterate over a sequence?",
+    "options": [
+      "for",
+      "while",
+      "repeat",
+      "foreach"
+    ],
+    "correct_answer": [
+      "for",
+      "while"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_09",
+    "question": "Which operator is used for floor division in Python?",
+    "options": [
+      "//",
+      "/",
+      "%",
+      "**"
+    ],
+    "correct_answer": [
+      "//"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_10",
+    "question": "What is the result of 2 ** 3?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "5"
+    ],
+    "correct_answer": [
+      "8"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_11",
+    "question": "Which of these are valid way to declare a list in Python?",
+    "options": [
+      "x = []",
+      "x = list()",
+      "x = {}",
+      "x = ( )"
+    ],
+    "correct_answer": [
+      "x = []",
+      "x = list()"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_12",
+    "question": "How do you insert an element at the end of a list?",
+    "options": [
+      "append()",
+      "add()",
+      "insert()",
+      "push()"
+    ],
+    "correct_answer": [
+      "append()"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_13",
+    "question": "What is the output of len('Python')?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "Error"
+    ],
+    "correct_answer": [
+      "6"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_14",
+    "question": "Which of these are immutable in Python?",
+    "options": [
+      "Tuple",
+      "String",
+      "List",
+      "Dictionary"
+    ],
+    "correct_answer": [
+      "Tuple",
+      "String"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_15",
+    "question": "How do you create a dictionary in Python?",
+    "options": [
+      "{}",
+      "[]",
+      "()",
+      "<>"
+    ],
+    "correct_answer": [
+      "{}"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_16",
+    "question": "Which keyword is used to import a module?",
+    "options": [
+      "import",
+      "include",
+      "use",
+      "require"
+    ],
+    "correct_answer": [
+      "import"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_17",
+    "question": "Which of these are valid numeric types in Python?",
+    "options": [
+      "int",
+      "float",
+      "complex",
+      "double"
+    ],
+    "correct_answer": [
+      "int",
+      "float",
+      "complex"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_18",
+    "question": "What does the 'range(5)' function return?",
+    "options": [
+      "0 to 4",
+      "0 to 5",
+      "1 to 5",
+      "1 to 4"
+    ],
+    "correct_answer": [
+      "0 to 4"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_19",
+    "question": "How do you check the type of an object in Python?",
+    "options": [
+      "type()",
+      "typeof()",
+      "kind()",
+      "class()"
+    ],
+    "correct_answer": [
+      "type()"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_20",
+    "question": "Which of these are logical operators in Python?",
+    "options": [
+      "and",
+      "or",
+      "not",
+      "xor"
+    ],
+    "correct_answer": [
+      "and",
+      "or",
+      "not"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_21",
+    "question": "What is the default return value of a function that doesn't have a return statement?",
+    "options": [
+      "None",
+      "0",
+      "False",
+      "null"
+    ],
+    "correct_answer": [
+      "None"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_22",
+    "question": "What is slicing in Python used for?",
+    "options": [
+      "Accessing a sub-part of a sequence",
+      "Sorting a list",
+      "Deleting an element",
+      "Converting types"
+    ],
+    "correct_answer": [
+      "Accessing a sub-part of a sequence"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_23",
+    "question": "Which of these are valid methods for a Python dictionary?",
+    "options": [
+      "keys()",
+      "values()",
+      "items()",
+      "contains()"
+    ],
+    "correct_answer": [
+      "keys()",
+      "values()",
+      "items()"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_easy_24",
+    "question": "How do you write a comment in Python?",
+    "options": [
+      "# comment",
+      "// comment",
+      "/* comment */",
+      "<!-- comment -->"
+    ],
+    "correct_answer": [
+      "# comment"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_easy_25",
+    "question": "What is the output of 10 // 3?",
+    "options": [
+      "3",
+      "3.33",
+      "4",
+      "0"
+    ],
+    "correct_answer": [
+      "3"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

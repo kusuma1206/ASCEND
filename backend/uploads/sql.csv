@@ -1,0 +1,108 @@
+id,question,option1,option2,option3,option4,answer,difficulty
+1,What does SQL stand for?,Structured Query Language,Simple Query Language,Standard Query List,System Query Logic,Structured Query Language,easy
+2,Which command retrieves data?,SELECT,INSERT,UPDATE,DELETE,SELECT,easy
+3,Which clause filters rows?,WHERE,ORDER BY,GROUP BY,HAVING,WHERE,easy
+4,Which keyword sorts results?,ORDER BY,SORT,GROUP,ARRANGE,ORDER BY,easy
+5,Which command adds data?,INSERT,ADD,PUT,APPEND,INSERT,easy
+6,Which command removes data?,DELETE,REMOVE,DROP,CLEAR,DELETE,easy
+7,Which command changes data?,UPDATE,MODIFY,CHANGE,SET,UPDATE,easy
+8,Which symbol means all columns?,*,%,#,&,*,easy
+9,Which clause removes duplicates?,DISTINCT,UNIQUE,ONLY,FILTER,DISTINCT,easy
+10,Which clause groups rows?,GROUP BY,ORDER BY,WHERE,HAVING,GROUP BY,easy
+11,Which function counts rows?,COUNT(),SUM(),AVG(),TOTAL(),COUNT(),easy
+12,Which function finds maximum?,MAX(),TOP(),HIGH(),GREATEST(),MAX(),easy
+13,Which function finds minimum?,MIN(),LOW(),SMALL(),LEAST(),MIN(),easy
+14,Which function calculates average?,AVG(),MEAN(),AVERAGE(),CALC(),AVG(),easy
+15,Which command creates table?,CREATE,MAKE,BUILD,NEW,CREATE,easy
+16,Which command deletes table?,DROP,DELETE,REMOVE,CLEAR,DROP,easy
+17,Which command changes table structure?,ALTER,MODIFY,CHANGE,UPDATE,ALTER,easy
+18,Which clause filters groups?,HAVING,WHERE,GROUP BY,ORDER,HAVING,easy
+19,Which keyword limits rows?,LIMIT,TOP,ROWNUM,FETCH,LIMIT,easy
+20,Which operator checks equality?,=,==,===,!=,=,easy
+21,Which operator checks pattern?,LIKE,MATCH,FIND,SEARCH,LIKE,easy
+22,Which wildcard matches many chars?,%,_,*,?,%,easy
+23,Which wildcard matches single char?,_,%,*,?,_,easy
+24,Which constraint ensures uniqueness?,UNIQUE,PRIMARY,FOREIGN,CHECK,UNIQUE,easy
+25,Which constraint identifies row?,PRIMARY KEY,UNIQUE,INDEX,FOREIGN KEY,PRIMARY KEY,easy
+26,Which constraint links tables?,FOREIGN KEY,PRIMARY KEY,UNIQUE,CHECK,FOREIGN KEY,easy
+27,Which constraint prevents null?,NOT NULL,NO NULL,REQUIRED,MANDATORY,NOT NULL,easy
+28,Which keyword renames column?,AS,RENAME,ALIAS,NAME,AS,easy
+29,Which command shows table data?,SELECT,SHOW,DISPLAY,VIEW,SELECT,easy
+30,Which command adds column?,ALTER,UPDATE,INSERT,ADD,ALTER,easy
+31,Difference between WHERE and HAVING?,HAVING filters groups,WHERE filters groups,Same,None,HAVING filters groups,medium
+32,Which join returns all rows?,LEFT JOIN,INNER JOIN,RIGHT JOIN,CROSS JOIN,LEFT JOIN,medium
+33,Which join returns matching rows?,INNER JOIN,LEFT JOIN,RIGHT JOIN,FULL JOIN,INNER JOIN,medium
+34,Which join returns cartesian product?,CROSS JOIN,INNER JOIN,LEFT JOIN,RIGHT JOIN,CROSS JOIN,medium
+35,Which join returns unmatched from both?,FULL JOIN,LEFT JOIN,RIGHT JOIN,INNER JOIN,FULL JOIN,medium
+36,Which index improves search?,INDEX,KEY,POINTER,MAP,INDEX,medium
+37,Which index enforces uniqueness?,UNIQUE INDEX,NORMAL INDEX,PRIMARY INDEX,HASH INDEX,UNIQUE INDEX,medium
+38,Which clause limits result set?,LIMIT,ORDER,WHERE,GROUP,LIMIT,medium
+39,Which function concatenates strings?,CONCAT(),JOIN(),MERGE(),ADD(),CONCAT(),medium
+40,Which function returns length?,LENGTH(),SIZE(),LEN(),COUNT(),LENGTH(),medium
+41,Which function converts to uppercase?,UPPER(),CAPS(),TOUPPER(),UC(),UPPER(),medium
+42,Which function converts to lowercase?,LOWER(),SMALL(),TOLOWER(),LC(),LOWER(),medium
+43,Which subquery returns single value?,Scalar subquery,Multi-row,Nested,Join,Scalar subquery,medium
+44,Which subquery returns many rows?,Multi-row subquery,Scalar,Inline,Simple,Multi-row subquery,medium
+45,Which keyword checks existence?,EXISTS,IN,ANY,ALL,EXISTS,medium
+46,Which operator checks multiple values?,IN,BETWEEN,LIKE,ANY,IN,medium
+47,Which operator checks range?,BETWEEN,IN,LIKE,RANGE,BETWEEN,medium
+48,Which clause removes duplicate rows?,DISTINCT,UNIQUE,FILTER,ONLY,DISTINCT,medium
+49,Which keyword defines view?,CREATE VIEW,MAKE VIEW,NEW VIEW,ADD VIEW,CREATE VIEW,medium
+50,Which command removes view?,DROP VIEW,DELETE VIEW,REMOVE VIEW,CLEAR VIEW,DROP VIEW,medium
+51,Which command creates index?,CREATE INDEX,MAKE INDEX,NEW INDEX,ADD INDEX,CREATE INDEX,medium
+52,Which constraint checks condition?,CHECK,VERIFY,ASSERT,RULE,CHECK,medium
+53,Which function handles null?,COALESCE(),ISNULL(),NVL(),NULLIF(),COALESCE(),medium
+54,Which function returns current date?,CURRENT_DATE,SYSDATE,TODAY,NOW,CURRENT_DATE,medium
+55,Which function returns current time?,CURRENT_TIME,NOW,SYSDATE,TIME,CURRENT_TIME,medium
+56,Which clause sorts descending?,DESC,DOWN,REVERSE,ORDER,DESC,medium
+57,Which command copies table?,CREATE TABLE AS,COPY TABLE,DUP TABLE,CLONE,CREATE TABLE AS,medium
+58,Which statement commits data?,COMMIT,SAVE,END,STORE,COMMIT,medium
+59,Which statement cancels changes?,ROLLBACK,UNDO,CANCEL,REVERT,ROLLBACK,medium
+60,Which statement creates transaction?,BEGIN,START,OPEN,TRANSACTION,BEGIN,medium
+61,What is normalization?,Reducing redundancy,Adding data,Indexing,Partitioning,Reducing redundancy,hard
+62,Which normal form removes partial dependency?,2NF,1NF,3NF,BCNF,2NF,hard
+63,Which normal form removes transitive dependency?,3NF,2NF,1NF,BCNF,3NF,hard
+64,Which normal form removes all anomalies?,BCNF,3NF,2NF,1NF,BCNF,hard
+65,What is denormalization?,Adding redundancy,Removing tables,Indexing,Partitioning,Adding redundancy,hard
+66,What is ACID?,Transaction properties,Index type,Join rule,Constraint,Transaction properties,hard
+67,Which ACID ensures durability?,Durability,Atomicity,Consistency,Isolation,Durability,hard
+68,Which ACID ensures all or none?,Atomicity,Consistency,Isolation,Durability,Atomicity,hard
+69,Which ACID ensures isolation?,Isolation,Atomicity,Consistency,Durability,Isolation,hard
+70,Which isolation prevents dirty read?,READ COMMITTED,READ UNCOMMITTED,REPEATABLE READ,SERIALIZABLE,READ COMMITTED,hard
+71,Which isolation prevents phantom read?,SERIALIZABLE,READ COMMITTED,REPEATABLE READ,READ UNCOMMITTED,SERIALIZABLE,hard
+72,What is a deadlock?,Circular wait,Table lock,Row lock,Index lock,Circular wait,hard
+73,Which command analyzes execution?,EXPLAIN,DESCRIBE,SHOW PLAN,TRACE,EXPLAIN,hard
+74,Which index type is fastest?,B-Tree,Hash,Bitmap,Cluster,B-Tree,hard
+75,Which index suits low-cardinality?,Bitmap,B-Tree,Hash,Cluster,Bitmap,hard
+76,Which partitioning improves performance?,Range,Random,Single,Global,Range,hard
+77,Which function ranks rows?,RANK(),ORDER(),ROWNUM,SORT(),RANK(),hard
+78,Which function assigns unique number?,ROW_NUMBER(),RANK(),DENSE_RANK(),COUNT(),ROW_NUMBER(),hard
+79,Which function skips gaps?,DENSE_RANK(),RANK(),ROW_NUMBER(),COUNT(),DENSE_RANK(),hard
+80,Which clause performs recursive query?,WITH RECURSIVE,CONNECT BY,RECURSE,LOOP,WITH RECURSIVE,hard
+81,What is a materialized view?,Stored query result,Temporary view,Join,Index,Stored query result,hard
+82,Which command refreshes materialized view?,REFRESH,UPDATE,REBUILD,RELOAD,REFRESH,hard
+83,Which locking level is finest?,Row-level,Table-level,Database-level,Page-level,Row-level,hard
+84,Which join is slowest?,CROSS JOIN,INNER JOIN,LEFT JOIN,RIGHT JOIN,CROSS JOIN,hard
+85,Which plan chooses join order?,Optimizer,Parser,Executor,Compiler,Optimizer,hard
+86,Which feature supports sharding?,Partitioning,Indexing,Normalization,View,Partitioning,hard
+87,Which function merges rows?,UNION,JOIN,MERGE,COMBINE,UNION,hard
+88,Which function removes duplicates?,UNION,UNION ALL,JOIN,MERGE,UNION,hard
+89,Which function keeps duplicates?,UNION ALL,UNION,JOIN,MERGE,UNION ALL,hard
+90,Which feature improves scalability?,Replication,Index,View,Trigger,Replication,hard
+91,Which symbol is used for all columns in a table?,%,#,*,@,*,easy
+92,Which function is used to count rows in SQL?,TOTAL(),ADD(),COUNT(),SUM(),COUNT(),easy
+93,Which SQL statement is used to update existing data?,MODIFY,CHANGE,UPDATE,ALTER,UPDATE,easy
+94,Which data type is used to store text in SQL?,INT,CHAR / VARCHAR,FLOAT,DATE,CHAR / VARCHAR,easy
+95,Which SQL function returns the largest value?,MAX(),TOP(),HIGH(),LARGE(),MAX(),easy
+96,What is the correct order of SQL query execution?,SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY,FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY,FROM → SELECT → WHERE → GROUP BY → ORDER BY → HAVING,SELECT → WHERE → FROM → GROUP BY → ORDER BY → HAVING,FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY,medium
+97,What will this query return SELECT COUNT(*) FROM employees;?,Number of columns,Number of non-null rows,Total number of rows,Sum of employee IDs,Total number of rows,medium
+98,Which function returns the current date in SQL?,TODAY(),CURDATE(),CURRENT_DATE,GETDATE(),CURRENT_DATE,medium
+99,What does the BETWEEN operator do?,Checks equality,Checks range (inclusive),Checks pattern,Checks list values,Checks range (inclusive),medium
+100,Which JOIN returns all records when there is a match in either table?,INNER JOIN,LEFT JOIN,RIGHT JOIN,FULL OUTER JOIN,FULL OUTER JOIN,medium
+101,What will this query return SELECT COUNT(emp_id) FROM employees;?,Total rows including NULL,Count of non-NULL emp_id values,Total columns,Sum of emp_id,Count of non-NULL emp_id values,hard
+102,Which index improves the speed of data retrieval?,UNIQUE index,PRIMARY index,CLUSTERED index,All of the above,All of the above,hard
+103,What is a correlated subquery?,Subquery independent of outer query,Subquery executed only once,Subquery that depends on outer query,Subquery without SELECT,Subquery that depends on outer query,hard
+104,What happens if you use WHERE with an aggregate function?,Works normally,Syntax error,Filters grouped data,Same as HAVING,Syntax error,hard
+105,Which statement is TRUE about NULL in SQL?,NULL = 0,NULL = '',NULL is not equal to anything,NULL is same as FALSE,NULL is not equal to anything,hard
+
+

@@ -1,0 +1,399 @@
+[
+  {
+    "id": "os_easy_01",
+    "question": "What is the main purpose of an operating system?",
+    "options": [
+      "Manage hardware resources",
+      "Provide a user interface",
+      "Run applications",
+      "Execute BIOS"
+    ],
+    "correct_answer": [
+      "Manage hardware resources"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_02",
+    "question": "What is a 'Kernel' in an operating system?",
+    "options": [
+      "Central core of OS",
+      "A file system",
+      "A user utility",
+      "Hardware part"
+    ],
+    "correct_answer": [
+      "Central core of OS"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_03",
+    "question": "Which of these are states of a process?",
+    "options": [
+      "Ready",
+      "Running",
+      "Waiting",
+      "Terminated"
+    ],
+    "correct_answer": [
+      "Ready",
+      "Running",
+      "Waiting",
+      "Terminated"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_04",
+    "question": "Which scheduling algorithm uses a time slice?",
+    "options": [
+      "Round Robin",
+      "First Come First Serve",
+      "Shortest Job First",
+      "Priority Scheduling"
+    ],
+    "correct_answer": [
+      "Round Robin"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_05",
+    "question": "Which of these are necessary conditions for a Deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "No Preemption",
+      "Circular Wait"
+    ],
+    "correct_answer": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "No Preemption",
+      "Circular Wait"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_06",
+    "question": "What is 'Thrashing' in an operating system?",
+    "options": [
+      "Excessive paging",
+      "CPU failure",
+      "Hard drive crash",
+      "Process termination"
+    ],
+    "correct_answer": [
+      "Excessive paging"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_07",
+    "question": "Which of these is used for inter-process communication?",
+    "options": [
+      "Shared Memory",
+      "Message Passing",
+      "Pipes",
+      "Registers"
+    ],
+    "correct_answer": [
+      "Shared Memory",
+      "Message Passing",
+      "Pipes"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_08",
+    "question": "What is Virual Memory?",
+    "options": [
+      "Memory that looks larger than physical RAM",
+      "Memory on a network",
+      "Cache memory",
+      "Instruction memory"
+    ],
+    "correct_answer": [
+      "Memory that looks larger than physical RAM"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_09",
+    "question": "What does FIFO stand for in memory management?",
+    "options": [
+      "First In First Out",
+      "Fast Input Fast Output",
+      "First In First Over",
+      "File Input File Output"
+    ],
+    "correct_answer": [
+      "First In First Out"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_10",
+    "question": "Which of the following are file system types?",
+    "options": [
+      "NTFS",
+      "FAT32",
+      "ext4",
+      "HTTP"
+    ],
+    "correct_answer": [
+      "NTFS",
+      "FAT32",
+      "ext4"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_11",
+    "question": "What is a 'System Call'?",
+    "options": [
+      "Program request to OS kernel",
+      "Call between hardware parts",
+      "User calling support",
+      "Compiler error"
+    ],
+    "correct_answer": [
+      "Program request to OS kernel"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_12",
+    "question": "Which of these are memory allocation techniques?",
+    "options": [
+      "First Fit",
+      "Best Fit",
+      "Worst Fit",
+      "Slow Fit"
+    ],
+    "correct_answer": [
+      "First Fit",
+      "Best Fit",
+      "Worst Fit"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_13",
+    "question": "What is an 'Interrupt'?",
+    "options": [
+      "Signal to processor about an event",
+      "Process taking too much CPU",
+      "User stopping a program",
+      "Power failure"
+    ],
+    "correct_answer": [
+      "Signal to processor about an event"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_14",
+    "question": "What is 'Spooling'?",
+    "options": [
+      "Overlapping I/O with process execution",
+      "Memory cleaning",
+      "Disk formatting",
+      "Process swapping"
+    ],
+    "correct_answer": [
+      "Overlapping I/O with process execution"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_15",
+    "question": "Which of these are types of OS?",
+    "options": [
+      "Batch OS",
+      "Real-time OS",
+      "Distributed OS",
+      "Network OS"
+    ],
+    "correct_answer": [
+      "Batch OS",
+      "Real-time OS",
+      "Distributed OS",
+      "Network OS"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_16",
+    "question": "What is a 'Thread'?",
+    "options": [
+      "Lightweight process",
+      "A physical wire",
+      "A data structure",
+      "A file name"
+    ],
+    "correct_answer": [
+      "Lightweight process"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_17",
+    "question": "Which of these are CPU scheduling metrics?",
+    "options": [
+      "Throughput",
+      "Turnaround time",
+      "Response time",
+      "Clock speed"
+    ],
+    "correct_answer": [
+      "Throughput",
+      "Turnaround time",
+      "Response time"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_18",
+    "question": "What is 'Paging' in an OS?",
+    "options": [
+      "Memory management scheme",
+      "Printing a document",
+      "CPU cooling",
+      "Device naming"
+    ],
+    "correct_answer": [
+      "Memory management scheme"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_19",
+    "question": "Which of the following describes a 'Zombie Process'?",
+    "options": [
+      "Terminated process but has entry in process table",
+      "Process that cannot die",
+      "Infectious process",
+      "Process using 100% CPU"
+    ],
+    "correct_answer": [
+      "Terminated process but has entry in process table"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_20",
+    "question": "Which of these algorithms are used for disk scheduling?",
+    "options": [
+      "SCAN",
+      "C-SCAN",
+      "LOOK",
+      "LRU"
+    ],
+    "correct_answer": [
+      "SCAN",
+      "C-SCAN",
+      "LOOK"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_21",
+    "question": "What is a 'Semaphore'?",
+    "options": [
+      "Variable used to control access to resource",
+      "A network signal",
+      "A hardware terminal",
+      "Memory address"
+    ],
+    "correct_answer": [
+      "Variable used to control access to resource"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_22",
+    "question": "What is 'Context Switching'?",
+    "options": [
+      "Saving/restoring state of a CPU",
+      "Changing user accounts",
+      "Switching monitors",
+      "Updating OS"
+    ],
+    "correct_answer": [
+      "Saving/restoring state of a CPU"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_23",
+    "question": "Which of these are page replacement algorithms?",
+    "options": [
+      "LRU",
+      "Optimal",
+      "FIFO",
+      "MRU"
+    ],
+    "correct_answer": [
+      "LRU",
+      "Optimal",
+      "FIFO",
+      "MRU"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_easy_24",
+    "question": "What is an 'Inode'?",
+    "options": [
+      "Data structure representing a file system object",
+      "Input node",
+      "Internet node",
+      "Information node"
+    ],
+    "correct_answer": [
+      "Data structure representing a file system object"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_easy_25",
+    "question": "What is 'Demand Paging'?",
+    "options": [
+      "Loading pages into memory only on demand",
+      "Forcing user to pay for memory",
+      "Requesting more CPU",
+      "User interface refresh"
+    ],
+    "correct_answer": [
+      "Loading pages into memory only on demand"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

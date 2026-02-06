@@ -1,0 +1,114 @@
+[
+  {
+    "id": "comm_01",
+    "type": "Read Aloud",
+    "prompt": "Please read the following text clearly: 'Artificial Intelligence is transforming the way we work and live. From improving healthcare outcomes to optimizing supply chains, its impact is profound. However, ethical considerations regarding data privacy and algorithmic bias must be addressed to ensure a fair and inclusive future for all.'",
+    "minDuration": 15,
+    "structurePoints": [
+      "artificial intelligence",
+      "working",
+      "living",
+      "healthcare",
+      "ethical",
+      "privacy",
+      "bias",
+      "fair",
+      "inclusive"
+    ],
+    "strongResponse": "Artificial Intelligence is transforming the way we work and live. From improving healthcare outcomes to optimizing supply chains, its impact is profound. However, ethical considerations regarding data privacy and algorithmic bias must be addressed to ensure a fair and inclusive future for all.",
+    "feedbackTemplates": {
+      "low": "You completed the reading, but try to speak more clearly and at a steady pace.",
+      "mid": "Good reading. Your pace was understandable, though some words could be more distinct.",
+      "high": "Excellent clarity and pacing. You read the text with confidence and professional tone."
+    }
+  },
+  {
+    "id": "comm_02",
+    "type": "Picture / Scenario Description",
+    "prompt": "Scenario: You are looking at a busy city park. There are people jogging, children playing near a fountain, and an elderly couple sitting on a bench reading newspapers. Describe this scene in detail.",
+    "minDuration": 30,
+    "structurePoints": [
+      "park",
+      "jogging",
+      "children",
+      "fountain",
+      "elderly",
+      "bench",
+      "newspapers",
+      "busy",
+      "playing"
+    ],
+    "strongResponse": "In this busy city park, I see a vibrant atmosphere. Several people are jogging along the paved paths for exercise. Near the center, children are playing joyfully around a splashing fountain. On a quiet wooden bench, an elderly couple is sitting together, deeply focused on reading their morning newspapers. The overall scene is peaceful yet full of life.",
+    "feedbackTemplates": {
+      "low": "An attempt was made, but try to describe more details of the scene next time.",
+      "mid": "Good description. You covered most elements, though adding more adjectives would help.",
+      "high": "Vivid and detailed description. You successfully captured the essence of the scenario."
+    }
+  },
+  {
+    "id": "comm_03",
+    "type": "Opinion-Based Speaking",
+    "prompt": "What is your opinion on remote work? Do you think it is more productive than working in an office? Why or why not?",
+    "minDuration": 45,
+    "structurePoints": [
+      "remote work",
+      "office",
+      "productive",
+      "flexibility",
+      "communication",
+      "collaboration",
+      "focus",
+      "distraction"
+    ],
+    "strongResponse": "In my opinion, remote work offers significant advantages in terms of productivity and flexibility. Firstly, the lack of a commute allows for better time management. Secondly, many people find they can focus better at home without office distractions. However, collaboration can be more challenging, so it requires strong communication tools. Overall, I believe a hybrid model is often the most productive approach.",
+    "feedbackTemplates": {
+      "low": "You shared your opinion, but try to structure it with 'First' and 'Second' to be clearer.",
+      "mid": "Good points made. Your response had some structure, though it could be more cohesive.",
+      "high": "Very well-structured opinion. You used logical connectors and supported your points effectively."
+    }
+  },
+  {
+    "id": "comm_04",
+    "type": "Situational Response",
+    "prompt": "Situation: A teammate is consistently missing deadlines, which is affecting your work. How would you address this with them professionally?",
+    "minDuration": 30,
+    "structurePoints": [
+      "feedback",
+      "deadlines",
+      "impact",
+      "help",
+      "support",
+      "solution",
+      "professional",
+      "conversation"
+    ],
+    "strongResponse": "I would approach my teammate privately and say, 'I've noticed some delays in our recent milestones, and it's starting to impact my part of the project. Is everything okay? I'd like to understand what's causing the delays so we can find a solution together or see if you need any support to get back on track.' This ensures a professional and helpful tone.",
+    "feedbackTemplates": {
+      "low": "You addressed the situation, but try to use more professional and collaborative language.",
+      "mid": "Proper response. You showed professional intent, though the delivery could be firmer.",
+      "high": "Excellent situational handle. You balanced empathy with professionalism and focused on solutions."
+    }
+  },
+  {
+    "id": "comm_05",
+    "type": "Timed Self Introduction",
+    "prompt": "Introduce yourself professionally in 60 seconds. Mention your experience, key skills, and what you are looking for in your next role.",
+    "minDuration": 40,
+    "structurePoints": [
+      "experience",
+      "skills",
+      "projects",
+      "role",
+      "background",
+      "passionate",
+      "looking for",
+      "contribution"
+    ],
+    "strongResponse": "Hello, my name is [Name]. I have over 5 years of experience in software development, specializing in full-stack technologies like React and Node.js. In my previous role, I led the migration of a legacy system to a microservices architecture, improving performance by 40%. I am passionate about building scalable solutions and I am currently looking for a Senior Developer role where I can contribute to innovative products.",
+    "feedbackTemplates": {
+      "low": "Good start, but try to include more specific details about your skills and achievements.",
+      "mid": "Clear introduction. You mentioned the essentials, though a bit more enthusiasm would be great.",
+      "high": "Highly professional introduction. You hit all the key points with great pacing and clarity."
+    }
+  }
+]

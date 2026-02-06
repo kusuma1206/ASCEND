@@ -1,0 +1,873 @@
+[
+  {
+    "category": "Self Introduction",
+    "questions": [
+      {
+        "id": "hr_si_01",
+        "question": "Tell me about yourself.",
+        "talking_points": [
+          "background",
+          "experience",
+          "education",
+          "skills",
+          "goals"
+        ],
+        "min_length": 100,
+        "example_answer": "I am a proactive software engineer with 3 years of experience in JavaScript and Java. I graduated from XYZ University and have since worked on various fintech projects. I am passionate about clean code and efficient problem-solving, and I'm here today because I want to bring my expertise to a scale-up environment.",
+        "feedback_templates": {
+          "poor": "The introduction was too brief and lacked professional highlights.",
+          "average": "Good overview, but try to link your background more directly to the role.",
+          "excellent": "Clear, concise, and professional introduction."
+        }
+      },
+      {
+        "id": "hr_si_02",
+        "question": "Walk me through your resume.",
+        "talking_points": [
+          "roles",
+          "achievements",
+          "transitions",
+          "skills"
+        ],
+        "min_length": 150,
+        "example_answer": "I started as an intern at A-Tech where I learned the basics of SQL. Then I moved to B-Web as a full-stack developer where I led the migration to React. In my most recent role, I've been focused on cloud optimization using AWS. Each step has been a growth phase for me.",
+        "feedback_templates": {
+          "poor": "The walkthrough lacked specific achievements.",
+          "average": "Detailed transition history, but focus more on the impact of your roles.",
+          "excellent": "Strategic overview of your career progression and impact."
+        }
+      },
+      {
+        "id": "hr_si_03",
+        "question": "How would you describe yourself in three words?",
+        "talking_points": [
+          "adjectives",
+          "qualities",
+          "professionalism"
+        ],
+        "min_length": 50,
+        "example_answer": "I would say: Resilient, Collaborative, and Detail-oriented. I thrive under pressure, value team consensus, and always ensure my code is bug-free.",
+        "feedback_templates": {
+          "poor": "Three words without context don't help much.",
+          "average": "Good choices, but try to provide more evidence for each trait.",
+          "excellent": "Strong self-awareness with well-justified descriptors."
+        }
+      },
+      {
+        "id": "hr_si_04",
+        "question": "What is your biggest professional achievement so far?",
+        "talking_points": [
+          "achievements",
+          "impact",
+          "numbers",
+          "leadership"
+        ],
+        "min_length": 120,
+        "example_answer": "My biggest achievement was reducing server costs by 40% at my previous company by implementing a custom caching layer. It required deep optimization and was recognized as a major win for the engineering team.",
+        "feedback_templates": {
+          "poor": "The achievement mentioned lacks scale or impact.",
+          "average": "Impressive achievement, try to explain the 'how' more clearly.",
+          "excellent": "High-impact achievement with clear quantitative results."
+        }
+      },
+      {
+        "id": "hr_si_05",
+        "question": "Why did you choose this career path?",
+        "talking_points": [
+          "passion",
+          "interest",
+          "curiosity",
+          "problem solving"
+        ],
+        "min_length": 80,
+        "example_answer": "I've always loved solving puzzles and building things. Software engineering is the perfect intersection of logic and creativity for me. I enjoy the fast-paced nature of learning new technologies every day.",
+        "feedback_templates": {
+          "poor": "The motivation seems generic.",
+          "average": "Clear passion, but try to relate it to your future goals.",
+          "excellent": "Authentic and mission-driven career choice."
+        }
+      },
+      {
+        "id": "hr_si_06",
+        "question": "What brings you to our company specifically?",
+        "talking_points": [
+          "company research",
+          "values",
+          "mission",
+          "role"
+        ],
+        "min_length": 100,
+        "example_answer": "I admire your company's focus on user privacy and data security. I've read your recent blog posts on zero-trust architecture and I believe my background in secure systems would be a great fit for your team.",
+        "feedback_templates": {
+          "poor": "lacks specific evidence of company research.",
+          "average": "Good alignment, but try to mention specific products or values.",
+          "excellent": "Excellent demonstration of research and value-alignment."
+        }
+      },
+      {
+        "id": "hr_si_07",
+        "question": "Where does your motivation come from?",
+        "talking_points": [
+          "drive",
+          "purpose",
+          "growth",
+          "results"
+        ],
+        "min_length": 80,
+        "example_answer": "My motivation comes from seeing the tangible impact of my work on users. Building something that makes someone's life easier or a business more efficient is incredibly rewarding for me.",
+        "feedback_templates": {
+          "poor": "Vague description of motivation.",
+          "average": "Good focus on impact, but could be more personal.",
+          "excellent": "Clear sense of purpose and professional drive."
+        }
+      },
+      {
+        "id": "hr_si_08",
+        "question": "What are you most proud of in your career?",
+        "talking_points": [
+          "pride",
+          "work ethic",
+          "collaboration",
+          "success"
+        ],
+        "min_length": 100,
+        "example_answer": "I am most proud of my reputation as a reliable teammate. In my last three roles, I was the go-to person for critical bug fixes under tight deadlines, and I never let the team down.",
+        "feedback_templates": {
+          "poor": "The response was too humble to be effective.",
+          "average": "Good focus on soft skills, but try to add a technical win too.",
+          "excellent": "Strong demonstration of reliability and expertise."
+        }
+      },
+      {
+        "id": "hr_si_09",
+        "question": "What defines you as a professional?",
+        "talking_points": [
+          "integrity",
+          "quality",
+          "reliability",
+          "growth"
+        ],
+        "min_length": 80,
+        "example_answer": "Consistency and integrity define me. I believe in delivering high-quality work every single time, not just when it's easy. I'm also committed to constant learning and helping my team grow.",
+        "feedback_templates": {
+          "poor": "Generic professional traits mentioned.",
+          "average": "Clear values, try to provide a brief anecdote for context.",
+          "excellent": "Powerful statement of professional values and commitment."
+        }
+      },
+      {
+        "id": "hr_si_10",
+        "question": "What is one thing not on your resume that you want to mention?",
+        "talking_points": [
+          "hidden talent",
+          "value",
+          "personality"
+        ],
+        "min_length": 80,
+        "example_answer": "I am a mentor to three junior developers in an open-source community. This has sharpened my communication skills and helped me understand the importance of knowledge sharing in a team environment.",
+        "feedback_templates": {
+          "poor": "The point mentioned didn't add much value to the role.",
+          "average": "Interesting personality trait, but try to link it to the workplace.",
+          "excellent": "Superb way to showcase leadership and soft skills."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Behavioral",
+    "questions": [
+      {
+        "id": "hr_beh_01",
+        "question": "Tell me about a time you faced a conflict in a team.",
+        "talking_points": [
+          "conflict",
+          "resolution",
+          "communication",
+          "empathy"
+        ],
+        "min_length": 120,
+        "example_answer": "I once disagreed with a peer on the choice of a library. Instead of arguing, I proposed a small proof-of-concept for both. We compared the results objectively and agreed on the best fit. It kept the relationship intact and led to a better technical decision.",
+        "feedback_templates": {
+          "poor": "The resolution was passive or avoiding.",
+          "average": "Good approach, try to emphasize the 'listening' aspect more.",
+          "excellent": "Perfect example of objective conflict resolution."
+        }
+      },
+      {
+        "id": "hr_beh_02",
+        "question": "Give an example of a time you handled a difficult client.",
+        "talking_points": [
+          "patience",
+          "listening",
+          "solution",
+          "professionalism"
+        ],
+        "min_length": 120,
+        "example_answer": "A client was upset about a delay. I let them vent first, then clearly explained the root cause and the new timeline. I offered a small feature addition as a gesture of goodwill. They ended up renewing their contract early.",
+        "feedback_templates": {
+          "poor": "The response was defensive or lacked a solution.",
+          "average": "Professional handling, try to highlight the transparency part.",
+          "excellent": "Excellent demonstration of empathy and recovery strategy."
+        }
+      },
+      {
+        "id": "hr_beh_03",
+        "question": "Tell me about a time you failed.",
+        "talking_points": [
+          "failure",
+          "ownership",
+          "lesson",
+          "growth"
+        ],
+        "min_length": 100,
+        "example_answer": "I once missed a deployment window due to a configuration error. I owned the mistake immediately, stayed late to fix it, and created a checklist to ensure it never happened again. I haven't missed a window since.",
+        "feedback_templates": {
+          "poor": "Lacks accountability or a clear lesson.",
+          "average": "Honest admission, but make the 'lesson' more robust.",
+          "excellent": "Strong ownership and systemic learning shown."
+        }
+      },
+      {
+        "id": "hr_beh_04",
+        "question": "Describe a time you went above and beyond.",
+        "talking_points": [
+          "initiative",
+          "extra effort",
+          "quality",
+          "impact"
+        ],
+        "min_length": 120,
+        "example_answer": "While I was task to fix a bug, I realized the whole module was inefficient. I refactored the entire section on my own time, improving performance by 50%. The team was thrilled and the system was much more stable.",
+        "feedback_templates": {
+          "poor": "Doing your job isn't 'above and beyond'.",
+          "average": "Good initiative, try to quantify the impact more clearly.",
+          "excellent": "Outstanding example of proactive excellence."
+        }
+      },
+      {
+        "id": "hr_beh_05",
+        "question": "Tell me about a time you worked under pressure.",
+        "talking_points": [
+          "stress",
+          "prioritization",
+          "deadlines",
+          "calm"
+        ],
+        "min_length": 120,
+        "example_answer": "During a server outage, I was responsible for the database recovery. I stayed calm, followed the protocol, and kept the team updated every 15 minutes. We were back online within the hour with zero data loss.",
+        "feedback_templates": {
+          "poor": "The response focus on the stress, not the solution.",
+          "average": "Good focus, try to explain how you managed your emotions.",
+          "excellent": "Excellent example of poise and execution under pressure."
+        }
+      },
+      {
+        "id": "hr_beh_06",
+        "question": "Describe a time you had to learn something new quickly.",
+        "talking_points": [
+          "adaptability",
+          "learning curve",
+          "speed",
+          "application"
+        ],
+        "min_length": 100,
+        "example_answer": "I was assigned to a Python project with zero prior experience. I spent my weekend doing an intensive deep dive and was pushing production code by Wednesday. It taught me that my fundamentals are very strong.",
+        "feedback_templates": {
+          "poor": "The learning process was too slow or vague.",
+          "average": "Fast learner, try to mention what resources you used.",
+          "excellent": "Strong evidence of adaptability and rapid skill acquisition."
+        }
+      },
+      {
+        "id": "hr_beh_07",
+        "question": "Tell me about a time you persuaded someone.",
+        "talking_points": [
+          "persuasion",
+          "data",
+          "logic",
+          "soft skills"
+        ],
+        "min_length": 100,
+        "example_answer": "I had to persuade my manager to adopt Kubernetes. instead of just talking about hype, I showed a cost-analysis report. Seeing the 30% potential savings convinced him to approve the migration.",
+        "feedback_templates": {
+          "poor": "The persuasion was based on opinion, not fact.",
+          "average": "Logical approach, try to show how you addressed their concerns.",
+          "excellent": "Perfect use of data-driven influence."
+        }
+      },
+      {
+        "id": "hr_beh_08",
+        "question": "Give an example of a team project that failed.",
+        "talking_points": [
+          "group failure",
+          "analysis",
+          "no blame",
+          "learning"
+        ],
+        "min_length": 120,
+        "example_answer": "Our team once failed to deliver a mobile app on time. Looking back, our communication was siloed. We learned to use daily stand-ups and transparent task boards in every project since then.",
+        "feedback_templates": {
+          "poor": "Blamed others for the failure.",
+          "average": "Good analysis, but be more specific on your personal role.",
+          "excellent": "Highly mature team-perspective and objective learning."
+        }
+      },
+      {
+        "id": "hr_beh_09",
+        "question": "Tell me about a time you led a team.",
+        "talking_points": [
+          "leadership",
+          "delegation",
+          "coordination",
+          "success"
+        ],
+        "min_length": 120,
+        "example_answer": "I led a small squad for a feature rollout. I delegated tasks based on individual strengths and held daily syncs. We finished ahead of schedule and the feature had zero post-launch bugs.",
+        "feedback_templates": {
+          "poor": "Management isn't the same as leadership.",
+          "average": "Good coordination, try to show how you empowered others.",
+          "excellent": "Strong demonstration of servant leadership and execution."
+        }
+      },
+      {
+        "id": "hr_beh_10",
+        "question": "Describe a situation where you had to change your plan.",
+        "talking_points": [
+          "pivot",
+          "agility",
+          "patience",
+          "new direction"
+        ],
+        "min_length": 100,
+        "example_answer": "A week before launch, the requirements changed. Instead of panicking, I re-scoped the sprint, prioritized the essentials, and we still managed a successful MVP launch on the original date.",
+        "feedback_templates": {
+          "poor": "The pivot was messy or resisted.",
+          "average": "Flexible approach, try to emphasize the planning part.",
+          "excellent": "Outstanding demonstration of professional agility."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Situational",
+    "questions": [
+      {
+        "id": "hr_sit_01",
+        "question": "What would you do if a deadline is impossible to meet?",
+        "talking_points": [
+          "communication",
+          "transparency",
+          "priority",
+          "options"
+        ],
+        "min_length": 100,
+        "example_answer": "I would immediately inform my manager, explain the roadblocks, and propose options: either a partial launch of core features or an extension with a clear new roadmap. Honesty is better than late surprises.",
+        "feedback_templates": {
+          "poor": "Waiting until the last minute is a failure.",
+          "average": "Good transparency, try to be more proactive in your proposal.",
+          "excellent": "Highly ethical and proactive approach to managing expectations."
+        }
+      },
+      {
+        "id": "hr_sit_02",
+        "question": "How would you handle a colleague who isn't pulling their weight?",
+        "talking_points": [
+          "checking in",
+          "support",
+          "communication",
+          "escalation"
+        ],
+        "min_length": 100,
+        "example_answer": "I'd start by checking in with them privately to see if they need help or are facing blockers. If it continues without reason, I'd bring it up in a team sync focusing on the workflow, not the person.",
+        "feedback_templates": {
+          "poor": "Ignoring the problem or being confrontational.",
+          "average": "Good empathetic approach, try to define when to escalate.",
+          "excellent": "Perfect balance of empathy and professional accountability."
+        }
+      },
+      {
+        "id": "hr_sit_03",
+        "question": "What if your manager gives you conflicting instructions?",
+        "talking_points": [
+          "clarification",
+          "questions",
+          "alignment"
+        ],
+        "min_length": 100,
+        "example_answer": "I would ask for a quick sync to clarify the priorities. I'd present the two conflicting points and explain why I'm seeking alignment to ensure I deliver what's most important for the business.",
+        "feedback_templates": {
+          "poor": "just picking one and hoping for the best.",
+          "average": "Good clarification, try to mention how you'd document the decision.",
+          "excellent": "Excellent demonstration of professional upward management."
+        }
+      },
+      {
+        "id": "hr_sit_04",
+        "question": "If you saw a security vulnerability, what's your first step?",
+        "talking_points": [
+          "report",
+          "fix",
+          "protocol",
+          "discretion"
+        ],
+        "min_length": 80,
+        "example_answer": "I would immediately follow the internal reporting protocol, inform the security lead, and if minor, propose a fix. I would keep it confidential to avoid panic while it's being addressed.",
+        "feedback_templates": {
+          "poor": "Fixing it without telling anyone or ignoring it.",
+          "average": "Good awareness, try to emphasize the formal reporting.",
+          "excellent": "Highly responsible and protocol-driven response."
+        }
+      },
+      {
+        "id": "hr_sit_05",
+        "question": "How do you handle a client who keeps changing requirements?",
+        "talking_points": [
+          "boundaries",
+          "documentation",
+          "process",
+          "contracts"
+        ],
+        "min_length": 120,
+        "example_answer": "I would document every change request and explain the impact on the timeline and budget. I'd suggest a formal change-control process to ensure they understand the trade-offs being made.",
+        "feedback_templates": {
+          "poor": "Just saying yes and overworking.",
+          "average": "Good documentation, try to show more 'consultative' guidance.",
+          "excellent": "Professional and firm approach to scope management."
+        }
+      },
+      {
+        "id": "hr_sit_06",
+        "question": "What if you disagree with the company's direction?",
+        "talking_points": [
+          "commitment",
+          "dialogue",
+          "loyalty",
+          "feedback"
+        ],
+        "min_length": 100,
+        "example_answer": "I would seek to understand the 'why' from my leadership. If I still disagreed, I'd voice my concerns through proper channels, but once a decision is made, I'd commit 100% to its success.",
+        "feedback_templates": {
+          "poor": "Resisting the direction or being vocal in a negative way.",
+          "average": "Good loyalty, try to show how you'd provide constructive dissent.",
+          "excellent": "Perfect demonstration of 'disagree and commit' philosophy."
+        }
+      },
+      {
+        "id": "hr_sit_07",
+        "question": "How do you prioritize multiple urgent tasks?",
+        "talking_points": [
+          "impact",
+          "deadlines",
+          "matrix",
+          "asking"
+        ],
+        "min_length": 100,
+        "example_answer": "I use an Eisenhower Matrix to categorize tasks by importance and urgency. If everything seems equally critical, I'd consult my manager for high-level business priorities.",
+        "feedback_templates": {
+          "poor": "just doing the easiest thing first.",
+          "average": "Good use of tools, try to mention the communication part.",
+          "excellent": "Structured and business-aligned prioritization method."
+        }
+      },
+      {
+        "id": "hr_sit_08",
+        "question": "What if you find a mistake in your own work after deployment?",
+        "talking_points": [
+          "report",
+          "honesty",
+          "fix",
+          "prevention"
+        ],
+        "min_length": 100,
+        "example_answer": "I would immediately alert the team and the manager. I'd provide a fix and a rollback plan if necessary. After the fix, I'd lead a post-mortem to ensure it's avoided next time.",
+        "feedback_templates": {
+          "poor": "Hiding it and hoping no one notices.",
+          "average": "Good honesty, try to focus more on the 'preventive' steps.",
+          "excellent": "Highly ethical and solution-oriented accountability."
+        }
+      },
+      {
+        "id": "hr_sit_09",
+        "question": "How would you handle a crisis in the middle of a project?",
+        "talking_points": [
+          "triage",
+          "calm",
+          "communication",
+          "leadership"
+        ],
+        "min_length": 120,
+        "example_answer": "I'd start by triaging the issue to determine the damage. I'd pull the right experts into a war-room and keep stakeholders updated with clear, factual progress reports.",
+        "feedback_templates": {
+          "poor": "Panicking or not communicating enough.",
+          "average": "Good triage skills, try to show how you'd lead the recovery.",
+          "excellent": "Excellent crisis management and stakeholder handling."
+        }
+      },
+      {
+        "id": "hr_sit_10",
+        "question": "What if you are asked to do something unethical?",
+        "talking_points": [
+          "integrity",
+          "refusal",
+          "policy",
+          "reporting"
+        ],
+        "min_length": 80,
+        "example_answer": "I would respectfully refuse and cite the relevant policy or law. I would then report the situation to HR or the appropriate ethics channel within the company immediately.",
+        "feedback_templates": {
+          "poor": "Being too vague or hesitant in refusal.",
+          "average": "Good integrity, try to be more firm in the reporting part.",
+          "excellent": "Uncompromising professional ethics and courage."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Strengths & Weaknesses",
+    "questions": [
+      {
+        "id": "hr_sw_01",
+        "question": "What is your greatest strength?",
+        "talking_points": [
+          "strength",
+          "example",
+          "relevance"
+        ],
+        "min_length": 100,
+        "example_answer": "My greatest strength is my technical curiosity. I don't just use tools; I want to know how they work. This allows me to debug deep issues and optimize systems where others might get stuck.",
+        "feedback_templates": {
+          "poor": "Lacked a specific example of the strength.",
+          "average": "Good strength, try to show how it helps the team.",
+          "excellent": "Strong, unique strength backed by professional context."
+        }
+      },
+      {
+        "id": "hr_sw_02",
+        "question": "What is your greatest weakness?",
+        "talking_points": [
+          "weakness",
+          "self-improvement",
+          "honesty",
+          "mitigation"
+        ],
+        "min_length": 100,
+        "example_answer": "My weakness is sometimes getting too caught up in details. To manage this, I now use time-boxed intervals and check-ins to ensure I'm still focused on the high-level project goals.",
+        "feedback_templates": {
+          "poor": "A 'fake' weakness like 'perfectionism' without mitigation.",
+          "average": "Honest weakness, try to show more progress in fixing it.",
+          "excellent": "Vulnerable, honest, and actively managed weakness."
+        }
+      },
+      {
+        "id": "hr_sw_03",
+        "question": "How do you handle criticism?",
+        "talking_points": [
+          "listening",
+          "no ego",
+          "learning",
+          "gratitude"
+        ],
+        "min_length": 100,
+        "example_answer": "I view criticism as a chance to grow. I listen without interrupting, ask clarifying questions, and thank the person for their feedback. I then create an action plan to address the points.",
+        "feedback_templates": {
+          "poor": "Defensive or dismissive of feedback.",
+          "average": "Good listener, try to show an example of when you improved.",
+          "excellent": "Excellent demonstration of professional humility and growth."
+        }
+      },
+      {
+        "id": "hr_sw_04",
+        "question": "What would your last manager say about you?",
+        "talking_points": [
+          "reliability",
+          "skills",
+          "personality",
+          "reputation"
+        ],
+        "min_length": 100,
+        "example_answer": "They would say I am the most reliable developer they've had. They often praised my ability to handle complex migrations with almost zero downtime and my willingness to focus on the team.",
+        "feedback_templates": {
+          "poor": "Vague or unrealistic self-assessment.",
+          "average": "Good focus on reliability, try to mention a technical skill.",
+          "excellent": "Realistic and highly positive professional endorsement."
+        }
+      },
+      {
+        "id": "hr_sw_05",
+        "question": "What is one skill you are currently working on?",
+        "talking_points": [
+          "learning",
+          "upskilling",
+          "initiative",
+          "future"
+        ],
+        "min_length": 100,
+        "example_answer": "I'm currently mastering System Design and Distributed Systems. I want to move into a Lead Architect role in the next few years, so I'm studying patterns like Event Sourcing and Saga.",
+        "feedback_templates": {
+          "poor": "Learning something irrelevant to the role.",
+          "average": "Good initiative, try to show how you apply it today.",
+          "excellent": "Impressive commitment to professional evolution."
+        }
+      },
+      {
+        "id": "hr_sw_06",
+        "question": "Are you a leader or a follower?",
+        "talking_points": [
+          "balance",
+          "context",
+          "initiative",
+          "teamwork"
+        ],
+        "min_length": 80,
+        "example_answer": "I am a flexible professional. I can lead when a project needs direction, but I am also a disciplined follower when I'm working under an expert. I prioritize the team's success over any title.",
+        "feedback_templates": {
+          "poor": "picking one without nuance.",
+          "average": "Good balance, try to give an example of when you did both.",
+          "excellent": "Mature and adaptable approach to team dynamics."
+        }
+      },
+      {
+        "id": "hr_sw_07",
+        "question": "What makes you unique compared to other candidates?",
+        "talking_points": [
+          "unique",
+          "value",
+          "skills",
+          "experience"
+        ],
+        "min_length": 100,
+        "example_answer": "I combine deep backend expertise with a strong understanding of product management. I don't just build features; I understand why they are being built and how they impact the business.",
+        "feedback_templates": {
+          "poor": "Mentioning things that everyone else has.",
+          "average": "Good value proposition, try to be more specific.",
+          "excellent": "Powerful and distinct cross-functional value."
+        }
+      },
+      {
+        "id": "hr_sw_08",
+        "question": "How do you define success?",
+        "talking_points": [
+          "quality",
+          "impact",
+          "learning",
+          "team"
+        ],
+        "min_length": 100,
+        "example_answer": "To me, success is delivering a product that solves a real user problem while the team remains healthy and motivated. It's about sustainable excellence, not just finishing a task.",
+        "feedback_templates": {
+          "poor": "just about finishing tasks or getting paid.",
+          "average": "Good definition, try to mention the technical side.",
+          "excellent": "Holistic and highly professional definition of success."
+        }
+      },
+      {
+        "id": "hr_sw_09",
+        "question": "What is one thing you would change about your professional self?",
+        "talking_points": [
+          "growth",
+          "honesty",
+          "plan"
+        ],
+        "min_length": 100,
+        "example_answer": "I'd like to be more comfortable with public speaking. I'm great in technical discussions, but I want to be able to present to larger business audiences with the same confidence.",
+        "feedback_templates": {
+          "poor": "Mentioning a trait that is a core requirement for the job.",
+          "average": "Good honesty, try to show how you're practicing it.",
+          "excellent": "Superb self-awareness and target for growth."
+        }
+      },
+      {
+        "id": "hr_sw_10",
+        "question": "What drives you when you encounter a repetitive task?",
+        "talking_points": [
+          "automation",
+          "patience",
+          "quality",
+          "standardization"
+        ],
+        "min_length": 100,
+        "example_answer": "Automation. If I have to do something twice, I look for a way to script it. My drive comes from eliminating wasted effort and creating more efficient processes for the whole team.",
+        "feedback_templates": {
+          "poor": "complaining about boredom.",
+          "average": "Good focus on automation, try to show an example.",
+          "excellent": "Perfect engineer mindset for efficiency and quality."
+        }
+      }
+    ]
+  },
+  {
+    "category": "Career Goals",
+    "questions": [
+      {
+        "id": "hr_cg_01",
+        "question": "Where do you see yourself in 5 years?",
+        "talking_points": [
+          "growth",
+          "leadership",
+          "expert",
+          "ambition"
+        ],
+        "min_length": 120,
+        "example_answer": "In five years, I see myself as a Senior Technical Lead, helping to architect large-scale systems and mentoring the next generation of engineers. I hope to have contributed significantly to your company's core platform.",
+        "feedback_templates": {
+          "poor": "No plan or an unrealistic one.",
+          "average": "Good ambition, try to mention specific milestones.",
+          "excellent": "Clear, professional, and company-aligned career path."
+        }
+      },
+      {
+        "id": "hr_cg_02",
+        "question": "Why do you want to leave your current job?",
+        "talking_points": [
+          "new challenges",
+          "growth",
+          "alignment",
+          "positive tones"
+        ],
+        "min_length": 100,
+        "example_answer": "I've had a great run at my current role, but I've reached a ceiling in terms of what I can learn there. I'm looking for a more innovative environment where I can tackle larger architectural challenges.",
+        "feedback_templates": {
+          "poor": "complaining about your current boss or company.",
+          "average": "Good focus on growth, but be more specific on what's missing.",
+          "excellent": "Professional and growth-oriented reasoning."
+        }
+      },
+      {
+        "id": "hr_cg_03",
+        "question": "What kind of work environment do you thrive in?",
+        "talking_points": [
+          "collaboration",
+          "transparency",
+          "agility",
+          "praise"
+        ],
+        "min_length": 100,
+        "example_answer": "I thrive in high-trust, collaborative environments where everyone is encouraged to speak up. I value transparency from leadership and a culture that celebrates both wins and learning moments.",
+        "feedback_templates": {
+          "poor": "Lacking specifics on what makes you productive.",
+          "average": "Good description, try to show how you contribute to it.",
+          "excellent": "Vivid and culturally-aware description of your ideal environment."
+        }
+      },
+      {
+        "id": "hr_cg_04",
+        "question": "What are your salary expectations?",
+        "talking_points": [
+          "market rate",
+          "value",
+          "flexibility",
+          "negotiation"
+        ],
+        "min_length": 60,
+        "example_answer": "Based on my 3 years of experience and the market rate for this role, I am looking for a range between $X and $Y. However, the overall package and growth opportunities are also very important to me.",
+        "feedback_templates": {
+          "poor": "too rigid or lacking market context.",
+          "average": "Good range, try to justify it with your specific skills.",
+          "excellent": "Clear, well-researched, and professional approach to compensation."
+        }
+      },
+      {
+        "id": "hr_cg_05",
+        "question": "What is your dream job?",
+        "talking_points": [
+          "innovation",
+          "impact",
+          "leadership",
+          "happiness"
+        ],
+        "min_length": 100,
+        "example_answer": "My dream job is working on planetary-scale problems at a company that values technical excellence and human empathy. I want to build things that matter and work with people who inspire me every day.",
+        "feedback_templates": {
+          "poor": "naming a job title at a different company.",
+          "average": "Good values, try to link it back to the current role.",
+          "excellent": "Inspirational and clearly articulated professional vision."
+        }
+      },
+      {
+        "id": "hr_cg_06",
+        "question": "How do you stay updated with industry trends?",
+        "talking_points": [
+          "blogs",
+          "podcasts",
+          "courses",
+          "github",
+          "events"
+        ],
+        "min_length": 100,
+        "example_answer": "I follow engineering blogs like Netflix and Uber, listen to the 'Software Engineering Daily' podcast, and I'm currently finishing a specialization on Coursera about Cloud Architecture. I also contribute to open source.",
+        "feedback_templates": {
+          "poor": "no specific sources mentioned.",
+          "average": "Good habits, try to explain how you apply new knowledge.",
+          "excellent": "Proactive and diverse approach to continuous learning."
+        }
+      },
+      {
+        "id": "hr_cg_07",
+        "question": "What if you don't get this job?",
+        "talking_points": [
+          "resilience",
+          "feedback",
+          "persistence",
+          "positivity"
+        ],
+        "min_length": 80,
+        "example_answer": "I would be disappointed, of course, as I'm very excited about this role. However, I'd ask for feedback to improve, and I'd keep refining my skills for the next opportunity in this industry.",
+        "feedback_templates": {
+          "poor": "sounding desperate or bitter.",
+          "average": "Good resilience, try to show how you'd use the feedback.",
+          "excellent": "Graceful, mature, and growth-oriented attitude."
+        }
+      },
+      {
+        "id": "hr_cg_08",
+        "question": "What do you want to achieve in your first 90 days?",
+        "talking_points": [
+          "listen",
+          "learn",
+          "quick wins",
+          "impact"
+        ],
+        "min_length": 120,
+        "example_answer": "The first 30 days are for listening and learning the codebase. By 60 days, I want to deliver my first major feature. By 90 days, I want to be a fully integrated and high-contributing member of the team.",
+        "feedback_templates": {
+          "poor": "unrealistic goals or just 'waiting to be told'.",
+          "average": "Good structure, try to mention a specific area to focus on.",
+          "excellent": "Self-starting and highly organized onboarding plan."
+        }
+      },
+      {
+        "id": "hr_cg_09",
+        "question": "How do you want to be remembered by your colleagues?",
+        "talking_points": [
+          "helpful",
+          "expert",
+          "kind",
+          "reliable"
+        ],
+        "min_length": 100,
+        "example_answer": "I want to be remembered as someone who was always willing to help and who always produced high-quality, reliable work. If a colleague says 'I'm glad they're on this project,' that's success for me.",
+        "feedback_templates": {
+          "poor": "focused only on technical skills.",
+          "average": "Good teamwork focus, try to balance it with technical impact.",
+          "excellent": "Thoughtful and collaborative professional legacy."
+        }
+      },
+      {
+        "id": "hr_cg_10",
+        "question": "Are you willing to relocate or travel?",
+        "talking_points": [
+          "flexibility",
+          "commitment",
+          "reasons"
+        ],
+        "min_length": 60,
+        "example_answer": "Yes, I am fully open to relocation for the right opportunity. I enjoy new environments and I'm at a stage in my life where I can easily adapt to a new city for professional growth.",
+        "feedback_templates": {
+          "poor": "too hesitant if it's a requirement.",
+          "average": "Good flexibility, try to ask about the relocation policy.",
+          "excellent": "Decisive and committed approach to the role's requirements."
+        }
+      }
+    ]
+  }
+]

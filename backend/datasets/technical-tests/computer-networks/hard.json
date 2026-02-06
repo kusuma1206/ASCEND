@@ -1,0 +1,404 @@
+[
+  {
+    "id": "cn_hard_01",
+    "question": "Which of these are steps in the RSA encryption algorithm?",
+    "options": [
+      "Choose two large prime numbers p and q",
+      "Compute n = p * q",
+      "Select e such that gcd(e, phi(n)) = 1",
+      "Compute d such that d*e = 1 (mod phi(n))"
+    ],
+    "correct_answer": [
+      "Choose two large prime numbers p and q",
+      "Compute n = p * q",
+      "Select e such that gcd(e, phi(n)) = 1",
+      "Compute d such that d*e = 1 (mod phi(n))"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_02",
+    "question": "What is the primary purpose of 'Diffie-Hellman' key exchange?",
+    "options": [
+      "Securely exchanging cryptographic keys over public channel",
+      "Encrypting files",
+      "Hashing passwords",
+      "Digital signatures"
+    ],
+    "correct_answer": [
+      "Securely exchanging cryptographic keys over public channel"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_03",
+    "question": "Which of these are modes of 'IPsec'?",
+    "options": [
+      "Transport Mode",
+      "Tunnel Mode",
+      "Safe Mode",
+      "Relay Mode"
+    ],
+    "correct_answer": [
+      "Transport Mode",
+      "Tunnel Mode"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_04",
+    "question": "In the context of TCP, what is 'Fast Recovery'?",
+    "options": [
+      "Resuming transmission without slow start after 3 duplicate ACKs",
+      "Restarting from beginning",
+      "Doubling congestion window",
+      "Halving RTO"
+    ],
+    "correct_answer": [
+      "Resuming transmission without slow start after 3 duplicate ACKs"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_05",
+    "question": "Which of these describe 'MPLS' (Multi-Protocol Label Switching)?",
+    "options": [
+      "Directs data based on short path labels rather than long network addresses",
+      "Operates between Layer 2 and Layer 3",
+      "Replacement for IP",
+      "A type of encryption"
+    ],
+    "correct_answer": [
+      "Directs data based on short path labels rather than long network addresses",
+      "Operates between Layer 2 and Layer 3"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_06",
+    "question": "What is the 'Hidden Terminal Problem' in wireless networks?",
+    "options": [
+      "Node can communicate with AP but cannot see other nodes that can also talk to AP",
+      "Malicious node hiding",
+      "Poor signal range",
+      "Incorrect password"
+    ],
+    "correct_answer": [
+      "Node can communicate with AP but cannot see other nodes that can also talk to AP"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_07",
+    "question": "Which of these are true about 'SDN' (Software Defined Networking)?",
+    "options": [
+      "Decouples control plane from forwarding plane",
+      "Centralized network management",
+      "Uses OpenFlow protocol",
+      "Hardware based routing"
+    ],
+    "correct_answer": [
+      "Decouples control plane from forwarding plane",
+      "Centralized network management",
+      "Uses OpenFlow protocol"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_08",
+    "question": "What is 'Leaky Bucket' algorithm used for?",
+    "options": [
+      "Traffic shaping",
+      "Error detection",
+      "Flow control",
+      "Subnetting"
+    ],
+    "correct_answer": [
+      "Traffic shaping"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_09",
+    "question": "Which of these are characteristics of 'IPv6' header compared to IPv4?",
+    "options": [
+      "Fixed 40-byte length",
+      "No checksum field",
+      "Flow label for QoS",
+      "Variable length"
+    ],
+    "correct_answer": [
+      "Fixed 40-byte length",
+      "No checksum field",
+      "Flow label for QoS"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_10",
+    "question": "What does a 'Stateful Firewall' do?",
+    "options": [
+      "Tracks the state of active connections",
+      "Inspects only single packets",
+      "Blocks all ports",
+      "Encrypts traffic"
+    ],
+    "correct_answer": [
+      "Tracks the state of active connections"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_11",
+    "question": "Which of these are true about 'BGP' attributes?",
+    "options": [
+      "AS-PATH",
+      "NEXT-HOP",
+      "LOCAL-PREF",
+      "WEIGHT"
+    ],
+    "correct_answer": [
+      "AS-PATH",
+      "NEXT-HOP",
+      "LOCAL-PREF",
+      "WEIGHT"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_12",
+    "question": "What is 'Nagle's Algorithm' used for?",
+    "options": [
+      "Improving efficiency of TCP by combining small packets",
+      "Flow control",
+      "Security",
+      "Routing"
+    ],
+    "correct_answer": [
+      "Improving efficiency of TCP by combining small packets"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_13",
+    "question": "Which of these provide message integrity and authentication?",
+    "options": [
+      "HMAC",
+      "Digital Signatures",
+      "TCP Checksum",
+      "IP Address"
+    ],
+    "correct_answer": [
+      "HMAC",
+      "Digital Signatures"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_14",
+    "question": "What is 'Split Horizon' in distance vector routing?",
+    "options": [
+      "Don't send routing info back out the same interface it was received on",
+      "Splitting a network into two",
+      "A way to hide IPs",
+      "Sorting route tables"
+    ],
+    "correct_answer": [
+      "Don't send routing info back out the same interface it was received on"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_15",
+    "question": "Which of these are true for 'QUIC' protocol?",
+    "options": [
+      "Runs over UDP",
+      "Reduces connection establishment latency",
+      "Built-in encryption (TLS 1.3)",
+      "Multiplexing without HOL blocking"
+    ],
+    "correct_answer": [
+      "Runs over UDP",
+      "Reduces connection establishment latency",
+      "Built-in encryption (TLS 1.3)",
+      "Multiplexing without HOL blocking"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_16",
+    "question": "What is 'Self-Clocking' in TCP?",
+    "options": [
+      "Using ACKs to trigger new data segments",
+      "Hardware clock synchronization",
+      "NTP",
+      "Packet timestamps"
+    ],
+    "correct_answer": [
+      "Using ACKs to trigger new data segments"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_17",
+    "question": "Which of these are components of 'TLS' handshake?",
+    "options": [
+      "Client Hello",
+      "Server Certificate",
+      "Key Exchange",
+      "Finished"
+    ],
+    "correct_answer": [
+      "Client Hello",
+      "Server Certificate",
+      "Key Exchange",
+      "Finished"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_18",
+    "question": "What is 'Anycast' primarily used for in DNS?",
+    "options": [
+      "Directing requests to the nearest geographical DNS server",
+      "Broadcasting to all servers",
+      "Updating records",
+      "Backup servers"
+    ],
+    "correct_answer": [
+      "Directing requests to the nearest geographical DNS server"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_19",
+    "question": "Which of these are 'TCP Congestion Control' variants?",
+    "options": [
+      "Tahoe",
+      "Reno",
+      "New Reno",
+      "Vegas"
+    ],
+    "correct_answer": [
+      "Tahoe",
+      "Reno",
+      "New Reno",
+      "Vegas"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_20",
+    "question": "What is 'Port Mirroring'?",
+    "options": [
+      "Sending copy of network packets to another port for monitoring",
+      "Duplicate ports for speed",
+      "Encrypting ports",
+      "Closing ports"
+    ],
+    "correct_answer": [
+      "Sending copy of network packets to another port for monitoring"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_21",
+    "question": "Which of these characterize 'CSMA/CA'?",
+    "options": [
+      "Carrier Sensing",
+      "Collision Avoidance",
+      "Uses inter-frame spaces",
+      "Used in IEEE 802.11"
+    ],
+    "correct_answer": [
+      "Carrier Sensing",
+      "Collision Avoidance",
+      "Uses inter-frame spaces",
+      "Used in IEEE 802.11"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_22",
+    "question": "What is 'ECN' (Explicit Congestion Notification)?",
+    "options": [
+      "Allowing end-to-end notification of network congestion without dropping packets",
+      "Dropping packets early",
+      "Restarting routers",
+      "Network status emails"
+    ],
+    "correct_answer": [
+      "Allowing end-to-end notification of network congestion without dropping packets"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_23",
+    "question": "Which of these are 'Symmetric Key' algorithms?",
+    "options": [
+      "AES",
+      "DES",
+      "Blowfish",
+      "RSA"
+    ],
+    "correct_answer": [
+      "AES",
+      "DES",
+      "Blowfish"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "cn_hard_24",
+    "question": "What is 'Sliding Window' size based on in TCP?",
+    "options": [
+      "Receiver's buffer (rwnd)",
+      "Network capacity (cwnd)",
+      "Both rwnd and cwnd",
+      "Packet size"
+    ],
+    "correct_answer": [
+      "Both rwnd and cwnd"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "cn_hard_25",
+    "question": "Which protocol is used to perform secure remote login?",
+    "options": [
+      "SSH",
+      "Telnet",
+      "RDP",
+      "VNC"
+    ],
+    "correct_answer": [
+      "SSH"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Test Setup | ASCEND</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0c0c0e;
+      color: #fff;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .accent-gradient {
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-6 relative">
+  <div style="position: absolute; top: 2rem; right: 2rem;">
+    <a href="index.html" class="text-red-500 font-semibold hover:text-red-400 transition-colors">Logout</a>
+  </div>
+  <div class="max-w-xl w-full glass rounded-3xl p-8 shadow-2xl">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl font-bold mb-2">Technical Proficiency Test</h1>
+      <p class="text-gray-400">Rule-based assessment for Computer Science subjects</p>
+    </div>
+
+    <form id="test-setup-form" class="space-y-6">
+      <!-- Subject Selection -->
+      <div>
+        <label class="block text-sm font-medium text-gray-400 mb-2">Select Subject</label>
+        <select id="subject" name="subject" required
+          class="w-full bg-[#16161a] border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all">
+          <option value="" disabled selected>Choose a subject...</option>
+        </select>
+      </div>
+
+      <!-- Difficulty Selection -->
+      <div>
+        <label class="block text-sm font-medium text-gray-400 mb-2">Difficulty Level</label>
+        <div class="grid grid-cols-3 gap-3" id="difficulty-grid">
+          <!-- Loaded dynamically -->
+        </div>
+      </div>
+
+      <!-- Rules Summary -->
+      <div class="bg-indigo-500/5 rounded-2xl p-4 border border-indigo-500/10 mb-8">
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-2">Test Rules</h3>
+        <ul class="text-sm text-gray-300 space-y-2" id="rules-list">
+          <li>• Easy: 10 Questions</li>
+          <li>• Medium: 15 Questions</li>
+          <li>• Hard: 20 Questions</li>
+          <li>• Deterministic scoring (No AI)</li>
+        </ul>
+      </div>
+
+      <button type="submit"
+        class="w-full accent-gradient hover:opacity-90 text-white font-bold py-4 rounded-xl shadow-lg transition-all transform hover:scale-[1.02]">
+        Start Assessment
+      </button>
+    </form>
+  </div>
+
+  <script>
+    const API_BASE = 'http://localhost:3002/api/test';
+
+    async function loadConfig() {
+      try {
+        const res = await fetch(`${API_BASE}/config`);
+        const data = await res.json();
+
+        // Populate Subjects
+        const subjectSelect = document.getElementById('subject');
+        data.subjects.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.id;
+          opt.textContent = s.name;
+          subjectSelect.appendChild(opt);
+        });
+
+        // Populate Difficulties
+        const diffGrid = document.getElementById('difficulty-grid');
+        data.difficulties.forEach(d => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'diff-btn bg-[#16161a] border border-gray-800 rounded-xl py-3 text-sm font-medium hover:border-indigo-500 transition-all';
+          btn.textContent = d;
+          btn.onclick = () => selectDifficulty(btn, d);
+          diffGrid.appendChild(btn);
+        });
+
+      } catch (e) {
+        console.error("Config Load Error", e);
+      }
+    }
+
+    let selectedDiff = '';
+    function selectDifficulty(btn, diff) {
+      document.querySelectorAll('.diff-btn').forEach(b => {
+        b.classList.remove('border-indigo-500', 'bg-indigo-500/10', 'text-indigo-400');
+        b.classList.add('border-gray-800', 'bg-[#16161a]', 'text-white');
+      });
+      btn.classList.add('border-indigo-500', 'bg-indigo-500/10', 'text-indigo-400');
+      btn.classList.remove('border-gray-800', 'bg-[#16161a]', 'text-white');
+      selectedDiff = diff;
+    }
+
+    document.getElementById('test-setup-form').onsubmit = async (e) => {
+      e.preventDefault();
+      const subject = document.getElementById('subject').value;
+      if (!subject || !selectedDiff) {
+        alert("Please select both subject and difficulty");
+        return;
+      }
+
+      // Save choice to session storage
+      sessionStorage.setItem('testConfig', JSON.stringify({
+        subject,
+        difficulty: selectedDiff
+      }));
+
+      window.location.href = 'technical_test_session.html';
+    };
+
+    loadConfig();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* Guided Tour Styles */
+#tour-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#tour-tooltip {
+  position: absolute;
+  background: #1E293B;
+  color: white;
+  padding: 24px;
+  border-radius: 16px;
+  width: 320px;
+  z-index: 9999;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease, left 0.3s ease;
+}
+
+.tour-highlight {
+  position: relative;
+  z-index: 10000 !important;
+  background: #0F172A; /* Match Bg to avoid transparency issues */
+  box-shadow: 0 0 0 4px #8B5CF6; /* Ring */
+  pointer-events: none; /* Let clicks pass through if needed, but usually we block */
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.tour-header {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #8B5CF6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-body {
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.tour-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-steps {
+  font-size: 0.8rem;
+  color: #64748B;
+}
+
+.tour-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-skip {
+  background: transparent;
+  color: #94A3B8;
+}
+.btn-skip:hover {
+  color: white;
+}
+
+.btn-next {
+  background: #8B5CF6;
+  color: white;
+}
+.btn-next:hover {
+  background: #7C3AED;
+}

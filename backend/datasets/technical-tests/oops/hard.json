@@ -1,0 +1,403 @@
+[
+  {
+    "id": "oops_hard_01",
+    "question": "Which of the following are 'Behavioral' design patterns?",
+    "options": [
+      "Strategy",
+      "Observer",
+      "Command",
+      "Iterator",
+      "Singleton"
+    ],
+    "correct_answer": [
+      "Strategy",
+      "Observer",
+      "Command",
+      "Iterator"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_02",
+    "question": "What is the primary intent of the 'Decorator' pattern?",
+    "options": [
+      "Attach additional responsibilities to an object dynamically",
+      "Define a families of related objects",
+      "Convert interface of a class into another",
+      "Provide a surrogate for another object"
+    ],
+    "correct_answer": [
+      "Attach additional responsibilities to an object dynamically"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_03",
+    "question": "What is 'Dependency Injection' primarily used for?",
+    "options": [
+      "Reducing hard-coded dependencies between objects",
+      "Improving testability",
+      "Promoting loose coupling",
+      "Speeding up app"
+    ],
+    "correct_answer": [
+      "Reducing hard-coded dependencies between objects",
+      "Improving testability",
+      "Promoting loose coupling"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_04",
+    "question": "Which of these define the 'Liskov Substitution Principle'?",
+    "options": [
+      "Objects of a superclass should be replaceable with objects of its subclasses without affecting correctness",
+      "Subclasses should not exist",
+      "Classes should be closed for modification",
+      "Use interfaces over classes"
+    ],
+    "correct_answer": [
+      "Objects of a superclass should be replaceable with objects of its subclasses without affecting correctness"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_05",
+    "question": "Which of the following are types of 'Dependency Injection'?",
+    "options": [
+      "Constructor Injection",
+      "Setter Injection",
+      "Interface Injection",
+      "Method Injection"
+    ],
+    "correct_answer": [
+      "Constructor Injection",
+      "Setter Injection",
+      "Interface Injection"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_06",
+    "question": "What is 'Covariance' in terms of return types in Method Overriding?",
+    "options": [
+      "Subclass method can return a type derived from the return type of superclass method",
+      "Subclass must return same type",
+      "Subclass can return any type",
+      "Only works for primitive types"
+    ],
+    "correct_answer": [
+      "Subclass method can return a type derived from the return type of superclass method"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_07",
+    "question": "In C++, what is a 'Virtual Destructor' used for?",
+    "options": [
+      "Ensuring proper cleanup of derived class objects when deleted via base pointer",
+      "Deleting virtual functions",
+      "Cleaning up vtable",
+      "Faster memory deallocation"
+    ],
+    "correct_answer": [
+      "Ensuring proper cleanup of derived class objects when deleted via base pointer"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_08",
+    "question": "Which of these are 'Structural' design patterns?",
+    "options": [
+      "Adapter",
+      "Composite",
+      "Proxy",
+      "Facade",
+      "Factory Method"
+    ],
+    "correct_answer": [
+      "Adapter",
+      "Composite",
+      "Proxy",
+      "Facade"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_09",
+    "question": "What is the 'Observer' pattern mainly used for?",
+    "options": [
+      "Implementing distributed event-handling systems",
+      "Creating objects",
+      "Sorting lists",
+      "Memory management"
+    ],
+    "correct_answer": [
+      "Implementing distributed event-handling systems"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_10",
+    "question": "Which of these describe 'Inversion of Control' (IoC)?",
+    "options": [
+      "A design principle where control of objects/program flows is transferred to a container/framework",
+      "Reversing loop order",
+      "Turning objects into data",
+      "Removing all classes"
+    ],
+    "correct_answer": [
+      "A design principle where control of objects/program flows is transferred to a container/framework"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_11",
+    "question": "What is a 'Fluent Interface'?",
+    "options": [
+      "API based on method chaining to improve readability",
+      "API in multiple languages",
+      "Fast API",
+      "GUI interface"
+    ],
+    "correct_answer": [
+      "API based on method chaining to improve readability"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_12",
+    "question": "Which of the following are components of the 'MVC' pattern?",
+    "options": [
+      "Model",
+      "View",
+      "Controller",
+      "Service"
+    ],
+    "correct_answer": [
+      "Model",
+      "View",
+      "Controller"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_13",
+    "question": "What is 'Object-Relational Mapping' (ORM)?",
+    "options": [
+      "Technique for converting data between incompatible type systems in OOP and Relational Databases",
+      "Mapping objects to files",
+      "Copying database to RAM",
+      "A type of join"
+    ],
+    "correct_answer": [
+      "Technique for converting data between incompatible type systems in OOP and Relational Databases"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_14",
+    "question": "Which of these describe 'Active Record' pattern?",
+    "options": [
+      "An object that wraps a row in a database table or view and encapsulates logic",
+      "Persistent object",
+      "Background task",
+      "Live data stream"
+    ],
+    "correct_answer": [
+      "An object that wraps a row in a database table or view and encapsulates logic"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_15",
+    "question": "Which of these are 'Creational' design patterns?",
+    "options": [
+      "Singleton",
+      "Abstract Factory",
+      "Builder",
+      "Prototype",
+      "Bridge"
+    ],
+    "correct_answer": [
+      "Singleton",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_16",
+    "question": "What is 'Method Overloading' resolved?",
+    "options": [
+      "At compile time (Static polymorphism)",
+      "At runtime",
+      "At link time",
+      "By the user manually"
+    ],
+    "correct_answer": [
+      "At compile time (Static polymorphism)"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_17",
+    "question": "In Java/C#, what is 'Shadowing' (or Hiding)?",
+    "options": [
+      "Subclass declares field with same name as superclass",
+      "Private method in public class",
+      "Hiding code in JAR",
+      "Deleting base methods"
+    ],
+    "correct_answer": [
+      "Subclass declares field with same name as superclass"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_18",
+    "question": "Which of these describe a 'Mixin'?",
+    "options": [
+      "Class containing methods for use by other classes without being a parent",
+      "Mixing two languages",
+      "Combining functions",
+      "A type of UI layout"
+    ],
+    "correct_answer": [
+      "Class containing methods for use by other classes without being a parent"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_19",
+    "question": "Which of these describe 'Duck Typing'?",
+    "options": [
+      "'If it walks like a duck and quacks like a duck, it is a duck'",
+      "Type determined at runtime based on methods/properties present",
+      "Common in Python/JavaScript",
+      "Static type checking"
+    ],
+    "correct_answer": [
+      "'If it walks like a duck and quacks like a duck, it is a duck'",
+      "Type determined at runtime based on methods/properties present",
+      "Common in Python/JavaScript"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_20",
+    "question": "What is the 'Law of Demeter'?",
+    "options": [
+      "A module should not know about the inner workings of the objects it manipulates",
+      "'Talk only to your immediate friends'",
+      "Reduction in coupling",
+      "Always use pointers"
+    ],
+    "correct_answer": [
+      "A module should not know about the inner workings of the objects it manipulates",
+      "'Talk only to your immediate friends'",
+      "Reduction in coupling"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_21",
+    "question": "In C++, what is a 'Friend Class'?",
+    "options": [
+      "Class that can access private and protected members of another class",
+      "Class from the same family",
+      "Class in the same file",
+      "Class with no methods"
+    ],
+    "correct_answer": [
+      "Class that can access private and protected members of another class"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_22",
+    "question": "Which of these denote 'Object Identity'?",
+    "options": [
+      "Memory address of the object",
+      "Value of its properties",
+      "Its class name",
+      "Its variable name"
+    ],
+    "correct_answer": [
+      "Memory address of the object"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_23",
+    "question": "Which of these are required for 'Encapsulation' to be effective?",
+    "options": [
+      "Data fields should be private",
+      "Public accessor (get) and mutator (set) methods",
+      "Methods should be static",
+      "Inheritance"
+    ],
+    "correct_answer": [
+      "Data fields should be private",
+      "Public accessor (get) and mutator (set) methods"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "oops_hard_24",
+    "question": "What is 'Virtual Inheritance' used for in C++?",
+    "options": [
+      "Solving the Diamond Problem",
+      "Speeding up inheritance",
+      "Hiding base classes",
+      "Dynamic memory allocation"
+    ],
+    "correct_answer": [
+      "Solving the Diamond Problem"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "oops_hard_25",
+    "question": "Which of these characterize a 'Singleton'?",
+    "options": [
+      "Guarantees a class has only one instance",
+      "Provides a global point of access to it",
+      "Private constructor",
+      "Static instance field"
+    ],
+    "correct_answer": [
+      "Guarantees a class has only one instance",
+      "Provides a global point of access to it",
+      "Private constructor",
+      "Static instance field"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  }
+]

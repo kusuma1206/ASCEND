@@ -1,0 +1,107 @@
+id,question,option1,option2,option3,option4,answer,difficulty
+1,Java is a ___ language.,Low-level,High-level,Assembly,Machine,High-level,easy
+2,Which keyword defines a class?,class,struct,define,object,class,easy
+3,Which method is entry point of Java?,start(),run(),main(),init(),main(),easy
+4,Which symbol ends a statement?,;,:,.,",",;,easy
+5,Which keyword creates object?,new,create,object,make,new,easy
+6,Which datatype stores integers?,int,float,double,char,int,easy
+7,Which package is imported by default?,java.lang,java.util,java.io,java.net,java.lang,easy
+8,Which keyword is used for inheritance?,extends,implements,inherits,super,extends,easy
+9,Which keyword is used for interface?,interface,class,abstract,implements,interface,easy
+10,Which access specifier is most restrictive?,private,protected,public,default,private,easy
+11,Which keyword prevents inheritance?,final,static,private,const,final,easy
+12,Which keyword is used for constants?,final,const,static,define,final,easy
+13,Which loop checks condition first?,while,do-while,for,foreach,while,easy
+14,Which keyword exits loop?,break,stop,exit,end,break,easy
+15,Which keyword skips iteration?,continue,skip,pass,next,continue,easy
+16,Which operator compares values?,==,=,===,!=,==,easy
+17,Which datatype stores decimal?,float,int,char,boolean,float,easy
+18,Which keyword handles exceptions?,try,catch,throw,error,try,easy
+19,Which keyword catches exception?,catch,try,throws,error,catch,easy
+20,Which keyword throws exception?,throw,throws,catch,raise,throw,easy
+21,Which method prints output?,System.out.println,print,echo,display,System.out.println,easy
+22,Which keyword defines method return type void?,void,null,empty,none,void,easy
+23,Which keyword is used to create thread?,Thread,Runnable,start,run,Thread,easy
+24,Which keyword calls parent constructor?,super,this,parent,base,super,easy
+25,Which keyword refers current object?,this,self,super,object,this,easy
+26,Which datatype stores true/false?,boolean,bool,int,char,boolean,easy
+27,Which keyword is used for packages?,package,import,module,namespace,package,easy
+28,Which keyword imports packages?,import,include,require,using,import,easy
+29,Which keyword defines abstract class?,abstract,interface,virtual,base,abstract,easy
+30,Which operator is logical AND?,&&,&,AND,and,&&,easy
+31,What is JVM?,Java Virtual Machine,Java Variable Method,Java Verified Module,None,Java Virtual Machine,medium
+32,Which collection allows duplicates?,List,Set,Map,Queue,List,medium
+33,Which collection doesn't allow duplicates?,Set,List,Array,Queue,Set,medium
+34,Which keyword is used for multiple inheritance?,interface,class,extends,super,interface,medium
+35,Which class is parent of all classes?,Object,Class,Main,Base,Object,medium
+36,Which method compares strings?,equals(),==,compare(),match(),equals(),medium
+37,Which operator allocates memory?,new,malloc,alloc,create,new,medium
+38,Which exception is unchecked?,NullPointerException,IOException,SQLException,EOFException,NullPointerException,medium
+39,Which keyword handles resources?,try-with-resources,final,catch,throw,try-with-resources,medium
+40,Which class reads input?,Scanner,Reader,Input,Stream,Scanner,medium
+41,Which package contains Scanner?,java.util,java.io,java.lang,java.net,java.util,medium
+42,Which method converts string to int?,Integer.parseInt,toInt,parse(),value(),Integer.parseInt,medium
+43,Which keyword prevents method override?,final,static,private,const,final,medium
+44,Which keyword allows method override?,override,extends,super,none,none,medium
+45,Which keyword creates anonymous class?,new,class,anonymous,lambda,new,medium
+46,Which stream writes bytes?,OutputStream,InputStream,Reader,Writer,OutputStream,medium
+47,Which stream reads characters?,Reader,Writer,InputStream,OutputStream,Reader,medium
+48,Which collection is synchronized?,Vector,ArrayList,HashSet,HashMap,Vector,medium
+49,Which Map allows null key?,HashMap,Hashtable,TreeMap,ConcurrentMap,HashMap,medium
+50,Which keyword is used with lambda?,->,=>,::,lambda,->,medium
+51,Which class supports threads?,Thread,Runnable,Process,Executor,Thread,medium
+52,Which interface supports lambda?,Functional Interface,Marker Interface,Cloneable,Serializable,Functional Interface,medium
+53,Which package handles exceptions?,java.lang,java.util,java.io,java.net,java.lang,medium
+54,Which method starts thread?,start(),run(),execute(),begin(),start(),medium
+55,Which keyword avoids deadlock?,synchronized,volatile,atomic,none,none,medium
+56,Which keyword ensures visibility?,volatile,static,final,public,volatile,medium
+57,Which class handles dates?,LocalDate,DateUtil,CalendarX,Time,LocalDate,medium
+58,Which version introduced streams?,Java 8,Java 7,Java 6,Java 5,Java 8,medium
+59,Which operator is ternary?,?:,??,if,=>,?:,medium
+60,What is method overloading?,Same method name diff params,Same params diff return,Same body,None,Same method name diff params,hard
+61,What is method overriding?,Redefining parent method,Overloading method,Changing class,None,Redefining parent method,hard
+62,Which principle hides data?,Encapsulation,Inheritance,Polymorphism,Abstraction,Encapsulation,hard
+63,Which principle allows many forms?,Polymorphism,Encapsulation,Inheritance,Abstraction,Polymorphism,hard
+64,Which collection uses hashing?,HashMap,TreeMap,LinkedList,ArrayList,HashMap,hard
+65,Which collection maintains order?,LinkedHashMap,HashMap,Hashtable,TreeSet,LinkedHashMap,hard
+66,Which sorting uses compareTo?,Comparable,Comparator,Sorter,Order,Comparable,hard
+67,Which sorting uses compare?,Comparator,Comparable,Sort,Order,Comparator,hard
+68,Which exception occurs at runtime?,RuntimeException,IOException,SQLException,FileException,RuntimeException,hard
+69,Which thread state means blocked?,WAITING,BLOCKED,RUNNING,STOPPED,BLOCKED,hard
+70,Which keyword prevents serialization?,transient,static,volatile,final,transient,hard
+71,Which keyword ensures atomicity?,synchronized,volatile,atomic,lock,synchronized,hard
+72,Which design pattern creates objects?,Factory,Singleton,Observer,Adapter,Factory,hard
+73,Which design pattern allows one instance?,Singleton,Factory,Builder,Adapter,Singleton,hard
+74,Which keyword supports async?,CompletableFuture,Thread,Runnable,Async,CompletableFuture,hard
+75,Which API supports reactive streams?,Flow API,Stream API,IO API,Util API,Flow API,hard
+76,Which JVM area stores objects?,Heap,Stack,Method Area,PC,Heap,hard
+77,Which JVM area stores methods?,Method Area,Heap,Stack,PC,Method Area,hard
+78,Which JVM area stores variables?,Stack,Heap,Method Area,PC,Stack,hard
+79,Which garbage collector is default?,G1,CMS,Serial,Parallel,G1,hard
+80,Which keyword enables reflection?,Class,Reflect,Mirror,Meta,Class,hard
+81,Which API supports reflection?,java.lang.reflect,java.util,java.io,java.net,java.lang.reflect,hard
+82,Which feature improves performance?,JIT,JVM,JDK,JRE,JIT,hard
+83,Which class loader loads core classes?,Bootstrap,Extension,Application,System,Bootstrap,hard
+84,Which keyword creates immutable class?,final,static,const,private,final,hard
+85,Which feature avoids null checks?,Optional,Stream,Lambda,Future,Optional,hard
+86,Which API supports concurrency?,java.util.concurrent,java.util,java.lang,java.io,java.util.concurrent,hard
+87,Which keyword handles memory visibility?,volatile,synchronized,atomic,none,volatile,hard
+88,Which feature enables parallelism?,ForkJoin,Thread,Process,Async,ForkJoin,hard
+89,Which of the following is used to determine the length of an array in java?,arr.length();,arr.size;,arr.length;,arr.count();,arr.length;,hard
+90,What is the default value of an integer array in java?,null,0,garbage value,depends on JVM,0,hard
+91,Which method is the entry point of a Java program?,start(),run(),main(),init(),main(),easy
+92,What is the size of int in Java?,8-bit,16-bit,32-bit,64-bit,32-bit,easy
+93,Which symbol is used to end a statement in Java?,.,,,;,:,;,easy
+94,Which operator is used for comparison in Java?,=,==,:=,equals,==,easy
+95,Java programs are compiled into ______.,Machine code,Bytecode,Assembly code,Source code,Bytecode,easy
+96,Which access modifier makes a member accessible only within the same class?,public,protected,default,private,private,medium
+97,Which of the following is used to achieve runtime polymorphism in Java?,Method overloading,Method overriding,Constructor overloading,Interfaces only,Method overriding,medium
+98,Which exception is checked at compile time?,NullPointerException,ArrayIndexOutOfBoundsException,IOException,ArithmeticException,IOException,medium
+99,Which collection does NOT allow duplicate elements?,List,ArrayList,Set,Vector,Set,medium
+100,What is the parent class of all Java classes?,System,Class,Object,Throwable,Object,medium
+101,What will be the output of System.out.println("Java" + 10 + 20);?,Java30,Java1020,1020Java,Error,Java1020,hard
+102,Which of the following statements about String is TRUE?,Strings are mutable,Strings are stored only in heap,String objects are immutable,Strings cannot be compared,String objects are immutable,hard
+103,Which keyword prevents inheritance in Java?,static,final,private,protected,final,hard
+104,Which collection class is synchronized by default?,ArrayList,HashSet,Vector,HashMap,Vector,hard
+105,Which exception is thrown when dividing by zero?,NullPointerException,ArithmeticException,IOException,NumberFormatException,ArithmeticException,hard
+

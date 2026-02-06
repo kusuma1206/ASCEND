@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communication Test | ASCEND</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8B5CF6;
+      --primary-dark: #7C3AED;
+      --accent: #10B981;
+      --bg: #0F172A;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 40%);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      width: 100%;
+      flex: 1;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .test-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #8B5CF6, #EC4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      margin-top: 20px;
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+    }
+
+    #progress-inner {
+      height: 100%;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+
+    .main-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .task-type {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(139, 92, 246, 0.2);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: var(--primary);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .prompt-text {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      font-weight: 500;
+      margin-bottom: 30px;
+      color: var(--text-primary);
+    }
+
+    .timer-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .timer-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .timer-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .example-box {
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 4px solid var(--accent);
+      padding: 20px;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 30px;
+    }
+
+    .example-label {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .example-content {
+      font-style: italic;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .transcript-container {
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 20px;
+      min-height: 150px;
+      max-height: 250px;
+      overflow-y: auto;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .transcript-label {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+    }
+
+    #live-transcript {
+      color: var(--text-primary);
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mic-btn {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+    }
+
+    .mic-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+    }
+
+    .mic-btn.active {
+      background: #EF4444;
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+    }
+
+    .mic-btn svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+      }
+
+      70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(239, 68, 68, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+      }
+    }
+
+    .submit-btn {
+      padding: 14px 36px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .submit-btn.ready {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Result View */
+    #result-view {
+      display: none;
+      text-align: center;
+    }
+
+    .score-display {
+      font-size: 5rem;
+      font-weight: 800;
+      margin: 20px 0;
+      background: linear-gradient(to right, #8B5CF6, #10B981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .perf-label {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .feedback-text {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .home-btn {
+      padding: 14px 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--glass-border);
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .home-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .status-msg {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="test-view">
+    <header>
+      <div style="position: absolute; top: 30px; right: 40px;">
+        <a href="index.html" style="color:#ef4444; text-decoration:none; font-weight:600;">Logout</a>
+      </div>
+      <h1 class="test-title">Communication Test</h1>
+      <p id="task-counter" style="color: var(--text-secondary)">Task 1 of 5</p>
+      <div class="progress-bar">
+        <div id="progress-inner"></div>
+      </div>
+    </header>
+
+    <main class="main-card">
+      <span class="task-type" id="task-type">Task Type</span>
+
+      <p class="prompt-text" id="prompt-text">Loading task...</p>
+
+      <div class="timer-container">
+        <div class="timer-circle" id="timer-val">0</div>
+        <div>
+          <p class="timer-label">Minimum Speaking Time</p>
+          <p id="min-time-label" style="font-weight: 600">-- seconds</p>
+        </div>
+      </div>
+
+      <div class="example-box">
+        <p class="example-label">Example of a Strong Response</p>
+        <p class="example-content" id="example-content">This will help you understand the expected flow and structure.
+        </p>
+      </div>
+
+      <div class="transcript-container">
+        <span class="transcript-label">Live Transcript</span>
+        <p id="live-transcript">Click the microphone to begin speaking...</p>
+      </div>
+
+      <div class="controls">
+        <button class="mic-btn" id="mic-btn" onclick="toggleRecording()">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
+            <path
+              d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+          </svg>
+        </button>
+        <button class="submit-btn" id="submit-btn" onclick="nextTask()">Next Task</button>
+      </div>
+      <p class="status-msg" id="status-msg">Speak at least 15 seconds to enable submission.</p>
+    </main>
+  </div>
+
+  <!-- Result Dashboard -->
+  <div class="container" id="result-view">
+    <div class="main-card">
+      <h1 class="test-title">Final Performance</h1>
+      <div class="score-display" id="final-score">0 / 50</div>
+      <div class="perf-label" id="final-label">Calculating...</div>
+      <p class="feedback-text" id="final-feedback"></p>
+
+      <div style="margin-top: 40px">
+        <a href="dashboard.html" class="home-btn"
+          style="text-decoration: none; background: var(--primary); padding: 12px 24px; border-radius: 8px; color: white; font-weight: 600;">Return
+          to Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="communication_test.js"></script>
+  <!-- Ready Check Modal -->
+  <div id="ready-modal"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.95); z-index: 1000; display: flex; justify-content: center; align-items: center; text-align: center;">
+    <div
+      style="background: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--glass-border); max-width: 500px; backdrop-filter: blur(12px);">
+      <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 20px;">Ready for Test Interface?</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 30px; font-size: 1.1rem;">
+        This assessment is time-bound and requires focus. <br>
+        <strong>Entering this mode will enable Full Screen.</strong>
+      </p>
+      <button onclick="startTestFlow()"
+        style="padding: 16px 40px; background: var(--accent); color: #0F172A; font-weight: 700; border: none; border-radius: 12px; font-size: 1.1rem; cursor: pointer; transition: transform 0.2s;">
+        I'm Ready 🚀
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Full Screen & Ready Logic
+    const readyModal = document.getElementById('ready-modal');
+    const testView = document.getElementById('test-view');
+
+    // Initially hide test view
+    testView.style.filter = "blur(10px)";
+    testView.style.pointerEvents = "none";
+
+    function startTestFlow() {
+      // 1. Request Full Screen
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen().catch(err => {
+          console.log(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      }
+
+      // 2. Hide Modal & Reveal Test
+      readyModal.style.opacity = '0';
+      setTimeout(() => {
+        readyModal.style.display = 'none';
+        testView.style.filter = "none";
+        testView.style.pointerEvents = "auto";
+      }, 300);
+    }
+  </script>
+</body>
+
+</html>

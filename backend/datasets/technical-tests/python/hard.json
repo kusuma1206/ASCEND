@@ -1,0 +1,408 @@
+[
+  {
+    "id": "py_hard_01",
+    "question": "What is a 'Metaclass' in Python?",
+    "options": [
+      "The class of a class; a class that defines how classes behave",
+      "A class with many methods",
+      "A class that inherits from multiple classes",
+      "A class used for metadata"
+    ],
+    "correct_answer": [
+      "The class of a class; a class that defines how classes behave"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_02",
+    "question": "Which of these are true about Python's 'Asyncio'?",
+    "options": [
+      "Uses single-threaded event loop",
+      "Provides infrastructure for writing single-threaded concurrent code using coroutines",
+      "Faster than multi-threading for I/O bound tasks",
+      "Requires the 'await' keyword inside async functions"
+    ],
+    "correct_answer": [
+      "Uses single-threaded event loop",
+      "Provides infrastructure for writing single-threaded concurrent code using coroutines",
+      "Faster than multi-threading for I/O bound tasks",
+      "Requires the 'await' keyword inside async functions"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_03",
+    "question": "What is a 'Descriptor' in Python?",
+    "options": [
+      "An object attribute with 'binding behavior' that has methods from the descriptor protocol",
+      "A string describing a class",
+      "A type of decorator",
+      "A variable in a list"
+    ],
+    "correct_answer": [
+      "An object attribute with 'binding behavior' that has methods from the descriptor protocol"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_04",
+    "question": "Which methods are part of the 'Descriptor Protocol'?",
+    "options": [
+      "__get__",
+      "__set__",
+      "__delete__",
+      "__set_name__"
+    ],
+    "correct_answer": [
+      "__get__",
+      "__set__",
+      "__delete__",
+      "__set_name__"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_05",
+    "question": "What is the 'MRO' (Method Resolution Order) and what algorithm does it use in Python 3?",
+    "options": [
+      "Order in which Python searches for a method in a class hierarchy; uses C3 Linearization",
+      "Manual order by user; uses DFS",
+      "Alphabetical order; uses BFS",
+      "Randomized order"
+    ],
+    "correct_answer": [
+      "Order in which Python searches for a method in a class hierarchy; uses C3 Linearization"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_06",
+    "question": "Which of these are true regarding 'Garbage Collection' in Python (CPython)?",
+    "options": [
+      "Primarily uses Reference Counting",
+      "Uses a cyclic garbage collector to detect reference cycles",
+      "Uses generational garbage collection (3 generations)",
+      "Can be disabled manually"
+    ],
+    "correct_answer": [
+      "Primarily uses Reference Counting",
+      "Uses a cyclic garbage collector to detect reference cycles",
+      "Uses generational garbage collection (3 generations)",
+      "Can be disabled manually"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_07",
+    "question": "What is the purpose of 'sys.setrecursionlimit()'?",
+    "options": [
+      "Change the maximum depth of the Python interpreter stack",
+      "Speed up recursion",
+      "Limit memory usage",
+      "Prevent all loops"
+    ],
+    "correct_answer": [
+      "Change the maximum depth of the Python interpreter stack"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_08",
+    "question": "Which of these describe the 'Slots' (__slots__) feature in classes?",
+    "options": [
+      "Used to restrict attribute creation to save memory",
+      "Avoids creation of __dict__ for instances",
+      "Speeds up attribute access",
+      "Prevents inheritance"
+    ],
+    "correct_answer": [
+      "Used to restrict attribute creation to save memory",
+      "Avoids creation of __dict__ for instances",
+      "Speeds up attribute access"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_09",
+    "question": "What is the effect of 'id(obj1) == id(obj2)' being True?",
+    "options": [
+      "Both variables refer to the same object in memory",
+      "Variables have same value",
+      "Variables have same type",
+      "Variables are in same module"
+    ],
+    "correct_answer": [
+      "Both variables refer to the same object in memory"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_10",
+    "question": "Which of these relate to Python 'Coroutines'?",
+    "options": [
+      "async def",
+      "await",
+      "yield from (legacy)",
+      "next()"
+    ],
+    "correct_answer": [
+      "async def",
+      "await",
+      "yield from (legacy)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_11",
+    "question": "What is the purpose of 'itertools.islice'?",
+    "options": [
+      "Slicing an iterator without creating a list copy",
+      "Sorting an iterator",
+      "Multiplying lists",
+      "Filtering strings"
+    ],
+    "correct_answer": [
+      "Slicing an iterator without creating a list copy"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_12",
+    "question": "Which of these describe 'Abstract Base Classes' (abc module)?",
+    "options": [
+      "Provide a way to define interfaces in Python",
+      "Classes cannot be instantiated if they have abstract methods",
+      "Uses @abstractmethod decorator",
+      "A type of C extension"
+    ],
+    "correct_answer": [
+      "Provide a way to define interfaces in Python",
+      "Classes cannot be instantiated if they have abstract methods",
+      "Uses @abstractmethod decorator"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_13",
+    "question": "What is 'Cython'?",
+    "options": [
+      "A superset of Python that supports calling C functions and declaring C types",
+      "A compiler for Python",
+      "A security framework",
+      "A database wrapper"
+    ],
+    "correct_answer": [
+      "A superset of Python that supports calling C functions and declaring C types"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_14",
+    "question": "Which of these are part of the 'collections' module?",
+    "options": [
+      "namedtuple",
+      "deque",
+      "Counter",
+      "defaultdict",
+      "OrderedDict"
+    ],
+    "correct_answer": [
+      "namedtuple",
+      "deque",
+      "Counter",
+      "defaultdict",
+      "OrderedDict"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_15",
+    "question": "What is 'Small Integer Caching' in CPython?",
+    "options": [
+      "CPython pre-allocates integers from -5 to 256 to save memory",
+      "Caching small loops",
+      "Encryption for small numbers",
+      "Database index for ints"
+    ],
+    "correct_answer": [
+      "CPython pre-allocates integers from -5 to 256 to save memory"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_16",
+    "question": "Which of these are module level 'dunder' variables?",
+    "options": [
+      "__name__",
+      "__file__",
+      "__package__",
+      "__doc__"
+    ],
+    "correct_answer": [
+      "__name__",
+      "__file__",
+      "__package__",
+      "__doc__"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_17",
+    "question": "What does 'yield from iterable' do in a generator?",
+    "options": [
+      "Delegates to a subgenerator or iterable",
+      "Returns the iterable",
+      "Stops the generator",
+      "Prints the iterable"
+    ],
+    "correct_answer": [
+      "Delegates to a subgenerator or iterable"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_18",
+    "question": "Which of these characterize 'FastAPI' in Python?",
+    "options": [
+      "Uses Pydantic for data validation",
+      "Built on Starlette",
+      "Supports asynchronous request handling",
+      "Requires manual SQL writing"
+    ],
+    "correct_answer": [
+      "Uses Pydantic for data validation",
+      "Built on Starlette",
+      "Supports asynchronous request handling"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_19",
+    "question": "What is 'Monkey Patching'?",
+    "options": [
+      "Dynamic replacement of attributes/methods at runtime",
+      "Writing code for mobile",
+      "Fixing old bugs",
+      "A type of unit test"
+    ],
+    "correct_answer": [
+      "Dynamic replacement of attributes/methods at runtime"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_20",
+    "question": "Which of these relate to the 'multiprocessing' module?",
+    "options": [
+      "Spawns separate OS processes",
+      "Each process has its own GIL",
+      "Used for CPU-bound tasks",
+      "Share memory easily like threads"
+    ],
+    "correct_answer": [
+      "Spawns separate OS processes",
+      "Each process has its own GIL",
+      "Used for CPU-bound tasks"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_21",
+    "question": "What is 'functools.partial' used for?",
+    "options": [
+      "Fixing a certain number of arguments of a function and returning a new function",
+      "Splitting a function into two",
+      "Caching function results",
+      "Timing functions"
+    ],
+    "correct_answer": [
+      "Fixing a certain number of arguments of a function and returning a new function"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_22",
+    "question": "Which of these are true about 'Non-local' keyword?",
+    "options": [
+      "Used to work with variables inside nested functions",
+      "Refers to parent scope (not global)",
+      "Used in decorators",
+      "Requires global access"
+    ],
+    "correct_answer": [
+      "Used to work with variables inside nested functions",
+      "Refers to parent scope (not global)"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_23",
+    "question": "What is the purpose of the '__call__' dunder method?",
+    "options": [
+      "Allows an instance of a class to be called as a function",
+      "Initializes a class",
+      "Deletes an object",
+      "Converts object to string"
+    ],
+    "correct_answer": [
+      "Allows an instance of a class to be called as a function"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "py_hard_24",
+    "question": "Which of these describe 'ContextLib' utilities?",
+    "options": [
+      "@contextmanager decorator",
+      "closing()",
+      "suppress()",
+      "redirect_stdout()"
+    ],
+    "correct_answer": [
+      "@contextmanager decorator",
+      "closing()",
+      "suppress()",
+      "redirect_stdout()"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "py_hard_25",
+    "question": "What is 'Interning' of strings in Python?",
+    "options": [
+      "Storing only one copy of each distinct string value",
+      "Translating strings",
+      "Combining strings",
+      "Deleting strings from RAM"
+    ],
+    "correct_answer": [
+      "Storing only one copy of each distinct string value"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

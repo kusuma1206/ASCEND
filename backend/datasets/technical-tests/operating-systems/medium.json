@@ -1,0 +1,398 @@
+[
+  {
+    "id": "os_med_01",
+    "question": "What is the primary purpose of the Banker's Algorithm?",
+    "options": [
+      "Deadlock avoidance",
+      "Deadlock detection",
+      "Process scheduling",
+      "Memory allocation"
+    ],
+    "correct_answer": [
+      "Deadlock avoidance"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_02",
+    "question": "Which of these are required to be in a 'Safe State' in Banker's algorithm?",
+    "options": [
+      "System can allocate resources to processes in some order without becoming deadlocked",
+      "All processes must finish instantly",
+      "No process can request more than available",
+      "Maximum needs are met"
+    ],
+    "correct_answer": [
+      "System can allocate resources to processes in some order without becoming deadlocked"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_03",
+    "question": "Which of these are Page Replacement algorithms?",
+    "options": [
+      "LRU (Least Recently Used)",
+      "FIFO (First In First Out)",
+      "Optimal",
+      "SJF (Shortest Job First)"
+    ],
+    "correct_answer": [
+      "LRU (Least Recently Used)",
+      "FIFO (First In First Out)",
+      "Optimal"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_04",
+    "question": "What is 'Thrashing' in OS?",
+    "options": [
+      "CPU spending more time paging than executing processes",
+      "Multiple users logging in",
+      "System cooling down",
+      "Disk spinning fast"
+    ],
+    "correct_answer": [
+      "CPU spending more time paging than executing processes"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_05",
+    "question": "Which of the following are necessary conditions for Deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "No Preemption",
+      "Circular Wait"
+    ],
+    "correct_answer": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "No Preemption",
+      "Circular Wait"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_06",
+    "question": "What is a 'Semaphore'?",
+    "options": [
+      "Integer variable used for signaling and synchronization",
+      "A hardware switch",
+      "A memory address",
+      "A process ID"
+    ],
+    "correct_answer": [
+      "Integer variable used for signaling and synchronization"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_07",
+    "question": "Which of these are types of Semaphores?",
+    "options": [
+      "Binary Semaphore",
+      "Counting Semaphore",
+      "Mutex",
+      "Atomic Semaphore"
+    ],
+    "correct_answer": [
+      "Binary Semaphore",
+      "Counting Semaphore"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_08",
+    "question": "What is 'Belady's Anomaly'?",
+    "options": [
+      "Page fault rate increases with more frames",
+      "CPU usage decreases with more processes",
+      "Disk speed drops with more files",
+      "Memory leak"
+    ],
+    "correct_answer": [
+      "Page fault rate increases with more frames"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_09",
+    "question": "In which page replacement algorithm does Belady's Anomaly occur?",
+    "options": [
+      "FIFO",
+      "LRU",
+      "Optimal",
+      "Clock"
+    ],
+    "correct_answer": [
+      "FIFO"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_10",
+    "question": "Which of these are Disk Scheduling algorithms?",
+    "options": [
+      "FCFS",
+      "SSTF",
+      "SCAN",
+      "C-LOOK"
+    ],
+    "correct_answer": [
+      "FCFS",
+      "SSTF",
+      "SCAN",
+      "C-LOOK"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_11",
+    "question": "What is 'Virtual Memory'?",
+    "options": [
+      "Technique allowing execution of processes larger than physical memory",
+      "Software simulated CPU",
+      "A backup of RAM on Disk",
+      "A type of cache"
+    ],
+    "correct_answer": [
+      "Technique allowing execution of processes larger than physical memory"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_12",
+    "question": "Which of these are true about 'Context Switching'?",
+    "options": [
+      "Saves state of a process to reload later",
+      "Is a pure overhead for the system",
+      "Performed by the kernel",
+      "Speeds up individual processes"
+    ],
+    "correct_answer": [
+      "Saves state of a process to reload later",
+      "Is a pure overhead for the system",
+      "Performed by the kernel"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_13",
+    "question": "What is the 'Working Set' of a process?",
+    "options": [
+      "Set of pages recently referenced",
+      "Total pages owned by process",
+      "Code segment of process",
+      "CPU registers used"
+    ],
+    "correct_answer": [
+      "Set of pages recently referenced"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_14",
+    "question": "Which of these are components of the 'Process Control Block' (PCB)?",
+    "options": [
+      "Process State",
+      "Program Counter",
+      "CPU Registers",
+      "Memory Management Info"
+    ],
+    "correct_answer": [
+      "Process State",
+      "Program Counter",
+      "CPU Registers",
+      "Memory Management Info"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_15",
+    "question": "What is 'Internal Fragmentation'?",
+    "options": [
+      "Unused space within an allocated block",
+      "Unused space between allocated blocks",
+      "Memory leak",
+      "Cache miss"
+    ],
+    "correct_answer": [
+      "Unused space within an allocated block"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_16",
+    "question": "Which of these characterize 'Shortest Job First' (SJF) scheduling?",
+    "options": [
+      "Provably optimal for minimum average waiting time",
+      "Can be preemptive or non-preemptive",
+      "Subject to starvation",
+      "Uses a time quantum"
+    ],
+    "correct_answer": [
+      "Provably optimal for minimum average waiting time",
+      "Can be preemptive or non-preemptive",
+      "Subject to starvation"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_17",
+    "question": "What is 'Translation Lookaside Buffer' (TLB)?",
+    "options": [
+      "Hardware cache used to reduce page table access time",
+      "Software buffer for disk I/O",
+      "Network buffer",
+      "Compiler temporary storage"
+    ],
+    "correct_answer": [
+      "Hardware cache used to reduce page table access time"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_18",
+    "question": "What is the result of 'wait()' (or P) operation on a semaphore?",
+    "options": [
+      "Decrements the value; blocks if value < 0",
+      "Increments the value",
+      "Deletes the variable",
+      "Wakes up a process"
+    ],
+    "correct_answer": [
+      "Decrements the value; blocks if value < 0"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_19",
+    "question": "Which of these are true about 'Multi-level Feedback Queue'?",
+    "options": [
+      "Processes can move between queues",
+      "Favors short jobs and I/O bound jobs",
+      "Starvation is possible if not managed",
+      "Requires fixed priority for all"
+    ],
+    "correct_answer": [
+      "Processes can move between queues",
+      "Favors short jobs and I/O bound jobs",
+      "Starvation is possible if not managed"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_20",
+    "question": "What is 'External Fragmentation'?",
+    "options": [
+      "Total free space exists to satisfy request but is not contiguous",
+      "Space inside a page is free",
+      "Disk space is full",
+      "Swap space is full"
+    ],
+    "correct_answer": [
+      "Total free space exists to satisfy request but is not contiguous"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_21",
+    "question": "What is 'Paging'?",
+    "options": [
+      "Memory management scheme that maps non-contiguous frames to contiguous pages",
+      "Storing files on disk",
+      "Sorting database records",
+      "Clearing cache"
+    ],
+    "correct_answer": [
+      "Memory management scheme that maps non-contiguous frames to contiguous pages"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_22",
+    "question": "Which of these are solutions to the 'Critical Section' problem?",
+    "options": [
+      "Peterson's Solution",
+      "TestAndSet instruction",
+      "Semaphores",
+      "Wait loops"
+    ],
+    "correct_answer": [
+      "Peterson's Solution",
+      "TestAndSet instruction",
+      "Semaphores"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_23",
+    "question": "What is the 'Dirty Bit' in a page table used for?",
+    "options": [
+      "Indicating if a page has been modified",
+      "Indicating if a page is in RAM",
+      "Indicating if a page is encrypted",
+      "Marking a page for deletion"
+    ],
+    "correct_answer": [
+      "Indicating if a page has been modified"
+    ],
+    "question_type": "single",
+    "marks": 5
+  },
+  {
+    "id": "os_med_24",
+    "question": "Which of these are benefits of 'Dynamic Linking'?",
+    "options": [
+      "Reduced executable size",
+      "Shared library updates without recompiling apps",
+      "Faster startup time",
+      "Increased security"
+    ],
+    "correct_answer": [
+      "Reduced executable size",
+      "Shared library updates without recompiling apps"
+    ],
+    "question_type": "multi",
+    "marks": 10
+  },
+  {
+    "id": "os_med_25",
+    "question": "What is a 'System Call'?",
+    "options": [
+      "Interface between a process and the operating system",
+      "A hardware interrupt",
+      "A remote procedure call",
+      "A library function"
+    ],
+    "correct_answer": [
+      "Interface between a process and the operating system"
+    ],
+    "question_type": "single",
+    "marks": 5
+  }
+]

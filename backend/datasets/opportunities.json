@@ -1,0 +1,176 @@
+[
+  {
+    "id": "intern-g-step-2026",
+    "batch_reach": [
+      "2026"
+    ],
+    "type": "Internship",
+    "title": "Google STEP Internship (India)",
+    "provider": "Google",
+    "stipend_reward": "High (Competitive + Housing)",
+    "application_link": "https://www.google.com/about/careers/applications/students/",
+    "deadlines": {
+      "application": "2025-10-15T23:59:59Z"
+    },
+    "difficulty": "Hard",
+    "mode": "In-Person",
+    "requirements": {
+      "skills": [
+        "Data Structures",
+        "Algos",
+        "C++/Java"
+      ],
+      "eligibility": "2nd/3rd year UG CS students graduating in 2026"
+    },
+    "intelligence": {
+      "why_it_matters": "Direct path to a Pre-Placement Interview for a full-time SWE role at Google.",
+      "next_action": "Perfect your LeetCode Mediums and update your resume for referrals.",
+      "prep_tip": "Focus heavily on Graph and Tree traversals for the phone screening stage."
+    }
+  },
+  {
+    "id": "intern-amzn-ml-2026",
+    "batch_reach": [
+      "2026"
+    ],
+    "type": "Internship",
+    "title": "Amazon ML Summer School",
+    "provider": "Amazon",
+    "stipend_reward": "Mentorship + Interview Opportunity",
+    "application_link": "https://www.amazon.science/academic-engagements/amazon-ml-summer-school-india",
+    "deadlines": {
+      "application": "2025-08-01T23:59:59Z"
+    },
+    "difficulty": "Hard",
+    "mode": "Remote",
+    "requirements": {
+      "skills": [
+        "Machine Learning",
+        "Math",
+        "Python"
+      ],
+      "eligibility": "Pre-final/Final year students (2025/2026 Batch)"
+    },
+    "intelligence": {
+      "why_it_matters": "Top rankers in the ML Challenge get direct interview Invites for Applied Scientist roles.",
+      "next_action": "Revise Probability, Statistics, and Linear Algebra basics.",
+      "prep_tip": "Take the Amazon ML Challenge seriously; it is the primary filter."
+    }
+  },
+  {
+    "id": "hack-sih-2025",
+    "batch_reach": [
+      "2026",
+      "2027"
+    ],
+    "type": "Hackathon",
+    "title": "Smart India Hackathon (SIH)",
+    "provider": "Govt of India",
+    "stipend_reward": "₹1,00,000 + Ministry Networking",
+    "application_link": "https://www.sih.gov.in/",
+    "deadlines": {
+      "application": "2025-09-30T23:59:59Z",
+      "event": "2025-12-15T23:59:59Z"
+    },
+    "difficulty": "Hard",
+    "mode": "Hybrid",
+    "requirements": {
+      "skills": [
+        "Full Stack",
+        "AI/ML",
+        "Mobile Dev"
+      ],
+      "eligibility": "Enrolled UG/PG students in Indian Institutes"
+    },
+    "intelligence": {
+      "why_it_matters": "The most prestigious Govt-linked hackathon in India; massive resume weight.",
+      "next_action": "Form a team of 6 and select a problem statement from the official portal.",
+      "prep_tip": "Learn to build a production-ready MVP; judges value scalability over UI."
+    }
+  },
+  {
+    "id": "hack-mlh-global",
+    "batch_reach": [
+      "2026"
+    ],
+    "type": "Hackathon",
+    "title": "MLH Global Hack Week",
+    "provider": "Major League Hacking",
+    "stipend_reward": "Swag + Global Recognition",
+    "application_link": "https://hack.mlh.io/",
+    "deadlines": {
+      "application": "2025-06-10T23:59:59Z"
+    },
+    "difficulty": "Medium",
+    "mode": "Remote",
+    "requirements": {
+      "skills": [
+        "Web Dev",
+        "API Integration"
+      ],
+      "eligibility": "Any student interested in software building"
+    },
+    "intelligence": {
+      "why_it_matters": "Perfect for building consistent portfolio projects and gaining global community visibility.",
+      "next_action": "Register on MLH portal and join the Discord server for team matching.",
+      "prep_tip": "Focus on 'Learning' tracks—they provide excellent starter code."
+    }
+  },
+  {
+    "id": "schol-wd-stem-2026",
+    "batch_reach": [
+      "2026"
+    ],
+    "type": "Scholarship",
+    "title": "Western Digital Scholarship",
+    "provider": "Western Digital",
+    "stipend_reward": "Financial Aid + Mentorship",
+    "application_link": "https://www.westerndigital.com/company/corporate-responsibility/philanthropy",
+    "deadlines": {
+      "application": "2025-04-15T23:59:59Z"
+    },
+    "difficulty": "Medium",
+    "mode": "Remote",
+    "requirements": {
+      "skills": [
+        "STEM Merit",
+        "Social Impact"
+      ],
+      "eligibility": "Undergraduates in STEM with min 3.0 CGPA"
+    },
+    "intelligence": {
+      "why_it_matters": "Supports high-merit students in tech; opens doors for R&D internships.",
+      "next_action": "Draft a personal statement highlighting your project contributions.",
+      "prep_tip": "Insider Tip: They look for community impact—mention how your code helps others."
+    }
+  },
+  {
+    "id": "schol-gsoc-2025",
+    "batch_reach": [
+      "2026"
+    ],
+    "type": "Scholarship",
+    "title": "Google Summer of Code",
+    "provider": "Google Open Source",
+    "stipend_reward": "$1500 - $3000 Stipend",
+    "application_link": "https://summerofcode.withgoogle.com/",
+    "deadlines": {
+      "application": "2025-03-25T23:59:59Z"
+    },
+    "difficulty": "Hard",
+    "mode": "Remote",
+    "requirements": {
+      "skills": [
+        "Git",
+        "Open Source",
+        "C++/Python"
+      ],
+      "eligibility": "Students 18+ years old enrolled in college"
+    },
+    "intelligence": {
+      "why_it_matters": "The gold standard for Open Source; extreme value for remote-job seekers.",
+      "next_action": "Join IRC of organizations you admire and start fixing 'Good First Issues'.",
+      "prep_tip": "Start 4 months early. Selection is 90% about your relationship with the community."
+    }
+  }
+]
