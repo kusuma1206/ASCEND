@@ -29,48 +29,108 @@
     }
   },
   {
-    "id": "intern-amzn-ml-2026",
+    "id": "intern-iitk-surge-2026",
+    "batch_reach": [
+      "2026",
+      "2027"
+    ],
+    "type": "Internship",
+    "title": "IIT Kanpur SURGE 2026",
+    "provider": "IIT Kanpur",
+    "stipend_reward": "₹12,500 + Research Certificate",
+    "application_link": "https://www.iitk.ac.in/surge/",
+    "deadlines": {
+      "application": "2026-02-22T23:59:59Z"
+    },
+    "difficulty": "Hard",
+    "mode": "In-Person",
+    "requirements": {
+      "skills": [
+        "Research",
+        "Python/ML",
+        "Mathematical Modeling"
+      ],
+      "eligibility": "UG students from SAARC countries with high CGPA"
+    },
+    "intelligence": {
+      "why_it_matters": "One of India's most prestigious research internships; perfect for students aiming for MS/PhD or R&D roles.",
+      "next_action": "Submit a strong research proposal and get a recommendation letter from your HOD.",
+      "prep_tip": "Focus on your 'Statement of Purpose'; they value interest in specific research labs over just coding."
+    }
+  },
+  {
+    "id": "intern-cdot-2026",
     "batch_reach": [
       "2026"
     ],
     "type": "Internship",
-    "title": "Amazon ML Summer School",
-    "provider": "Amazon",
-    "stipend_reward": "Mentorship + Interview Opportunity",
-    "application_link": "https://www.amazon.science/academic-engagements/amazon-ml-summer-school-india",
+    "title": "C-DOT Paid Internship Scheme",
+    "provider": "C-DOT (Govt of India)",
+    "stipend_reward": "₹10,000 - ₹20,000 per month",
+    "application_link": "https://www.cdot.in/cdotweb/web/internship.php",
     "deadlines": {
-      "application": "2025-08-01T23:59:59Z"
+      "application": "2026-02-28T23:59:59Z"
+    },
+    "difficulty": "Medium",
+    "mode": "In-Person/Hybrid",
+    "requirements": {
+      "skills": [
+        "Telecommunications",
+        "Embedded Systems",
+        "Java/Python"
+      ],
+      "eligibility": "Students from Top 30 Engineering Institutes in India"
+    },
+    "intelligence": {
+      "why_it_matters": "Gain experience in Telecom R&D with a government body; great for hardware-software integration profiles.",
+      "next_action": "Check if your college is in the top 30 list and apply through the official NATS portal.",
+      "prep_tip": "Review basics of Computer Networks and OSI layers; they often ask about communication protocols."
+    }
+  },
+  {
+    "id": "intern-outreachy-2026-may",
+    "batch_reach": [
+      "2026",
+      "2027"
+    ],
+    "type": "Internship",
+    "title": "Outreachy May 2026 Cohort",
+    "provider": "Outreachy",
+    "stipend_reward": "$7,000 Total Stipend",
+    "application_link": "https://www.outreachy.org/apply/",
+    "deadlines": {
+      "application": "2026-02-13T23:59:59Z"
     },
     "difficulty": "Hard",
     "mode": "Remote",
     "requirements": {
       "skills": [
-        "Machine Learning",
-        "Math",
-        "Python"
+        "Open Source",
+        "Git",
+        "Collaboration"
       ],
-      "eligibility": "Pre-final/Final year students (2025/2026 Batch)"
+      "eligibility": "Students subject to systemic bias in tech; Remote global"
     },
     "intelligence": {
-      "why_it_matters": "Top rankers in the ML Challenge get direct interview Invites for Applied Scientist roles.",
-      "next_action": "Revise Probability, Statistics, and Linear Algebra basics.",
-      "prep_tip": "Take the Amazon ML Challenge seriously; it is the primary filter."
+      "why_it_matters": "High-stipend remote internship with global open-source communities (GNOME, Linux, etc.).",
+      "next_action": "Complete the initial application before the Feb 13 deadline to enter the contribution period.",
+      "prep_tip": "Contribution is key. Start interacting with mentors early in the mailing lists or Slack/Zulip."
     }
   },
   {
-    "id": "hack-sih-2025",
+    "id": "hack-sih-2026",
     "batch_reach": [
       "2026",
       "2027"
     ],
     "type": "Hackathon",
-    "title": "Smart India Hackathon (SIH)",
+    "title": "Smart India Hackathon (SIH) 2026",
     "provider": "Govt of India",
     "stipend_reward": "₹1,00,000 + Ministry Networking",
     "application_link": "https://www.sih.gov.in/",
     "deadlines": {
-      "application": "2025-09-30T23:59:59Z",
-      "event": "2025-12-15T23:59:59Z"
+      "application": "2026-09-30T23:59:59Z",
+      "event": "2026-12-15T23:59:59Z"
     },
     "difficulty": "Hard",
     "mode": "Hybrid",
@@ -89,6 +149,65 @@
     }
   },
   {
+    "id": "hack-agentic-30",
+    "batch_reach": [
+      "2026",
+      "2027"
+    ],
+    "type": "Hackathon",
+    "title": "Agentic India 30",
+    "provider": "Reskill / AI Community",
+    "stipend_reward": "Equity + Cash Prizes",
+    "application_link": "https://reskilll.com/hack/agentic30",
+    "deadlines": {
+      "application": "2026-02-25T23:59:59Z"
+    },
+    "difficulty": "Medium",
+    "mode": "Remote",
+    "requirements": {
+      "skills": [
+        "GenAI",
+        "Agents",
+        "Python"
+      ],
+      "eligibility": "Open to all students interested in AI Automation"
+    },
+    "intelligence": {
+      "why_it_matters": "Hyper-focused on the hottest tech trend: AI Agents. Great for showing you are ahead of the curve.",
+      "next_action": "Study LangChain or CrewAI frameworks to build autonomous agents.",
+      "prep_tip": "Focus on multi-agent collaboration use cases like automated research or coding assistants."
+    }
+  },
+  {
+    "id": "hack-iit-mandi-2026",
+    "batch_reach": [
+      "2026"
+    ],
+    "type": "Hackathon",
+    "title": "Weelliptic Hackathon - Xpecto'26",
+    "provider": "IIT Mandi",
+    "stipend_reward": "₹50,000 + IIT Certifications",
+    "application_link": "https://xpecto.iitmandi.ac.in/",
+    "deadlines": {
+      "application": "2026-02-15T23:59:59Z"
+    },
+    "difficulty": "Medium",
+    "mode": "Hybrid",
+    "requirements": {
+      "skills": [
+        "Data Analytics",
+        "Web Dev",
+        "Creative Problem Solving"
+      ],
+      "eligibility": "Engineering students across India"
+    },
+    "intelligence": {
+      "why_it_matters": "Showcase your skills at a premier IIT technical fest; excellent for networking with IIT students.",
+      "next_action": "Check the Xpecto official site for problem statements released 48 hours early.",
+      "prep_tip": "IIT hackathons value unique approaches; don't just use standard templates."
+    }
+  },
+  {
     "id": "hack-mlh-global",
     "batch_reach": [
       "2026"
@@ -99,7 +218,7 @@
     "stipend_reward": "Swag + Global Recognition",
     "application_link": "https://hack.mlh.io/",
     "deadlines": {
-      "application": "2025-06-10T23:59:59Z"
+      "application": "2026-06-10T23:59:59Z"
     },
     "difficulty": "Medium",
     "mode": "Remote",
@@ -117,45 +236,74 @@
     }
   },
   {
-    "id": "schol-wd-stem-2026",
+    "id": "schol-reliance-2026",
+    "batch_reach": [
+      "2026",
+      "2027"
+    ],
+    "type": "Scholarship",
+    "title": "Reliance Foundation UG Scholarship",
+    "provider": "Reliance Foundation",
+    "stipend_reward": "₹2,00,000 + Alumni Network",
+    "application_link": "https://www.reliancefoundation.org/scholarships",
+    "deadlines": {
+      "application": "2026-10-31T23:59:59Z"
+    },
+    "difficulty": "Hard",
+    "mode": "Remote",
+    "requirements": {
+      "skills": [
+        "Merit",
+        "Social Leadership"
+      ],
+      "eligibility": "1st/2nd year UG students with high academic standing"
+    },
+    "intelligence": {
+      "why_it_matters": "One of India's most massive private scholarships; provides an elite network of scholars and leaders.",
+      "next_action": "Prepare for the aptitude test which covers logical reasoning and quantitative math.",
+      "prep_tip": "They look for 'Future Leaders'—highlight any volunteer work or student club leadership."
+    }
+  },
+  {
+    "id": "schol-dayanand-2026",
     "batch_reach": [
       "2026"
     ],
     "type": "Scholarship",
-    "title": "Western Digital Scholarship",
-    "provider": "Western Digital",
-    "stipend_reward": "Financial Aid + Mentorship",
-    "application_link": "https://www.westerndigital.com/company/corporate-responsibility/philanthropy",
+    "title": "Swami Dayanand India Scholarship",
+    "provider": "Swami Dayanand Foundation",
+    "stipend_reward": "₹50,000 per year",
+    "application_link": "https://www.swamidayanand.org/",
     "deadlines": {
-      "application": "2025-04-15T23:59:59Z"
+      "application": "2026-12-30T23:59:59Z"
     },
     "difficulty": "Medium",
     "mode": "Remote",
     "requirements": {
       "skills": [
-        "STEM Merit",
-        "Social Impact"
+        "Academic Excellence",
+        "Need-based"
       ],
-      "eligibility": "Undergraduates in STEM with min 3.0 CGPA"
+      "eligibility": "UG students in Engineering/Medical with annual family income < 6L"
     },
     "intelligence": {
-      "why_it_matters": "Supports high-merit students in tech; opens doors for R&D internships.",
-      "next_action": "Draft a personal statement highlighting your project contributions.",
-      "prep_tip": "Insider Tip: They look for community impact—mention how your code helps others."
+      "why_it_matters": "Direct financial aid for tuition fees; high success rate for students fromTier-2/3 cities.",
+      "next_action": "Gather your income tax returns and college fee receipts for the application.",
+      "prep_tip": "A well-written 'Financial Need' essay is crucial. Be honest about your family's situation."
     }
   },
   {
-    "id": "schol-gsoc-2025",
+    "id": "schol-gsoc-2026",
     "batch_reach": [
       "2026"
     ],
     "type": "Scholarship",
-    "title": "Google Summer of Code",
+    "title": "Google Summer of Code 2026",
     "provider": "Google Open Source",
     "stipend_reward": "$1500 - $3000 Stipend",
     "application_link": "https://summerofcode.withgoogle.com/",
     "deadlines": {
-      "application": "2025-03-25T23:59:59Z"
+      "application": "2026-03-25T23:59:59Z"
     },
     "difficulty": "Hard",
     "mode": "Remote",

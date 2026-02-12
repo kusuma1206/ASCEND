@@ -1,0 +1,78 @@
+[
+  {
+    "questionId": "java_01",
+    "question_type": "single",
+    "correct_answer": [
+      "JDK (Java Development Kit) is the full toolset for developers, containing the JRE and tools like compilers. JRE (Java Runtime Environment) provides the minimum requirements to run Java applications. JVM (Java Virtual Machine) is the engine that actually executes the Java bytecode on a specific machine. In short: JDK is for developing, JRE is for running, and JVM is the execution heart."
+    ],
+    "userAnswers": [
+      "JDK (Java Development Kit) is the full toolset for developers, containing the JRE and tools like compilers. JRE (Java Runtime Environment) provides the minimum requirements to run Java applications. JVM (Java Virtual Machine) is the engine that actually executes the Java bytecode on a specific machine. In short: JDK is for developing, JRE is for running, and JVM is the execution heart."
+    ],
+    "y_true": true
+  },
+  {
+    "questionId": "java_01",
+    "question_type": "single",
+    "correct_answer": [
+      "JDK (Java Development Kit) is the full toolset for developers..."
+    ],
+    "userAnswers": [
+      "Wrong Answer"
+    ],
+    "y_true": false
+  },
+  {
+    "questionId": "java_02",
+    "question_type": "multi",
+    "correct_answer": [
+      "encapsulation",
+      "inheritance",
+      "polymorphism",
+      "abstraction"
+    ],
+    "userAnswers": [
+      "encapsulation",
+      "inheritance",
+      "polymorphism",
+      "abstraction"
+    ],
+    "y_true": true
+  },
+  {
+    "questionId": "java_02",
+    "question_type": "multi",
+    "correct_answer": [
+      "encapsulation",
+      "inheritance",
+      "polymorphism",
+      "abstraction"
+    ],
+    "userAnswers": [
+      "encapsulation",
+      "inheritance"
+    ],
+    "y_true": false
+  },
+  {
+    "questionId": "java_03",
+    "question_type": "single",
+    "correct_answer": [
+      "Interface"
+    ],
+    "userAnswers": [
+      "Interface"
+    ],
+    "y_true": true
+  },
+  {
+    "questionId": "java_03",
+    "question_type": "single",
+    "correct_answer": [
+      "Interface"
+    ],
+    "userAnswers": [
+      "Abstract Class"
+    ],
+    "y_true": false
+  }
+]

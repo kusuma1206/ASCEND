@@ -343,12 +343,12 @@
 
       <nav class="menu">
         <button id="menuResume" class="active">Resume Upload</button>
-        <button onclick="location.href='technical_test_setup.html'">Technical Test</button>
-        <button onclick="location.href='communication_test.html'">Communication Test</button>
+        <button id="menuTech" onclick="location.href='technical_test_setup.html'">Technical Test</button>
+        <button id="menuComm" onclick="location.href='communication_test.html'">Communication Test</button>
         <button onclick="location.href='mock_interview_setup.html'">Mock Interview</button>
         <button onclick="location.href='opportunities.html'">Opportunities</button>
         <button onclick="location.href='roadmap_setup.html'">Roadmap</button>
-        <button onclick="location.href='dashboard.html'">Dashboard</button>
+        <button id="menuDashboard" onclick="location.href='dashboard.html'">Dashboard</button>
       </nav>
 
 
@@ -381,136 +381,92 @@
       </div>
 
       <!-- 1. Selection & Upload -->
-      <div class="card">
-        <h2>Resume Analyzer</h2>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
-          Select your target role and upload your resume for a rule-based evaluation.
-        </p>
+      <div id="resumeView">
+        <div class="card">
+          <h2>Resume Analyzer</h2>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+            Select your target role and upload your resume for a rule-based evaluation.
+          </p>
 
-        <div style="margin-bottom: 20px;">
-          <label for="targetRole" style="font-weight: 600; display: block; margin-bottom: 8px;">Target Job Role</label>
-          <select id="targetRole"
-            style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; font-family: inherit;">
-            <option value="">-- Select Target Role --</option>
-            <option value="Frontend Developer">Frontend Developer</option>
-            <option value="Backend Developer">Backend Developer</option>
-            <option value="Full Stack Developer">Full Stack Developer</option>
-            <option value="Data Analyst">Data Analyst</option>
-          </select>
-        </div>
-
-        <div class="upload-area">
-          <div>
-            <input type="file" id="resumeFile" accept=".pdf,.docx"><br><br>
-            <button class="btn primary-btn" id="uploadBtn">Upload & Parse</button>
-          </div>
-        </div>
-
-        <p id="parsingStatus"
-          style="margin-top: 15px; font-size: 0.85rem; color: var(--accent-2); display: none; text-align: center;">
-          <span class="spinner"></span> Parsing resume logic...
-        </p>
-      </div>
-
-      <!-- 2. ATS Results (Step 8, 9) -->
-      <div class="card" id="atsResultCard" style="display: none;">
-        <h3>ATS Evaluation: <span id="atsScoreTitle">0 / 100</span></h3>
-
-        <div class="centered" style="margin: 30px 0;">
-          <svg width="180" height="180" viewBox="0 0 180 180">
-            <circle cx="90" cy="90" r="70" stroke="#e6eefc" stroke-width="14" fill="none" />
-            <circle id="atsProgress" cx="90" cy="90" r="70" stroke="#16a34a" stroke-width="14" fill="none"
-              stroke-linecap="round" stroke-dasharray="439.6" stroke-dashoffset="439.6" transform="rotate(-90 90 90)" />
-            <text id="atsText" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="26"
-              font-weight="700">0%</text>
-          </svg>
-        </div>
-
-        <div id="atsAnalysisContainer" style="text-align: left; margin-top: 20px;">
-          <!-- Two-Column Header -->
-          <div
-            style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 15px; margin-bottom: 10px; padding: 0 10px;">
-            <div style="font-weight: 700; color: #4b5563; font-size: 0.85rem; text-transform: uppercase;">❌ Issue /
-              Error Detected</div>
-            <div style="font-weight: 700; color: #4b5563; font-size: 0.85rem; text-transform: uppercase;">✅ How to Fix /
-              Correct Example</div>
+          <div style="margin-bottom: 20px;">
+            <label for="targetRole" style="font-weight: 600; display: block; margin-bottom: 8px;">Target Job
+              Role</label>
+            <select id="targetRole"
+              style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; font-family: inherit;">
+              <option value="">-- Select Target Role --</option>
+              <option value="Frontend Developer">Frontend Developer</option>
+              <option value="Backend Developer">Backend Developer</option>
+              <option value="Full Stack Developer">Full Stack Developer</option>
+              <option value="Data Analyst">Data Analyst</option>
+            </select>
           </div>
 
-          <div id="analysisTableBody" style="border-top: 1px solid #e5e7eb;">
-            <!-- Rows injected here -->
+          <div class="upload-area">
+            <div>
+              <input type="file" id="resumeFile" accept=".pdf,.docx"><br><br>
+              <button class="btn primary-btn" id="uploadBtn">Upload & Parse</button>
+            </div>
           </div>
 
-          <div id="analysisSummary"
-            style="margin-top: 30px; padding: 20px; background: #eff6ff; border-radius: 12px; border-left: 4px solid #3b82f6;">
-            <h4 style="color: #1e40af; font-size: 1rem; margin-bottom: 8px;">Overall ATS Improvement Path</h4>
-            <p id="atsSummaryPath" style="font-size: 0.9rem; color: #1e3a8a; margin: 0; line-height: 1.6;"></p>
-          </div>
+          <p id="parsingStatus"
+            style="margin-top: 15px; font-size: 0.85rem; color: var(--accent-2); display: none; text-align: center;">
+            <span class="spinner"></span> Parsing resume logic...
+          </p>
         </div>
 
-        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+        <!-- 2. ATS Results (Step 8, 9) -->
+        <div class="card" id="atsResultCard" style="display: none;">
+          <h3>ATS Evaluation: <span id="atsScoreTitle">0 / 100</span></h3>
 
-        <p style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;">
-          Step 12: This ATS score is a simulated evaluation to help improve resumes. It does not guarantee selection or
-          rejection by employers.
-        </p>
+          <div class="centered" style="margin: 30px 0;">
+            <svg width="180" height="180" viewBox="0 0 180 180">
+              <circle cx="90" cy="90" r="70" stroke="#e6eefc" stroke-width="14" fill="none" />
+              <circle id="atsProgress" cx="90" cy="90" r="70" stroke="#16a34a" stroke-width="14" fill="none"
+                stroke-linecap="round" stroke-dasharray="439.6" stroke-dashoffset="439.6"
+                transform="rotate(-90 90 90)" />
+              <text id="atsText" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="26"
+                font-weight="700">0%</text>
+            </svg>
+          </div>
+
+          <div id="atsAnalysisContainer" style="text-align: left; margin-top: 20px;">
+            <!-- Two-Column Header -->
+            <div
+              style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 15px; margin-bottom: 10px; padding: 0 10px;">
+              <div style="font-weight: 700; color: #4b5563; font-size: 0.85rem; text-transform: uppercase;">❌ Issue /
+                Error Detected</div>
+              <div style="font-weight: 700; color: #4b5563; font-size: 0.85rem; text-transform: uppercase;">✅ How to Fix
+                /
+                Correct Example</div>
+            </div>
+
+            <div id="analysisTableBody" style="border-top: 1px solid #e5e7eb;">
+              <!-- Rows injected here -->
+            </div>
+
+            <div id="analysisSummary"
+              style="margin-top: 30px; padding: 20px; background: #eff6ff; border-radius: 12px; border-left: 4px solid #3b82f6;">
+              <h4 style="color: #1e40af; font-size: 1rem; margin-bottom: 8px;">Overall ATS Improvement Path</h4>
+              <p id="atsSummaryPath" style="font-size: 0.9rem; color: #1e3a8a; margin: 0; line-height: 1.6;"></p>
+            </div>
+          </div>
+
+          <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+
+          <p style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;">
+            Step 12: This ATS score is a simulated evaluation to help improve resumes. It does not guarantee selection
+            or
+            rejection by employers.
+          </p>
+        </div>
       </div>
 
   </div>
   <!-- =============== END RESUME VIEW =============== -->
 
 
-  <!-- ================= TECHNICAL TEST VIEW ================= -->
-  <div id="technicalTestView" style="display:none">
+  <!-- ================= TECHNICAL TEST VIEW REMOVED (Conflicted with dedicated setup flow) ================= -->
 
-    <div class="card" id="techHeaderCard">
-      <h2>
-        Technical Test
-        <strong id="timer" style="float:right">30:00</strong>
-      </h2>
-
-      <select id="skill"
-        class="w-full bg-[#16161a] border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all mb-4">
-        <option value="">Select Subject</option>
-        <option value="data-structures">Data Structures</option>
-        <option value="algorithms">Algorithms</option>
-        <option value="operating-systems">Operating Systems</option>
-        <option value="computer-networks">Computer Networks</option>
-        <option value="dbms">DBMS</option>
-        <option value="oops">OOPs</option>
-        <option value="java">Java</option>
-        <option value="python">Python</option>
-        <option value="web-technologies">Web Technologies</option>
-      </select>
-
-      <select id="difficulty">
-        <option value="">Select Difficulty</option>
-        <option value="Easy">Easy</option>
-        <option value="Medium">Medium</option>
-        <option value="Hard">Hard</option>
-      </select>
-
-      <button id="startBtn" class="primary-btn" onclick="startExam()">Start Exam</button>
-    </div>
-    <div id="questions"></div>
-    <!-- RESULT PANEL (HIDDEN INITIALLY) -->
-    <div id="resultPanel">
-      <div class="result-card">
-        <div class="circle" id="progressCircle">
-          <div class="inside-circle" id="circleText">0%</div>
-        </div>
-
-        <div class="score-text" id="scoreText"></div>
-        <div class="performance-text" id="performanceText"></div>
-
-        <!-- ✅ ADD THIS -->
-        <button id="backToTestBtn" class="primary-btn" style="margin-top:20px">
-          ← Back to Technical Test
-        </button>
-
-      </div>
-    </div>
-
-  </div>
   <!-- =============== END TECHNICAL TEST VIEW =============== -->
   </div>
   </main>
@@ -525,6 +481,8 @@
       const resumeFile = document.getElementById("resumeFile");
 
       const menuResume = document.getElementById("menuResume");
+      const menuDashboard = document.getElementById("menuDashboard");
+
       if (!menuDashboard || !menuResume) {
         console.error("Menu buttons not found");
       }
@@ -760,15 +718,8 @@
         rightContent.innerHTML = "";
       };
 
-      // Technical Test
-      menuTech.onclick = () => {
-        clearActive();
-        menuTech.classList.add("active");
+      // Technical Test - Dedicated flow via technical_test_setup.html
 
-        resumeView.style.display = "none";
-        techView.style.display = "block";
-        rightContent.innerHTML = "";
-      };
 
       // Communication Test
       menuComm.onclick = () => {

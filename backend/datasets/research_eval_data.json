@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "N000",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N001",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N002",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N003",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N004",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N005",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N006",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N007",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N008",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N009",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N010",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N011",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N012",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N013",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N014",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N015",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N016",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N017",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N018",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N019",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N020",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N021",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N022",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N023",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N024",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N025",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N026",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N027",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N028",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N029",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N030",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N031",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N032",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N033",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N034",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N035",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N036",
+    "category": "Normal",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N037",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "N038",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option A"
+    ],
+    "y_true": true,
+    "description": "Standard correct case."
+  },
+  {
+    "id": "N039",
+    "category": "Normal",
+    "questionType": "single",
+    "correctAnswers": [
+      "Option A"
+    ],
+    "userAnswers": [
+      "Option B"
+    ],
+    "y_true": false,
+    "description": "Standard incorrect case."
+  },
+  {
+    "id": "E000",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E001",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E002",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E003",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E004",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E005",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E006",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E007",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E008",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E009",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E010",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E011",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E012",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E013",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E014",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E015",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E016",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E017",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E018",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E019",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E020",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E021",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E022",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E023",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E024",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E025",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E026",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E027",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E028",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E029",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E030",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E031",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E032",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E033",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E034",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E035",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E036",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "E037",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E038",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "alpha",
+      "beta"
+    ],
+    "y_true": false,
+    "description": "Edge case testing case sensitivity."
+  },
+  {
+    "id": "E039",
+    "category": "Edge",
+    "questionType": "multi",
+    "correctAnswers": [
+      "Alpha",
+      "Beta"
+    ],
+    "userAnswers": [
+      "Beta",
+      "Alpha"
+    ],
+    "y_true": true,
+    "description": "Edge case testing ordering."
+  },
+  {
+    "id": "I000",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I001",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I002",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I003",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I004",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I005",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I006",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I007",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I008",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I009",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I010",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I011",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I012",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I013",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I014",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I015",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I016",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I017",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I018",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I019",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I020",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I021",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I022",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I023",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I024",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I025",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I026",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I027",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I028",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I029",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I030",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I031",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I032",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I033",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I034",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I035",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I036",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I037",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "I038",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": [],
+    "y_true": false,
+    "description": "Invalid input: empty array."
+  },
+  {
+    "id": "I039",
+    "category": "Invalid",
+    "questionType": "single",
+    "correctAnswers": [
+      "A"
+    ],
+    "userAnswers": null,
+    "y_true": false,
+    "description": "Invalid input: null."
+  },
+  {
+    "id": "C000",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C001",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C002",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C003",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C004",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C005",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C006",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C007",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C008",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C009",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C010",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C011",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C012",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C013",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C014",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C015",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C016",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C017",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C018",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C019",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C020",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C021",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C022",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C023",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C024",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C025",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C026",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C027",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C028",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  },
+  {
+    "id": "C029",
+    "category": "Conflict",
+    "questionType": "single",
+    "correctAnswers": [
+      "Correct"
+    ],
+    "userAnswers": [
+      "Correct",
+      "Extra"
+    ],
+    "y_true": false,
+    "description": "Conflicting rule: Single choice with multiple answers provided."
+  }
+]

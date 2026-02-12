@@ -200,5 +200,53 @@
         ]
       }
     ]
+  },
+  {
+    "id": "full-stack-career-camp-2026",
+    "title": "Full Stack Mastery (2026 Batch)",
+    "description": "A comprehensive roadmap for mastering React, Node.js, and Cloud deployment for Full Stack roles.",
+    "target_batch": "2026",
+    "phases": [
+      {
+        "phase_number": 1,
+        "title": "Frontend Core & React",
+        "duration_weeks": 4,
+        "description": "Master Modern JavaScript and React fundamentals through project work.",
+        "tasks": [
+          {
+            "week": 1,
+            "title": "ES6+ & DOM Manipulation",
+            "type": "LEARN",
+            "deliverable": "Interactive vanilla JS dashboard."
+          },
+          {
+            "week": 3,
+            "title": "React Component Architecture",
+            "type": "BUILD",
+            "deliverable": "Portfolio site built with React and Tailwind CSS."
+          }
+        ]
+      },
+      {
+        "phase_number": 2,
+        "title": "Backend & APIs",
+        "duration_weeks": 6,
+        "description": "Build robust servers and databases using Node.js and PostgreSQL.",
+        "tasks": [
+          {
+            "week": 1,
+            "title": "Node.js & Express Basics",
+            "type": "LEARN",
+            "deliverable": "RESTful API for a Task Manager app."
+          },
+          {
+            "week": 4,
+            "title": "Prisma & PostgreSQL",
+            "type": "BUILD",
+            "deliverable": "Database-driven e-commerce backend."
+          }
+        ]
+      }
+    ]
   }
 ]

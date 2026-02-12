@@ -16,18 +16,30 @@ let fullTranscript = "";
 // 1. Initialization
 async function initTest() {
   try {
+    // Use UserContext if available, otherwise localStorage/guest
+    const userId = (typeof UserContext !== 'undefined') ? UserContext.getUserId() : (localStorage.getItem('userId') || 'guest');
+
     const response = await fetch('/api/comm/start', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userId: localStorage.getItem('userId') || 'guest' })
+      body: JSON.stringify({ userId })
     });
+
+    if (!response.ok) throw new Error('Server returned ' + response.status);
+
     const data = await response.json();
     testId = data.testId;
-    tasks = data.tasks;
+    tasks = data.tasks || [];
+
+    if (tasks.length === 0) {
+      alert("No tasks loaded from server. Please check backend.");
+      return;
+    }
+
     renderTask();
   } catch (err) {
     console.error('Failed to init test:', err);
-    alert('Could not initialize test session.');
+    alert('Could not initialize test session. Server may be down or database not ready.');
   }
 }
 

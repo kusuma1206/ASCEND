@@ -15,352 +15,315 @@
       --success: #10b981;
     }
 
-    body {
-      background: var(--bg);
-      font-family: 'Inter', sans-serif;
+    /* UNIFIED SIDEBAR STYLES */
+    .sidebar {
+      width: 260px;
+      padding: 24px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      color: var(--text);
-    }
-
-    .wizard-card {
+      flex-direction: column;
+      gap: 30px;
       background: white;
-      width: 600px;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      border-right: 1px solid #e2e8f0;
+      flex-shrink: 0;
     }
 
-    .step-indicator {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 30px;
+    .brand-logo img {
+      width: 40px;
     }
 
-    .step-dot {
-      width: 100%;
-      height: 6px;
-      background: #e2e8f0;
-      border-radius: 4px;
-    }
-
-    .step-dot.active {
-      background: var(--primary);
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 8px;
-      font-size: 0.9rem;
-    }
-
-    select,
-    input {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    .btn {
-      width: 100%;
-      padding: 14px;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
+    .sidebar-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
       margin-top: 10px;
     }
 
-    .btn:hover {
-      background: #1d4ed8;
+    .user-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
     }
 
-    /* Skills Grid */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    .user-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #e0e7ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       gap: 10px;
     }
 
-    .skill-check {
-      display: none;
-    }
-
-    .skill-label {
-      padding: 10px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      text-align: center;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    .skill-check:checked+.skill-label {
-      background: #eff6ff;
-      border-color: var(--primary);
-      color: var(--primary);
+    .menu button {
+      padding: 12px;
+      border: none;
+      background: transparent;
+      color: #64748b;
       font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 8px;
+      width: 100%;
     }
 
-    /* Result View */
-    .result-view {
-      display: none;
-      text-align: center;
+    .menu button.active {
+      background: #eff6ff;
+      color: var(--primary);
     }
 
-    .score-circle {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 8px solid #cbd5e1;
+    .main-container {
+      flex: 1;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 auto 24px;
-      font-size: 2rem;
-      font-weight: 800;
+      overflow-y: auto;
+      padding: 40px;
     }
 
-    .risk-box {
-      background: #fef2f2;
-      border: 1px solid #fecaca;
-      padding: 16px;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      text-align: left;
-    }
-
-    .gap-box {
-      background: #fffbeb;
-      border: 1px solid #fcd34d;
-      padding: 16px;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      text-align: left;
+    body {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--bg);
+      margin: 0;
     }
   </style>
 </head>
 
 <body>
-  <div style="position: absolute; top: 30px; right: 40px; z-index: 100;">
-    <a href="index.html" style="color:#ef4444; text-decoration:none; font-weight:600;">Logout</a>
-  </div>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand-logo"><img src="assets/logo.png"></div>
+    <div class="sidebar-title">Career Companion</div>
 
-  <div class="wizard-card" id="wizard">
-    <div class="step-indicator">
-      <div class="step-dot active"></div>
-      <div class="step-dot"></div>
-      <div class="step-dot"></div>
-      <div class="step-dot"></div>
+    <div class="user-row">
+      <div class="user-icon">👤</div>
+      <strong class="user-greeting">Hi, <span class="user-name-display">Student</span></strong>
     </div>
 
-    <!-- Step 1: Academic -->
-    <div id="step1">
-      <h2>Academic Snapshot</h2>
-      <div class="form-group">
-        <label>Current Semester</label>
-        <select id="semester">
-          <option value="4">Semester 4 (2nd Year)</option>
-          <option value="5">Semester 5 (3rd Year)</option>
-          <option value="6" selected>Semester 6 (3rd Year)</option>
-          <option value="8">Semester 8 (Final Year)</option>
-        </select>
+    <nav class="menu">
+      <button onclick="location.href='resume_upload.html'">Resume Upload</button>
+      <button onclick="location.href='technical_test_setup.html'">Technical Test</button>
+      <button onclick="location.href='communication_test.html'">Communication Test</button>
+      <button onclick="location.href='mock_interview_setup.html'">Mock Interview</button>
+      <button onclick="location.href='opportunities.html'">Opportunities</button>
+      <button class="active" onclick="location.href='roadmap_setup.html'">Roadmap</button>
+      <button onclick="location.href='dashboard.html'">Dashboard</button>
+    </nav>
+
+    <div style="margin-top: auto;">
+      <button onclick="location.href='index.html'"
+        style="background: none; color: #EF4444; width:100%; text-align:left; padding:12px; border:none; font-weight:600; font-size:14px; cursor:pointer;">Logout</button>
+      <div style="padding-left:12px; font-size: 0.8rem; color: #94a3b8;">Signed in</div>
+    </div>
+  </aside>
+
+  <div class="main-container">
+
+    <div class="wizard-card" id="wizard">
+      <div class="step-indicator">
+        <div class="step-dot active"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
       </div>
-      <div class="form-group">
-        <label>Branch</label>
-        <input type="text" id="branch" value="Computer Science" readonly>
+
+      <!-- Step 1: Academic -->
+      <div id="step1">
+        <h2>Academic Snapshot</h2>
+        <div class="form-group">
+          <label>Current Semester</label>
+          <select id="semester">
+            <option value="4">Semester 4 (2nd Year)</option>
+            <option value="5">Semester 5 (3rd Year)</option>
+            <option value="6" selected>Semester 6 (3rd Year)</option>
+            <option value="8">Semester 8 (Final Year)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Branch</label>
+          <input type="text" id="branch" value="Computer Science" readonly>
+        </div>
+        <button class="btn" onclick="nextStep(2)">Next &rarr;</button>
       </div>
-      <button class="btn" onclick="nextStep(2)">Next &rarr;</button>
+
+      <!-- Step 2: Role & Time -->
+      <div id="step2" style="display:none;">
+        <h2>Focus & Availability</h2>
+        <div class="form-group">
+          <label>Target Role</label>
+          <select id="targetRole">
+            <option value="AI Engineer">AI/ML Engineer</option>
+            <option value="Full Stack Developer">Full Stack Developer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Weekly Hours Available</label>
+          <input type="number" id="weeklyHours" value="15" min="5" max="60">
+        </div>
+        <button class="btn" onclick="nextStep(3)">Next &rarr;</button>
+      </div>
+
+      <!-- Step 3: Skills -->
+      <div id="step3" style="display:none;">
+        <h2>Current Skills</h2>
+        <div class="skills-grid">
+          <label><input type="checkbox" class="skill-check" value="Python">
+            <div class="skill-label">Python</div>
+          </label>
+          <label><input type="checkbox" class="skill-check" value="JavaScript">
+            <div class="skill-label">JavaScript</div>
+          </label>
+          <label><input type="checkbox" class="skill-check" value="React">
+            <div class="skill-label">React</div>
+          </label>
+          <label><input type="checkbox" class="skill-check" value="Machine Learning">
+            <div class="skill-label">Machine Learning</div>
+          </label>
+          <label><input type="checkbox" class="skill-check" value="SQL">
+            <div class="skill-label">SQL</div>
+          </label>
+          <label><input type="checkbox" class="skill-check" value="Data Structures">
+            <div class="skill-label">DSA</div>
+          </label>
+        </div>
+        <button class="btn" onclick="runDiagnosis()" style="margin-top: 24px;">Analyze Profile</button>
+      </div>
+
+      <!-- Result View -->
+      <div id="resultView" class="result-view">
+        <h2>Diagnosis Report</h2>
+
+        <div class="score-circle" id="scoreCircle">0%</div>
+        <div id="verdict" style="font-weight: 600; margin-bottom: 24px; color: var(--text);">Thinking...</div>
+
+        <div id="gapsContainer" class="gap-box" style="display:none;">
+          <strong>⚠️ Critical Skill Gaps:</strong>
+          <ul id="gapList" style="margin: 8px 0 0 20px; padding: 0;"></ul>
+        </div>
+
+        <div id="riskContainer" class="risk-box" style="display:none;">
+          <strong>🛑 Risk Factors:</strong>
+          <ul id="riskList" style="margin: 8px 0 0 20px; padding: 0;"></ul>
+        </div>
+
+        <p style="color: var(--text-muted); font-size: 0.9rem;">We have prescribed a personalized roadmap based on this
+          diagnosis.</p>
+
+        <button class="btn" onclick="confirmRoadmap()">Generate My Roadmap &rarr;</button>
+      </div>
+
     </div>
 
-    <!-- Step 2: Role & Time -->
-    <div id="step2" style="display:none;">
-      <h2>Focus & Availability</h2>
-      <div class="form-group">
-        <label>Target Role</label>
-        <select id="targetRole">
-          <option value="AI Engineer">AI/ML Engineer</option>
-          <option value="Full Stack Developer">Full Stack Developer</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Weekly Hours Available</label>
-        <input type="number" id="weeklyHours" value="15" min="5" max="60">
-      </div>
-      <button class="btn" onclick="nextStep(3)">Next &rarr;</button>
-    </div>
+    <script src="js/userContext.js"></script>
+    <script>
+      const STATE = { semester: 6, branch: 'CSE', targetRole: 'AI Engineer', weeklyHours: 15, skills: [] };
+      let DIAGNOSIS = null;
 
-    <!-- Step 3: Skills -->
-    <div id="step3" style="display:none;">
-      <h2>Current Skills</h2>
-      <div class="skills-grid">
-        <label><input type="checkbox" class="skill-check" value="Python">
-          <div class="skill-label">Python</div>
-        </label>
-        <label><input type="checkbox" class="skill-check" value="JavaScript">
-          <div class="skill-label">JavaScript</div>
-        </label>
-        <label><input type="checkbox" class="skill-check" value="React">
-          <div class="skill-label">React</div>
-        </label>
-        <label><input type="checkbox" class="skill-check" value="Machine Learning">
-          <div class="skill-label">Machine Learning</div>
-        </label>
-        <label><input type="checkbox" class="skill-check" value="SQL">
-          <div class="skill-label">SQL</div>
-        </label>
-        <label><input type="checkbox" class="skill-check" value="Data Structures">
-          <div class="skill-label">DSA</div>
-        </label>
-      </div>
-      <button class="btn" onclick="runDiagnosis()" style="margin-top: 24px;">Analyze Profile</button>
-    </div>
-
-    <!-- Result View -->
-    <div id="resultView" class="result-view">
-      <h2>Diagnosis Report</h2>
-
-      <div class="score-circle" id="scoreCircle">0%</div>
-      <div id="verdict" style="font-weight: 600; margin-bottom: 24px; color: var(--text);">Thinking...</div>
-
-      <div id="gapsContainer" class="gap-box" style="display:none;">
-        <strong>⚠️ Critical Skill Gaps:</strong>
-        <ul id="gapList" style="margin: 8px 0 0 20px; padding: 0;"></ul>
-      </div>
-
-      <div id="riskContainer" class="risk-box" style="display:none;">
-        <strong>🛑 Risk Factors:</strong>
-        <ul id="riskList" style="margin: 8px 0 0 20px; padding: 0;"></ul>
-      </div>
-
-      <p style="color: var(--text-muted); font-size: 0.9rem;">We have prescribed a personalized roadmap based on this
-        diagnosis.</p>
-
-      <button class="btn" onclick="confirmRoadmap()">Generate My Roadmap &rarr;</button>
-    </div>
-
-  </div>
-
-  <script src="js/userContext.js"></script>
-  <script>
-    const STATE = { semester: 6, branch: 'CSE', targetRole: 'AI Engineer', weeklyHours: 15, skills: [] };
-    let DIAGNOSIS = null;
-
-    // Load User
-    UserContext.fetchUser().then(u => {
-      console.log("Diagnosing for:", u.name);
-    });
-
-    function nextStep(step) {
-      document.querySelectorAll('[id^="step"]').forEach(el => el.style.display = 'none');
-      document.getElementById(`step${step}`).style.display = 'block';
-
-      // Update State
-      if (step === 2) {
-        STATE.semester = document.getElementById('semester').value;
-      }
-      if (step === 3) {
-        STATE.targetRole = document.getElementById('targetRole').value;
-        STATE.weeklyHours = document.getElementById('weeklyHours').value;
-      }
-
-      // Update Dots
-      document.querySelectorAll('.step-dot').forEach((d, i) => {
-        d.classList.toggle('active', i < step);
+      // Load User
+      UserContext.fetchUser().then(u => {
+        console.log("Diagnosing for:", u.name);
       });
-    }
 
-    async function runDiagnosis() {
-      // Collect Skills
-      STATE.skills = Array.from(document.querySelectorAll('.skill-check:checked')).map(cb => cb.value);
+      function nextStep(step) {
+        document.querySelectorAll('[id^="step"]').forEach(el => el.style.display = 'none');
+        document.getElementById(`step${step}`).style.display = 'block';
 
-      document.querySelectorAll('[id^="step"]').forEach(el => el.style.display = 'none');
-      document.getElementById('resultView').style.display = 'block';
-
-      try {
-        const res = await fetch('http://localhost:3002/api/diagnosis', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(STATE)
-        });
-        const data = await res.json();
-
-        if (data.success) {
-          DIAGNOSIS = data.diagnosis;
-          renderResult(data.diagnosis);
+        // Update State
+        if (step === 2) {
+          STATE.semester = document.getElementById('semester').value;
         }
-      } catch (e) {
-        console.error(e);
-        alert("Diagnosis failed. Is backend running?");
-      }
-    }
+        if (step === 3) {
+          STATE.targetRole = document.getElementById('targetRole').value;
+          STATE.weeklyHours = document.getElementById('weeklyHours').value;
+        }
 
-    function renderResult(diagnosis) {
-      const circle = document.getElementById('scoreCircle');
-      circle.textContent = diagnosis.readinessScore + '%';
-
-      // Color Logic
-      if (diagnosis.readinessScore > 70) circle.style.borderColor = '#10b981'; // Green
-      else if (diagnosis.readinessScore > 40) circle.style.borderColor = '#f59e0b'; // Orange
-      else circle.style.borderColor = '#ef4444'; // Red
-
-      document.getElementById('verdict').textContent = diagnosis.verdict;
-
-      // Gaps
-      if (diagnosis.criticalGaps.length > 0) {
-        document.getElementById('gapsContainer').style.display = 'block';
-        document.getElementById('gapList').innerHTML = diagnosis.criticalGaps.map(g => `<li>${g}</li>`).join('');
-      }
-
-      // Risks
-      if (diagnosis.riskFactors.length > 0) {
-        document.getElementById('riskContainer').style.display = 'block';
-        document.getElementById('riskList').innerHTML = diagnosis.riskFactors.map(r => `<li>${r}</li>`).join('');
-      }
-    }
-
-    async function confirmRoadmap() {
-      if (!DIAGNOSIS) return;
-
-      try {
-        await fetch('http://localhost:3002/api/diagnosis/confirm', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            userId: UserContext.getUserId(),
-            ...STATE,
-            diagnosis: DIAGNOSIS
-          })
+        // Update Dots
+        document.querySelectorAll('.step-dot').forEach((d, i) => {
+          d.classList.toggle('active', i < step);
         });
-
-        // Redirect
-        window.location.href = 'roadmap.html';
-      } catch (e) {
-        console.error(e);
       }
-    }
 
-  </script>
+      async function runDiagnosis() {
+        // Collect Skills
+        STATE.skills = Array.from(document.querySelectorAll('.skill-check:checked')).map(cb => cb.value);
+
+        document.querySelectorAll('[id^="step"]').forEach(el => el.style.display = 'none');
+        document.getElementById('resultView').style.display = 'block';
+
+        try {
+          const res = await fetch('http://localhost:3002/api/diagnosis', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(STATE)
+          });
+          const data = await res.json();
+
+          if (data.success) {
+            DIAGNOSIS = data.diagnosis;
+            renderResult(data.diagnosis);
+          }
+        } catch (e) {
+          console.error(e);
+          alert("Diagnosis failed. Is backend running?");
+        }
+      }
+
+      function renderResult(diagnosis) {
+        const circle = document.getElementById('scoreCircle');
+        circle.textContent = diagnosis.readinessScore + '%';
+
+        // Color Logic
+        if (diagnosis.readinessScore > 70) circle.style.borderColor = '#10b981'; // Green
+        else if (diagnosis.readinessScore > 40) circle.style.borderColor = '#f59e0b'; // Orange
+        else circle.style.borderColor = '#ef4444'; // Red
+
+        document.getElementById('verdict').textContent = diagnosis.verdict;
+
+        // Gaps
+        if (diagnosis.criticalGaps.length > 0) {
+          document.getElementById('gapsContainer').style.display = 'block';
+          document.getElementById('gapList').innerHTML = diagnosis.criticalGaps.map(g => `<li>${g}</li>`).join('');
+        }
+
+        // Risks
+        if (diagnosis.riskFactors.length > 0) {
+          document.getElementById('riskContainer').style.display = 'block';
+          document.getElementById('riskList').innerHTML = diagnosis.riskFactors.map(r => `<li>${r}</li>`).join('');
+        }
+      }
+
+      async function confirmRoadmap() {
+        if (!DIAGNOSIS) return;
+
+        try {
+          await fetch('http://localhost:3002/api/diagnosis/confirm', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              userId: UserContext.getUserId(),
+              ...STATE,
+              diagnosis: DIAGNOSIS
+            })
+          });
+
+          // Redirect
+          window.location.href = 'roadmap.html';
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+    </script>
+  </div>
 </body>
 
 </html>

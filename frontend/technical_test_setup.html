@@ -9,10 +9,109 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <style>
+    :root {
+      --accent: #6366f1;
+      --accent-2: #4f46e5;
+      --sidebar-bg: #0f1724;
+      --menu-text: #cbd5e1;
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: #0c0c0e;
       color: #fff;
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 300px;
+      background: var(--sidebar-bg);
+      color: white;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #0b1220;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .brand-logo img {
+      width: 80px
+    }
+
+    .sidebar-title {
+      color: #a5b4fc;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .user-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .user-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #1f2937;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .menu button {
+      padding: 12px;
+      border: none;
+      background: transparent;
+      color: var(--menu-text);
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    .menu button.active {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: white;
+    }
+
+    .sidebar-foot {
+      margin-top: auto;
+      font-size: 12px;
+      color: #9aa7c7;
+    }
+
+    /* ===== MAIN ===== */
+    .main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
     }
 
     .glass {
@@ -27,52 +126,80 @@
   </style>
 </head>
 
-<body class="min-h-screen flex items-center justify-center p-6 relative">
-  <div style="position: absolute; top: 2rem; right: 2rem;">
-    <a href="index.html" class="text-red-500 font-semibold hover:text-red-400 transition-colors">Logout</a>
-  </div>
-  <div class="max-w-xl w-full glass rounded-3xl p-8 shadow-2xl">
-    <div class="text-center mb-10">
-      <h1 class="text-3xl font-bold mb-2">Technical Proficiency Test</h1>
-      <p class="text-gray-400">Rule-based assessment for Computer Science subjects</p>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand-logo"><img src="assets/logo.png"></div>
+    <div class="sidebar-title">Career Companion</div>
+
+    <div class="user-row">
+      <div class="user-icon">👤</div>
+      <strong class="user-greeting">Hi, <span class="user-name-display">Student</span></strong>
     </div>
 
-    <form id="test-setup-form" class="space-y-6">
-      <!-- Subject Selection -->
-      <div>
-        <label class="block text-sm font-medium text-gray-400 mb-2">Select Subject</label>
-        <select id="subject" name="subject" required
-          class="w-full bg-[#16161a] border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all">
-          <option value="" disabled selected>Choose a subject...</option>
-        </select>
+    <nav class="menu">
+      <button onclick="location.href='resume_upload.html'">Resume Upload</button>
+      <button class="active">Technical Test</button>
+      <button onclick="location.href='communication_test.html'">Communication Test</button>
+      <button onclick="location.href='mock_interview_setup.html'">Mock Interview</button>
+      <button onclick="location.href='opportunities.html'">Opportunities</button>
+      <button onclick="location.href='roadmap_setup.html'">Roadmap</button>
+      <button onclick="location.href='dashboard.html'">Dashboard</button>
+    </nav>
+
+    <div style="margin-top: auto; width: 100%;">
+      <button onclick="location.href='index.html'"
+        style="background: none; color: #EF4444; width:100%; text-align:left; padding:12px; border:none; font-weight:600; font-size:14px; cursor:pointer; font-family:inherit;">Logout</button>
+      <div class="sidebar-foot" style="padding-left:12px; margin-top:0;">Signed in</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="max-w-xl w-full glass rounded-3xl p-8 shadow-2xl">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold mb-2">Technical Proficiency Test</h1>
+        <p class="text-gray-400">Rule-based assessment for Computer Science subjects</p>
       </div>
 
-      <!-- Difficulty Selection -->
-      <div>
-        <label class="block text-sm font-medium text-gray-400 mb-2">Difficulty Level</label>
-        <div class="grid grid-cols-3 gap-3" id="difficulty-grid">
-          <!-- Loaded dynamically -->
+      <form id="test-setup-form" class="space-y-6">
+        <!-- Subject Selection -->
+        <div>
+          <label class="block text-sm font-medium text-gray-400 mb-2">Select Subject</label>
+          <select id="subject" name="subject" required
+            class="w-full bg-[#16161a] border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all">
+            <option value="" disabled selected>Choose a subject...</option>
+          </select>
         </div>
-      </div>
 
-      <!-- Rules Summary -->
-      <div class="bg-indigo-500/5 rounded-2xl p-4 border border-indigo-500/10 mb-8">
-        <h3 class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-2">Test Rules</h3>
-        <ul class="text-sm text-gray-300 space-y-2" id="rules-list">
-          <li>• Easy: 10 Questions</li>
-          <li>• Medium: 15 Questions</li>
-          <li>• Hard: 20 Questions</li>
-          <li>• Deterministic scoring (No AI)</li>
-        </ul>
-      </div>
+        <!-- Difficulty Selection -->
+        <div>
+          <label class="block text-sm font-medium text-gray-400 mb-2">Difficulty Level</label>
+          <div class="grid grid-cols-3 gap-3" id="difficulty-grid">
+            <!-- Loaded dynamically -->
+          </div>
+        </div>
 
-      <button type="submit"
-        class="w-full accent-gradient hover:opacity-90 text-white font-bold py-4 rounded-xl shadow-lg transition-all transform hover:scale-[1.02]">
-        Start Assessment
-      </button>
-    </form>
-  </div>
+        <!-- Rules Summary -->
+        <div class="bg-indigo-500/5 rounded-2xl p-4 border border-indigo-500/10 mb-8">
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-2">Test Rules</h3>
+          <ul class="text-sm text-gray-300 space-y-2" id="rules-list">
+            <li>• Easy: 10 Questions</li>
+            <li>• Medium: 15 Questions</li>
+            <li>• Hard: 20 Questions</li>
+            <li>• Deterministic scoring (No AI)</li>
+          </ul>
+        </div>
 
+        <button type="submit"
+          class="w-full accent-gradient hover:opacity-90 text-white font-bold py-4 rounded-xl shadow-lg transition-all transform hover:scale-[1.02]">
+          Start Assessment
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/userContext.js"></script>
   <script>
     const API_BASE = 'http://localhost:3002/api/test';
 

@@ -33,6 +33,31 @@ router.get('/current', async (req, res) => {
   }
 });
 
+/**
+ * GET /api/user/:id
+ * Returns a user with their profile and diagnosis results.
+ */
+router.get('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const user = await prisma.user.findUnique({
+      where: { id },
+      include: {
+        studentProfile: true,
+        diagnosisResult: true
+      }
+    });
+
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found." });
+    }
+
+    res.json({ success: true, user });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
 
 /**
  * POST /api/user/complete-tour

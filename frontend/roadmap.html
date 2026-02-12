@@ -32,31 +32,69 @@
 
     /* Sidebar (Reused) */
     /* Sidebar (Reused) */
+    /* UNIFIED SIDEBAR STYLES */
     .sidebar {
       width: 260px;
-      background: white;
-      border-right: 1px solid #e2e8f0;
       padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 30px;
+      background: white;
+      border-right: 1px solid #e2e8f0;
+      flex-shrink: 0;
     }
 
-    .nav-item {
+    .brand-logo img {
+      width: 40px;
+    }
+
+    .sidebar-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 10px;
+    }
+
+    .user-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .user-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #e0e7ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .menu button {
       padding: 12px;
+      border: none;
+      background: transparent;
+      color: #64748b;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
       border-radius: 8px;
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 500;
-      display: block;
     }
 
-    .nav-item.active {
-      background: var(--primary-soft);
+    .menu button.active {
+      background: #eff6ff;
       color: var(--primary);
     }
 
-    /* Main */
     .main {
       flex: 1;
       display: flex;
@@ -64,214 +102,42 @@
       overflow: hidden;
     }
 
-    /* Header */
-    .header {
-      padding: 24px 40px;
-      background: white;
-      border-bottom: 1px solid #e2e8f0;
+    body {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* Timeline Container */
-    .timeline-container {
-      flex: 1;
-      padding: 40px;
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
-
-    /* Velocity Banner */
-    .velocity-banner {
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    }
-
-    .status-badge {
-      background: #f0fdf4;
-      color: #15803d;
-      padding: 6px 12px;
-      border-radius: 99px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    /* Phase Blocks */
-    .phases-wrapper {
-      position: relative;
-      padding-left: 20px;
-      border-left: 2px solid #e2e8f0;
-    }
-
-    .phase-card {
-      background: white;
-      border-radius: 16px;
-      padding: 30px;
-      margin-bottom: 40px;
-      position: relative;
-      border: 1px solid #e2e8f0;
-    }
-
-    .phase-card::before {
-      content: "";
-      position: absolute;
-      left: -27px;
-      top: 30px;
-      width: 12px;
-      height: 12px;
-      background: white;
-      border: 3px solid var(--text-muted);
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    .phase-card.active {
-      border-color: var(--primary);
-      box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1);
-    }
-
-    .phase-card.active::before {
-      border-color: var(--primary);
-      background: var(--primary);
-    }
-
-    .phase-card.locked {
-      opacity: 0.6;
-      filter: grayscale(1);
-      pointer-events: none;
-    }
-
-    .phase-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-
-    .phase-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-
-    .phase-meta {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    /* Task List */
-    .task-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .task-item {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 16px;
-      background: #f8fafc;
-      border-radius: 10px;
-      border: 1px solid #f1f5f9;
-      transition: all 0.2s;
-    }
-
-    .task-item:hover {
-      border-color: var(--primary-soft);
-      background: white;
-    }
-
-    .task-checkbox {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      accent-color: var(--primary);
-    }
-
-    .task-content {
-      flex: 1;
-    }
-
-    .task-title {
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 4px;
-    }
-
-    .task-deliverable {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    .tag {
-      font-size: 0.7rem;
-      padding: 2px 8px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-left: 10px;
-    }
-
-    .tag-build {
-      background: #fee2e2;
-      color: #991b1b;
-    }
-
-    /* Execution focus */
-    .tag-learn {
-      background: #fef3c7;
-      color: #92400e;
-    }
-
-    /* Opportunity Unlock */
-    .opp-unlock {
-      margin-top: 24px;
-      background: #eff6ff;
-      border: 1px border-blue-200;
-      border-radius: 10px;
-      padding: 16px;
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
-
-    .unlock-icon {
-      font-size: 1.5rem;
-    }
-
-    .unlock-btn {
-      margin-left: auto;
-      background: var(--primary);
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.85rem;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      background: var(--bg-page);
     }
   </style>
 </head>
 
 <body>
 
+  <!-- SIDEBAR -->
   <aside class="sidebar">
-    <div style="font-weight: 700; font-size: 1.4rem; color: var(--primary); margin-bottom: 20px;">Ascend 🚀</div>
-    <a href="dashboard.html" class="nav-item">📊 Dashboard</a>
-    <a href="opportunities.html" class="nav-item">Opportunities</a>
-    <a href="#" class="nav-item active">My Roadmap</a>
-    <a href="resume_upload.html" class="nav-item">Resume Builder</a>
+    <div class="brand-logo"><img src="assets/logo.png"></div>
+    <div class="sidebar-title">Career Companion</div>
+
+    <div class="user-row">
+      <div class="user-icon">👤</div>
+      <strong class="user-greeting">Hi, <span class="user-name-display">Student</span></strong>
+    </div>
+
+    <nav class="menu">
+      <button onclick="location.href='resume_upload.html'">Resume Upload</button>
+      <button onclick="location.href='technical_test_setup.html'">Technical Test</button>
+      <button onclick="location.href='communication_test.html'">Communication Test</button>
+      <button onclick="location.href='mock_interview_setup.html'">Mock Interview</button>
+      <button onclick="location.href='opportunities.html'">Opportunities</button>
+      <button class="active" onclick="location.href='roadmap_setup.html'">Roadmap</button>
+      <button onclick="location.href='dashboard.html'">Dashboard</button>
+    </nav>
 
     <div style="margin-top: auto;">
-      <a href="index.html" class="nav-item" style="color: #EF4444; font-weight: 600;">Logout</a>
-      <div style="padding: 12px; color: var(--text-muted); font-size: 0.8rem;">Signed in</div>
+      <button onclick="location.href='index.html'"
+        style="background: none; color: #EF4444; width:100%; text-align:left; padding:12px; border:none; font-weight:600; font-size:14px; cursor:pointer;">Logout</button>
+      <div style="padding-left:12px; font-size: 0.8rem; color: #94a3b8;">Signed in</div>
     </div>
   </aside>
 
@@ -279,10 +145,11 @@
     <header class="header">
       <div>
         <h1 style="font-size: 1.5rem; font-weight: 700;">Career Roadmap</h1>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Target: <strong>AI/ML Engineer (2026 Batch)</strong></p>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Target: <strong id="roadmapTarget">Loading...</strong>
+        </p>
       </div>
       <div style="text-align: right;">
-        <div style="font-size: 2rem; font-weight: 800; color: var(--text-main);">Week 3</div>
+        <div style="font-size: 2rem; font-weight: 800; color: var(--text-main);">Week 1</div>
         <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
           Current Sprint</div>
       </div>
@@ -293,12 +160,13 @@
       <!-- Velocity Check -->
       <div class="velocity-banner">
         <div>
-          <h3 style="margin: 0 0 8px 0;">Status: <span class="status-badge">On Track</span></h3>
-          <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">You are moving at <strong>1.2x
-              velocity</strong>. Keep this up to unlock Amazon ML Application by July.</p>
+          <h3 style="margin: 0 0 8px 0;">Status: <span class="status-badge" id="roadmapStatus">Diagnosis Required</span>
+          </h3>
+          <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);" id="roadmapVelocityText">Complete your
+            diagnosis to see your personalized growth velocity.</p>
         </div>
         <div style="height: 8px; width: 140px; background: #e2e8f0; border-radius: 99px;">
-          <div style="height: 100%; width: 35%; background: var(--success); border-radius: 99px;"></div>
+          <div id="velocityBar" style="height: 100%; width: 0%; background: var(--success); border-radius: 99px;"></div>
         </div>
       </div>
 
@@ -316,18 +184,41 @@
 
     // 1. Fetch Template
     async function loadRoadmap() {
-      // Assuming user has selected 'ai-ml-fast-track-2026'
-      const templateId = 'ai-ml-fast-track-2026';
-
       try {
-        // Init progress tracking if new
+        // A. Get User's Diagnosis for the Prescribed Template
+        const diagRes = await fetch(`http://localhost:3002/api/user/${TEST_USER_ID}`);
+        const userData = await diagRes.json();
+
+        if (!userData.success || !userData.user || !userData.user.diagnosisResult) {
+          document.getElementById('roadmapView').innerHTML = `
+            <div style="text-align: center; padding: 40px;">
+              <h3>No Diagnosis Found</h3>
+              <p>Please complete your career diagnosis first to generate your custom roadmap.</p>
+              <button class="btn" onclick="location.href='roadmap_setup.html'" style="margin-top:15px; width:200px">Start Diagnosis</button>
+            </div>
+          `;
+          return;
+        }
+
+        const diagnosis = userData.user.diagnosisResult;
+        const templateId = diagnosis.prescribedTemplateId;
+
+        // Update Header
+        document.getElementById('roadmapTarget').textContent = `${userData.user.studentProfile.targetRole} (${userData.user.studentProfile.semester}th Sem)`;
+        document.getElementById('roadmapStatus').textContent = diagnosis.readinessScore > 50 ? "On Track" : "Needs Acceleration";
+        document.getElementById('roadmapVelocityText').textContent = diagnosis.readinessScore > 50
+          ? `You are moving at 1.2x velocity. Stay consistent!`
+          : `Velocity upgrade recommended to hit placement targets.`;
+        document.getElementById('velocityBar').style.width = diagnosis.readinessScore + '%';
+
+        // B. Init progress tracking if new
         await fetch(`${API_BASE}/init`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ userId: TEST_USER_ID, templateId })
         });
 
-        // Get Full Data
+        // C. Get Full Data
         const res = await fetch(`${API_BASE}/${templateId}`);
         const data = await res.json();
 

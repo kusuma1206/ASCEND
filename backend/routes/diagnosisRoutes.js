@@ -126,14 +126,16 @@ router.post('/confirm', async (req, res) => {
         readinessScore: diagnosis.readinessScore,
         criticalGaps: diagnosis.criticalGaps,
         riskFactors: diagnosis.riskFactors,
-        prescribedTemplateId: diagnosis.prescribedTemplateId
+        prescribedTemplate: diagnosis.prescribedTemplateId,
+        verdict: diagnosis.verdict
       },
       create: {
         userId,
         readinessScore: diagnosis.readinessScore,
         criticalGaps: diagnosis.criticalGaps,
         riskFactors: diagnosis.riskFactors,
-        prescribedTemplateId: diagnosis.prescribedTemplateId
+        prescribedTemplate: diagnosis.prescribedTemplateId,
+        verdict: diagnosis.verdict
       }
     });
 
